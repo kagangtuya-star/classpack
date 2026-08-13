@@ -48,13 +48,19 @@ jobs:
           const fs = require("fs");
           const file = "dnd5e_classpack/module.json";
           const data = JSON.parse(fs.readFileSync(file, "utf8"));
-          const tag = (process.env.RELEASE_TAG || "").replace(/^v/i, "");
-          if (tag) data.version = tag;
-          const base = `https://github.com/${process.env.REPO}/releases/latest/download`;
-          data.manifest = `${base}/module.json`;
-          data.download = `${base}/dnd5e_classpack.zip`;
+          const tag = process.env.RELEASE_TAG || "";
+          const version = tag.replace(/^v/i, "");
+          if (version) data.version = version;
+          const base = `https://github.com/${process.env.REPO}/releases`;
+          // `manifest` stays on "latest" so Foundry always detects new versions;
+          // `download` is pinned to this release's tag so each manifest points
+          // at its own archive (falls back to latest for untagged manual runs).
+          data.manifest = `${base}/latest/download/module.json`;
+          data.download = tag
+            ? `${base}/download/${tag}/dnd5e_classpack.zip`
+            : `${base}/latest/download/dnd5e_classpack.zip`;
           fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
-          console.log(`module.json: version=${data.version} manifest=${data.manifest}`);
+          console.log(`module.json: version=${data.version} download=${data.download}`);
           EOF
 
       # Compile every pack from the JSON source. `--inputDirectory` points at the
