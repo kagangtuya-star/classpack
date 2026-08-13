@@ -8,8 +8,14 @@ name: Release Creation
 # pack back to LevelDB (`fvtt package pack`) and the module is zipped for
 # Foundry's Data/modules/ directory.
 on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to attach the archive to. Leave empty to build the archive without attaching.'
+        required: false
+        default: ''
   release:
-    types: [published]
+    types: [published, edited]
 
 permissions:
   contents: write
@@ -56,11 +62,14 @@ jobs:
       - name: Build module archive
         run: zip -r dnd5e_classpack.zip dnd5e_classpack
 
+      # Attach the archive to the release (or to the tag supplied via a manual
+      # workflow_dispatch run). Skipped for manual runs that omit the tag.
       - name: Attach archive to release
+        if: ${{ github.event_name == 'release' || inputs.tag != '' }}
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          tag: ${{ github.event.release.tag_name }}
+          tag: ${{ github.event.release.tag_name || inputs.tag }}
           omitName: true
           omitBody: true
           artifacts: dnd5e_classpack.zip
