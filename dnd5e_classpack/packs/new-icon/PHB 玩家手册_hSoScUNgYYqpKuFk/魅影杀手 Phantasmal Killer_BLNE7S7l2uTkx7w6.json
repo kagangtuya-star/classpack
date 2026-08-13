@@ -58,7 +58,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 0,
-          "value": "turn=end,allowIncapacitated=true,rollType=save,saveAbility=str,saveDC=@attributes.spell.dc,saveDamage=nodamage,saveRemove=true,saveMagic=true,damageBeforeSave=true,damageRoll=(@flags.dnd5e.spellLevel)d10,damageType=psychic,rollMode=publicroll,",
+          "value": "turn=end, label=魅影杀手 Phantasmal Killer, saveAbility=str, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=(@flags.dnd5e.spellLevel)d10, damageType=psychic, damageBeforeSave=true, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -109,14 +109,15 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": null,
-        "modifiedTime": 1753358423493,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1786654942538,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "modules/dnd5e_classpack/Nicons/Ability_Rogue_ShadowDance.png",
       "type": "base",
@@ -309,12 +310,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711701349071,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!BLNE7S7l2uTkx7w6"
 }

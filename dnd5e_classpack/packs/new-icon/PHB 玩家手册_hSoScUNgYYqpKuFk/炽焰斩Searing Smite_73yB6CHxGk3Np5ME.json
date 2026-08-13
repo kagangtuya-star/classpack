@@ -49,7 +49,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 0,
-          "value": "turn=start,allowIncapacitated=true,rollType=save,saveAbility=con,saveDamage=nodamage,saveRemove=true,saveMagic=true,damageRoll=[@flags.dnd5e.spellLevel]d6,damageType=fire,rollMode=publicroll,",
+          "value": "turn=start, label=炽焰斩Searing Smite, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=[@flags.dnd5e.spellLevel]d6, damageType=fire, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -78,7 +78,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -109,12 +110,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1753073573129,
-        "modifiedTime": 1753203328719,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786654728316,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!73yB6CHxGk3Np5ME.zJedZ10PTuYRlDoJ"
     }
@@ -309,12 +311,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!73yB6CHxGk3Np5ME"
 }

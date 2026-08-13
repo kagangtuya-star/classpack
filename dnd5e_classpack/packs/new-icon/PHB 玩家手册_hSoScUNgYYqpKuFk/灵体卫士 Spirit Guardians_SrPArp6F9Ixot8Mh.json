@@ -82,9 +82,9 @@
       "system": {},
       "changes": [
         {
-          "key": "flags.midi-qol.ActivityOverTime",
+          "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=start, saveAbility=wis, saveDC=@attributes.spelldc, saveDamage=halfdamage, rollType=save, saveMagic=true, damageBeforeSave=false, damageRoll=[@flags.dnd5e.spellLevel]d8, damageType=radiant",
+          "value": "turn=start, label=灵体卫士 Spirit Guardians, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=[@flags.dnd5e.spellLevel]d8, damageType=radiant, saveDamage=halfdamage, allowIncapacitated=true",
           "priority": 20
         },
         {
@@ -119,7 +119,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -150,12 +151,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1755250990831,
-        "modifiedTime": 1755251126363,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786655605515,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!SrPArp6F9Ixot8Mh.hDDRqOojnDCTpPKI"
     }
@@ -335,12 +337,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!SrPArp6F9Ixot8Mh"
 }

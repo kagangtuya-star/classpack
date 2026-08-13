@@ -51,7 +51,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 0,
-          "value": "turn=start,allowIncapacitated=true,rollType=check,saveAbility=wis,saveDamage=nodamage,saveRemove=true,saveMagic=true,actionSave=dialog,damageType=fire,rollMode=publicroll,",
+          "value": "turn=start, label=激愤斩Wrathful Smite, rollType=check, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, damageType=fire, saveCount=1-, actionSave=dialog, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -82,7 +82,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -113,12 +114,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1753196835301,
-        "modifiedTime": 1753203346800,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786655656276,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!ccsNUAD2zK3esckm.vSwDQ6ZGpaPgCKbS"
     }
@@ -414,12 +416,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711695707444,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!ccsNUAD2zK3esckm"
 }

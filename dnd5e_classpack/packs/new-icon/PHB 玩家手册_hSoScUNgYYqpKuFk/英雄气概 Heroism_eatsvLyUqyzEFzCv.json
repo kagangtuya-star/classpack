@@ -56,7 +56,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 0,
-          "value": "turn=start,allowIncapacitated=true,saveAbility=str,saveDamage=nodamage,saveRemove=true,actionSave=dialog,damageRoll=@attributes.spell.mod,damageType=temphp,rollMode=publicroll,",
+          "value": "turn=start, label=英雄气概 Heroism, rollType=damage, saveAbility=str, damageRoll=@attributes.spell.mod, damageType=temphp, saveCount=1-, actionSave=dialog, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -85,7 +85,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -116,12 +117,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1753070903785,
-        "modifiedTime": 1753090893900,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786655762170,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!eatsvLyUqyzEFzCv.RIzlQ1IbiqkqqeTM"
     }
@@ -402,12 +404,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!eatsvLyUqyzEFzCv"
 }

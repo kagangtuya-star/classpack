@@ -88,7 +88,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=end,\ndamageRoll=10d8,\ndamageType=fire,\nsaveRemove=false,\nsaveDC=@attributes.spelldc,\nsaveAbility=dex,\nsaveDamage=halfdamage,\nkillAnim=true",
+          "value": "turn=end, label=焚云术 Incendiary Cloud, saveAbility=dex, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=10d8, damageType=fire, saveDamage=halfdamage, allowIncapacitated=true, killAnim=true",
           "priority": 20
         }
       ],
@@ -105,7 +105,9 @@
           "showIcon": true,
           "durationExpression": "",
           "macroRepeat": "none",
-          "specialDuration": []
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": ""
         },
         "ActiveAuras": {
           "isAura": false,
@@ -122,18 +124,27 @@
           "hostile": false,
           "onlyOnce": false,
           "wallsBlock": "system"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
         }
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "12.343",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
         "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
+        "modifiedTime": 1786655877802,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_WindsofWoe.png",
       "type": "base",
@@ -340,12 +351,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711691764392,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!FUiSyN2j2j3ufukn"
 }

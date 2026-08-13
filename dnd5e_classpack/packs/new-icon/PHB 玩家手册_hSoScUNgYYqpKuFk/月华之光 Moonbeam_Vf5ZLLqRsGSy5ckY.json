@@ -89,7 +89,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 0,
-          "value": "turn=start, saveAbility=con, saveDC=@attributes.spelldc, saveDamage=halfdamage, rollType=save, saveMagic=true, damageBeforeSave=false, damageRoll=[@flags.dnd5e.spellLevel]d10, damageType=radiant",
+          "value": "turn=start, label=月华之光 Moonbeam, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=[@flags.dnd5e.spellLevel]d10, damageType=radiant, saveDamage=halfdamage, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -118,7 +118,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -149,12 +150,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1755158963689,
-        "modifiedTime": 1755159040568,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786655467819,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!Vf5ZLLqRsGSy5ckY.SijKuciO2cYUaJkt"
     }
@@ -324,12 +326,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": null,
     "modifiedTime": 1757419719404,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!Vf5ZLLqRsGSy5ckY"
 }

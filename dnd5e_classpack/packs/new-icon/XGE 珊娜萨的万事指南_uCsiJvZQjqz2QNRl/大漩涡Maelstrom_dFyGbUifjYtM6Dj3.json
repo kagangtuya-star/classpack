@@ -90,7 +90,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=start,allowIncapacitated=true,rollType=save,saveDamage=nodamage,saveMagic=true,damageRoll=6d6,damageType=bludgeoning,rollMode=publicroll,",
+          "value": "turn=start, label=大漩涡生效Maelstrom, rollType=damage, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=6d6, damageType=bludgeoning, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -129,7 +129,6 @@
           "statuses": []
         },
         "core": {
-          "sourceId": "Actor.bvEYS7EFkAFT4pCf.Item.D85jj7XpsIug249c.ActiveEffect.nVmlEvvV2f4CRei7",
           "overlay": false
         },
         "dnd5e": {
@@ -140,14 +139,15 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.4.4",
         "createdTime": null,
-        "modifiedTime": 1756996554194,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "compendiumSource": null,
-        "duplicateSource": null
+        "modifiedTime": 1786655696291,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "compendiumSource": "Actor.bvEYS7EFkAFT4pCf.Item.D85jj7XpsIug249c.ActiveEffect.nVmlEvvV2f4CRei7",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "icons/magic/water/vortex-water-whirlpool.webp",
       "type": "base",
@@ -326,12 +326,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711689423300,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!dFyGbUifjYtM6Dj3"
 }

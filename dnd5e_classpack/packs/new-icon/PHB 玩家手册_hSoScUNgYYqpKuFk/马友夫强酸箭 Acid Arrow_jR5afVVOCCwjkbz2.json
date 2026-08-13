@@ -85,7 +85,9 @@
           "macroRepeat": "none",
           "specialDuration": [
             "turnEnd"
-          ]
+          ],
+          "enableCondition": "",
+          "disableCondition": ""
         },
         "ActiveAuras": {
           "isAura": false,
@@ -102,25 +104,32 @@
           "hostile": false,
           "onlyOnce": false,
           "wallsBlock": "system"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
         }
       },
       "name": "Acid Arrow",
       "origin": "Compendium.dnd5e_classpack.new-icon.Item.jR5afVVOCCwjkbz2",
       "tint": "#ffffff",
       "transfer": false,
-      "statuses": [
-        "Convenient Effect: Acid Arrow"
-      ],
+      "statuses": [],
       "_id": "rd4Cw0bftP6Rzm6R",
       "_stats": {
-        "coreVersion": "12.343",
-        "systemId": null,
-        "systemVersion": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
         "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
+        "modifiedTime": 1786655963914,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "icons/magic/acid/projectile-bolts-salvo-green.webp",
       "type": "base",
@@ -450,12 +459,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711700579049,
     "modifiedTime": 1757419089174,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!jR5afVVOCCwjkbz2"
 }

@@ -81,7 +81,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=start, saveAbility=dex, saveDC=@attributes.spelldc, rollType=save, label=Fall prone on fail",
+          "value": "turn=start, label=Fall prone on fail, saveAbility=dex, saveDC=@attributes.spell.dc, saveMagic=true, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -110,7 +110,8 @@
           "stackable": "multi",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -141,12 +142,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1753069446224,
-        "modifiedTime": 1753070356822,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786656092274,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!ocOtoi8hLFVfkG8V.cthYaNGuTGEYM0PY"
     }
@@ -330,12 +332,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!ocOtoi8hLFVfkG8V"
 }

@@ -484,7 +484,7 @@
       "otherCondition": "",
       "fumbleThreshold": null
     },
-    "cf": null,
+    "cf": {},
     "custom-character-sheet-sections": {
       "sectionName": ""
     },
@@ -519,12 +519,6 @@
       "ida": false
     },
     "core": {},
-    "exportSource": {
-      "world": "development-testing",
-      "system": "dnd5e",
-      "coreVersion": "10.291",
-      "systemVersion": "2.1.5"
-    },
     "autoanimations": {
       "id": "f258d2a7-b07c-46dc-ae57-64268a89b433",
       "label": "Storm Sphere",
@@ -772,7 +766,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=end, saveAbility=str, saveDC=@attributes.spelldc, saveMagic=true, saveDamage=halfdamage, rollType=save, saveMagic=true, damageBeforeSave=false, damageRoll=[@flags.dnd5e.spellLevel/2]d6, damageType=bludgeoning",
+          "value": "turn=end, label=暴风法球Storm Sphere, saveAbility=str, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=[@flags.dnd5e.spellLevel/2]d6, damageType=bludgeoning, saveDamage=halfdamage, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -801,7 +795,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -832,12 +827,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.4.4",
         "createdTime": 1756492710156,
-        "modifiedTime": 1756492943112,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786655531642,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!aDWH4875u9g0MGe8.TRSU07bjIlEvXdDn"
     }
@@ -846,12 +842,19 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1676798650449,
     "modifiedTime": 1757260847563,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "development-testing",
+      "uuid": null,
+      "coreVersion": "10.291",
+      "systemId": "dnd5e",
+      "systemVersion": "2.1.5"
+    }
   },
   "folder": "uCsiJvZQjqz2QNRl",
   "ownership": {

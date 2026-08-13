@@ -55,6 +55,12 @@
           "mode": 0,
           "value": "1",
           "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.OverTime",
+          "mode": 2,
+          "value": "turn=end, label=Stunned, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, allowIncapacitated=true",
+          "priority": 20
         }
       ],
       "description": "<p>- A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly.<br />- The creature automatically fails Strength and Dexterity saving throws.<br />- Attack rolls against the creature have advantage.</p>",
@@ -125,14 +131,15 @@
       ],
       "_id": "mUlVVfhQimYYkcir",
       "_stats": {
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.4.4",
         "createdTime": null,
-        "modifiedTime": 1757002137952,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1786656065693,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "modules/dfreds-convenient-effects/images/stunned.svg",
       "type": "base",
@@ -319,12 +326,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711700493756,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!JZSNvGikwyPAR0UY"
 }

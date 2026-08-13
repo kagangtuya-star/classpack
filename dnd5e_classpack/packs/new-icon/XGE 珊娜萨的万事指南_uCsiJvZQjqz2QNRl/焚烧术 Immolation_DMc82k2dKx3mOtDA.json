@@ -58,7 +58,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=end,allowIncapacitated=true,rollType=save,saveAbility=dex,saveDamage=nodamage,saveRemove=true,saveMagic=true,damageRoll=4d6,damageType=fire,rollMode=publicroll,",
+          "value": "turn=end, label=焚烧Immolation, saveAbility=dex, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=4d6, damageType=fire, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -107,14 +107,15 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.4.4",
         "createdTime": null,
-        "modifiedTime": 1756997035433,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1786655007510,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "icons/magic/fire/flame-burning-creature-skeleton.webp",
       "type": "base",
@@ -320,12 +321,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711691494305,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!DMc82k2dKx3mOtDA"
 }

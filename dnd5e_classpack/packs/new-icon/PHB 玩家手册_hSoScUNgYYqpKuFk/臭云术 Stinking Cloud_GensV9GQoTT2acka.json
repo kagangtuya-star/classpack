@@ -88,7 +88,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 0,
-          "value": "turn=start, saveAbility=con, saveDC=@attributes.spelldc, label=豁免失败则该生物必须因呕吐和蹒跚浪费掉其本回合的动作。如果生物不需要呼吸或对毒素免疫，则其检定直接判定为成功.",
+          "value": "turn=start, label=豁免失败则该生物必须因呕吐和蹒跚浪费掉其本回合的动作。如果生物不需要呼吸或对毒素免疫，则其检定直接判定为成功., saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -137,14 +137,15 @@
       },
       "tint": "#ffffff",
       "_stats": {
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": null,
-        "modifiedTime": 1755072095445,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1786655208621,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "modules/dnd5e_classpack/Nicons/ability_monk_zenflight.png",
       "type": "base",
@@ -334,12 +335,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711688697669,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!GensV9GQoTT2acka"
 }

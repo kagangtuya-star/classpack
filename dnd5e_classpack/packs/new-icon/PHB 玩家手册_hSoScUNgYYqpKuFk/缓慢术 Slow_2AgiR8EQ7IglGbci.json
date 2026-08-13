@@ -78,7 +78,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 2,
-          "value": "turn=end, saveAbility=wis, saveDC=@attributes.spelldc, saveRemove=true, saveMagic=true",
+          "value": "turn=end, label=缓慢术 Slow, saveAbility=wis, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=1-, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -98,10 +98,10 @@
           "disableCondition": "",
           "disableIncapacitated": false,
           "dontApply": false,
-          "showIcon": false
+          "showIcon": false,
+          "macroRepeat": "none"
         },
         "core": {
-          "sourceId": "Actor.GabJyoAElcOKQvnt.Item.uCVpMQzRMkzIqrup.ActiveEffect.635JmtpXZmuoOyji",
           "overlay": false
         },
         "ActiveAuras": {
@@ -131,14 +131,15 @@
       "description": "",
       "statuses": [],
       "_stats": {
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": null,
-        "modifiedTime": 1755072448993,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "compendiumSource": null,
-        "duplicateSource": null
+        "modifiedTime": 1786654597451,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "compendiumSource": "Actor.GabJyoAElcOKQvnt.Item.uCVpMQzRMkzIqrup.ActiveEffect.635JmtpXZmuoOyji",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_Slow.png",
       "type": "base",
@@ -328,12 +329,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1711694615425,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!2AgiR8EQ7IglGbci"
 }

@@ -52,7 +52,7 @@
         {
           "key": "flags.midi-qol.OverTime",
           "mode": 0,
-          "value": "turn=start,allowIncapacitated=true,saveDamage=nodamage,saveRemove=true,damageRoll=1,damageType=healing,rollMode=publicroll,",
+          "value": "turn=start, label=生命灵光 Aura of Life, rollType=damage, damageRoll=1, damageType=healing, saveCount=1-, rollMode=publicroll, allowIncapacitated=true",
           "priority": 20
         },
         {
@@ -87,7 +87,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -118,12 +119,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1753504001446,
-        "modifiedTime": 1753504294346,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+        "modifiedTime": 1786654758579,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
       },
       "_key": "!items.effects!9WDd3gopYOGyYnrT.SQsN0iDcjSTdIhMf"
     }
@@ -295,12 +297,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": null,
     "modifiedTime": 1757259979391,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!9WDd3gopYOGyYnrT"
 }
