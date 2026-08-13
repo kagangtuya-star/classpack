@@ -1,0 +1,195 @@
+{
+  "name": "侏儒特快投递器 Gnomeflinger",
+  "type": "weapon",
+  "img": "icons/weapons/artillery/cannon-engraved-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>大型物件</em></p><p><strong>伤害免疫</strong>：毒素，心灵。</p><p>这个装置是一种弹射器，不过不是用来弹射物品，而是用抛物线来投掷生物。侏儒特快投递器是与@UUID[Compendium.dnd5e_classpack.moditems.Item.wGievT6n3NkpIBYS]{防止跌落背包 narycrash}一起设计的，用来加快交通速度。该装置可以容纳一个中型或更小的生物。侏儒特快投递器在装载和瞄准之后才能发射。装载需要1个动作，瞄准需要1个动作，发射需要1个动作。</p><p>在你进行瞄准时，你可以将抛掷生物的最大水平距离设定为60尺、150尺或300尺。</p><p><strong>抛掷生物 Fling Personnel。</strong>投递器将一个中型或更小的生物水平抛出至少60尺远，投递最大水平距离为60尺、150尺或300尺。投递距离在瞄准时设定。在弹射弹道中，被弹射的生物都会被向上抬升60尺。<br />被弹射者在弹道过程中如果撞到其他生物或物体，每远离投递器10尺都会受到<strong>3（[[/r 1d6]]）点</strong><em><strong>钝击伤害</strong></em>。</p><p></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DSotDQ",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "range": {
+      "value": 60,
+      "long": 300,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": true,
+          "formula": "d6"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      }
+    },
+    "armor": {
+      "value": 15
+    },
+    "hp": {
+      "value": 100,
+      "max": 100,
+      "dt": null,
+      "conditions": ""
+    },
+    "properties": [],
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "siege",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "发射前必须先进行装填和瞄准作业。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-gnomeflinger",
+    "container": null,
+    "attuned": false,
+    "ammunition": {},
+    "magicalBonus": null
+  },
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": 1686485958603,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "folder": null,
+  "_id": "9NRJk99wRrTQevrS",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Jo05tXxu7yf2dQe3": 3
+  },
+  "_key": "!items!9NRJk99wRrTQevrS"
+}

@@ -1,0 +1,27 @@
+{
+  "folder": "eU30QuaGz6BH1UEA",
+  "name": "效果创建时造成伤害",
+  "type": "script",
+  "_id": "PmUUZIVmMTyoxIEu",
+  "author": "WqWGW8MuBm7BNHxt",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "(async () => {\n  // 确认宏触发时 args[0] 存在“on”或“off”\n  const hook = args[0];\n  const tokenD = canvas.tokens.get(args[1]?.tokenId);\n  if (!tokenD) return;\n\n  if (hook === \"on\") {\n    // 效果创建时：立即造成 5d10 力场伤害\n    const roll = await new Roll(\"5d10[force]\").roll({async: true});\n    await new MidiQOL.DamageOnlyWorkflow(\n      actor,\n      token,\n      roll.total,\n      'force',\n      tokenD ? [tokenD] : [],\n      roll,\n      { flavor: \"DAE Effect: Force Damage on creation\" }\n    );\n  }\n  // hook === \"off\" 时，无操作\n})();",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "WqWGW8MuBm7BNHxt": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1756909390660,
+    "modifiedTime": 1756909402151,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+  },
+  "_key": "!macros!PmUUZIVmMTyoxIEu"
+}

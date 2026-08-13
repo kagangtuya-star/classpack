@@ -1,0 +1,223 @@
+{
+  "name": "猎人之衣 Hunter’s Coat",
+  "type": "equipment",
+  "img": "icons/equipment/chest/shirt-simple-grey.webp",
+  "effects": [],
+  "folder": "v3V4BJIslRqB1yV5",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 3,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"WordSection1\"><p class=\"MsoNormal\"><span style=\"FONT-SIZE:10pt;COLOR:black\">着装该护甲时，你的</span><span class=\"1\">AC </span><span style=\"FONT-SIZE:10pt;COLOR:black\">获得</span><span class=\"1\">+1 </span><span style=\"FONT-SIZE:10pt;COLOR:black\">加值。</span><br style=\"WORD-SPACING:0px;ORPHANS:2;WIDOWS:2;font-variant-ligatures:normal;font-variant-caps:normal;-webkit-text-stroke-width:0px;text-decoration-style:initial;text-decoration-color:initial\" /><span style=\"FONT-SIZE:10pt;COLOR:black\">这身皮甲共有</span><span class=\"1\">3</span><span style=\"FONT-SIZE:10pt;COLOR:black\">发充能，并将于每天黎明时恢复[[/r 1d3]]发充能。当你攻击并击中一个失去了任何量生命值的目标时，你可以消耗一发充能，并对该目标额外造成</span><span class=\"1\">[[/r 1d10]]</span><span style=\"FONT-SIZE:10pt;COLOR:black\">的黯蚀伤害。</span><br style=\"WORD-SPACING:0px;ORPHANS:2;WIDOWS:2;font-variant-ligatures:normal;font-variant-caps:normal;-webkit-text-stroke-width:0px;text-decoration-style:initial;text-decoration-color:initial\" /></p></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 152",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 10,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1510,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "3",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "formula",
+          "formula": "1d3"
+        }
+      ],
+      "spent": 0
+    },
+    "armor": {
+      "value": 12,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "light",
+      "baseItem": "leather"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "special",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-hunters-coat",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1692164331343,
+    "modifiedTime": 1757877616205,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "JGPsD1jUDfQaImVz",
+  "sort": 5000000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!JGPsD1jUDfQaImVz"
+}

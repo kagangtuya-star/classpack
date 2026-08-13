@@ -1,0 +1,135 @@
+{
+  "_id": "uZjBfwzuVt0KO2iD",
+  "name": "战斗风格：箭术 Fighting Style: Archery",
+  "type": "feat",
+  "img": "icons/weapons/bows/shortbow-recurve-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>你使用远程武器进行攻击检定时具有 +2加值。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 72; 73; 91",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "fightingStyle"
+    },
+    "requirements": "战士等级 1，勇士等级 10，游侠等级 2",
+    "activities": {},
+    "identifier": "-archery",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "ZDgCN7P5zEfBq8dC",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.dnd5e.classfeatures.Item.8YwPFv3UAPjWVDNf.ActiveEffect.F0Bh4n8Tu1ZZnwSr"
+        }
+      },
+      "changes": [
+        {
+          "key": "system.bonuses.rwak.attack",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.uZjBfwzuVt0KO2iD",
+      "tint": "#ffffff",
+      "transfer": true,
+      "name": "战斗风格：箭术",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "img": "icons/weapons/bows/shortbow-recurve-yellow.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!uZjBfwzuVt0KO2iD.ZDgCN7P5zEfBq8dC"
+    }
+  ],
+  "folder": null,
+  "sort": 40800000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": 1711461521253,
+    "modifiedTime": 1757273492383,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!uZjBfwzuVt0KO2iD"
+}

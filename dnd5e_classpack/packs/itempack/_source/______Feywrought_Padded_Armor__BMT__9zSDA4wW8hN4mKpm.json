@@ -1,0 +1,213 @@
+{
+  "_id": "9zSDA4wW8hN4mKpm",
+  "name": "妖精锻布甲 Feywrought Padded Armor (BMT)",
+  "type": "equipment",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "67",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>护甲（轻甲），珍稀（需同调）</em><br />这套色彩鲜艳、花团锦簇的护甲铸成于 <strong>妖精荒野Feywild</strong> 之中，它充满着那个奇幻位面的诱人能量。<br />穿着这套护甲期间，你为防止陷入或结束 <strong>魅惑&amp;Reference[condition=charmed]</strong> 状态所做的豁免具有优势。<br />这套护甲具有3发充能。你可以消耗一发充能以用其施展法术<em>@UUID[Compendium.dnd5e_classpack.new-icon.Item.RpBbOYseLZCFXaFY]{强迫术 Compulsion}</em>（豁免DC15）。这套护甲在每日黎明时分恢复[[/r 1d3]]发已消耗的充能数。</p><p>布甲由数层布料与棉料的衬里构成。</p><p>This colorful, flowery armor was forged in the Feywild and is infused with that plane's captivating magic.</p><p>While wearing this armor, you have advantage on saving throws you make to avoid or end the &amp;Reference[condition=charmed] condition on yourself.</p><p>This armor has 3 charges. You can use an action to expend a charge to cast the @spell[Compulsion] spell (save DC <span class=\"rd__dc\">15</span>) from this armor. The armor regains [[/r 1d3]] expended charges daily at dawn.</p><p>Padded armor consists of quilted layers of cloth and batting.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 8,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "rare",
+    "type": {
+      "value": "light",
+      "baseItem": "padded"
+    },
+    "properties": [
+      "mgc",
+      "stealthDisadvantage"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "3",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d3"
+        }
+      ]
+    },
+    "armor": {
+      "value": 11,
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": null,
+    "activities": {
+      "uC7yhR1V4vtcece4": {
+        "_id": "uC7yhR1V4vtcece4",
+        "type": "cast",
+        "img": "systems/dnd5e/icons/svg/activity/cast.svg",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "spell": {
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "uuid": "Compendium.plutonium-faux-id--7b22746167223a227370656c6c222c2274657874223a22636f6d70756c73696f6e227d.custom.Item.0000000000000000"
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "feywrought-padded-armor-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false
+  },
+  "img": "icons/equipment/chest/breastplate-quilted-brown.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "feywrought%20padded%20armor_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "UkU3u1aaCqVQbSa1",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738888053,
+    "modifiedTime": 1751738888053,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "sort": 125782,
+  "_key": "!items!9zSDA4wW8hN4mKpm"
+}

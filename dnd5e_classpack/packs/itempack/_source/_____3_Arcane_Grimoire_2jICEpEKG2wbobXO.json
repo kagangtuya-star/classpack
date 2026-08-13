@@ -1,0 +1,214 @@
+{
+  "name": "奥法秘典+3 Arcane Grimoire",
+  "type": "equipment",
+  "img": "icons/sundries/books/book-symbol-hexagram-silver-red.webp",
+  "system": {
+    "description": {
+      "value": "<p class=\"MsoNormal\" style=\"MARGIN-BOTTOM:12pt;TEXT-ALIGN:left;mso-pagination:widow-orphan\"><em style=\"mso-bidi-font-style:normal\">需法师同调</em></p><p class=\"MsoNormal\" style=\"MARGIN-BOTTOM:12pt;TEXT-ALIGN:left;mso-pagination:widow-orphan\">当你持握着这件皮革封皮的书籍时，你可以将其作为你法师法术的法器，你在你法师法术的法术攻击骰和法术豁免DC上获得加值。加值取决于书的稀有度。<br />你可以将其作为法术书。此外，当你使用你的奥术回想特性时，你能够恢复的法术位环阶总和额外增加1环。<br /></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {},
+    "identifier": "3-arcane-grimoire",
+    "attuned": false
+  },
+  "effects": [
+    {
+      "name": "奥法秘典+3 Arcane Grimoire",
+      "origin": "Compendium.dnd5e_classpack.itempack.Item.2jICEpEKG2wbobXO",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "transfer": true,
+      "disabled": false,
+      "_id": "6kCspvumCrFgCuSc",
+      "changes": [
+        {
+          "key": "system.bonuses.spell.attack",
+          "mode": 2,
+          "value": "+ 3",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.spell.dc",
+          "mode": 2,
+          "value": "+ 3",
+          "priority": 20
+        }
+      ],
+      "description": "",
+      "statuses": [],
+      "flags": {
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [],
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "macroRepeat": "none"
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system"
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "img": "icons/sundries/books/book-symbol-hexagram-silver-red.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!2jICEpEKG2wbobXO.6kCspvumCrFgCuSc"
+    }
+  ],
+  "flags": {
+    "core": {},
+    "magic-items-2": {
+      "enabled": false,
+      "default": "",
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "充能耗尽，它崩碎成了一堆灰烬。",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1686059964887,
+    "modifiedTime": 1757871122967,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "folder": "0kYXiIauxbxVdjZn",
+  "_id": "2jICEpEKG2wbobXO",
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!2jICEpEKG2wbobXO"
+}

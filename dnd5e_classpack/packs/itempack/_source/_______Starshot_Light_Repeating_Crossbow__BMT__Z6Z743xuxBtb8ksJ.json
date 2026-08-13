@@ -1,0 +1,253 @@
+{
+  "_id": "Z6Z743xuxBtb8ksJ",
+  "name": "射星轻连射弩 Starshot Light Repeating Crossbow (BMT)",
+  "type": "weapon",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "38",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>武器（轻连射弩），珍稀（需同调）</em><br />这把弩由黑色木材制成，弩弓上镶嵌着排列为星座的珍珠。你可以忽略此弩的装填属性。 如果这把武器没有装填弹药，它会在你使用它进行一次远程攻击时自动为自己制造出一发魔法弹药。被创造出的弹药命中或落空后会消失。这把弩有3发充能，每天黎明时恢复[[/r 1d3]]发已消耗的充能。<br /><em><strong>星座Constellation。</strong></em>弩上饰有三个星座。以一个附赠动作，你可以激活其中一个星座，消耗1发充能并获得以下增益之一：</p><ul><li><em><strong>平衡Balance</strong></em>。你在下一回合结束之前用这把武器进行的下一次远程攻击命中时，你可以选择你或30尺内的另一个生物恢复[[/r 1d8]]+你的熟练加值的生命值。</li><li><em><strong>火焰Flame。</strong></em>直到你下个回合结束为止，你用这把武器进行的远程攻击在命中生物时造成额外的[[/damage 2d8 type=fire]]伤害。</li><li><p><em><strong>浪客Rogue。</strong></em>直到你下个回合结束为止，你变为隐形。你的穿着物和携带物也随之隐形。</p></li></ul><p>This crossbow is crafted from blackened wood, and its limbs bear pearl inlays depicting constellations. You ignore the loading property with this crossbow. If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target. The crossbow has 3 charges and regains [[/r 1d3]] expended charges daily at dawn.</p><div data-roll-name-ancestor=\"Constellations\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Constellations.</span> The crossbow is decorated with three constellations. As a bonus action, you can tap one of the constellations to invoke it, expending 1 charge and producing one of the following effects:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Balance\"><span class=\"bold rd__list-item-name\">Balance.</span> The next time you hit a creature with a ranged attack roll using this crossbow before the end of your next turn, you or another creature of your choice within 30 feet of you can regain hit points equal to [[/r 1d8]] plus your proficiency bonus.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Flames\"><span class=\"bold rd__list-item-name\">Flames.</span> Until the end of your next turn, when you hit a creature with a ranged attack roll using this crossbow, the attack deals an additional [[/damage 2d8 type=fire]] damage.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Rogue\"><span class=\"bold rd__list-item-name\">Rogue.</span> Until the end of your next turn, you have the invisible condition, and anything you are wearing or carrying is also invisible.</p></li></ul></div><p>This crossbow is fitted with a cartridge that can hold up to six crossbow bolts. It automatically reloads after firing until the cartridge runs out of ammunition. Reloading the cartridge takes an action.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "rare",
+    "type": {
+      "value": "simpleR",
+      "baseItem": ""
+    },
+    "range": {
+      "value": 40,
+      "long": 160,
+      "units": "ft",
+      "reach": null
+    },
+    "properties": [
+      "amm",
+      "mgc",
+      "two"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "3",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d3"
+        }
+      ]
+    },
+    "magicalBonus": 0,
+    "damage": {
+      "base": {
+        "types": [
+          "piercing"
+        ],
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "scaling": {
+          "mode": "",
+          "number": 1
+        },
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "ammunition": {
+      "type": "crossbowBolt"
+    },
+    "mastery": "",
+    "activities": {
+      "lmJ5sjonV1xDLrLV": {
+        "_id": "lmJ5sjonV1xDLrLV",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          },
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": ""
+      }
+    },
+    "identifier": "starshot-light-repeating-crossbow-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "armor": {
+      "value": null
+    }
+  },
+  "img": "modules/plutonium/media/icon/pocket-bow.svg",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "starshot%20light%20repeating%20crossbow_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "4TOAfkeg3rPfaVef",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738836954,
+    "modifiedTime": 1751738836954,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "sort": 100782,
+  "_key": "!items!Z6Z743xuxBtb8ksJ"
+}

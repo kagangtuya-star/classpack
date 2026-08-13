@@ -1,0 +1,151 @@
+{
+  "_id": "5777EBC9E403D996",
+  "name": "文书伪造工具 Forgery Kit",
+  "type": "tool",
+  "img": "icons/sundries/documents/envelope-sealed-red-tan.webp",
+  "effects": [],
+  "folder": "Bf7NK3IUK930qcHb",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "盒装的工具包内装着各种纸和羊皮纸、笔墨、印章、封蜡、金银叶饰，以及其他用以伪造信用文书的用品。拥有文书伪造工具熟练项的角色，在使用该工具进行伪造实物式信用文书的属性检定时，可以将其熟练加值加入检定结果中。",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 154",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "ability": "int",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "",
+      "baseItem": "forg"
+    },
+    "container": null,
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "check": {
+          "ability": "int",
+          "associated": [],
+          "dc": {}
+        },
+        "sort": 0
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "identifier": "-forgery-kit",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010439659,
+    "modifiedTime": 1757275698084,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 3200000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!5777EBC9E403D996"
+}

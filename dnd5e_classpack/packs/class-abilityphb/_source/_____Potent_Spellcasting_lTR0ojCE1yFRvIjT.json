@@ -1,0 +1,178 @@
+{
+  "_id": "lTR0ojCE1yFRvIjT",
+  "name": "强力施法 Potent Spellcasting",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Rebuke.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第8级起，你施展牧师戏法造成伤害时，可以再加上你的感知调整值。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "牧师领域等级 8",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "强力施法PotentSpellcasting",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Rebuke.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.lTR0ojCE1yFRvIjT",
+      "_id": "tKCOOB7gzCIN9bO4",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.force",
+          "mode": 5,
+          "value": "item.level === 0 && item.sourceClass === 'cleric'&& item.itemType === \"spell\"",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.damage.all",
+          "mode": 2,
+          "value": "+@abilities.wis.mod",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.强力施法PotentSpellcasting.count",
+          "mode": 2,
+          "value": "every",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [],
+          "macroRepeat": "none"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756701521468,
+        "modifiedTime": 1756988727480,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!lTR0ojCE1yFRvIjT.tKCOOB7gzCIN9bO4"
+    }
+  ],
+  "folder": null,
+  "sort": 34400000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757407605432,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lTR0ojCE1yFRvIjT"
+}

@@ -1,0 +1,171 @@
+{
+  "_id": "Bre1FogGHSxQmZYl",
+  "name": "透视过去 Visions of the Past",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Mage_AlterTime.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>        第17级起，你可以看到过去的情形。你花费至少1分钟冥想，然后将以梦幻阴暗的形式瞥见最近发生的事件。你在维持幻觉的时长分钟数等于你的感知值。而在这段时间里，你必须要如施法般维持专注。</p>\n<p>        你使用该特性后必须完成一次短休或长休才能再次启用。.</p>\n<p><strong>        物件解读object Reading。</strong>保持专注于某个物件时，你即可从幻觉中找到其之前的拥有者。1分钟冥想后，你将看到该拥有者如何获得以及如何丢失该物件。以及新近发生的涉及该物体与该拥有者的重大事件。如果对象在近期转交由另一个生物拥有(转交日距施法时的日数必须在等同于你感知值的日数之内)，则每个生物你要花费额外1分钟进行冥想，以通过幻觉获得同类的信息。</p>\n<p><strong>        区域解读Area Reading。</strong>你在冥想时看到的景象是身处位置最近发生的事件(某处的房间、街道、地道、空地，或是与之类似的50尺立方空间)，可回溯的日数等于你的感知值。每个重要事件的幻象都将额外花费你1分钟的时间。这些重大事件通常涉及强烈的情感，比如战争和背叛、结婚和谋杀、出生和葬礼等。而这其中也可能包含有一些当时看似平凡无奇，眼下却显得至关重要的事情。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "知识领域等级 17",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 12300000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757174258484,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Bre1FogGHSxQmZYl"
+}

@@ -1,0 +1,232 @@
+{
+  "_id": "Z7wIZcd6Ku5Gvk8D",
+  "name": "阿弗纳斯之刃 Blade of Avernus",
+  "type": "weapon",
+  "img": "icons/weapons/swords/greatsword-crossguard-blue.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1751739761507,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>在扎瑞尔之剑被摧毁后的某个时刻，扎瑞尔给了她的仆人（包括那些扮演过此的角色）为她锻造一把新剑的任务。这项企图包括的目标如下：</p>\n<ul>\n<li>如果贝尔还在为扎瑞尔服务，她会请求他去锻造刀锋。否则，她的仆人必须在宇宙中找到一个相当的武器铁匠，比如火元素位面黄铜城的一名火巨灵。</li>\n<li>扎瑞尔至少需要十磅的金属或材料来制造剑的刀刃。精金或者是提亚马特的爪子都行。</li>\n<li>为了赋予剑力量，新锻造的武器必须在天界生物、恶魔领主和魔鬼大公的血液中淬火。扎瑞尔可以供应自己的血，但她的仆人必须收集另外两份。</li>\n</ul>\n<p>扎瑞尔将这个新的神器命名为阿弗纳斯之刃。这把长剑是一个需要同调的神器，它具有以下属性：</p>\n<p><strong>魔法武器 Magic Weapons</strong>。阿弗纳斯之刃是一把魔法武器，有@UUID[Compendium.dnd5e_classpack.itempack.8BC379E202BC7596]{斩首长剑 Vorpal Longsword}的效果。</p>\n<p><strong>随机属性 Random Properties</strong>。剑具有以下随机确定的属性，如《城主指南》第7章所述：</p>\n<ul>\n<li>2项弱效增益属性</li>\n<li>1项强效增益属性</li>\n<li>1项强效减益属性，当剑与大魔鬼同调时会被压制</li>\n</ul>\n<p><strong>阿弗纳斯的统治者 Ruler of Avernus</strong>。以一个动作，你可以把这把剑指向一个离你60尺以内的魔鬼。魔鬼必须成功通过一个DC22的魅力豁免检定，否则被你魅惑1小时。以这种方式被魅惑的话魔鬼会全力执行你的命令。如果你命令魔鬼去做一些它认为是自杀的事，效果便会结束，你也无法再用这把剑的力量来对付这个魔鬼。</p>\n<p><strong>炼狱回返 Infernal Recall</strong>。以一个动作，你可以用这把剑来释放一个@UUID[Compendium.dnd5e_classpack.new-icon.saFwXc26RtQaVLWN]{回返真言 Word of Recall}。被这个法术传送的生物出现在当前阿弗纳斯统治者30尺范围内的一个未被占据的地方，或者你指定的一个避难所，如果你统治了阿弗纳斯的话。</p>\n<p><strong>摧毁这把剑 Destroying the Sword</strong>。把剑扔进冥河或者在铸造它的熔炉中将其熔化都可以摧毁它。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "BGDIA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "artifact",
+    "identified": true,
+    "range": {
+      "value": null,
+      "long": 0,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": "1d10+3+@mod"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": true,
+          "formula": "1d8+3+@mod"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      }
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "attuned": true,
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "longsword"
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "0",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-blade-of-avernus",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "ammunition": {},
+    "magicalBonus": null,
+    "mastery": ""
+  },
+  "_key": "!items!Z7wIZcd6Ku5Gvk8D"
+}

@@ -1,0 +1,256 @@
+{
+  "_id": "6gVCkuxAqIeSgg0V",
+  "name": "粘球魔杖 Wand of Viscid Globs",
+  "type": "consumable",
+  "img": "icons/weapons/staves/staff-ornate-purple.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 7,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<blockquote>\n<h4><strong>卓尔制品Drowcraft Items </strong></h4>\n<p>由卓尔制作的（或是由幽暗地域其他种族制作的某些）魔法物品，都是由一些无法接触日光的物质或仪式制成。许多这类物品（包括卓尔的护甲、武器和魔法斗篷之类）当暴露在阳光下超过1小时就会失去其魔力。充能物品则会被彻底摧毁。</p>\n</blockquote>\n<p><em>魔杖（需同调）</em></p>\n<p>这根卓尔制作的黑细魔杖有7 发充能。持握该魔杖时，你可以用一个动作并消耗1 发充能，向身边60 尺范围内的一个目标发射一个粘球。对该目标进行一次远程攻击检定，其攻击加值为你的熟练加值加你的施法关键属性调整值（没有施法关键属性时按智力调整值算）。若命中，则粘球炸开并在目标身上凝固，以此使目标受束缚1 小时。时间过后，其身上的粘性物质自然破裂脱落。</p>\n<p>被困目标可以至少一品脱剂量的酒精使其身上的粘质溶解，@UUID[Compendium.dnd5e_classpack.itempack.76A53FC1DC160E02]{灵化之油 Oil of Etherealness}或@UUID[Compendium.dnd5e_classpack.itempack.6BC1A57F655FB594]{万溶剂 Universal Solvent}也可以实现同样的效果。其粘质暴露在阳光下时也会立即溶解。</p>\n<p>此外的其他非魔法手段都无法移除魔杖产生的粘性物质。</p>\n<p>每日午夜时，魔杖会恢复[[/r 1d6+1]]发充能。当你用掉魔杖最后一发充能时骰一次[[/r d20]]，若骰值为1，则魔杖将随之融化为一滩软泥而彻底摧毁。</p>\n<p>粘球魔杖在阳光下连续暴露超过1个小时便会魔力尽失。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "OoTA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "7",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "wand",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      },
+      "dnd5eactivity300": {
+        "_id": "dnd5eactivity300",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d6+1",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-wand-of-viscid-globs",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!6gVCkuxAqIeSgg0V"
+}

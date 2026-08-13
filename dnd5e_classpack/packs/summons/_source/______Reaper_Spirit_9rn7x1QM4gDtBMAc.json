@@ -1,0 +1,1463 @@
+{
+  "name": "收割者灵魄 Reaper Spirit",
+  "img": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/bestiary/tokens/BMT/Reaper Spirit.webp",
+  "type": "npc",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": "0"
+        },
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "custom",
+        "formula": "@attributes.ac.armor + @attributes.ac.dex -2",
+        "flat": null
+      },
+      "hp": {
+        "value": 40,
+        "max": 40,
+        "temp": null,
+        "tempmax": null,
+        "formula": ""
+      },
+      "init": {
+        "bonus": "0",
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": 30,
+        "swim": null,
+        "walk": 30,
+        "units": "ft",
+        "hover": true
+      },
+      "spellcasting": "str",
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "attunement": {
+        "max": 3
+      },
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "spell": {
+        "level": 0
+      },
+      "loyalty": {
+        "value": null
+      }
+    },
+    "details": {
+      "alignment": "neutral",
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "race": null,
+      "type": {
+        "value": "undead",
+        "subtype": ""
+      },
+      "cr": 0,
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "habitat": {
+        "custom": "",
+        "value": []
+      },
+      "treasure": {
+        "value": []
+      }
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "0",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "traits": {
+      "size": "med",
+      "languages": {
+        "value": [],
+        "custom": "理解你所说的语言",
+        "communication": {}
+      },
+      "di": {
+        "value": [
+          "necrotic",
+          "poison"
+        ],
+        "custom": "",
+        "bypasses": []
+      },
+      "dr": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "dv": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "dm": {
+        "amount": {},
+        "bypasses": []
+      },
+      "important": false
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "spells": {
+      "spell0": {
+        "value": 0,
+        "override": null
+      },
+      "spell1": {
+        "value": 0,
+        "override": null
+      },
+      "spell2": {
+        "value": 0,
+        "override": null
+      },
+      "spell3": {
+        "value": 0,
+        "override": null
+      },
+      "spell4": {
+        "value": 0,
+        "override": null
+      },
+      "spell5": {
+        "value": 0,
+        "override": null
+      },
+      "spell6": {
+        "value": 0,
+        "override": null
+      },
+      "spell7": {
+        "value": 0,
+        "override": null
+      },
+      "spell8": {
+        "value": 0,
+        "override": null
+      },
+      "spell9": {
+        "value": 0,
+        "override": null
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "tools": {},
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "50",
+      "license": "",
+      "revision": 1,
+      "rules": "2024"
+    }
+  },
+  "prototypeToken": {
+    "displayName": 20,
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "visionMode": "darkvision",
+      "saturation": -1,
+      "angle": 360,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "detectionModes": [],
+    "name": "Reaper Spirit",
+    "texture": {
+      "src": "assets/srd5e/img/bestiary/tokens/BMT/Reaper Spirit.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "rotation": 0,
+    "actorLink": false,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "lockRotation": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "flags": {
+    "plutonium": {
+      "page": "bestiary.html",
+      "source": "BMT",
+      "hash": "reaper%20spirit_bmt"
+    },
+    "dnd5e": {
+      "showTokenPortrait": false
+    },
+    "core": {}
+  },
+  "items": [
+    {
+      "_id": "KXjOTISGsuZtiDQC",
+      "name": "多重攻击 Multiattack",
+      "type": "feat",
+      "system": {
+        "source": {
+          "custom": "",
+          "book": "BMT",
+          "page": "50",
+          "license": "",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--3\"><p>灵魄发动等同于法术环阶一半的次数的攻击 （向下取整）。</p></div>",
+          "chat": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "cover": null,
+        "crewed": false,
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0
+      },
+      "img": "icons/skills/melee/strike-weapons-orange.webp",
+      "flags": {
+        "plutonium": {
+          "page": "monsterAction",
+          "source": "BMT",
+          "hash": "multiattack_reaper%20spirit_bmt_bmt"
+        },
+        "midiProperties": {
+          "confirmTargets": "default",
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "critOther": false,
+          "offHandWeapon": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false,
+          "idr": false,
+          "idi": false,
+          "idv": false,
+          "ida": false
+        },
+        "midi-qol": {
+          "rollAttackPerTarget": "default",
+          "itemCondition": "",
+          "effectCondition": ""
+        },
+        "dnd5e": {
+          "persistSourceMigration": true
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.3.1",
+        "coreVersion": "12.343",
+        "createdTime": null,
+        "modifiedTime": 1724943570992,
+        "lastModifiedBy": "pF5tIzH2aEMuTR6D",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!9rn7x1QM4gDtBMAc.KXjOTISGsuZtiDQC"
+    },
+    {
+      "system": {
+        "type": {
+          "value": "natural",
+          "baseItem": ""
+        },
+        "damage": {
+          "versatile": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "base": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [
+              "necrotic"
+            ],
+            "custom": {
+              "enabled": true,
+              "formula": "1d8  + @mod + 4"
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          }
+        },
+        "source": {
+          "custom": "",
+          "book": "BMT",
+          "page": "50",
+          "license": "",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--3\"><p>近战武器攻击：命中使用你的法术攻击调整值(具有优势)，触及5尺，单一被作祟的生物。命中：[[/damage 1d8 + 3 ]]+该法术环阶的黯蚀伤害。</p><p></p><div class=\"rd__spc-inline-post\"><p></p></div></div>",
+          "chat": ""
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft",
+          "reach": null
+        },
+        "proficient": 1,
+        "properties": [],
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": "",
+        "attuned": false,
+        "equipped": true,
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "armor": {
+          "value": null
+        },
+        "hp": {
+          "value": null,
+          "max": null,
+          "dt": null,
+          "conditions": ""
+        },
+        "magicalBonus": null,
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "attack": {
+              "ability": "str",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": true,
+              "parts": []
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "",
+        "ammunition": {}
+      },
+      "_id": "RdiFALHOpWQJSTgR",
+      "name": "收割之镰 Reaping Scythe",
+      "type": "weapon",
+      "ownership": {
+        "default": 0
+      },
+      "img": "icons/skills/melee/strike-scythe-fire-green.webp",
+      "flags": {
+        "plutonium": {
+          "page": "monsterAction",
+          "source": "BMT",
+          "hash": "reaping%20scythe_reaper%20spirit_bmt_bmt"
+        },
+        "midi-qol": {
+          "fumbleThreshold": null,
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "effectCondition": ""
+        },
+        "midiProperties": {
+          "confirmTargets": "default",
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "critOther": false,
+          "offHandWeapon": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false,
+          "idr": false,
+          "idi": false,
+          "idv": false,
+          "ida": false
+        },
+        "dnd5e": {
+          "persistSourceMigration": true
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.3.1",
+        "coreVersion": "12.343",
+        "createdTime": null,
+        "modifiedTime": 1724943552024,
+        "lastModifiedBy": "pF5tIzH2aEMuTR6D",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!9rn7x1QM4gDtBMAc.RdiFALHOpWQJSTgR"
+    },
+    {
+      "_id": "2wwMQX2mNndlu45b",
+      "name": "虚体移动 Incorporeal Movement",
+      "type": "feat",
+      "system": {
+        "source": {
+          "custom": "",
+          "book": "BMT",
+          "page": "50",
+          "license": "",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--3\"><p>灵魄可以如同穿过困难地形一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部则受到5（[[/damage 1d10 type=force]]）的力场伤害。</p><p></p><p>The spirit can move through other creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes [[/damage 1d10 type=force]] damage for every 5 feet shunted.</p><div class=\"rd__spc-inline-post\"><p></p></div></div>",
+          "chat": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "cover": null,
+        "crewed": false,
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "damage",
+            "activation": {
+              "type": "",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "damage": {
+              "critical": {
+                "allow": false,
+                "bonus": ""
+              },
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "whole",
+                    "number": null,
+                    "formula": ""
+                  }
+                }
+              ]
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0
+      },
+      "img": "icons/magic/control/debuff-energy-snare-purple-blue.webp",
+      "flags": {
+        "plutonium": {
+          "page": "monsterTrait",
+          "source": "BMT",
+          "hash": "incorporeal%20movement_reaper%20spirit_bmt_bmt"
+        },
+        "midiProperties": {
+          "confirmTargets": "default",
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "critOther": false,
+          "offHandWeapon": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false,
+          "idr": false,
+          "idi": false,
+          "idv": false,
+          "ida": false
+        },
+        "midi-qol": {
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "effectCondition": ""
+        },
+        "dnd5e": {
+          "persistSourceMigration": true
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.3.1",
+        "coreVersion": "12.343",
+        "createdTime": null,
+        "modifiedTime": 1724943421867,
+        "lastModifiedBy": "pF5tIzH2aEMuTR6D",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!9rn7x1QM4gDtBMAc.2wwMQX2mNndlu45b"
+    },
+    {
+      "_id": "p4n57D3jSOJBDw5T",
+      "name": "作祟生物 Haunt Creature",
+      "type": "feat",
+      "system": {
+        "source": {
+          "custom": "",
+          "book": "BMT",
+          "page": "50",
+          "license": "",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "description": {
+          "value": "<div class=\"rd__b  rd__b--3\"><p>灵魄以自己10尺内的一个生物为目标，并开始作祟该生物。当目标被作祟时，如果目标和你在同一个存在位面上，你和灵魄就会感知到目标的方向和距离。此外，如果目标在灵魄10尺内开始其回合，则该目标必须对你的法术豁免DC进行一次成功的感知豁免，否则将陷入恐慌状态直到目标的下一回合开始。目标在死亡、灵魄消失或灵魄再次使用此动作前一直处于被作祟状态。</p><div class=\"rd__spc-inline-post\"><p></p></div></div>",
+          "chat": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "properties": [],
+        "cover": null,
+        "crewed": false,
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "bonus",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0
+          }
+        },
+        "identifier": "",
+        "advancement": [],
+        "enchant": {}
+      },
+      "ownership": {
+        "default": 0
+      },
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "flags": {
+        "plutonium": {
+          "page": "monsterBonus",
+          "source": "BMT",
+          "hash": "haunt%20creature_reaper%20spirit_bmt_bmt"
+        },
+        "midiProperties": {
+          "confirmTargets": "default",
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "critOther": false,
+          "offHandWeapon": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false,
+          "idr": false,
+          "idi": false,
+          "idv": false,
+          "ida": false
+        },
+        "midi-qol": {
+          "rollAttackPerTarget": "default",
+          "itemCondition": "",
+          "effectCondition": ""
+        },
+        "dnd5e": {
+          "persistSourceMigration": true
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.3.1",
+        "coreVersion": "12.343",
+        "createdTime": null,
+        "modifiedTime": 1724943595184,
+        "lastModifiedBy": "pF5tIzH2aEMuTR6D",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "_key": "!actors.items!9rn7x1QM4gDtBMAc.p4n57D3jSOJBDw5T"
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": 1724943186541,
+    "modifiedTime": 1756539313640,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "pF5tIzH2aEMuTR6D": 3
+  },
+  "_id": "9rn7x1QM4gDtBMAc",
+  "sort": 1500000,
+  "_key": "!actors!9rn7x1QM4gDtBMAc"
+}

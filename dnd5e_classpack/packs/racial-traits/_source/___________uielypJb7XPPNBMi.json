@@ -1,0 +1,129 @@
+{
+  "name": "滑翔（哈多兹鼯猴人）",
+  "type": "feat",
+  "img": "icons/creatures/abilities/wing-batlike-purple-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>当从至少高于地面10尺的地方坠落时，你能用你的反应展开皮肤膜来水平滑翔，滑翔的距离与你的步行速度相等，并且你受到的坠落伤害为0。你决定滑翔的方向。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "AAG",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "哈多兹鼯猴人",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_id": "uielypJb7XPPNBMi",
+  "folder": null,
+  "sort": 36300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1756544420586,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!uielypJb7XPPNBMi"
+}

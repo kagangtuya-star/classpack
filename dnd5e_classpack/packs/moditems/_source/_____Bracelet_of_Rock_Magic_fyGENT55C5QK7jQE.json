@@ -1,0 +1,175 @@
+{
+  "_id": "fyGENT55C5QK7jQE",
+  "name": "石化手镯 Bracelet of Rock Magic",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-cabochon-notched-gold-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 3,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>佩带这个金手镯时，你将免疫石化，且可以用一个动作施展@UUID[Compendium.dnd5e_classpack.new-icon.oLtyOvrWeLNEJDIE]{石化术 Flesh to Stone}（豁免DC 15）。以该方式施展三次该法术后，手镯便无法再施展这项法术。但随后你可以用一个动作施展@UUID[Compendium.dnd5e_classpack.new-icon.SKzCvyGhDCBEYZqg]{塑石术 Stone Shape}。以该方式完成十三次施法后，该手镯将失去其魔法，其材质也从黄金转变为铅。</p>\n<p><strong>诅咒Curse</strong>。该手镯与大地之间的紧密联系是一种罕见的诅咒。与大地或石头具有紧密联系的血肉之躯（比如石巨人Stone Giants 和矮人Dwarves）为抵抗该石化术而进行的豁免检定具有优势。一旦该生物豁免成功，则该手镯将立即解除与你的同调，并转而对你施展该法术。本次豁免你将承受劣势，而豁免失败时你将立即被石化。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TftYP",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": true,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "3",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": 1,
+    "attuned": true,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-bracelet-of-rock-magic",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!fyGENT55C5QK7jQE"
+}

@@ -1,0 +1,489 @@
+{
+  "_id": "G35fwwPskf9Dv1rr",
+  "name": "真龙姿态 Draconic Presence",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_cataclysm.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>18级起，你可以导引你@UUID[Compendium.dnd5e_classpack.class-abilityphb.02apnvdAC94ksZIV]{巨龙先祖}的恐怖气息，使你周围的生物感到震撼或恐慌。你可以用一个动作和5术法点引导这股力量，并张开一个60尺范围的震撼（或恐惧）灵光。在1分钟内，只要你保持专注（等同于施法时进行专注），在灵光范围内开始其回合的每个敌对生物都必须进行一次感知豁免，豁免失败则被魅惑（震撼灵光）或陷入恐慌（恐惧灵光）直至灵光消失。豁免成功者将在随后的24小时内免疫你的灵光效应。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 103",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "龙族血脉等级 18",
+    "activities": {
+      "CICTfAoMyqdZ26Ev": {
+        "type": "utility",
+        "_id": "CICTfAoMyqdZ26Ev",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "5",
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.Q3AW3csi2dBTMvPm"
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": true,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "xFxIzzr6rvJMF6LI"
+          },
+          {
+            "_id": "VMwfJHaDrWVmCBAu"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": true,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "xFxIzzr6rvJMF6LI",
+          "VMwfJHaDrWVmCBAu"
+        ]
+      },
+      "lZe3tYAXXlLinab3": {
+        "type": "save",
+        "_id": "lZe3tYAXXlLinab3",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [],
+          "critical": {
+            "allow": false
+          },
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "save-for-dragon",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "真龙姿态 恐慌",
+      "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_cataclysm.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.G35fwwPskf9Dv1rr",
+      "transfer": false,
+      "_id": "xFxIzzr6rvJMF6LI",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.StatusEffect",
+          "mode": 0,
+          "value": "frightened",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.ActivityOverTime",
+          "mode": 2,
+          "value": "save-for-dragon",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": true,
+          "aura": "Enemy",
+          "nameOverride": "",
+          "radius": "60",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": true,
+          "height": false,
+          "hidden": false,
+          "displayTemp": true,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757273722028,
+        "modifiedTime": 1757274064077,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!G35fwwPskf9Dv1rr.xFxIzzr6rvJMF6LI"
+    },
+    {
+      "name": "真龙姿态 魅惑",
+      "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_cataclysm.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.G35fwwPskf9Dv1rr",
+      "transfer": false,
+      "_id": "VMwfJHaDrWVmCBAu",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.StatusEffect",
+          "mode": 0,
+          "value": "charmed",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.ActivityOverTime",
+          "mode": 2,
+          "value": "save-for-dragon",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": true,
+          "aura": "Enemy",
+          "nameOverride": "",
+          "radius": "60",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": true,
+          "height": false,
+          "hidden": false,
+          "displayTemp": true,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757273722719,
+        "modifiedTime": 1757274062554,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!G35fwwPskf9Dv1rr.VMwfJHaDrWVmCBAu"
+    }
+  ],
+  "folder": null,
+  "sort": 14500000,
+  "flags": {
+    "_sheetTab": "description",
+    "entityorder": {
+      "order": 68
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757274004354,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!G35fwwPskf9Dv1rr"
+}

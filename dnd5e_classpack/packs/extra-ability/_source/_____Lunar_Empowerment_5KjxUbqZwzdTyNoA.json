@@ -1,0 +1,131 @@
+{
+  "name": "月之赋能 Lunar Empowerment",
+  "type": "feat",
+  "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+  "system": {
+    "description": {
+      "value": "<p>月相的力量渗入了你的存在本身。每当你处于@UUID[Compendium.dnd5e_classpack.extra-ability.Item.93SWuqQa3gbWs70m]{月之化身}中的月相时，你也会根据所选月相获得下列增益：</p><ul><li><p><strong>满月Full Moon.</strong>你可以以一个附赠动作来散发出10尺明亮光照和额外10尺的微光光照，或是熄灭前述光照。此外，你和你选择的生物处于你散发的明亮光照之中时，智力（调查）和感知（察觉）检定具有优势。</p></li><li><p><strong>朔月New Moon.</strong>你在敏捷（隐匿）检定中具有优势。此外，当你完全处于黑暗中时，对你发动的攻击检定具有劣势。</p></li><li><p><strong>新月Crescent Moon.</strong>你具有黯蚀和光耀伤害的抗性。</p></li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DSotDQ",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "月之术法等级 14",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "radius",
+            "size": "20",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-lunar-empowerment",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": 1686483531019,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "folder": null,
+  "_id": "5KjxUbqZwzdTyNoA",
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "Jo05tXxu7yf2dQe3": 3
+  },
+  "_key": "!items!5KjxUbqZwzdTyNoA"
+}

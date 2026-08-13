@@ -1,0 +1,88 @@
+{
+  "_id": "x5BlmsznCsW5gADs",
+  "name": "奥法暂滞 Arcane Abeyance",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_Readiness.png",
+  "system": {
+    "description": {
+      "value": "<p>         从10级起，当你消耗一个四环或更低的法术位来施展法术时，你可以将该法术的法力浓缩至一抹微尘中。该法术将冻结在施展的那一刻，并被保存在一个灰色的小珠中，持续一小时。这个小珠是一个拥有15AC和1点生命值的物件，并免疫毒素和心灵伤害。在持续时间结束或者珠子被摧毁时，它会在光芒一闪中消失，而法术将会失去。</p>\n<p>         持握着小珠的生物可以使用他的动作来释放其内的法术，随后小珠将会消失。该法术使用你的法术攻击加值和豁免DC，而在其他方面视为由释放它的生物施展。</p>\n<p>         在你以此特性创造一个小珠后，你在完成一次短休或长休前不能再次这样做。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "EGtW",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "时间魔法等级 10",
+    "activities": {},
+    "identifier": "-arcane-abeyance",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 50400000,
+  "flags": {
+    "dnd5e": {
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757309810482,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!x5BlmsznCsW5gADs"
+}

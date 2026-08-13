@@ -1,0 +1,154 @@
+{
+  "_id": "rmqnyb5F4AKopYMX",
+  "name": "导航球 Navigation Orb",
+  "type": "consumable",
+  "img": "icons/commodities/gems/pearl-beige-smooth.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>导航球是一个直径7尺的空心球体，由轻薄而铮亮的秘银组成，表面上绘制了一个巨大的skye（云）符文。球体悬浮在距离地面10尺处，是控制特定某个云中城堡的关键。当导航球位于城堡内时，你可以使用其控制城堡的高度和移动。如果球体被摧毁或从城堡中移除，城堡的高度和位置将保持不变，直到球体回到原位或被替换。</p>\n<p>如果你触碰此球，你可以以一个动作产生下列的效果之一：</p>\n<ul>\n<li>城堡以每小时1里的速度朝你所选择的方向移动，直到城堡停下或被迫停滞，或直到接收到另一个改变它移动方向的指令。如果这个动作使城堡与地面接触，城堡会轻轻地降落。</li>\n<li>若城堡在移动中，则该移动可以被平稳缓慢地停止。</li>\n<li>这座城堡以顺时针或逆时针的方向旋转90度（例如，将其从一个北方的视角转变为一个西方的视角）。城堡在直线移动时也可以转弯。</li>\n<li>任何接触球体的生物都能知道城堡底部距离地面或水面的高度。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SKT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "触碰此球。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-navigation-orb",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!rmqnyb5F4AKopYMX"
+}

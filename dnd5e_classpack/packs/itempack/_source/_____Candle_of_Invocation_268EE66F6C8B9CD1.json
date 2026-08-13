@@ -1,0 +1,195 @@
+{
+  "_id": "268EE66F6C8B9CD1",
+  "name": "祈神蜡烛 Candle of Invocation",
+  "type": "consumable",
+  "img": "icons/sundries/lights/candle-unlit-grey.webp",
+  "effects": [],
+  "folder": "XzwLZWoghG1AqJYp",
+  "flags": {
+    "core": {},
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>每一支祈神蜡烛都是为某位神祇定制的，具有和神祇同样的阵营。蜡烛的阵营可以通过@UUID[Compendium.dnd5e_classpack.new-icon.zeN5fxXLn4QE2YDa]{侦测善恶 Detect Evil and Good}辨别。蜡烛对应的神祇或阵营由DM选择或随机决定。</p>\n<table>\n<thead>\n<tr>\n<th><strong>[[/r d20]]</strong></th>\n<th><strong>阵营</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1-2</td>\n<td>混乱邪恶</td>\n</tr>\n<tr>\n<td>3-4</td>\n<td>混乱中立</td>\n</tr>\n<tr>\n<td>5-7</td>\n<td>混乱善良</td>\n</tr>\n<tr>\n<td>8-9</td>\n<td>中立邪恶</td>\n</tr>\n<tr>\n<td>10-11</td>\n<td>绝对中立</td>\n</tr>\n<tr>\n<td>12-13</td>\n<td>中立善良</td>\n</tr>\n<tr>\n<td>14-15</td>\n<td>守序邪恶</td>\n</tr>\n<tr>\n<td>16-17</td>\n<td>守序中立</td>\n</tr>\n<tr>\n<td>18-20</td>\n<td>守序善良</td>\n</tr>\n</tbody>\n</table>\n<p>当你用一个动作点燃蜡烛时，它的魔力就会被激活。蜡烛共可以燃烧4小时，你可以提前吹灭蜡烛以备将来之用。以分钟为单位计算蜡烛已燃烧时间，并从总时间内扣除。</p>\n<p>蜡烛燃烧时为30尺半径的范围提供昏暗照明。范围内任何阵营与蜡烛相同的生物在攻击骰、豁免和属性检定上具有优势。另外，范围内阵营与蜡烛相同的牧师和德鲁伊施展1环法术时无需消耗法术位，但法术效果仍按消耗了1环法术位计算。</p>\n<p>你也可以在第一次点燃蜡烛时施展@UUID[Compendium.dnd5e_classpack.new-icon.bJdmgHYyhUJv8Zyc]{异界之门 Gate}。这种用法将立即摧毁祈神蜡烛。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 157",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 12000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "4",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "radius",
+            "size": "30",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-candle-of-invocation",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010438952,
+    "modifiedTime": 1757871115254,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 41700000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!268EE66F6C8B9CD1"
+}

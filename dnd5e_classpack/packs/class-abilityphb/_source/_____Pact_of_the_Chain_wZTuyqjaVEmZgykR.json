@@ -1,0 +1,213 @@
+{
+  "_id": "wZTuyqjaVEmZgykR",
+  "name": "链之魔契 Pact of the Chain",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_BlackIceTrap.png",
+  "system": {
+    "description": {
+      "value": "<p>你习得法术@UUID[Compendium.dnd5e_classpack.new-icon.daB7oGSKy1BglKlt]{获得魔宠}，并可以把它作为一个仪式施展。此法术不计入你的已知法术数量。<br />施展该法术时，你可以选择召唤一个普通的生物，或是下列特殊生物之一：@UUID[Compendium.dnd5e_classpack.monsterspack.dLQiESMsfsXijD5c]{小魔鬼}、@UUID[Compendium.dnd5e_classpack.monsterspack.fkCNtbvPOMd7mipF]{伪龙}、@UUID[Compendium.dnd5e_classpack.monsterspack.bwtkdzavdNHISgp4]{夸塞魔}、或@UUID[Compendium.dnd5e_classpack.monsterspack.MUpBNDoJEr09bLaO]{小妖精}。</p>\n<p>此外，当你执行攻击动作时可以放弃所有攻击中的一次攻击，转而让你的魔宠使用其反应发动一次攻击。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 107",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "pact"
+    },
+    "requirements": "邪术师等级 3",
+    "activities": {
+      "D4qfV4nUipSXSMJ6": {
+        "type": "summon",
+        "_id": "D4qfV4nUipSXSMJ6",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "bonuses": {},
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false
+        },
+        "profiles": [
+          {
+            "_id": "PEKNvcO26VVZDdX9",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.dLQiESMsfsXijD5c"
+          },
+          {
+            "_id": "oA5LqkFLNi7Q2RLp",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.fkCNtbvPOMd7mipF"
+          },
+          {
+            "_id": "0KJuG2D2QQPMnE2y",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.bwtkdzavdNHISgp4"
+          },
+          {
+            "_id": "9lxMLDW5WM4WzHD5",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.MUpBNDoJEr09bLaO"
+          }
+        ],
+        "summon": {
+          "prompt": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 42300000,
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757409784111,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!wZTuyqjaVEmZgykR"
+}

@@ -1,0 +1,492 @@
+{
+  "_id": "9MDIAUzgWfJCMT0m",
+  "name": "莹月短弓 Glimmering Moon Shortbow (BMT)",
+  "type": "weapon",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "36",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>武器（短弓），珍稀（需同调）</em> <br />这把银黑相间的弓上刻有月相。你使用这把弓进行的攻击检定和伤害掷骰获得+1加值。</p><p>当你用这把魔法弓进行的攻击检定命中时，目标受到额外[[/damage 1d6 type=radiant]]伤害。如果这把武器没有装填弹药，它会在你使用它进行一次远程攻击时自动为自己制造出一发魔法弹药。被创造出的弹药命中或落空后会消失。你持握这把魔法弓时，可以用一个附赠动作进入半虚体状态，该状态持续到你的下个回合开始。在半虚体状态，你获得对钝击、穿刺和挥砍伤害的抗性。 此附赠动作一经使用，直到下次黎明前不能再次使用。</p><p>This silver-and-black bow is engraved with the phases of the moon. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p><p>When you hit with a ranged attack roll using this magic bow, the target takes an extra [[/damage 1d6 type=radiant]] damage. If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the bow vanishes the instant after it hits or misses a target.</p><p>While wielding this magic bow, you can use a bonus action to enter a semi-incorporeal state until the start of your next turn. While semi-incorporeal, you have resistance to bludgeoning, piercing, and slashing damage. Once this bonus action is used, it can't be used again until the next dawn.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "rare",
+    "type": {
+      "value": "simpleR",
+      "baseItem": "shortbow"
+    },
+    "range": {
+      "value": 80,
+      "long": 320,
+      "units": "ft",
+      "reach": null
+    },
+    "properties": [
+      "amm",
+      "mgc",
+      "two"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "magicalBonus": 1,
+    "damage": {
+      "base": {
+        "types": [
+          "piercing"
+        ],
+        "number": 1,
+        "denomination": 6,
+        "bonus": "",
+        "scaling": {
+          "mode": "",
+          "number": 1
+        },
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "ammunition": {
+      "type": "arrow"
+    },
+    "mastery": "",
+    "activities": {
+      "EqAWv87xX5Ae9MSM": {
+        "_id": "EqAWv87xX5Ae9MSM",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          },
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": ""
+      },
+      "8I79RHqdgpfaMb55": {
+        "_id": "8I79RHqdgpfaMb55",
+        "type": "damage",
+        "name": "",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "types": [
+                "radiant"
+              ],
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "scaling": {
+                "mode": "",
+                "number": 1
+              },
+              "custom": {
+                "enabled": false
+              }
+            }
+          ]
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "glimmering-moon-shortbow-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "armor": {
+      "value": null
+    }
+  },
+  "img": "icons/weapons/bows/shortbow-leather.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "glimmering%20moon%20shortbow_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "IIPGrIL1Yl0wXf3k",
+      "name": "Damage Resistance",
+      "img": "icons/weapons/bows/shortbow-leather.webp",
+      "description": "",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "bludgeoning",
+          "priority": 7
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "plutonium": {
+          "dedupeId": "damage-resistance"
+        }
+      },
+      "type": "base",
+      "system": {},
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!9MDIAUzgWfJCMT0m.IIPGrIL1Yl0wXf3k"
+    },
+    {
+      "_id": "7VJIt5YngVb7VG2z",
+      "name": "Damage Resistance",
+      "img": "icons/weapons/bows/shortbow-leather.webp",
+      "description": "",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "piercing",
+          "priority": 7
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "plutonium": {
+          "dedupeId": "damage-resistance-0"
+        }
+      },
+      "type": "base",
+      "system": {},
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!9MDIAUzgWfJCMT0m.7VJIt5YngVb7VG2z"
+    },
+    {
+      "_id": "ypLJLHxUj0oZauE4",
+      "name": "Damage Resistance",
+      "img": "icons/weapons/bows/shortbow-leather.webp",
+      "description": "",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "slashing",
+          "priority": 7
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "plutonium": {
+          "dedupeId": "damage-resistance-1"
+        }
+      },
+      "type": "base",
+      "system": {},
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!9MDIAUzgWfJCMT0m.ypLJLHxUj0oZauE4"
+    }
+  ],
+  "folder": "4TOAfkeg3rPfaVef",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738836954,
+    "modifiedTime": 1751738836954,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "sort": 125000,
+  "_key": "!items!9MDIAUzgWfJCMT0m"
+}

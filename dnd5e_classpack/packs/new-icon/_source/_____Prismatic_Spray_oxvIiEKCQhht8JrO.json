@@ -1,0 +1,604 @@
+{
+  "_id": "oxvIiEKCQhht8JrO",
+  "name": "虹光喷射 Prismatic Spray",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "onUseMacroName": "[postPreambleComplete]ItemMacro"
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "halfdam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "虹光喷射 Prismatic Spray",
+        "img": "modules/dnd5e_classpack/Nicons/002652.png",
+        "type": "script",
+        "scope": "global",
+        "command": "// RainbowSpray_Simplified_StrictA\n(async () => {\n  try {\n    const a = args?.[0] ?? {};\n    const item = a.item ?? a.itemData ?? null;\n    const caster = a.actor ?? (a.token ? canvas.tokens.get(a.token.id)?.actor : undefined) ?? game.actors.get(a.actor?._id);\n    const casterToken = canvas.tokens.get(a.token?.id) ?? canvas.tokens.controlled[0] ?? canvas.tokens.placeables.find(t => t.actor?.id === caster?.id);\n\n    if (!caster) { ui.notifications.error(\"RainbowSpray: 无法找到施法者\"); return true; }\n\n    // 收集目标\n    let targets = [];\n    if (Array.isArray(a?.targets) && a.targets.length) targets = a.targets.map(t => canvas.tokens.get(t.id ?? t.document?.id)).filter(Boolean);\n    else if (Array.isArray(a?.targetUuids) && a.targetUuids.length) {\n      for (const u of a.targetUuids) { try { const d = await fromUuid(u); if (d?.documentName === \"Token\") targets.push(canvas.tokens.get(d.id)); } catch {} }\n    } else targets = Array.from(game.user.targets);\n    if (!targets.length) { ui.notifications.warn(\"RainbowSpray: 未选中目标\"); return true; }\n\n    // 计算 DC（优先 item/system/actor 的设定）\n    const computeSpellDC = (actorObj, itemObj) => {\n      try { if (itemObj?.system?.save?.dc) return Number(itemObj.system.save.dc); } catch {}\n      try { const aDC = actorObj?.system?.attributes?.spell?.dc ?? actorObj?.system?.attributes?.spelldc; if (aDC) return Number(aDC); } catch {}\n      const abil = itemObj?.system?.ability ?? Object.keys(actorObj.system.abilities)[0];\n      const abilMod = Number(actorObj?.system?.abilities?.[abil]?.mod ?? 0);\n      const prof = Number(actorObj?.system?.attributes?.prof ?? actorObj?.system?.attributes?.proficiency ?? 0);\n      const itemBonus = Number(itemObj?.system?.save?.bonus ?? 0);\n      return 8 + abilMod + prof + itemBonus;\n    };\n    const spellDC = computeSpellDC(caster, item);\n\n    const colorMap = {\n      1:{type:\"fire\",label:\"红 (fire)\"},\n      2:{type:\"acid\",label:\"橙 (acid)\"},\n      3:{type:\"lightning\",label:\"黄 (lightning)\"},\n      4:{type:\"poison\",label:\"绿 (poison)\"},\n      5:{type:\"cold\",label:\"蓝 (cold)\"},\n      6:{type:\"petrify\",label:\"靛 (petrify)\"},\n      7:{type:\"blind\",label:\"紫 (blind)\"},\n      8:{type:\"special\",label:\"特殊 (special)\"}\n    };\n\n    // 全场一次 10d6\n    const globalRoll = await new Roll(\"10d6\").roll();\n    const globalTotal = Number(globalRoll.total);\n    await globalRoll.toMessage({ flavor: `虹光喷射 — 全场伤害掷骰 = ${globalTotal}` });\n\n    // helper: roll d8 (special) 并公告\n    const rollD8 = async tk => {\n      let r = await new Roll(\"1d8\").roll();\n      if (r.total === 8) { r = await new Roll(\"1d8\").roll(); if (r.total === 8) r = await new Roll(\"1d8\").roll(); }\n      ChatMessage.create({ content: `${tk.name} 被判定为: <b>${(colorMap[r.total]?.label) ?? r.total}</b> (d8=${r.total})`, speaker: ChatMessage.getSpeaker({ actor: caster }) });\n      return r.total;\n    };\n\n    // doDexSave（严格版：仅使用系统提供的豁免方法；若两者都不存在则抛出）\n    const doDexSave = async actorTarget => {\n      if (typeof actorTarget.rollSavingThrow === \"function\") return await actorTarget.rollSavingThrow(\"dex\", { fastForward: false, chatMessage: true });\n      if (typeof actorTarget.rollAbilitySave === \"function\") return await actorTarget.rollAbilitySave(\"dex\", { fastForward: false, chatMessage: true });\n      console.error(`RainbowSpray: ${actorTarget.name} 不支持 rollSavingThrow/rollAbilitySave（严格模式）`);\n      ChatMessage.create({ content: `RainbowSpray: 错误 — 目标 ${actorTarget.name} 不支持标准豁免方法，请检查该 Actor 配置。` });\n      throw new Error(\"Target actor lacks saving throw API\");\n    };\n\n    // apply item AE to target (for petrify / blind)\n    const applyItemAEToTarget = async (targetActor, keywords=[]) => {\n      if (!item?.effects?.length) return false;\n      const found = item.effects.find(ef => {\n        const nm = String(ef.name ?? ef.label ?? ef.data?.name ?? \"\").toLowerCase();\n        return keywords.some(k => nm.includes(k));\n      });\n      if (!found) return false;\n      const data = found.toObject ? found.toObject() : duplicate(found);\n      if (data._id) delete data._id;\n      data.origin = a.uuid ?? a.itemUuid ?? item?.uuid ?? data.origin;\n      await targetActor.createEmbeddedDocuments(\"ActiveEffect\", [data]);\n      return true;\n    };\n\n    // 主循环（严格/无回退）\n    for (const tk of targets) {\n      if (!tk?.actor) continue;\n      const tgtActor = tk.actor;\n      const d8 = await rollD8(tk);\n      const color = colorMap[d8] ?? colorMap[8];\n\n      // 强制使用系统豁免方法（严格）\n      const save = await doDexSave(tgtActor);\n      const saveTotal = Number(save?.total ?? save?.results?.[0]?.result ?? -9999);\n      const saved = saveTotal >= spellDC;\n\n      // petrify / blind: copy AE from item\n      if (color.type === \"petrify\" || color.type === \"blind\") {\n        if (!saved) {\n          const ok = await applyItemAEToTarget(tgtActor, color.type === \"petrify\" ? [\"petr\",\"indigo\"] : [\"violet\",\"blind\"]);\n          if (!ok) ChatMessage.create({ content: `${tgtActor.name} 未找到对应 AE（请在施法物品上添加）` });\n          else ChatMessage.create({ content: `${tgtActor.name} 未通过豁免，已应用 ${color.label}` });\n        } else {\n          ChatMessage.create({ content: `${tgtActor.name} 豁免成功，未触发 ${color.label}` });\n        }\n        continue;\n      }\n\n      // 普通伤害色（1-5）\n      if ([\"fire\",\"acid\",\"lightning\",\"poison\",\"cold\"].includes(color.type)) {\n        const applied = saved ? Math.floor(globalTotal/2) : globalTotal;\n        const typed = new Roll(`${applied}[${color.type}]`);\n        if (typeof typed.evaluateSync === \"function\") typed.evaluateSync(); else await typed.roll();\n\n        try {\n          await new MidiQOL.DamageOnlyWorkflow(caster, casterToken, applied, color.type, [tk], typed, {\n            flavor: `${item?.name ?? \"Rainbow Spray\"} — ${color.label}`,\n            itemCardId: a.itemCardId ?? a.itemCardUUID ?? null,\n            itemData: duplicate(item) ?? {},\n            useOther: false\n          });\n          // 成功时正常继续（不做其它回退）\n        } catch (err) {\n          console.error(\"RainbowSpray: DamageOnlyWorkflow failed for\", tk.name, err);\n          ChatMessage.create({ content: `自动应用伤害失败：请 GM 手动应用 ${applied} ${color.type} 到 ${tk.name}` });\n        }\n      }\n    }\n\n    return true;\n  } catch (e) {\n    console.error(\"RainbowSpray strict error\", e);\n    return true;\n  }\n})();",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.4.4",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/002652.png",
+  "effects": [
+    {
+      "name": "indigo",
+      "img": "modules/dnd5e_classpack/Nicons/002652.png",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.oxvIiEKCQhht8JrO",
+      "transfer": false,
+      "_id": "KK8eL0PBjt8i7wRv",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.execute",
+          "mode": 0,
+          "value": "indigo",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756651117702,
+        "modifiedTime": 1756651360050,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!oxvIiEKCQhht8JrO.KK8eL0PBjt8i7wRv"
+    },
+    {
+      "name": "violet",
+      "img": "modules/dnd5e_classpack/Nicons/002652.png",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.oxvIiEKCQhht8JrO",
+      "transfer": false,
+      "_id": "Ky12EGwZDuJezY9Q",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.ActivityOverTime",
+          "mode": 2,
+          "value": "放逐",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 6,
+        "combat": null,
+        "rounds": null,
+        "turns": 1,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "blinded"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756651120549,
+        "modifiedTime": 1756651824220,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!oxvIiEKCQhht8JrO.Ky12EGwZDuJezY9Q"
+    },
+    {
+      "name": "放逐",
+      "img": "modules/dnd5e_classpack/Nicons/002652.png",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.oxvIiEKCQhht8JrO",
+      "transfer": false,
+      "_id": "OciSsBl0djnDuWNR",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.traits.ci.value",
+          "mode": 2,
+          "value": "blinded",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "incapacitated",
+        "ethereal",
+        "invisible"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756651667791,
+        "modifiedTime": 1756651731572,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!oxvIiEKCQhht8JrO.OciSsBl0djnDuWNR"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 八条多彩射线从你的手上闪出。每条射线颜色不同且具有不同的威力和作用。在60尺锥状区域内的每个生物必须进行一次敏捷豁免同时掷一次d8决定生效哪种颜色的射线。\n<br />1.红red。目标豁免失败时受10d6的火焰伤害，成功则伤害减半。\n<br />2.橙Orange。目标豁免失败时受10d6的强酸伤害，成功则伤害减半。\n<br />3黄Yellow。目标豁免失败时受10d6的闪电伤害，成功则伤害减半。\n<br />4.绿Green。目标豁免失败时受10d6的毒素伤害，成功则伤害减半。\n<br />5.蓝Blue。目标豁免失败时受10d6的冷冻伤害，成功则伤害减半。\n<br />6.靛Indigo。目标豁免失败时受束缚。它必须在其每回合结束时进行一次体质豁免。三次豁免成功后法术终止。三次豁免失败后目标将永久陷入石化状态。成功或失败的豁免不需要连续，只需记下两边的数量直至其中一种达到三次。\n<br />7.紫Violet。目标豁免失败时陷入目盲。其必须在你下一回合开始时进行一次感知豁免。豁免成功则目盲状态终止。豁免失败则该生物被传送到另一个DM 指定的位面并且不再目盲。（典型情况是不在家乡位面的生物被驱逐回家，而其他生物通常会被传送到星界或以太位面。）\n<br />8.特殊Special。目标被两条射线打中。再掷两次，结果为8时再重掷。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 267",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "cone",
+        "size": "60",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 7,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "mgc"
+    ],
+    "activities": {
+      "QW4SiCkgIw67Hslp": {
+        "type": "utility",
+        "_id": "QW4SiCkgIw67Hslp",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Ky12EGwZDuJezY9Q"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      },
+      "1HUVcYlnyZUqnCF6": {
+        "type": "save",
+        "_id": "1HUVcYlnyZUqnCF6",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "OciSsBl0djnDuWNR"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [],
+          "critical": {
+            "allow": false
+          },
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "放逐",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "turnChoice": "start"
+        },
+        "otherActivityId": "none",
+        "name": "放逐",
+        "img": "",
+        "appliedEffects": [
+          "OciSsBl0djnDuWNR"
+        ]
+      }
+    },
+    "identifier": "prismatic-spray"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "hSoScUNgYYqpKuFk",
+  "sort": 9500000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!oxvIiEKCQhht8JrO"
+}

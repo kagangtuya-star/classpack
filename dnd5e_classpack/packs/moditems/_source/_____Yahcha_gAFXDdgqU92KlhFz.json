@@ -1,0 +1,165 @@
+{
+  "_id": "gAFXDdgqU92KlhFz",
+  "name": "亚查甲虫 Yahcha",
+  "type": "consumable",
+  "img": "icons/creatures/invertebrates/beetle-stag-yellow-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<blockquote>\n<p>这是楚尔特当地不同寻常的野生动植物。熟练自然技能的冒险者能够一眼认出这些动植物，并通过一个成功 的 DC 15 的智力(自然)检定来回忆起它的详细属性。如果冒险者们是楚尔特本地人，则该检定具优势。</p>\n<p>此处描述的野生动植物可以在南扎路港和其他聚居地内以动植物价格表内对应的价格进行买卖。</p>\n<p>有的野生动植物中会使生物承受一小时或更久的中毒状态。请记住，@UUID[Compendium.dnd5e_classpack.new-icon.I1C2EQxwynPd7dOC]{次级复原术 Lesser Restoration}以及类似魔法可以结束该状态。</p>\n</blockquote>\n<p>亚查甲虫是一种无害的多肉甲虫，尺寸约人手大小，以蠕虫和 蛆为食。它的行动十分缓慢(步行速度 10 尺)，易于捕捉。 患有疯猴热的生物在吃下一只生熟不忌的亚查甲虫时，可以立刻进行一次对抗该疾病的具优势的豁免检定。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "ToA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-yahcha",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!gAFXDdgqU92KlhFz"
+}

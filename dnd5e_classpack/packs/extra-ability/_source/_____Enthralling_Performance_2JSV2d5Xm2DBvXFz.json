@@ -1,0 +1,231 @@
+{
+  "_id": "2JSV2d5Xm2DBvXFz",
+  "name": "醉人表演 Enthralling Performance",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Fanaticism.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         从3级起，你能将诱惑力和妖精的魔法充入你的表演。若你表演至少1分钟，你可以尝试通过歌唱，吟诗或舞蹈的方式来让你的观众们感受到美。在这次表演的结束时，选择一定数量的类人生物，他们需要处于你周围60尺内，并完整的观看并聆听了你的表演，可以选择的数量至多等于你的魅力调整值（至少1个）。每个目标必须通过一次感知豁免检定，对抗你的法术豁免DC，否则被你魅惑。当被你以此法魅惑时，目标视你为偶像，他会热情的和任何和他交谈的人谈论你，反对任何对抗你的人，他会避免暴力，除非他已经站在你这边加入了战斗。此效果在一个目标上持续1小时，或当他受到任何伤害，你攻击他，以及他目睹你对任何他的盟友进行攻击或造成伤害时结束。</p>\n<p>         若一个目标在对抗此效果的豁免检定中成功，该目标对于你试图魅惑他的行为没有任何察觉。</p>\n<p>         一旦你使用此特性，直到你完成了一次短休或长休前，你都不能再次使用它。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "迷惑学院等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "yM8QDMgaMUSYgtjr",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "max(@abilities.cha.mod,1)",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-enthralling-performance",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "醉人表演 Enthralling Performance",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.2JSV2d5Xm2DBvXFz",
+      "duration": {
+        "startTime": null,
+        "seconds": 3600,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {},
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "yM8QDMgaMUSYgtjr",
+      "changes": [],
+      "description": "",
+      "transfer": false,
+      "statuses": [
+        "charmed"
+      ],
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Fanaticism.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!2JSV2d5Xm2DBvXFz.yM8QDMgaMUSYgtjr"
+    }
+  ],
+  "folder": null,
+  "sort": 6500000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1725273039635,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2JSV2d5Xm2DBvXFz"
+}

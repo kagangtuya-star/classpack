@@ -1,0 +1,180 @@
+{
+  "_id": "2C93DDF87BFDF62A",
+  "name": "艾恩石（再生）Ioun Stone of Regeneration",
+  "type": "equipment",
+  "img": "icons/commodities/stone/rock-chunk-pumice-white.webp",
+  "effects": [],
+  "folder": "tBltNHvQID4vNcLI",
+  "flags": {
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>艾恩Ioun在许多世界被尊为知识和预言之神，而其名字则被用来命名这种石头。艾恩石 有许多种，每一种都有与众不同的形状和颜色。</p>\n<p>如果你用一个动作将一块艾恩石抛到空中，则它将环绕你的头部，与你的头部距离[[/r 1d3]]尺移动，并为你带来一些增益。另一名生物必须用一个动作抓住或用网网住艾恩石，才能将它与你分开。上述方法需要成功通过一次对抗AC 24的攻击检定，或一次对抗DC 24的敏捷（体操）检定。你自己则可以用一个动作抓住并收起石头，终止它的效应。</p>\n<p>每颗石头拥有AC 24，生命值为10，具有所有伤害类型的抗性。即使只是环绕你的头部移动，它依然视为由你着装。</p>\n<p><strong>@UUID[Compendium.dnd5e_classpack.itempack.2C93DDF87BFDF62A]{再生 Regeneration}（传说）。</strong>该珍珠白纺锤形艾恩石环绕你时，在每经过一小时只要你尚有1点生命值，就可以恢复15点生命值。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 177",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "armor": {
+      "value": 0,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "proficient": null,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": true,
+                "formula": "1d3"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "ioun-stone-of-regeneration",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010438952,
+    "modifiedTime": 1757871120063,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 1600000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!2C93DDF87BFDF62A"
+}

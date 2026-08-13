@@ -1,0 +1,138 @@
+{
+  "_id": "WYSbzjOzh5IVQYR1",
+  "name": "越野 Roving",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-bladed-boots-fire.webp",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>　　你的步行速度增加5，同时你获得等于你步行速度的攀爬速度和游泳速度。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "游侠等级 6",
+    "activities": {},
+    "identifier": "-roving",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 6,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "越野 Roving",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.WYSbzjOzh5IVQYR1",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {}
+      },
+      "_id": "e76qL3uF54E1SKga",
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 2,
+          "value": "5",
+          "priority": null
+        },
+        {
+          "key": "system.attributes.movement.climb",
+          "mode": 5,
+          "value": "+ 5 + @attributes.movement.walk",
+          "priority": null
+        },
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 5,
+          "value": "+ 5 + @attributes.movement.walk",
+          "priority": null
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "img": "icons/skills/movement/feet-bladed-boots-fire.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!WYSbzjOzh5IVQYR1.e76qL3uF54E1SKga"
+    }
+  ],
+  "folder": null,
+  "sort": 28200000,
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1724328146418,
+    "modifiedTime": 1753690573108,
+    "lastModifiedBy": "vFLRCDyc5l72uRlV",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WYSbzjOzh5IVQYR1"
+}

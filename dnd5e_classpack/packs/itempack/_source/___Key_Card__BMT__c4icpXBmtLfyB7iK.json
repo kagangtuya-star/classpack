@@ -1,0 +1,212 @@
+{
+  "_id": "c4icpXBmtLfyB7iK",
+  "name": "钥匙 Key Card (BMT)",
+  "type": "equipment",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "14",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><span style=\"font-family:Arial, Helvetica, sans-serif\">以一个动作，你可以挥舞这张卡片并用其施放<em>@UUID[Compendium.dnd5e_classpack.new-icon.Item.VC9nFuUxF7yptXK5]{敲击术knock}</em>，以此法施放的法术不会发出敲击声。你能使用该特性五次，每天黎明时，它重获所有已被消耗的使用次数。</span></p><p>As an action, you can brandish this card and use it to cast the @spell[Knock] spell, with no sound made by the spell. This property can be used five times, and it regains all expended uses at dawn.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": false,
+    "identified": true,
+    "equipped": true,
+    "rarity": "legendary",
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "attunement": "",
+    "uses": {
+      "max": "5",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1"
+        }
+      ]
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": null,
+    "activities": {
+      "5FUJxj1Ut6UPv8pn": {
+        "_id": "5FUJxj1Ut6UPv8pn",
+        "type": "cast",
+        "img": "systems/dnd5e/icons/svg/activity/cast.svg",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "5",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "spell": {
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "uuid": "Compendium.plutonium-faux-id--7b22746167223a227370656c6c222c2274657874223a226b6e6f636b227d.custom.Item.0000000000000000"
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "key-card-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false
+  },
+  "img": "modules/dnd5e_classpack/Nicons/img/decks/BMT/Deck of Many Things/02-key.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "key%20card_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "bg5iu1Kg4aUfjg7h",
+  "_stats": {
+    "compendiumSource": "Item.c4icpXBmtLfyB7iK",
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751788372301,
+    "modifiedTime": 1751818536056,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "sort": 1100000,
+  "_key": "!items!c4icpXBmtLfyB7iK"
+}

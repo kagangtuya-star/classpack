@@ -1,0 +1,552 @@
+{
+  "_id": "14a3v5NF5h5Lgm9J",
+  "name": "魔化武器 Magic Weapon",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_rogue_nightblade.jpg",
+  "effects": [
+    {
+      "name": "魔化武器 Magic Weapon",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.14a3v5NF5h5Lgm9J",
+      "duration": {
+        "rounds": 100,
+        "startTime": null,
+        "seconds": 3600,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "utghpIeDpFSgwHdv",
+      "changes": [
+        {
+          "key": "system.bonuses.weapon.attack",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.weapon.damage",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
+      "description": "",
+      "transfer": false,
+      "statuses": [],
+      "flags": {
+        "dae": {
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": ""
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": 1751584527462,
+        "lastModifiedBy": "A6zoJ8r1FeeiU1rB",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/ability_rogue_nightblade.jpg",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!14a3v5NF5h5Lgm9J.utghpIeDpFSgwHdv"
+    },
+    {
+      "type": "enchantment",
+      "name": "魔化武器 Magic Weapon +1",
+      "img": "modules/dnd5e_classpack/Nicons/ability_rogue_nightblade.jpg",
+      "disabled": true,
+      "_id": "ZUvT1iprn59LGbe7",
+      "system": {},
+      "changes": [
+        {
+          "key": "name",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "system.magicalBonus",
+          "mode": 5,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!14a3v5NF5h5Lgm9J.ZUvT1iprn59LGbe7"
+    },
+    {
+      "type": "enchantment",
+      "name": "魔化武器 Magic Weapon +2",
+      "img": "modules/dnd5e_classpack/Nicons/ability_rogue_nightblade.jpg",
+      "disabled": true,
+      "_id": "CkQkeRA7N6A3URaJ",
+      "system": {},
+      "changes": [
+        {
+          "key": "name",
+          "mode": 2,
+          "value": "+2",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "system.magicalBonus",
+          "mode": 5,
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!14a3v5NF5h5Lgm9J.CkQkeRA7N6A3URaJ"
+    },
+    {
+      "type": "enchantment",
+      "name": "魔化武器 Magic Weapon +3",
+      "img": "modules/dnd5e_classpack/Nicons/ability_rogue_nightblade.jpg",
+      "disabled": true,
+      "_id": "MoFFj5RSPXs9FN6k",
+      "system": {},
+      "changes": [
+        {
+          "key": "name",
+          "mode": 2,
+          "value": "+3",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "system.magicalBonus",
+          "mode": 5,
+          "value": "3",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!14a3v5NF5h5Lgm9J.MoFFj5RSPXs9FN6k"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你触碰一件非魔法武器，并使其在法术持续时间内成为魔法武器。该武器进行攻击检定和伤害掷骰时具有+1加值。\n<br /><strong>升环施法效应。</strong>使用4环或更高法术位施展该法术时，加值增加至+2。使用6环或更高法术位施展该法术时，加值增加至+3。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 257",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "ability": "",
+    "level": 2,
+    "school": "trs",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "yXCP71dXRKfcqekC": {
+        "type": "enchant",
+        "_id": "yXCP71dXRKfcqekC",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ZUvT1iprn59LGbe7",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "CkQkeRA7N6A3URaJ",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "MoFFj5RSPXs9FN6k",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "enchant": {},
+        "restrictions": {
+          "allowMagical": false,
+          "categories": [],
+          "properties": []
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "magic-weapon"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "hSoScUNgYYqpKuFk",
+  "sort": 19900000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1711702476592,
+    "modifiedTime": 1757419719404,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!14a3v5NF5h5Lgm9J"
+}

@@ -1,0 +1,1406 @@
+{
+  "_id": "uwk1Pn0Sm1bQkzdY",
+  "name": "猩红仪式 Crimson Rite",
+  "type": "feat",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BH2022",
+      "page": "",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p>第 2 级时，你学会消耗你自身的活力来对你的武器释放猩红仪式。以一个附赠动作，你激活任何一种你已知的猩红仪式，为一把武器注入元素能量，效果持续到你完成下次短休或长休。当你激活一个血仪时，你失去一个鲜血秘法骰的生命值。这个伤害不能被任何方式减少。<br />当仪式生效时，你用该武器进行的攻击是魔法攻击，并且造成等用于你鲜血秘法骰的额外伤害，一把武器只能容纳一个激活的猩红仪式。其他生物无法从你的猩红仪式中获益。当你第一次获得此特性时，你从下列的猩红仪式中学会一种。你在第 7 级时学会一种额外的猩红仪式，并在 14 级时再额外学会一种猩红仪式。</p><blockquote style=\"MARGIN-RIGHT:0px\" dir=\"ltr\"><p><strong>烈焰血仪 Rite of the Flame。</strong> 猩红仪式造成的额外伤害是火焰伤害。</p><p><strong>冻结血仪 Rite of the Frozen。</strong> 猩红仪式造成的额外伤害是寒冷伤害。</p><p><strong>风暴血仪 Rite of the Storm。</strong> 猩红仪式造成的额外伤害是闪电伤害。</p><p><strong>死亡血仪 Rite of the Dead。</strong> 猩红仪式造成的额外伤害是暗蚀伤害。（前提：需 14 级）</p><p><strong>神谕血仪 Rite of the Oracle。</strong> 猩红仪式造成的额外伤害是心灵伤害。（前提：需 14 级）</p><p><strong>轰鸣血仪 Rite of the Roar。</strong> 猩红仪式造成的额外伤害是雷鸣伤害。（前提：需 14 级）</p></blockquote>",
+      "chat": ""
+    },
+    "requirements": "血猎手等级 2",
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "advancement": [],
+    "activities": {
+      "Oanaku4E2v8swvFL": {
+        "type": "damage",
+        "_id": "Oanaku4E2v8swvFL",
+        "sort": 200000,
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.blood-hunter.hemocraft"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "none"
+              ]
+            }
+          ]
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "扣除生命值",
+        "img": "",
+        "appliedEffects": []
+      },
+      "qqH5xZvrmWz1x9Vq": {
+        "type": "enchant",
+        "_id": "qqH5xZvrmWz1x9Vq",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "猩红仪式造成的额外伤害是火焰伤害。"
+        },
+        "duration": {
+          "units": "spec",
+          "concentration": false,
+          "override": false,
+          "special": "效果持续到你完成下次短休或长休"
+        },
+        "effects": [
+          {
+            "_id": "XoGihqSUwF4CGkSE"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": "blood-hunter"
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "扣除生命值",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "self",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "烈焰血仪",
+        "img": "",
+        "appliedEffects": [
+          "XoGihqSUwF4CGkSE"
+        ]
+      },
+      "WoOuBwKmKC4HeLwH": {
+        "type": "enchant",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "猩红仪式造成的额外伤害是寒冷伤害。"
+        },
+        "duration": {
+          "units": "spec",
+          "concentration": false,
+          "override": false,
+          "special": "效果持续到你完成下次短休或长休"
+        },
+        "effects": [
+          {
+            "_id": "HvatNoEoJ7qsQTQm",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": "blood-hunter"
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "扣除生命值",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "self",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "冻结血仪",
+        "_id": "WoOuBwKmKC4HeLwH",
+        "img": "",
+        "appliedEffects": [
+          "XoGihqSUwF4CGkSE",
+          "HvatNoEoJ7qsQTQm"
+        ]
+      },
+      "QaZGjOfXzIiiDg6y": {
+        "type": "enchant",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "猩红仪式造成的额外伤害是闪电伤害。"
+        },
+        "duration": {
+          "units": "spec",
+          "concentration": false,
+          "override": false,
+          "special": "效果持续到你完成下次短休或长休"
+        },
+        "effects": [
+          {
+            "_id": "aN5TXE8m2B1hObJf",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": "blood-hunter"
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "扣除生命值",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "self",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "风暴血仪",
+        "_id": "QaZGjOfXzIiiDg6y",
+        "img": "",
+        "appliedEffects": [
+          "HvatNoEoJ7qsQTQm",
+          "aN5TXE8m2B1hObJf"
+        ]
+      },
+      "6OEcjXummkRJGDXC": {
+        "type": "enchant",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "猩红仪式造成的额外伤害是暗蚀伤害。"
+        },
+        "duration": {
+          "units": "spec",
+          "concentration": false,
+          "override": false,
+          "special": "效果持续到你完成下次短休或长休"
+        },
+        "effects": [
+          {
+            "_id": "OuLALPr1gEvVIkyg",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": "blood-hunter"
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "扣除生命值",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "self",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "死亡血仪(14级)",
+        "_id": "6OEcjXummkRJGDXC",
+        "img": "",
+        "appliedEffects": [
+          "aN5TXE8m2B1hObJf",
+          "OuLALPr1gEvVIkyg"
+        ]
+      },
+      "RrzDdbBHTPeXf8uS": {
+        "type": "enchant",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "猩红仪式造成的额外伤害是心灵伤害。"
+        },
+        "duration": {
+          "units": "spec",
+          "concentration": false,
+          "override": false,
+          "special": "效果持续到你完成下次短休或长休"
+        },
+        "effects": [
+          {
+            "_id": "fkUqlxcmqdisVSp0"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": "blood-hunter"
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "扣除生命值",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "self",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "神谕血仪(14级)",
+        "_id": "RrzDdbBHTPeXf8uS",
+        "img": "",
+        "appliedEffects": [
+          "fkUqlxcmqdisVSp0"
+        ]
+      },
+      "fya4Hph1KACL5njw": {
+        "type": "enchant",
+        "sort": 100000,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "猩红仪式造成的额外伤害是雷鸣伤害。"
+        },
+        "duration": {
+          "units": "spec",
+          "concentration": false,
+          "override": false,
+          "special": "效果持续到你完成下次短休或长休"
+        },
+        "effects": [
+          {
+            "_id": "FQNI85rZfmfRvQn9"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": "blood-hunter"
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "扣除生命值",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "self",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "轰鸣血仪(14级)",
+        "_id": "fya4Hph1KACL5njw",
+        "img": "",
+        "appliedEffects": [
+          "FQNI85rZfmfRvQn9"
+        ]
+      }
+    },
+    "identifier": "crimson-rite",
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 2,
+      "repeatable": false
+    }
+  },
+  "img": "icons/skills/melee/strike-sword-blood-red.webp",
+  "flags": {
+    "plutonium": {
+      "page": "classFeature",
+      "source": "BH2022",
+      "hash": "crimson%20rite_blood%20hunter_bh2022_2_bh2022",
+      "propDroppable": "classFeature"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "烈焰血仪",
+      "img": "icons/skills/melee/strike-sword-blood-red.webp",
+      "disabled": true,
+      "_id": "XoGihqSUwF4CGkSE",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "[\"1@scale.blood-hunter.hemocraft\", \"fire\"]",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 10000,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>当仪式生效时，你用该武器进行的攻击是魔法攻击，并且造成等用于你鲜血秘法骰的额外火焰伤害，一把武器只能容纳一个激活的猩红仪式。</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "shortRest",
+            "longRest"
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757422307849,
+        "modifiedTime": 1757424759487,
+        "lastModifiedBy": "hzd8mTtpA2xMcmGp"
+      },
+      "_key": "!items.effects!uwk1Pn0Sm1bQkzdY.XoGihqSUwF4CGkSE"
+    },
+    {
+      "type": "enchantment",
+      "name": "冻结血仪",
+      "img": "icons/skills/melee/strike-sword-blood-red.webp",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "[\"1@scale.blood-hunter.hemocraft\", \"cold\"]",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 10000,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>当仪式生效时，你用该武器进行的攻击是魔法攻击，并且造成等用于你鲜血秘法骰的额外寒冷伤害，一把武器只能容纳一个激活的猩红仪式。</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "shortRest",
+            "longRest"
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757423295640,
+        "modifiedTime": 1757424743279,
+        "lastModifiedBy": "hzd8mTtpA2xMcmGp"
+      },
+      "_id": "HvatNoEoJ7qsQTQm",
+      "_key": "!items.effects!uwk1Pn0Sm1bQkzdY.HvatNoEoJ7qsQTQm"
+    },
+    {
+      "type": "enchantment",
+      "name": "风暴血仪",
+      "img": "icons/skills/melee/strike-sword-blood-red.webp",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "[\"1@scale.blood-hunter.hemocraft\", \"lightning\"]",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 10000,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>当仪式生效时，你用该武器进行的攻击是魔法攻击，并且造成等用于你鲜血秘法骰的额外闪电伤害，一把武器只能容纳一个激活的猩红仪式。</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "shortRest",
+            "longRest"
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757423357055,
+        "modifiedTime": 1757423391073,
+        "lastModifiedBy": "hzd8mTtpA2xMcmGp"
+      },
+      "_id": "aN5TXE8m2B1hObJf",
+      "_key": "!items.effects!uwk1Pn0Sm1bQkzdY.aN5TXE8m2B1hObJf"
+    },
+    {
+      "type": "enchantment",
+      "name": "死亡血仪",
+      "img": "icons/skills/melee/strike-sword-blood-red.webp",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "[\"1@scale.blood-hunter.hemocraft\", \"necrotic\"]",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 10000,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>当仪式生效时，你用该武器进行的攻击是魔法攻击，并且造成等用于你鲜血秘法骰的额外暗蚀伤害，一把武器只能容纳一个激活的猩红仪式。</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "shortRest",
+            "longRest"
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757423398759,
+        "modifiedTime": 1757423420738,
+        "lastModifiedBy": "hzd8mTtpA2xMcmGp"
+      },
+      "_id": "OuLALPr1gEvVIkyg",
+      "_key": "!items.effects!uwk1Pn0Sm1bQkzdY.OuLALPr1gEvVIkyg"
+    },
+    {
+      "type": "enchantment",
+      "name": "神谕血仪",
+      "img": "icons/skills/melee/strike-sword-blood-red.webp",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "[\"1@scale.blood-hunter.hemocraft\", \"psychic\"]",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 10000,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>当仪式生效时，你用该武器进行的攻击是魔法攻击，并且造成等用于你鲜血秘法骰的额外心灵伤害，一把武器只能容纳一个激活的猩红仪式。</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "shortRest",
+            "longRest"
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757423422535,
+        "modifiedTime": 1757423445551,
+        "lastModifiedBy": "hzd8mTtpA2xMcmGp"
+      },
+      "_id": "fkUqlxcmqdisVSp0",
+      "_key": "!items.effects!uwk1Pn0Sm1bQkzdY.fkUqlxcmqdisVSp0"
+    },
+    {
+      "type": "enchantment",
+      "name": "轰鸣血仪",
+      "img": "icons/skills/melee/strike-sword-blood-red.webp",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "[\"1@scale.blood-hunter.hemocraft\", \"thunder\"]",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 10000,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>当仪式生效时，你用该武器进行的攻击是魔法攻击，并且造成等用于你鲜血秘法骰的额外雷鸣伤害，一把武器只能容纳一个激活的猩红仪式。</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "shortRest",
+            "longRest"
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757423448888,
+        "modifiedTime": 1757423470782,
+        "lastModifiedBy": "hzd8mTtpA2xMcmGp"
+      },
+      "_id": "FQNI85rZfmfRvQn9",
+      "_key": "!items.effects!uwk1Pn0Sm1bQkzdY.FQNI85rZfmfRvQn9"
+    }
+  ],
+  "folder": "FAdeDr59Gwy7NN2E",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1757153159764,
+    "modifiedTime": 1757423556094,
+    "lastModifiedBy": "hzd8mTtpA2xMcmGp"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "hzd8mTtpA2xMcmGp": 3
+  },
+  "_key": "!items!uwk1Pn0Sm1bQkzdY"
+}

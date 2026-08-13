@@ -1,0 +1,182 @@
+{
+  "_id": "VNRou693ZhLxqGoa",
+  "name": "炼狱谜盒 Infernal Puzzle Box",
+  "type": "equipment",
+  "img": "icons/containers/chest/chest-reinforced-box-brown.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>炼狱谜盒是一个边长5到6寸的立方体形容器，由九狱中的材料制成的密闭、连锁的部件组成。这些盒子大多由炼狱铁制成，但也有一些是用骨头或角雕成的。炼狱谜盒是用来保护魔鬼和凡人之间签订的魔鬼合同，即使这些合同的条款已经履行。一个空的炼狱谜盒重3磅，不管它是用什么材料做的。</p>\n<p>当一个小到可以装进炼狱谜盒的物体被放入其中时，容器就会神奇地封住这个物体，并且没有任何魔法可以强行打开盒子。密封的盒子也会对所有类型的伤害免疫。每一个炼狱谜盒都是用一种独特的方法来打开的。解决这个谜题的诀窍总是平凡的，而不是魔法的。一旦一个生物想出了打开一个炼狱谜盒所需的技巧或步骤序列，该生物就可以以一个动作打开炼狱谜盒，并且能够获得炼狱谜盒的内容。</p>\n<p>一个生物如果花费1小时拿着一个炼狱谜盒并尝试打开它，就可以进行一次DC 30的智力(调查)检定。如果检定成功，该生物就能够知道打开盒子所需的技巧或步骤。如果检定失败5次或以上，该生物必须进行一次DC 18的感知豁免检定，豁免失败则将受到42([[/r 12d6]])点心灵伤害，成功则伤害减半。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "BGDIA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": true,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": 1,
+    "attuned": false,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 12,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "30"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-infernal-puzzle-box",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!VNRou693ZhLxqGoa"
+}

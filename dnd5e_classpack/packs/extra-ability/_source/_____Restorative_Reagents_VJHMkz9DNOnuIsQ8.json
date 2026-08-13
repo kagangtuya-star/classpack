@@ -1,0 +1,156 @@
+{
+  "_id": "VJHMkz9DNOnuIsQ8",
+  "name": "复原药剂 Restorative Reagents",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Mage_ConjureWater11.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         从第9级起，你可以在你的一些作品中加入复原药剂：每当一个生物饮用一剂你制造的@UUID[Compendium.dnd5e_classpack.extra-ability.sGggioh8w6WTNUbD]{实验性灵药}时，该生物获得[[/r 2d6]]+你智力调整值的临时生命值。（至少1点临时生命点）。</p>\n<p>         此外，只要你使用@UUID[Compendium.dnd5e_classpack.itempack.EFBBAE8B63126638]{炼金工具}作为法器，就可以在不花费法术位的情况下施展@UUID[Compendium.dnd5e_classpack.new-icon.I1C2EQxwynPd7dOC]{次级复原术}。你能够这么做的次数等于你的智力调整值（最少1次），在你完成一次长休后，将恢复所有可用次数。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "ERLW",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "max(@abilities.int.mod,1)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "炼金师等级 9",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "heal",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "healing": {
+          "number": 2,
+          "denomination": 6,
+          "bonus": "@abilities.int.mod",
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-restorative-reagents",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 27400000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VJHMkz9DNOnuIsQ8"
+}

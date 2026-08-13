@@ -1,0 +1,191 @@
+{
+  "_id": "B9836C8CEE143C41",
+  "name": "艾恩石（高等吸收）Ioun Stone of Greater Absorption",
+  "type": "equipment",
+  "img": "icons/commodities/stone/ore-pile-green.webp",
+  "effects": [],
+  "folder": "tBltNHvQID4vNcLI",
+  "flags": {
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 50,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>艾恩Ioun在许多世界被尊为知识和预言之神，而其名字则被用来命名这种石头。艾恩石 有许多种，每一种都有与众不同的形状和颜色。</p>\n<p>如果你用一个动作将一块艾恩石抛到空中，则它将环绕你的头部，与你的头部距离[[/r 1d3]]尺移动，并为你带来一些增益。另一名生物必须用一个动作抓住或用网网住艾恩石，才能将它与你分开。上述方法需要成功通过一次对抗AC 24的攻击检定，或一次对抗DC 24的敏捷（体操）检定。你自己则可以用一个动作抓住并收起石头，终止它的效应。</p>\n<p>每颗石头拥有AC 24，生命值为10，具有所有伤害类型的抗性。即使只是环绕你的头部移动，它依然视为由你着装。</p>\n<div><strong>@UUID[Compendium.dnd5e_classpack.itempack.B9836C8CEE143C41]{高等吸收 Greater Absorption}（传说）。</strong>该淡紫色和绿色相间大理石纹彩的椭圆艾恩石环绕你时，你可以用你的反应使一个法术无效，该法术必须由你能看到的生物施展，只以你为目标且不超过8环。</div>\n<div>吸收合计50环的法术后，此艾恩石将耗尽力量，失去魔法并变为暗灰色。如果一个法术的环阶超出了此艾恩石剩余的吸收环数，则石头无法将其吸收。</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 177",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 31000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "50",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 0,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "proficient": null,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": true,
+                "formula": "1d3"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "ioun-stone-of-greater-absorption",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010441154,
+    "modifiedTime": 1757871231369,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 700000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!B9836C8CEE143C41"
+}

@@ -1,0 +1,165 @@
+{
+  "_id": "KHxXnGPhqpoRyMDm",
+  "name": "石语者水晶 Stonespeaker Crystal",
+  "type": "consumable",
+  "img": "icons/commodities/stone/stone-white-quartz-ball.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 10,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>铭刻谷Gravenhollow 的石巨人管理员制作了这个十九寸高的石英石，你带着它进行智力（调查）检定时将获得优势。</p>\n<p>水晶拥有10 发充能。你可以在持握该水晶时消耗其充能用它施展下列法术：@UUID[Compendium.dnd5e_classpack.new-icon.3JUEqJSbgArlUBR5]{动物交谈 Speak with Animals}（2 充能），@UUID[Compendium.dnd5e_classpack.new-icon.o9GQEt4fYw6WjpB0]{死者交谈 Speak with Dead}（4 充能），@UUID[Compendium.dnd5e_classpack.new-icon.n61LzTyqnbhiYxre]{植物交谈 Speak with Plants}（3 充能）。</p>\n<p>你施展预言系法术时，水晶还可以用来代替其中一样耗材。施展的法术按其环阶每环消耗 1 发充能，而水晶不会因此被消耗掉。</p>\n<p>每日黎明时，水晶会恢复[[/r 1d6+4]]发充能。当你用掉水晶最后一发充能时骰一次[[/r d20]]，若骰值为1，则水晶将随之消失而不复存在。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "OoTA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "10",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d6+4",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-stonespeaker-crystal",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!KHxXnGPhqpoRyMDm"
+}

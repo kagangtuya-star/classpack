@@ -1,0 +1,225 @@
+{
+  "_id": "UdiF2PfBvmVstQ06",
+  "name": "剑圣宗 Way of the Kensei（XGE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/002518.png",
+  "effects": [],
+  "folder": "b1hNUPJ6ajk0guML",
+  "sort": 94044,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>研习剑圣之道的武僧沉浸于器械训练，达到了“武器就是身体的延伸”这一境界。在研习剑术的基础上，这一流派也同时涉猎诸多不同的武器。</p><p>器械之于剑圣，就如同画笔之于画家、笔墨之于文人。剑圣将其视为用来展现武道之美丽优雅的工具。这一信条使得剑圣成为了盖世无双的武者，但与此同时也受缚于热情奉献和刻苦专研。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "identifier": "way-of-the-kensei",
+    "classIdentifier": "monk",
+    "advancement": [
+      {
+        "_id": "t6syhxntg6gb7f7r",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.teODKKtETrQCBQJT",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.ooy23deo8jYYo5gT",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.d2r8B0gwhpUCVdwu",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "ya6uqp8hw4r54zsx",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.zOSOTnM4IZ7DmLmY",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.pA7rHAOkkxRUOvon",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "itghiv65p8swreh0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.7ShzwIqbtJW9M2cg",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "as1m1irim28remsg",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.gRkU4RaaZC8IY85b",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "LYogMzWvWLr8xhFh",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:calligrapher",
+                "tool:art:painter"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 3,
+        "title": "书画之道",
+        "hint": "",
+        "icon": null
+      },
+      {
+        "_id": "udGLth7QYlXXvjzg",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "weapon:sim:club",
+                "weapon:sim:dagger",
+                "weapon:sim:greatclub",
+                "weapon:sim:handaxe",
+                "weapon:sim:javelin",
+                "weapon:sim:lighthammer",
+                "weapon:sim:mace",
+                "weapon:sim:quarterstaff",
+                "weapon:sim:sickle",
+                "weapon:sim:spear",
+                "weapon:mar:battleaxe",
+                "weapon:mar:flail",
+                "weapon:mar:longsword",
+                "weapon:mar:morningstar",
+                "weapon:mar:rapier",
+                "weapon:mar:scimitar",
+                "weapon:mar:shortsword",
+                "weapon:mar:trident",
+                "weapon:mar:warpick",
+                "weapon:mar:warhammer",
+                "weapon:mar:whip"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 3,
+        "title": "剑圣武器（近战）",
+        "hint": "",
+        "icon": null
+      },
+      {
+        "_id": "rxzZASzhM1wpndsL",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:sim:dart",
+            "weapon:sim:lightcrossbow",
+            "weapon:sim:shortbow",
+            "weapon:sim:sling",
+            "weapon:mar:blowgun",
+            "weapon:mar:handcrossbow",
+            "weapon:mar:longbow"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 3,
+        "title": "剑圣武器（远程）",
+        "hint": "",
+        "icon": null
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!UdiF2PfBvmVstQ06"
+}

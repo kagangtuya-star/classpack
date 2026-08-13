@@ -1,0 +1,154 @@
+{
+  "_id": "m6cTWTYUtohfrLez",
+  "name": "诡异水罐 Weird Tank",
+  "type": "consumable",
+  "img": "icons/commodities/tech/tube-chamber-lightning.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>诡异水罐是由一个10加仑的吹制玻璃水罐，以及带有双肩背带的青铜雕刻所组成，其背带是以坚韧的皮革缝制而成。一个水诡被封存在水罐内。当你穿戴着这个水罐时，你可以使用一个动作将它打开，让水诡从中涌现。水诡的行动会紧接在你的先攻顺序之后进行，且它被这个水罐所束缚。</p>\n<p>当你穿戴着这个水罐时，你可以以心灵感应的方式控制水诡（不需要任何动作）。只有在你命令水诡返回罐中，或水诡死亡之后，你才可以使用一个动作再次关上水罐。若水诡被杀死，则这个容器将失去它的魔法属性，直到它在一个水元素节点中停留至少24小时。当水罐被重新充能，其内部会再形成一只新的水诡。</p>\n<p>诡异水罐具有AC 15，50点生命值，对钝击易伤，且免疫于毒素和心灵伤害。将水罐的生命值降低到0会一并摧毁它和里面的水诡。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PotA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-weird-tank",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!m6cTWTYUtohfrLez"
+}

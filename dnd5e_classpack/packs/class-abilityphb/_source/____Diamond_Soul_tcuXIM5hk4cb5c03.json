@@ -1,0 +1,242 @@
+{
+  "_id": "tcuXIM5hk4cb5c03",
+  "name": "金刚魂 Diamond Soul",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_LegacyOfTheEmperor.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第14级起，你对气的控制让你拥有所有属性豁免的熟练。</p><p>另外，当豁免失败时，你可以消耗1点气重掷豁免并使用重掷的结果。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 79",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "0",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "武僧等级 14",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "Ef8lqVavggfILekj",
+      "changes": [
+        {
+          "key": "system.abilities.wis.proficient",
+          "mode": 4,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.str.proficient",
+          "mode": 4,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.int.proficient",
+          "mode": 4,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.dex.proficient",
+          "mode": 4,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.con.proficient",
+          "mode": 4,
+          "value": "1",
+          "priority": null
+        },
+        {
+          "key": "system.abilities.cha.proficient",
+          "mode": 4,
+          "value": "1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.tcuXIM5hk4cb5c03",
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "name": "获得所有属性豁免熟练",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_LegacyOfTheEmperor.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!tcuXIM5hk4cb5c03.Ef8lqVavggfILekj"
+    },
+    {
+      "name": "金刚魂",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_LegacyOfTheEmperor.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.tcuXIM5hk4cb5c03",
+      "_id": "dfCStKubn9kxkSN7",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.金刚魂.save.fail.all",
+          "mode": 2,
+          "value": "reroll",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.金刚魂.count",
+          "mode": 2,
+          "value": "ItemUses.气 Ki",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757101204604,
+        "modifiedTime": 1757101297941,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!tcuXIM5hk4cb5c03.dfCStKubn9kxkSN7"
+    }
+  ],
+  "folder": null,
+  "sort": 40300000,
+  "flags": {
+    "_sheetTab": "details",
+    "entityorder": {
+      "order": 184
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1757101312916,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!tcuXIM5hk4cb5c03"
+}

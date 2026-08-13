@@ -1,0 +1,495 @@
+{
+  "name": "月蚀恶兆 Eclipse of Ill Omen",
+  "type": "feat",
+  "_id": "KqfZkfwT4mj2p9Ae",
+  "img": "modules/dnd5e_classpack/Nicons/images/skill_icon_1.png",
+  "system": {
+    "activities": {
+      "MdAKOEoTfmHnUVWV": {
+        "type": "utility",
+        "_id": "MdAKOEoTfmHnUVWV",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": true,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "iSia32lJNIKg6e4l"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "type": "self",
+            "count": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "召唤",
+        "img": "",
+        "appliedEffects": [
+          "iSia32lJNIKg6e4l"
+        ]
+      },
+      "4H3CbiSYrw4C6Sec": {
+        "type": "utility",
+        "_id": "4H3CbiSYrw4C6Sec",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": "每回合一次，当你对这个微光光照范围内的任何生物造成光耀伤害时"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1"
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "pRmy3fGnEXag9V1F"
+          }
+        ],
+        "range": {
+          "units": "ft",
+          "override": false,
+          "special": "",
+          "value": "60"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "turn",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "诅咒",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "description": {
+      "value": "<p>17级起，你可以将血月茹蒂斯唤至你头顶的天空中，侵蚀其他的天光。哪怕在看不到天空的地方甚至其他位面，它的力量依旧能环绕着你。你可以使用一个附赠动作让你周围60尺的区域内显现出微红色的微光。除了微光光照的正常效果外，任何处在这片区域的生物进行的豁免检定具有劣势。当你创造这片月蚀区域时，你可以选择任意数量的生物不受它影响。<br />你需要为你的月蚀保持专注（如同专注一个法术），它至多能持续1分钟。这个特性的专注对于你的 双月同心Mind of Two Moons 特性而言，也被视为一个正专注的月亮领域法术。<br />另外，每回合一次，当你对这个微光光照范围内的任何生物造成光耀伤害时，你可以诅咒其中一个被伤害的生物（不需要动作）。诅咒将一直持续到月蚀结束为止，期间。被这种方法诅咒的生物移动速度减半，且无法回复生命值。<br />一旦你使用了这个特性，直到你完成一次长休前你都无法再次使用它。</p>",
+      "chat": ""
+    },
+    "identifier": "-",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "月亮领域等级 17",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "月蚀恶兆",
+      "img": "modules/dnd5e_classpack/Nicons/images/skill_icon_1.png",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.KqfZkfwT4mj2p9Ae",
+      "transfer": false,
+      "_id": "iSia32lJNIKg6e4l",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.attack.save",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": true,
+          "aura": "Enemy",
+          "nameOverride": "",
+          "radius": "60",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": true,
+          "height": true,
+          "hidden": true,
+          "displayTemp": true,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756620565785,
+        "modifiedTime": 1756620624692,
+        "lastModifiedBy": "vFLRCDyc5l72uRlV"
+      },
+      "_key": "!items.effects!KqfZkfwT4mj2p9Ae.iSia32lJNIKg6e4l"
+    },
+    {
+      "name": "月蚀诅咒",
+      "img": "modules/dnd5e_classpack/Nicons/images/skill_icon_1.png",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.KqfZkfwT4mj2p9Ae",
+      "transfer": false,
+      "_id": "pRmy3fGnEXag9V1F",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.movement.walk",
+          "mode": 1,
+          "value": "0.5",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.fly",
+          "mode": 1,
+          "value": "0.5",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.climb",
+          "mode": 1,
+          "value": "0.5",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.swim",
+          "mode": 1,
+          "value": "0.5",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p>诅咒将一直持续到月蚀结束为止，期间。被这种方法诅咒的生物移动速度减半，且无法回复生命值。</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756621140635,
+        "modifiedTime": 1756621211011,
+        "lastModifiedBy": "vFLRCDyc5l72uRlV"
+      },
+      "_key": "!items.effects!KqfZkfwT4mj2p9Ae.pRmy3fGnEXag9V1F"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "vFLRCDyc5l72uRlV": 3
+  },
+  "flags": {
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1756620431945,
+    "modifiedTime": 1756621433500,
+    "lastModifiedBy": "vFLRCDyc5l72uRlV"
+  },
+  "_key": "!items!KqfZkfwT4mj2p9Ae"
+}

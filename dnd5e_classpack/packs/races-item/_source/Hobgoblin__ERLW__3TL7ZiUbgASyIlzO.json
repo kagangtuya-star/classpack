@@ -1,0 +1,107 @@
+{
+  "name": "Hobgoblin (ERLW)",
+  "type": "race",
+  "system": {
+    "description": {
+      "value": "<div>\n\t\t\t\t<table class=\"w-100 summary stripe-even\">\n\t\t\t\t<tbody><tr>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Ability Scores</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Size</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Speed</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"ve-text-center\">Constitution +2; Intelligence +1</td>\n\t\t\t\t\t<td class=\"ve-text-center\">Medium</td>\n\t\t\t\t\t<td class=\"ve-text-center\">30 ft. </td>\n\t\t\t\t</tr>\n\t\t\t</tbody></table>\n\t\t\t\t<div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Age\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Age.</span></span> Hobgoblins mature at the same rate as humans and have lifespans similar in length to theirs.</p></div><div data-roll-name-ancestor=\"Size\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Size.</span></span> Your size is Medium.</p></div><div data-roll-name-ancestor=\"Darkvision\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Darkvision.</span></span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p></div><div data-roll-name-ancestor=\"Martial Training\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Martial Training.</span></span> You are proficient with two <span class=\"bold\">martial weapons</span> of your choice and with light armor.</p></div><div data-roll-name-ancestor=\"Saving Face\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Saving Face.</span></span> Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest.</p></div><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Languages.</span></span> You can speak, read, and write Common and Goblin.</p></div><div data-roll-name-ancestor=\"Alignment\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Alignment.</span></span> Hobgoblin society in Eberron is shaped by the ideal of a strict code of honor and rigid martial discipline. Most hobgoblins are lawful, tending toward harsh enforcement of their laws.</p></div></div>\n\t\t\t\t<hr class=\"hr-1\" />\n\t\t\t</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "ERLW",
+      "page": "26",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "hobgoblin",
+      "custom": ""
+    },
+    "senses": {
+      "darkvision": 60,
+      "blindsight": null,
+      "truesight": null,
+      "tremorsense": null,
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": [
+      {
+        "_id": "hqGIiKtMrsz5tAnu",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 2,
+            "int": 1,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": []
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      },
+      {
+        "_id": "VC9pFnsDZo4K7m8O",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ],
+    "identifier": "hobgoblin-erlw"
+  },
+  "effects": [],
+  "flags": {
+    "plutonium": {
+      "page": "races.html",
+      "source": "ERLW",
+      "hash": "hobgoblin_erlw",
+      "propDroppable": "race"
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/img/races/ERLW/Goblinoids.webp",
+  "folder": "upL3J1x4Q6tBxcfl",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751822727671,
+    "modifiedTime": 1751822727741,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "_id": "3TL7ZiUbgASyIlzO",
+  "sort": 415625,
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "_key": "!items!3TL7ZiUbgASyIlzO"
+}

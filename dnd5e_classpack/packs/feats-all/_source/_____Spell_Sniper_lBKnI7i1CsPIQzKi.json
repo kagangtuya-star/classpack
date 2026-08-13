@@ -1,0 +1,165 @@
+{
+  "_id": "lBKnI7i1CsPIQzKi",
+  "name": "法术射手 Spell Sniper",
+  "type": "feat",
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "img": "icons/magic/light/projectile-beam-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>你学会如何操控特定的法术进行攻击，并获得下列增益：</p><ul><li><p>当你施展需要进行攻击检定的法术时，则该法术的施法距离加倍。</p></li><li><p>你的远程法术攻击忽视半身掩护和四分之三掩护状态。</p></li><li><p>你习得一个需要进行攻击检定的戏法。从吟游诗人、牧师、德鲁伊、术士、邪术师、法师中选择其一，并从其相应的法术列表里选择该戏法。你施展该戏法的施法关键属性取决于你选择的职业：吟游诗人、术士、邪术师用魅力；牧师、德鲁伊用感知；法师用智力。</p></li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "cover": null,
+    "uses": {
+      "max": "0",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "requirements": "至少可以施展一个法术",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "ownership": {
+    "default": 0
+  },
+  "effects": [
+    {
+      "name": "法术射手",
+      "img": "icons/magic/light/projectile-beam-yellow.webp",
+      "origin": "Compendium.dnd5e_classpack.feats-all.Item.lBKnI7i1CsPIQzKi",
+      "_id": "rLvrbJSWDSItIEmW",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.long.rsak",
+          "mode": 2,
+          "value": "+item.long.value",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.range.rsak",
+          "mode": 2,
+          "value": "+item.range.value",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756534106482,
+        "modifiedTime": 1756534924260,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!lBKnI7i1CsPIQzKi.rLvrbJSWDSItIEmW"
+    }
+  ],
+  "folder": "qiJofEGkS1454LSL",
+  "sort": 700000,
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757864646196,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!lBKnI7i1CsPIQzKi"
+}

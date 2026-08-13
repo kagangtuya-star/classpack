@@ -1,0 +1,143 @@
+{
+  "_id": "17683D2871EACE2F",
+  "name": "赌具（骰子）Gaming Set of Dice",
+  "type": "tool",
+  "img": "icons/sundries/gaming/dice-runed-brown.webp",
+  "effects": [],
+  "folder": "Bf7NK3IUK930qcHb",
+  "flags": {
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "拥有赌具熟练项的角色，在使用相应赌具进行赌博的属性检定时，可以将其熟练加值加入检定结果中。各个种类的赌具之间互不关联，其熟练项只能对相应的工具起效。",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 154",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0.1,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "ability": "dex",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "game",
+      "baseItem": "dice"
+    },
+    "container": null,
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "check": {
+          "ability": "dex",
+          "associated": [],
+          "dc": {}
+        },
+        "sort": 0
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "identifier": "gaming-set-of-dice",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010438641,
+    "modifiedTime": 1757275698084,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!17683D2871EACE2F"
+}

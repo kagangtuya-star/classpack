@@ -1,0 +1,887 @@
+{
+  "_id": "gbHBG4jYU3I06JQO",
+  "name": "疫病术 Contagion",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "疫病术 Contagion",
+        "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+        "type": "script",
+        "scope": "global",
+        "command": "",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.3.9",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+  "effects": [
+    {
+      "name": "疫病术 Contagion",
+      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.gbHBG4jYU3I06JQO",
+      "transfer": false,
+      "_id": "mkQJc9HxQciTvVLM",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.execute",
+          "mode": 0,
+          "value": "疫病术",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "poisoned"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1753606078604,
+        "modifiedTime": 1756371549773,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!gbHBG4jYU3I06JQO.mkQJc9HxQciTvVLM"
+    },
+    {
+      "name": "失明症 Blinding Sickness",
+      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.gbHBG4jYU3I06JQO",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.ability.check.wis",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.ability.save.wis",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "blinded"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1755344103478,
+        "modifiedTime": 1756371473453,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "iqaYmvimtZ7n6tKf",
+      "_key": "!items.effects!gbHBG4jYU3I06JQO.iqaYmvimtZ7n6tKf"
+    },
+    {
+      "name": "腐热症 Filth Fever",
+      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.gbHBG4jYU3I06JQO",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.ability.check.str",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.ability.save.str",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.attack.mwak",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1755344104518,
+        "modifiedTime": 1756371495677,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "u5Xuyc0YUnOJTtEB",
+      "_key": "!items.effects!gbHBG4jYU3I06JQO.u5Xuyc0YUnOJTtEB"
+    },
+    {
+      "name": "烂肉症 Flesh Rot",
+      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.gbHBG4jYU3I06JQO",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.ability.check.cha",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.ability.save.cha",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.dv.all",
+          "mode": 0,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1755344105799,
+        "modifiedTime": 1756371505640,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "bi206BnER9Dy68EV",
+      "_key": "!items.effects!gbHBG4jYU3I06JQO.bi206BnER9Dy68EV"
+    },
+    {
+      "name": "脑热症 Mindfire",
+      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.gbHBG4jYU3I06JQO",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.ability.check.int",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.ability.save.int",
+          "mode": 2,
+          "value": "",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "diseased"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1755344106944,
+        "modifiedTime": 1756371469111,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "xkpLAUMNrTAktlCW",
+      "_key": "!items.effects!gbHBG4jYU3I06JQO.xkpLAUMNrTAktlCW"
+    },
+    {
+      "name": "癫痫症 Seizure",
+      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.gbHBG4jYU3I06JQO",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.ability.save.dex",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.ability.check.dex",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.advantage.attack.dex",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1755344108056,
+        "modifiedTime": 1756371478765,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "tDfQRjrexgYpTWWw",
+      "_key": "!items.effects!gbHBG4jYU3I06JQO.tDfQRjrexgYpTWWw"
+    },
+    {
+      "name": "恶心症 Slimy Doom",
+      "img": "modules/dnd5e_classpack/Nicons/ability_maldraxxus_warlock.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.gbHBG4jYU3I06JQO",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.ability.check.con",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.ability.save.con",
+          "mode": 2,
+          "value": "",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1755344118638,
+        "modifiedTime": 1756371490854,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "9zIE4Xf0rIDHjWKS",
+      "_key": "!items.effects!gbHBG4jYU3I06JQO.9zIE4Xf0rIDHjWKS"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你的触碰带着疾病。你对触及范围内一个生物发动一次近战法术攻击。命中时，你选择使该生物承受以下描述的疾病之一。\n<br />被触碰生物在每回合结束时必须进行一次体质豁免。在累计三次豁免失败后，该疾病效应将维持至法术持续时间结束，且该生物不再进行相应的体质豁免。在累计三次豁免成功后，该生物从疾病中恢复，并终止法术的效应。\n<br />由于法术对目标引发的是自然疾病，因此任何移除疾病或改善疾病状况的效应都可以对受术生物产生影响。\n<br /><strong>失明症Blinding Sickness。</strong>痛苦缠绕着患病者的意志，并使其眼睛变成奶白色。患病生物进行感知检定和感知豁免时具有劣势，并且承受目盲状态。\n<br /><strong>腐热症Filth Fever。</strong>患者身体发起严重的高烧。患病生物进行力量检定和力量豁免时，以及发动基于力量的攻击检定时具有劣势。\n<br /><strong>烂肉症Flesh Rot。</strong>患者的肌肤逐渐腐朽。患病生物进行魅力检定时具有劣势，并且具有所有伤害类型的伤害易受。\n<br /><strong>脑热症Mindfire。</strong>患者头脑发热。患病生物进行智力检定和智力豁免时具有劣势，并且其在战斗中视为受到困惑术confusion效应影响。\n<br /><strong>癫痫症Seizure。</strong>患者全身颤抖不止。患病生物进行敏捷检定和敏捷豁免时，以及发动基于敏捷的攻击检定时具劣势。\n<br /><strong>恶心症Slimy Doom。</strong>患者开始不受控地流血。患病生物进行体质检定和体质豁免时具有劣势。另外每当该生物受到伤害时都会陷入震慑状态，直至其下一回合结束。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 227",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "7",
+      "units": "day"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 5,
+    "school": "nec",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "mkQJc9HxQciTvVLM"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": ""
+      }
+    },
+    "identifier": "contagion"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "hSoScUNgYYqpKuFk",
+  "sort": 33700000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!gbHBG4jYU3I06JQO"
+}

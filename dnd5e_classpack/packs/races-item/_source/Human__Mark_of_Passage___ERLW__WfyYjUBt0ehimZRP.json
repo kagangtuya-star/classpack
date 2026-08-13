@@ -1,0 +1,107 @@
+{
+  "name": "Human (Mark of Passage) (ERLW)",
+  "type": "race",
+  "system": {
+    "description": {
+      "value": "<div>\n\t\t\t\t<table class=\"w-100 summary stripe-even\">\n\t\t\t\t<tbody><tr>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Ability Scores</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Size</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Speed</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"ve-text-center\">Dexterity +2; Choose any other +1</td>\n\t\t\t\t\t<td class=\"ve-text-center\">Medium</td>\n\t\t\t\t\t<td class=\"ve-text-center\">35 ft. </td>\n\t\t\t\t</tr>\n\t\t\t</tbody></table>\n\t\t\t\t<div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Age\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Age.</span></span> Humans reach adulthood in their late teens and live less than a century.</p></div><div data-roll-name-ancestor=\"Size\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Size.</span></span> Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.</p></div><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Languages.</span></span> You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.</p></div><div data-roll-name-ancestor=\"Courier's Speed\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Courier's Speed.</span></span> Your base walking speed increases to 35 feet.</p></div><div data-roll-name-ancestor=\"Intuitive Motion\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Intuitive Motion.</span></span> When you make a Dexterity (&amp;Reference[skill=Acrobatics]) check or any ability check to operate or maintain a <span class=\"bold\">land vehicle</span>, you can roll a [[/r d4]] and add the number rolled to the ability check.</p></div><div data-roll-name-ancestor=\"Magical Passage\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Magical Passage.</span></span> You can cast the @spell[misty step] spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell.</p></div><div data-roll-name-ancestor=\"Spells of the Mark\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Spells of the Mark.</span></span> If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Passage Spells table are added to the spell list of your spellcasting class.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Mark of Passage Spells\"><caption>Mark of Passage Spells</caption><thead><tr><th class=\"rd__th ve-col-2 ve-text-center \" data-rd-isroller=\"false\">Spell Level</th><th class=\"rd__th ve-col-10 \" data-rd-isroller=\"false\">Spells</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-2 ve-text-center \">1st</td><td class=\"rd__th ve-col-10 \">@spell[expeditious retreat], @spell[jump]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">2nd</td><td class=\"rd__th ve-col-10 \">@spell[misty step], @spell[pass without trace]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">3rd</td><td class=\"rd__th ve-col-10 \">@spell[blink], @spell[phantom steed]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">4th</td><td class=\"rd__th ve-col-10 \">@spell[dimension door], @spell[freedom of movement]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">5th</td><td class=\"rd__th ve-col-10 \">@spell[teleportation circle]</td></tr></tbody></table></div></div>\n\t\t\t\t\n\t\t\t</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "ERLW",
+      "page": "46",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 35,
+      "units": "ft",
+      "hover": false
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "human",
+      "custom": ""
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "truesight": null,
+      "tremorsense": null,
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": [
+      {
+        "_id": "Zi5MwY5cLVG1huu9",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 2,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": []
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      },
+      {
+        "_id": "obH4nMd2JXmhdTuq",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ],
+    "identifier": "human-mark-of-passage-erlw"
+  },
+  "effects": [],
+  "flags": {
+    "plutonium": {
+      "page": "races.html",
+      "source": "ERLW",
+      "hash": "human%20(mark%20of%20passage)_erlw",
+      "propDroppable": "race"
+    }
+  },
+  "img": "icons/environment/people/commoner.webp",
+  "folder": "upL3J1x4Q6tBxcfl",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751822734214,
+    "modifiedTime": 1751822734283,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "_id": "WfyYjUBt0ehimZRP",
+  "sort": 421875,
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "_key": "!items!WfyYjUBt0ehimZRP"
+}

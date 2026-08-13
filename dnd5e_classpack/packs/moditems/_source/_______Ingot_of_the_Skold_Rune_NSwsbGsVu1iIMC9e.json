@@ -1,0 +1,214 @@
+{
+  "_id": "NSwsbGsVu1iIMC9e",
+  "name": "盾牌符文之锭 Ingot of the Skold Rune",
+  "type": "equipment",
+  "img": "icons/commodities/metal/ingot-stamped-steel.webp",
+  "effects": [
+    {
+      "_id": "Pat3fnPmzL3nQYvl",
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Item.NSwsbGsVu1iIMC9e",
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "12.324",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "name": "AC + 1",
+      "img": "icons/commodities/metal/ingot-stamped-steel.webp",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!NSwsbGsVu1iIMC9e.Pat3fnPmzL3nQYvl"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>这奇物看起来是一块朴素的铁矿石锭，大约一尺长，几寸宽。检查其表面可以看见skold（盾牌）符文暗淡的银色轮廓。铸块具有以下特性，这些特性只在此铸块装备在你身上时才能生效。</p>\n<p><strong>符文之盾Runic Shield</strong>。 你在AC上获得+1加值。</p>\n<p><strong>盾之连结Shield Bond</strong>。 以一个附赠动作，选择一个30尺内你所能看到的除你以外生物。直到你的下一回合结束，目标所受到的伤害将会减少至1，但是你会受到以此方式防止的伤害的一半。你所承受的伤害无法以任何方式减少。一旦你使用了这个特性，直到完成一次短休息或长休息之前，都无法再次使用，</p>\n<p><strong>盾之守护Shield Ward</strong>。 通过用你的手指在一件非魔法物品——一把武器或一件盔甲上描摹skold符文，你可以将铸块的魔法转移到上面。转移需要花费8小时时间，并且需要两件物品在此期间互相间隔在5尺之内。在这8小时结束时，铸块会被摧毁，并且银色的符文会出现在你所选择的物品上，这会使得该物品获得一项基于其形态的增益：</p>\n<ul>\n<li><strong>盾牌Shield</strong>。 该盾牌现在成为一件珍稀的魔法物品，需要同调。它的魔法使你在AC上获得+1加值，并且每当你进行一次长休之后、第一次受到将你的生命值降低至O的伤害时，你改为降低生命值至1点。要获得这种好处，你必须持有该盾牌。</li>\n<li><strong>武器Weapon</strong>。该武器现在成为一件非普通的魔法物品。当你持有它的时候，你在AC上获得+1加值。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SKT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "turn",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-ingot-of-the-skold-rune",
+    "container": null,
+    "attuned": false,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!NSwsbGsVu1iIMC9e"
+}

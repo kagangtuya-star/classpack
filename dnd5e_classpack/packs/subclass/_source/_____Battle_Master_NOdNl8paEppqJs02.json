@@ -1,0 +1,315 @@
+{
+  "_id": "NOdNl8paEppqJs02",
+  "name": "战斗大师 Battle Master",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Achievement_Arena_2v2_6.png",
+  "effects": [],
+  "folder": "dqzc0s0n6BEoFqEm",
+  "sort": -99609,
+  "flags": {},
+  "system": {
+    "description": {
+      "value": "<p>        战斗大师选择磨炼列代先辈传承下来的战斗技巧。战斗大师们将战斗视为一门学问，而其内容不止包含战斗本身，还包括铸造武器和书法等等。并非每个战士都能适应战斗大师范型对学习历史，理论和艺术的要求，但能做到的人则都是技艺精熟，知识丰富的多面手。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "identifier": "battle-master",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "9gd70onmans30zvr",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.SU3RYIYcwg1MmRGV",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.CRu7K83gIxlVL5sX",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.ZT9vj0Gq45jYM7ne",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.etA1oLtnnD27jna2",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性"
+      },
+      {
+        "_id": "xrbp5zb11dgdzq36",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.DKWVj0Nu3c7Bv76Q",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "职业特性"
+      },
+      {
+        "_id": "a3dzqoxh385uu51q",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.MNPSY97vJ2u3g4PT",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "职业特性"
+      },
+      {
+        "_id": "ac1adrmivci6ryf4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.XhIrfJzwfR4ldXHy",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "职业特性"
+      },
+      {
+        "_id": "azolijsc98tbxiyw",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "superiority-die",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": null,
+              "faces": 8,
+              "modifiers": []
+            },
+            "10": {
+              "number": null,
+              "faces": 10,
+              "modifiers": []
+            },
+            "18": {
+              "number": null,
+              "faces": 12,
+              "modifiers": []
+            }
+          }
+        },
+        "value": {},
+        "title": "卓越骰",
+        "hint": "",
+        "icon": null
+      },
+      {
+        "_id": "f2j3m4T9xQ2npoCE",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 3,
+              "replacement": false
+            },
+            "7": {
+              "count": 2,
+              "replacement": false
+            },
+            "10": {
+              "count": 2,
+              "replacement": false
+            },
+            "15": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.P2sEeA2SwAWVFlmp"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.7Bxg3jMMKStcDwEg"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.ICU4UM2zkjZKgF8R"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.o0drZbre70mQZJyw"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.XPss8JrGOAkbvtqL"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.3mh8JDnSHd0C80FD"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.QWzpd3YeD8yzm0uQ"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.fmut2oPoXkcErPTG"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.Z9VTY08dEKHN6NSG"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.tZMUQ7cZxXp8Jhig"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.ntxJ0qMIKnU4Urbs"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.nK8383Sfx2lzCMbu"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.YWPe5vOpsEEhdAET"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.hjCX6CUshgacy9eU"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.sXPM1fnnLlbIEWsG"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.eZWU8IrHPcNXuu0w"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.DHRB0zFNBcOkuto3"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.iim2hoh4OGrRYZU0"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.4LvVKKPL68AFJiwL"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.KBa0zvvGmsIQzAWM"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.71aSuFiaQn7QPgiQ"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.VtoHZM9o8Oifvh4m"
+            }
+          ],
+          "spell": null,
+          "restriction": {
+            "type": "class",
+            "subtype": "maneuver"
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "卓越战技",
+        "hint": "你习得三种自选战技。战技强化了你的攻击。而你在每次攻击时只能应用一种战技。\n        \n你在第7，第10和第15级时均习得两种新战技。习得新战技时，你还可以额外替换一个已经习得的战技。",
+        "icon": null
+      },
+      {
+        "_id": "82m1TFSUbG1LGTCb",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 3,
+        "title": "",
+        "hint": "",
+        "icon": null
+      },
+      {
+        "_id": "q0QQxgNQdrPWueNG",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "superiority-dice-count",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 4
+            },
+            "7": {
+              "value": 5
+            },
+            "15": {
+              "value": 6
+            }
+          }
+        },
+        "value": {},
+        "title": "卓越骰数量",
+        "hint": "",
+        "icon": null
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NOdNl8paEppqJs02"
+}

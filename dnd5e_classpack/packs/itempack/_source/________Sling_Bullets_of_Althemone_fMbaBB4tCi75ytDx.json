@@ -1,0 +1,203 @@
+{
+  "name": "阿瑟蒙妮之弹丸 Sling Bullets of Althemone",
+  "type": "consumable",
+  "img": "icons/skills/ranged/bullets-triple-ball-yellow.webp",
+  "effects": [],
+  "folder": "lcetqoieNd14KxUF",
+  "flags": {
+    "core": {},
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"WordSection1\" style=\"LAYOUT-GRID:15.6pt none\"><p class=\"MsoNormal\">这些弹药装在一个袋子里，里面有[[/r 1d4+4]]颗弹丸。在列表上为每颗弹丸投骰，以确定其魔法属性。</p><p class=\"MsoNormal\">你在用这些弹丸做出的攻击和伤害检定有<span>+2</span>的加成。如果弹丸没有击中目标，弹丸会传送回弹袋。一旦弹丸击中目标，弹丸就会失去魔力。</p><p class=\"MsoNormal\"><span>1</span>、放逐<span>Banishment</span>。受到此弹丸伤害的生物必须在<span>DC15</span>的魅力豁免检定中成功，否则将被驱逐，就像被@UUID[Compendium.dnd5e_classpack.new-icon.Item.lopw7wVkPoE7gbNu]{放逐术}影响一样。</p><p class=\"MsoNormal\"><span>2</span>、闪光<span>Fulguration</span>。命中后，这颗弹丸会对目标造成额外<span>2d8</span>闪电伤害。目标周围<span>10</span>尺内的所有其他生物必须在<span>DC15</span>的体质豁免中成功，否则将受到<span>1d8</span>的闪电伤害。</p><p class=\"MsoNormal\"><span>3</span>、震慑<span>Stunning</span>。命中后，此弹丸会造成额外的<span>1d10</span>力场伤害，目标会被震慑直到你的下一回合结束。</p><p class=\"MsoNormal\"><span>4</span>、追踪<span>Tracking</span>。受到这颗弹丸伤害的生物会在被子弹击中的地方被标记上一个发光符文。这个标记会持续<span>24</span>小时。当生物被标记时，你总是知道它的方向。</p></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "MOT",
+      "revision": 1,
+      "rules": "2014",
+      "book": "MOT"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.075,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 4,
+        "bonus": "@mod",
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "properties": [
+      "mgc"
+    ],
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "ammo",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "2",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-sling-bullets-of-althemone",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1692348384925,
+    "modifiedTime": 1757871336975,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "fMbaBB4tCi75ytDx",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!fMbaBB4tCi75ytDx"
+}

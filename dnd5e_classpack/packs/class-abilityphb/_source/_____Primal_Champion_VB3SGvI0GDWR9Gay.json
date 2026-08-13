@@ -1,0 +1,177 @@
+{
+  "_id": "VB3SGvI0GDWR9Gay",
+  "name": "原初斗士 Primal Champion",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ability_rogue_imrovedrecuperate.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第20级时，你的存在即是野性之力的具现。你的力量和体质各提升4。并且你这两项属性的上限变为24。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 49",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "野蛮人等级 20",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "BlwnztIDum3m1RSw",
+      "changes": [
+        {
+          "key": "system.abilities.str.value",
+          "mode": 2,
+          "value": "4",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.con.value",
+          "mode": 2,
+          "value": "4",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.con.max",
+          "mode": 2,
+          "value": "+4",
+          "priority": 20
+        },
+        {
+          "key": "system.abilities.str.max",
+          "mode": 2,
+          "value": "+4",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.VB3SGvI0GDWR9Gay",
+      "transfer": true,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "tint": "#ffffff",
+      "name": "获得 4 力量、体质",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": null,
+        "modifiedTime": 1757272997489,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/ability_rogue_imrovedrecuperate.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!VB3SGvI0GDWR9Gay.BlwnztIDum3m1RSw"
+    }
+  ],
+  "folder": null,
+  "sort": 24000000,
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1724128101907,
+    "modifiedTime": 1757407566559,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VB3SGvI0GDWR9Gay"
+}

@@ -1,0 +1,251 @@
+{
+  "_id": "q6CBRfibDCt8rmi9",
+  "name": "魔鬼指挥官头盔 Helm of Devil Command",
+  "type": "equipment",
+  "img": "icons/equipment/head/helm-barbute-leather.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 3,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需要会说炼狱语的生物同调）</em></p>\n<p>这款笨重的无眼头盔是专为深狱炼魔制造的，但神奇的是，它的大小可以适应其他佩戴者的头部。</p>\n<p>当你戴着该头盔的时候，你可以看到外面，正如你没有戴着头盔一样。此外，你能够知道1000尺内所有魔鬼的确切位置和类型。你可以通过心灵感应与范围内的魔鬼交流，或者你可以向范围内的所有魔鬼传达你的想法。收到你传达的想法的魔鬼没有什么特别的方法来回应它们。</p>\n<p>头盔有3次充能。作为一个动作，你可以消耗1点充能来施放只能够影响魔鬼的@UUID[Compendium.dnd5e_classpack.new-icon.f63uBXNvbalm1y7v]{支配怪物 Dominate Monster}(豁免DC 21)。(如果指定的目标不是魔鬼的话，这个法术就会失效并且该充能就会被浪费。)如果当你释放这个法术时，目标的魔鬼能够看见你，该魔鬼就会知道你尝试用魔法来魅惑它。头盔在最后一发充能消耗完的24小时后回复所有的充能。</p>\n<p>如果你不是魔鬼，在九狱中使用头盔的支配怪物特性有20%的几率吸引一名魇骑魔 Narzugon，它在[[/r 1d4]]小时内坐在梦魇的背上到达。魇骑魔会试图夺回头盔，如果对获得头盔有必要的话它会杀死你。如果它得到了头盔，魇骑魔会试图把头盔献给它的魔鬼主子。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "BGDIA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": true,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "3",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": 1,
+    "attuned": true,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "1000",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "d100",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "1000",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "21"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-helm-of-devil-command",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!q6CBRfibDCt8rmi9"
+}

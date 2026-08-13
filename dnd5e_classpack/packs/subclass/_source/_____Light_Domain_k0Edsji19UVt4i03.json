@@ -1,0 +1,308 @@
+{
+  "_id": "k0Edsji19UVt4i03",
+  "name": "光明领域 Light Domain",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_BlindingLight.png",
+  "effects": [],
+  "folder": "Xih0AZJHkJZLWGw4",
+  "sort": 100049,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>        光明之神(包括海姆Helm、 洛山达Lathander. 佛尔图斯Pholtus、布兰查拉branchala、银焰The Silver Flame、巴菜纳斯Belenus、阿波罗Apollo以及拉.赫拉克提Re-Horakh-ty)促进世间的理念如重生和革新，真理，警觉，以及美丽，其通常的象征为太阳。某些这类的神衹会被描绘为太阳本身，或是驾着战车引领太阳划过天际。还有一些则是不懈的哨兵之眼，时刻洞穿每一片阴影与诡计。而其中某些美与才艺的神衹其教义还会诠释艺术即灵魂晋升容器的理念。光明之神的牧师们致力于指引灌输光耀的灵魂，其守护神的力量洞悉幻象，驱散谎言并烧尽一切晦暗。</p><table border=\"1\"><tbody><tr><th><p>牧师等级</p></th><th><p>法术</p></th></tr><tr><td><p><strong>1st</strong></p></td><td><p>@UUID[Compendium.dnd5e_classpack.new-icon.CB9z74KJLWMplGuz]{燃烧之手}@UUID[Compendium.dnd5e_classpack.new-icon.sLkNbDcU39qcVt14]{妖火}</p></td></tr><tr><td><p><strong>3rd</strong></p></td><td><p>@UUID[Compendium.dnd5e_classpack.new-icon.TEZY0aYJtnuU4FlW]{炽焰法球}@UUID[Compendium.dnd5e_classpack.new-icon.IkgKSSiBuGa5TPLB]{灼热射线}</p></td></tr><tr><td><p><strong>5th</strong></p></td><td><p>@UUID[Compendium.dnd5e_classpack.new-icon.uRF0L8no150cYca4]{昼明术}@UUID[Compendium.dnd5e_classpack.new-icon.Uh3zcz4PO4DXP3Dj]{火球术}</p></td></tr><tr><td><p><strong>7th</strong></p></td><td><p>@UUID[Compendium.dnd5e_classpack.new-icon.LPXdi1HhVx8kJWYy]{信仰守卫}@UUID[Compendium.dnd5e_classpack.new-icon.agTzLRmgNSVghaGk]{火墙术}</p></td></tr><tr><td><p><strong>9th</strong></p></td><td><p>@UUID[Compendium.dnd5e_classpack.new-icon.Q8XNvy4kwTSQVizo]{焰击术}@UUID[Compendium.dnd5e_classpack.new-icon.OA4mCsVxg6nUrLjV]{探知}</p></td></tr></tbody></table><p> </p><p><strong>额外戏法Bonus Cantrips</strong></p><p>在你第1级选择该领域时，获得戏法@UUID[Compendium.dnd5e_classpack.new-icon.rW5ZoeX4jjZw4hBO]{光亮术},如果你已经学会则不会重新获得。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "identifier": "light-domain",
+    "classIdentifier": "cleric",
+    "advancement": [
+      {
+        "_id": "lowv6o578jo7dqnq",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.CB9z74KJLWMplGuz"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.sLkNbDcU39qcVt14"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "hae6czro96iqw4dp",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.TEZY0aYJtnuU4FlW"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.IkgKSSiBuGa5TPLB"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "fk77z2wwcw4n25l4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.uRF0L8no150cYca4"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.Uh3zcz4PO4DXP3Dj"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 5,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "s2c8unanjhicb4sd",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.LPXdi1HhVx8kJWYy"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.agTzLRmgNSVghaGk"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 7,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "zd4fuedgf1zxqiyg",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.Q8XNvy4kwTSQVizo"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.OA4mCsVxg6nUrLjV"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 9,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "2pbio9g7r1c48uqm",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.4lIfviMB7iNh8W9X",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "w23y6jcwldhqnfh2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.mZK4784I0vq8h7Ug",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "4tobypdfms4ciha1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.thQvk0Pz73NwGhgr",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "cb32azsgazjyrx8d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.lTR0ojCE1yFRvIjT",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 8,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "96yky860nofemqc4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.v1Lepy3QhD41otYW",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "GJQuAIzEKfFHi5eZ",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.new-icon.Item.rW5ZoeX4jjZw4hBO",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!k0Edsji19UVt4i03"
+}

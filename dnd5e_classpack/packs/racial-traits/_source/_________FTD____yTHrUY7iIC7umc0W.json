@@ -1,0 +1,184 @@
+{
+  "name": "金属龙吐息武器 (FTD龙裔)",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ability_evoker_dragonrage.png",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p><span>5</span>级起，你获得第二种吐息武器。当你使用攻击动作时，你可以将其中一次攻击替换为呼出一种<span>15</span>尺锥形的魔法气体。其豁免<span>DC</span>为<span>8+</span>你的体质调整值<span>+</span>你的熟练加值。在你使用此特性时，选择以下一项：<span><br /><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">·</span></strong></span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">衰弱吐息</span></strong>。范围内的每个生物必须成功通过一次体质豁免，否则将陷入失能，直至你的下个回合开始。<span><br /><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">·</span></strong></span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">排斥吐息</span></strong>。范围内的每个生物必须成功通过一次力量豁免，否则将被推离<span>20</span>尺并应击倒地。在你使用你的<span class=\"GramE\">金属龙吐息武器</span>后，你不能再次使用它，直至你完成<span class=\"GramE\">一</span>次长休。<span><br /><br /></span></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "FTD",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "等级5",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "当你使用攻击动作时",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "cone",
+            "size": "15",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-ftd",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 37400000,
+  "flags": {
+    "dynamiceffects": {
+      "equipActive": false,
+      "alwaysActive": false
+    },
+    "core": {
+      "sourceId": "Item.NnTjvnjY4KdSqgYK"
+    },
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_id": "yTHrUY7iIC7umc0W",
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1756544420586,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6",
+    "compendiumSource": "Item.NnTjvnjY4KdSqgYK",
+    "duplicateSource": null
+  },
+  "_key": "!items!yTHrUY7iIC7umc0W"
+}

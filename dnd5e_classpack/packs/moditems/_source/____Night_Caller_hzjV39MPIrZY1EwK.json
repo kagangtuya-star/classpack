@@ -1,0 +1,170 @@
+{
+  "_id": "hzjV39MPIrZY1EwK",
+  "name": "唤夜者 Night Caller",
+  "type": "equipment",
+  "img": "icons/tools/instruments/pipe-flue-tan.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>这只哨子由透明水晶雕刻而成，形似一条如蜗牛壳般蜷缩着的小龙。哨子上用矮人语符文蚀刻着它的名字“唤夜者”。成功对其通过一次DC 20 智力（奥秘或历史）检定的角色，可以想起传说中古代矮人们曾经制作过各式各样这类的哨子。</p>\n<p>你在黑暗中或夜空下吹响该哨子时，它可以让你得以施展一次@UUID[Compendium.dnd5e_classpack.new-icon.xYpJGRI4xcMa41kO]{操纵死尸 Animate Dead}。该效应可以穿透至多 10 尺松土或类似材质作用于目标，目标受术后，将花费1 分钟时间爬上地表来为你效劳。一旦成功以此唤起不死生物，该哨子必须直到7 日之后才能再次使用。</p>\n<p>每隔 24 小时，你可以再次吹响哨子来延长你用它控制的不死生物其受操纵时间。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TftYP",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "attuned": false,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-night-caller",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!hzjV39MPIrZY1EwK"
+}

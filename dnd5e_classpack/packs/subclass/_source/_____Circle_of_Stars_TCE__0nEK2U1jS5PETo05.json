@@ -1,0 +1,197 @@
+{
+  "_id": "0nEK2U1jS5PETo05",
+  "name": "星辰结社 Circle of Stars（TCE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_unused2.png",
+  "effects": [],
+  "folder": "mLciwzYwSCcb3Ij7",
+  "sort": 112500,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>星辰结社历史悠久，其德鲁伊可驱使星光的能量。这些德鲁伊自远古时期便开始记载星象并探索星座中隐藏的秘密。通过揭示并理解群星之奥妙，属于星辰结社的德鲁伊们渴望驾驭宇宙之力。</p><p>此结社的诸多德鲁伊对群星与其对世界的影响保留有详细记载，其中一些则被记载并保存于作为深奥知识的宝库的巨型石制场地中。这些知识保存处形态多样，从巨石阵，金字塔，岩刻再到地下神殿——乃至于任何足以在一场大灾变中幸存下来并保护这此结社的珍贵知识的坚固结构。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "identifier": "circle-of-stars",
+    "classIdentifier": "druid",
+    "advancement": [
+      {
+        "_id": "rxgf7g5kfupucz4a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.XuddfP5pfKqJL4NP",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.YMjgmId32dyhNhY3",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.qCQtq2qCdWT5wduu",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.3c678QuDLdblTLXm",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.aiNtDThsxYEkpNr9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "t8ku5p36a9cm4f1z",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.beHICAkM6dJJZi1X",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "euhkvk3bbm9d154u",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.h5qHOk6IYIB73din",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "l9q97qya8cu9whyp",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.1d0UIp7RHG48TRBU",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.oUEbHQuLJ2JZjAS5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "t9fuxsot92psswc7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.QiU2ZZ09lBye0Iy4"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.PHYXwNkXSdJjDCSD"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "获得星图法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "9QMuMq7V2QXNjkkv",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.Item.PHYXwNkXSdJjDCSD"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "innate",
+            "uses": {
+              "max": "@prof",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "",
+        "hint": "",
+        "icon": null
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!0nEK2U1jS5PETo05"
+}

@@ -1,0 +1,273 @@
+{
+  "_id": "49HnrlgFqmKirDBa",
+  "name": "太阳剑 Sunsword",
+  "type": "weapon",
+  "img": "icons/magic/fire/beam-jet-stream-trails-orange.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>（需同调）</em></p>\n<p>太阳剑是一把世间罕有的宝剑，曾经属于施特拉德的兄弟谢尔盖·冯·扎洛维奇。它原本有铂金的剑柄和护手以及坚如钢铁的锋利水晶剑刃。</p>\n<p>在谢尔盖死后，施特拉德雇佣了一个名叫卡赞的强大法师来销毁这把武器。其过程的第一步是要把剑柄与剑刃分开——卡赞完成了这个部分。但在卡赞摧毁剑刃的时候，他的学徒却偷走了剑柄和护手。卡赞后来把这名学徒支离破碎的尸体丢进了斯瓦里奇森林，但他在哪都找不到剑柄。为了避免吸血鬼发怒，卡赞告诉施特拉德整把剑都已经被摧毁了。</p>\n<p>这把剑柄有自己的智能，它明白自己已经永远不可能再和原来的水晶剑刃合二为一。然而，它却得到了@UUID[Compendium.dnd5e_classpack.itempack.152FDAA04D28AF9E]{阳炎剑 Sun Blade}的属性。</p>\n<p><strong>智能Sentience</strong>。太阳剑是一把有智能的，混乱善良的武器，具有 11 点智力，17 点感知，16 点魅力。它的听觉范围是 60 尺，也具有 60 尺的普通视觉。该武器通过传递情绪来和携带或使用它的生物交流。</p>\n<p><strong>个性Personality</strong>。太阳剑的特别想要摧毁施特拉德，这并不是因为它很想解放巴洛维亚，而是因为它想要报复令它失去水晶剑刃的人。这把剑在背地里十分担心自己被摧毁。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "CoS",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": "1d10 + @mod +2"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [
+          "radiant"
+        ],
+        "custom": {
+          "enabled": true,
+          "formula": "1d8 + @mod +2"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      }
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "properties": [
+      "ver",
+      "fin",
+      "mgc"
+    ],
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "longsword"
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      },
+      "dnd5eactivity300": {
+        "_id": "dnd5eactivity300",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d8",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-sunsword",
+    "container": null,
+    "attuned": false,
+    "cover": null,
+    "crewed": false,
+    "ammunition": {},
+    "magicalBonus": null
+  },
+  "_key": "!items!49HnrlgFqmKirDBa"
+}

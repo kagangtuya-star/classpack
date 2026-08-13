@@ -1,0 +1,107 @@
+{
+  "name": "Goblin (ERLW)",
+  "type": "race",
+  "system": {
+    "description": {
+      "value": "<div><table class=\"w-100 summary stripe-even\"><tbody><tr><th class=\"ve-col-4 ve-text-center\"><p>Ability Scores</p></th><th class=\"ve-col-4 ve-text-center\"><p>Size</p></th><th class=\"ve-col-4 ve-text-center\"><p>Speed</p></th></tr><tr><td class=\"ve-text-center\"><p>Dexterity +2; Constitution +1</p></td><td class=\"ve-text-center\"><p>Small</p></td><td class=\"ve-text-center\"><p>30 ft.</p></td></tr></tbody></table><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Age\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Age.</span> Goblins reach adulthood at age 8 and live up to 60 years.</p></div><div data-roll-name-ancestor=\"Size\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Size.</span> Your size is Small.</p></div><div data-roll-name-ancestor=\"Darkvision\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Darkvision.</span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p></div><div data-roll-name-ancestor=\"Fury of the Small\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Fury of the Small.</span> When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p></div><div data-roll-name-ancestor=\"Nimble Escape\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Nimble Escape.</span> You can take the @action[Disengage] or @action[Hide] action as a bonus action on each of your turns.</p></div><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Languages.</span> You can speak, read, and write Common and Goblin.</p></div><div data-roll-name-ancestor=\"Alignment\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Alignment.</span> In Eberron, goblins are usually neutral. They tend to look out for themselves, preferably without drawing unwanted attention from any larger, more powerful people.</p></div></div><hr class=\"hr-1\" /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "ERLW",
+      "page": "26",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "goblin",
+      "custom": ""
+    },
+    "senses": {
+      "darkvision": 60,
+      "blindsight": null,
+      "truesight": null,
+      "tremorsense": null,
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": [
+      {
+        "_id": "Kfkvg7y0px8XbKJC",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 2,
+            "con": 1,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": []
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      },
+      {
+        "_id": "i4Ek8dhTuU1ILIzs",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm"
+          ]
+        },
+        "value": {
+          "size": "sm"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ],
+    "identifier": "goblin-erlw"
+  },
+  "effects": [],
+  "flags": {
+    "plutonium": {
+      "page": "races.html",
+      "source": "ERLW",
+      "hash": "goblin_erlw",
+      "propDroppable": "race"
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/img/races/ERLW/Goblinoids.webp",
+  "folder": "upL3J1x4Q6tBxcfl",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751822701823,
+    "modifiedTime": 1756028738005,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6"
+  },
+  "_id": "ZJQ6eWKR3HW5cCw8",
+  "sort": 412500,
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "_key": "!items!ZJQ6eWKR3HW5cCw8"
+}

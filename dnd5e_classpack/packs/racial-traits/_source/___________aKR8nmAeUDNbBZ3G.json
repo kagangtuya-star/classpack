@@ -1,0 +1,86 @@
+{
+  "name": "星界出神（星界精灵）",
+  "type": "feat",
+  "img": "icons/magic/perception/orb-eye-scrying.webp",
+  "system": {
+    "description": {
+      "value": "<p>你不需要睡眠，魔法也不能将你陷入睡眠。你能在4小时里完成一次长休，只要你在这期间进行出神般的冥想，整个过程你都能保持清醒。</p><p>当你完成出神时，你获得一项技能熟练和一把武器或一件工具熟练，从玩家手册中进行选择。你通过抽取共享的精灵记忆及星界位面的实体经历，神秘地获得这些熟练，你保有这些熟练直到你完成下一次长休。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "AAG",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "spent": null,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "星界精灵",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_id": "aKR8nmAeUDNbBZ3G",
+  "folder": null,
+  "sort": 27000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1756544420586,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!aKR8nmAeUDNbBZ3G"
+}

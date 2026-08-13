@@ -1,0 +1,299 @@
+{
+  "_id": "qz9iu9jFPOpFE5gd",
+  "name": "特鲁莱 Tearulai",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-serrated.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 6,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>（需同调）</em></p>\n<p>长剑特鲁莱，是一把有知性的中立善良的锋锐之剑，有着翡翠色的剑刃，剑柄和柄头镶嵌着珍贵的宝石。这把剑的魔法属性被压制，直到它从瓦尔德马的头上移除。</p>\n<p>邪恶的生物无法同调它；任何试图同调的邪恶生物都会受到 20 点心灵伤害。武器的翡翠剑刃不会损坏或变钝，并且在同调时，没有持剑者的剑不能被传送到任何地方。</p>\n<p><strong>法术 Spell</strong>。剑有 6 次充能，每天黎明时恢复[[/r 1D4+2]]次消耗的充能。一个已同调长剑的生物可以使用一个动作并花费若干个充能从它身上施放下列法术中的一个而不 需要材料：@UUID[Compendium.dnd5e_classpack.new-icon.N6gooaEP5pDVtJTV]{飞行术 Fly}(2 次充能)，@UUID[Compendium.dnd5e_classpack.new-icon.IXs3Neqbl8xaT3yk]{变形术 Polymorph}(3 次充能)，@UUID[Compendium.dnd5e_classpack.new-icon.L9NYP6PPcOKVOt8H]{木遁术 Transport via Plants}(4 次充能)。</p>\n<p><strong>智能 Sentience</strong>。剑的智力 17，感知 12，魅力 20。它有 120 尺范围内的听觉和真实视觉。它以心灵感应的方式与同调的持用者交流，并能说、阅读和理解通用语、龙语、精灵语和木族语。此外，这把剑还可以确定 5 尺内任何宝石的真实价值。</p>\n<p><strong>性格 Personality</strong>。特鲁莱喜欢美学、音乐、美术和诗歌。它努力改善自己外观，渴求宝石，并寻找更好的宝石来装饰自己，尽管这是徒劳的。最重要的是，它渴望回到迷斯卓诺周围的森林，它就是在那里被创造出来的。如果它它的持用者并逃离地脉迷城，在那里它可以使用木遁术返回它来的地方。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "WDMM",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "range": {
+      "value": null,
+      "long": 0,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "6",
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      }
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "attuned": true,
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "longsword"
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "命令字。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "0",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      },
+      "dnd5eactivity300": {
+        "_id": "dnd5eactivity300",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "命令字。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "0",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d4 + 2",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-tearulai",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "ammunition": {},
+    "magicalBonus": null
+  },
+  "_key": "!items!qz9iu9jFPOpFE5gd"
+}

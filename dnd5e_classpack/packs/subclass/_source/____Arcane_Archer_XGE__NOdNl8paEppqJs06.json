@@ -1,0 +1,241 @@
+{
+  "_id": "NOdNl8paEppqJs06",
+  "name": "魔射手 Arcane Archer（XGE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_SpearHand.png",
+  "effects": [],
+  "folder": "dqzc0s0n6BEoFqEm",
+  "sort": 81641,
+  "flags": {},
+  "system": {
+    "description": {
+      "value": "<p>         一个魔射手会学习能将魔法注入到攻击中并产生超自然效果的独特精灵箭技。魔射手是精灵中最精锐的战士。他们会驻足守望精灵国土的边界，着重留意那些入侵者并在那些怪物和入侵者来到精灵的居住地之前用注魔箭矢击败他们。在这数个世纪之间，这种精灵箭技已经被其他能够在魔法和箭艺中找到平衡的种族习得。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "identifier": "arcane-archer",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "9gd70onmans30zvr",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.rydtC4xFzhhmfXsT",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.w3EVK3XBgi1HZ5K2",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.HqwYiStgiunCmEG7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性"
+      },
+      {
+        "_id": "xrbp5zb11dgdzq36",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.AbDKFh70K7dThl4q",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.9jfOa8HGvdeSAP14",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "职业特性"
+      },
+      {
+        "_id": "ac1adrmivci6ryf4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.2qyvDJtbsF8bGjnQ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "职业特性"
+      },
+      {
+        "_id": "KCR0J3aDtPCIhrGa",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": "spell",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.new-icon.Item.zaUmr54yGtLyvUVC"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.new-icon.Item.Q6muyDarRcXMcuKv"
+            }
+          ],
+          "spell": {
+            "ability": [],
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            }
+          },
+          "restriction": {
+            "level": "0"
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "魔箭学识",
+        "hint": "在3级时，你作为精灵军事传统的研习者学会了魔法理论或者自然知识。你从魔法伎俩或者德鲁伊伎俩中选择一个戏法并学会。"
+      },
+      {
+        "_id": "fNFw7NAVOEWJigMv",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 2,
+              "replacement": false
+            },
+            "7": {
+              "count": 1,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            },
+            "15": {
+              "count": 1,
+              "replacement": false
+            },
+            "18": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.Xr8uiPr41sHR1Uwt"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.leabhG1wc0d4vP8C"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.yQGz7bYFsOumtt2M"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.uCwcaFGcyIGftJr4"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.HLXS5pd6WfRE3anL"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.O3iKK0vtmoVxfUqo"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.i3YthtU7oYjfnZgB"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.9IoLBGEaRRm3vd6G"
+            }
+          ],
+          "spell": null,
+          "restriction": {
+            "type": "class",
+            "subtype": ""
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "奥术射击",
+        "hint": "3级时，你学会在射击时施放一些特殊的魔法效果。当你获得这个特性时，你学会两种你选择的奥术射击选项。\n当你到达一定战士等级时（7级、10级、15级、18级）你会获得一个额外的你选择的奥术射击选项。所有的选项在你成为18级战士时都会提升。"
+      },
+      {
+        "_id": "A3mQh39JwjwrWUn0",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:arc",
+                "skills:nat"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 3,
+        "title": "魔箭学识",
+        "hint": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "int",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NOdNl8paEppqJs06"
+}

@@ -1,0 +1,107 @@
+{
+  "name": "Human (Mark of Sentinel) (ERLW)",
+  "type": "race",
+  "system": {
+    "description": {
+      "value": "<div>\n\t\t\t\t<table class=\"w-100 summary stripe-even\">\n\t\t\t\t<tbody><tr>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Ability Scores</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Size</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Speed</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"ve-text-center\">Constitution +2; Wisdom +1</td>\n\t\t\t\t\t<td class=\"ve-text-center\">Medium</td>\n\t\t\t\t\t<td class=\"ve-text-center\">30 ft. </td>\n\t\t\t\t</tr>\n\t\t\t</tbody></table>\n\t\t\t\t<div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Age\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Age.</span></span> Humans reach adulthood in their late teens and live less than a century.</p></div><div data-roll-name-ancestor=\"Size\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Size.</span></span> Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.</p></div><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Languages.</span></span> You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.</p></div><div data-roll-name-ancestor=\"Sentinel's Intuition\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Sentinel's Intuition.</span></span> When you make a Wisdom (&amp;Reference[skill=Insight]) or Wisdom (&amp;Reference[skill=Perception]) check, you can roll a [[/r d4]] and add the number rolled to the ability check.</p></div><div data-roll-name-ancestor=\"Guardian's Shield\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Guardian's Shield.</span></span> You can cast the @spell[shield] spell once with this trait, and you regain the ability to cast it after you finish a long rest. Wisdom is your spellcasting ability for this spell.</p></div><div data-roll-name-ancestor=\"Vigilant Guardian\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Vigilant Guardian.</span></span> When a creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to swap places with that creature, and you are hit by the attack instead. Once you use this trait, you can't do so again until you finish a long rest.</p></div><div data-roll-name-ancestor=\"Spells of the Mark\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Spells of the Mark.</span></span> If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Sentinel Spells table are added to the spell list of your spellcasting class.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Mark of Sentinel Spells\"><caption>Mark of Sentinel Spells</caption><thead><tr><th class=\"rd__th ve-col-2 ve-text-center \" data-rd-isroller=\"false\">Spell Level</th><th class=\"rd__th ve-col-10 \" data-rd-isroller=\"false\">Spells</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-2 ve-text-center \">1st</td><td class=\"rd__th ve-col-10 \">@spell[compelled duel], @spell[shield of faith]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">2nd</td><td class=\"rd__th ve-col-10 \">@spell[warding bond], @spell[zone of truth]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">3rd</td><td class=\"rd__th ve-col-10 \">@spell[counterspell], @spell[protection from energy]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">4th</td><td class=\"rd__th ve-col-10 \">@spell[death ward], @spell[guardian of faith]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">5th</td><td class=\"rd__th ve-col-10 \">@spell[Bigby's hand]</td></tr></tbody></table></div></div>\n\t\t\t\t\n\t\t\t</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "ERLW",
+      "page": "48",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "human",
+      "custom": ""
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "truesight": null,
+      "tremorsense": null,
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": [
+      {
+        "_id": "2aGU2zLfJo7um0dq",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 2,
+            "int": 0,
+            "wis": 1,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": []
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      },
+      {
+        "_id": "xjzsW2sBAm954v3b",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ],
+    "identifier": "human-mark-of-sentinel-erlw"
+  },
+  "effects": [],
+  "flags": {
+    "plutonium": {
+      "page": "races.html",
+      "source": "ERLW",
+      "hash": "human%20(mark%20of%20sentinel)_erlw",
+      "propDroppable": "race"
+    }
+  },
+  "img": "icons/environment/people/commoner.webp",
+  "folder": "upL3J1x4Q6tBxcfl",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751822736036,
+    "modifiedTime": 1751822736103,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "_id": "ZmAzJ6Pqe408U6j0",
+  "sort": 420313,
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "_key": "!items!ZmAzJ6Pqe408U6j0"
+}

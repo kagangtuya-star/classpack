@@ -1,0 +1,206 @@
+{
+  "_id": "xm92jGxrTsB47UND",
+  "name": "反魔法兽皮甲 Antimagic Hide Armor (BMT)",
+  "type": "equipment",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "65",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>护甲（中甲），极珍稀（需同调）</em><br />穿着这套护甲期间，你进行对抗法术的豁免时，你可以用反应让本次豁免具有优势。此属性一旦被使用，直到次日黎明前都无法被再次使用。<br />此外，穿着这套护甲期间，你可以用它施展法术<em>@UUID[Compendium.dnd5e_classpack.new-icon.Item.YYb9R08YduTPpE2s]{反魔法场 Antimagic Field}</em>，无需法术成分。此属性一旦被使用，直到次日黎明前都无法被再次使用。</p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">一种由厚毛皮制作的粗糙护甲。常见使用人群包括：野蛮人部落、邪恶类人生物以及其它缺少资源制作更好护甲的人。</span></p><p>While wearing this armor, you can use your reaction to give yourself advantage on a saving throw you make against a spell. Once this property is used, it can't be used again until the next dawn.</p><p>In addition, while you wear this armor, you can use it to cast @spell[Antimagic Field], requiring no spell components. Once this property is used, it can't be used again until the next dawn.</p><p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 12,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "veryRare",
+    "type": {
+      "value": "medium",
+      "baseItem": "hide"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 12,
+      "dex": 2,
+      "magicalBonus": 0
+    },
+    "strength": null,
+    "activities": {
+      "diTWzmFCMuVHsI5m": {
+        "_id": "diTWzmFCMuVHsI5m",
+        "type": "cast",
+        "img": "systems/dnd5e/icons/svg/activity/cast.svg",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "spell": {
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "uuid": "Compendium.plutonium-faux-id--7b22746167223a227370656c6c222c2274657874223a22616e74696d61676963206669656c64227d.custom.Item.0000000000000000"
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "antimagic-hide-armor-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false
+  },
+  "img": "icons/equipment/chest/vest-cloth-tattered-tan.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "antimagic%20hide%20armor_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "JkCcQt5fmlph6h7T",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738888053,
+    "modifiedTime": 1751738888053,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "sort": 3400000,
+  "_key": "!items!xm92jGxrTsB47UND"
+}

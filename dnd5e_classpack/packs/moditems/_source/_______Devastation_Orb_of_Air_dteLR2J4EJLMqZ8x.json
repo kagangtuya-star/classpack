@@ -1,0 +1,254 @@
+{
+  "_id": "dteLR2J4EJLMqZ8x",
+  "name": "气之毁灭法球 Devastation Orb of Air",
+  "type": "consumable",
+  "img": "icons/weapons/thrown/grenade-round.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>毁灭法球是一种元素炸弹，可以在元素节点上通过使用邪恶元素武器进行仪式来制造。创建的法球类型取决于制造所使用的节点。例如，一个气元素节点会产生一个气之毁灭法球。这个仪式需要1个小时完成，需要2000gp的特殊材料，这些成分将会被消耗掉。</p>\n<p>毁灭法球直径12寸，重10磅，外壳坚固。这个球体在诞生后[[/r 1d100]]小时将会爆炸，释放出它所包含的元素能量。这个球体没有任何迹象显示它还需要多久才会爆炸。诸如@UUID[Compendium.dnd5e_classpack.new-icon.tyshE8ZcV1Xniej3]{鉴定术 Identify}和@UUID[Compendium.dnd5e_classpack.new-icon.0An7Gb3wSSffcHhV]{预言术 Divination}之类的法术可以用来确定球体爆炸的时间。一个球体有10点AC，15点生命值，对毒素和心灵伤害有免疫。降低到0点生命值会导致法球立刻爆炸。</p>\n<p>好在，可以制作一个特殊的容器来存放一个毁灭法球，以此防止它一言不合就爆炸。容器必须刻有球体相反元素的符号。例如，一个刻有大地符号的盒子可以用来封存一个气之毁灭法球。在容器中，球体会缓缓旋转。如果在本应引爆的时间之后将其从容器中取出，则法球会在[[/r 1d6]]轮之后爆炸，除非将其放回容器。</p>\n<p>无论法球的类型如何，它的作用范围都是一个半径为1里的球型区域。区域的中心是法球所在位置。一次使用后球体会被摧毁。</p>\n<p><strong>狂风法球Air Orb</strong>。当这个法球爆炸时，它会产生持续1小时的强大风暴。当一个生物暴露在风中结束它的回合时，该生物必须通过DC18体质豁免或承受[[/r 1d4]]钝击伤害，这是因为风和碎石会对其进行冲击。在风中暴露超过10分钟后，脆弱的树木将会被连根拔起，轻型建筑物也会被强风摧毁。除此之外，《地下城主指南》第五章详细介绍了强风的规则。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PotA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 10,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 4,
+        "bonus": "",
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "ammo",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "radius",
+            "size": "1",
+            "width": "",
+            "height": "",
+            "units": "mi"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d100",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "radius",
+            "size": "1",
+            "width": "",
+            "height": "",
+            "units": "mi"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "18"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-devastation-orb-of-air",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!dteLR2J4EJLMqZ8x"
+}

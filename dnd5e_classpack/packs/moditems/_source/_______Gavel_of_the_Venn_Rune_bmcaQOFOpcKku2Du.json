@@ -1,0 +1,172 @@
+{
+  "_id": "bmcaQOFOpcKku2Du",
+  "name": "友谊符文之槌 Gavel of the Venn Rune",
+  "type": "consumable",
+  "img": "icons/weapons/hammers/hammer-mallet-wood-banded.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>这把木制的小槌对于巨人来说很小，但在人类的手中大小几乎相当于一把战锤。venn（友谊）符文被铭刻在小槌手柄处的秘银上。对巨人来说，该物品被用于解决巨人之间争端的仪式的一部分。木槌具有以下特性。</p>\n<p><strong>仲裁者之盾Arbiter's Shield</strong>。在每次战斗开始时，你的第一回合开始之前，只要木槌在你的身上，任何攻击你的攻击骰都具有劣势。</p>\n<p><strong>友善之契Bond of Amity</strong>。以一个动作，你可以用木槌敲击一片坚硬表面上的一点。在接下来的一分钟里，当第一次距离目标点60尺内的生物攻击另一个生物并命中时，攻击者受到相当于对目标所造成伤害量一半的心灵伤害。一旦你使用了这个特性，直到完成一次长休息之前，都无法再次使用该特性，</p>\n<p><strong>真相之赠礼Gift of Truth</strong>。通过用你的手指在地面描绘venn符文，你可以将木槌的魔法转移到某一地方。由你所描绘的那个点成为一个半径30尺的球形魔法区域的中心，该区域的位置是固定的。转移该项魔力需要花费8小时时间，并且需要木槌在这期间一直位于你的5尺之内。在这8小时结束时，木槌被摧毁，该区域获得以下特性：</p>\n<ul>\n<li>当一个生物在此30尺半径的球形范围内说谎时，该生物受到5点心灵伤害并且明显可见地畏缩。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SKT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "spec"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-gavel-of-the-venn-rune",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!bmcaQOFOpcKku2Du"
+}

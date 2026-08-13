@@ -1,0 +1,27 @@
+{
+  "folder": "eU30QuaGz6BH1UEA",
+  "name": "效果创建时执行豁免",
+  "type": "script",
+  "_id": "TieKALdNaRKh4Ld4",
+  "author": "WqWGW8MuBm7BNHxt",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "(async () => {\n  // args[0] === \"on\" or \"off\" (DAE behavior)\n  const hook = args[0];\n  console.log(\"DAE args:\", args);\n\n  // DAE sometimes gives context as args[3] (you showed that), try that first,\n  // otherwise try lastArg fallback.\n  const context = args[3] ?? (args[args.length - 1] && args[args.length - 1].lastArg) ?? null;\n  if (!context) return ui.notifications.error(\"无法取得 DAE 上下文 (args[3] / lastArg)。\");\n\n  // 解析目标 (token/actor) —— 使用 fromUuid 获取更稳健\n  const tokenOrActor = await fromUuid(context.actorUuid ?? context.tokenUuid);\n  const targetActor = tokenOrActor?.actor ? tokenOrActor.actor : tokenOrActor;\n  // tokenOrActor 有可能是 token document（含 .token / .id），尽力拿到 scene token\n  let targetToken = tokenOrActor?.token ?? canvas.tokens.get(tokenOrActor?.id) ?? canvas.tokens.placeables.find(t => t.actor?.id === targetActor?.id);\n\n  // 解析施法者 actor UUID（origin 格式类似： Actor.<id>.Item.<id>.ActiveEffect...）\n  const sourceActorUuid = context.origin ? context.origin.split(\".Item.\")[0] : null;\n  const sourceTokenCandidate = await (sourceActorUuid ? fromUuid(sourceActorUuid) : null);\n  const sourceActor = sourceTokenCandidate ? (sourceTokenCandidate.actor ?? sourceTokenCandidate) : null;\n  // 在 scene 中尽量找到施法者 token（若施法者在当前场景）\n  const sourceToken = canvas.tokens.placeables.find(t => t.actor?.id === sourceActor?.id) ?? null;\n\n  if (!targetActor) return ui.notifications.error(\"无法解析目标 actor。\");\n  if (!sourceActor) ui.notifications.warn(\"未能解析施法者 actor，仍将以 null 作为来源（某些功能可能受限）。\");\n\n  if (hook === \"off\") {\n    // 效果删除时什么都不做（按需求）\n    return;\n  }\n\n  // ========== 计算施法者 DC ==========\n  let dc = null;\n  // 优先尝试系统里常见的 spelldc 字段\n  dc =  (sourceActor?.system?.attributes?.spell.dc) ?? null;\n\n  // 如果没拿到，就尝试更通用的计算：8 + proficiency + 施法属性 mod\n  if (!dc) {\n    // 尝试从施法物品（origin 的 Item 部分）读取 cast ability（若存在）\n    let itemAbility = null;\n    try {\n      const originItemUuid = context.origin ? context.origin.split(\".ActiveEffect\")[0] : null; // Actor.x.Item.y\n      if (originItemUuid) {\n        const originItemWrapper = await fromUuid(originItemUuid);\n        const originItem = originItemWrapper?.item ?? originItemWrapper;\n        itemAbility = originItem?.system?.ability ?? originItem?.system?.save?.ability ?? originItem?.system?.spellcasting ?? null;\n      }\n    } catch (e) {\n      console.warn(\"无法解析 origin item（可忽略，继续用回退 DC）\", e);\n    }\n\n  }\n\n  // ========== 让目标掷体质豁免 ==========\n  // 使用 dnd5e 的 actor API：rollAbilitySave(\"con\")\n  const saveRoll = await targetActor.rollSavingThrow(\"con\", { flavor: `体质豁免 — DC ${dc}` });\n  const saveTotal = saveRoll?.total ?? 0;\n  console.log(\"Save total:\", saveTotal, \"DC:\", dc);\n\n  // ========== 掷 5d10 伤害 ==========\n  const damageDice = \"5d10\";\n  const damageRoll = new Roll(damageDice);\n  // Foundry v12+: 必须 await evaluate()（不要传 {async:true}）\n  await damageRoll.evaluate();\n  const rolledDamage = damageRoll.total ?? 0;\n  console.log(\"Rolled damage (raw):\", rolledDamage);\n\n  // 根据豁免结果决定最终伤害（豁免成功减半，向下取整）\n  let finalDamage = rolledDamage;\n  let flavor = `失败豁免：造成 ${rolledDamage} 点力场伤害`;\n  if (saveTotal >= dc) {\n    finalDamage = Math.floor(rolledDamage / 2);\n    flavor = `豁免成功：造成减半伤害（${finalDamage}）`;\n  }\n\n  // 为了让 MidiQOL 正确显示并应用“最终伤害”，构造一个表示最终伤害的 Roll 对象并传入\n  const finalRoll = new Roll(String(finalDamage));\n  await finalRoll.evaluate();\n\n  // ========== 调用 MidiQOL DamageOnlyWorkflow ==========\n  // 参数： (sourceActor, sourceToken, damageAmount, damageType, targetsArray, rollObject, options)\n  await new MidiQOL.DamageOnlyWorkflow(\n    sourceActor,                 // 施法者 actor（可能为 null，但通常存在）\n    sourceToken ?? null,         // 施法者 token（如果在场景上找不到可传 null）\n    finalDamage,                 // 最终数值（number）\n    \"force\",                     // 伤害类型：力场\n    [ targetToken ].filter(Boolean), // 目标数组（若找不到 token 可传空）\n    finalRoll,                   // Roll 对象 —— 必须反映最终造成的伤害\n    { flavor, itemCardId: context?.itemCardId ?? null }\n  );\n\n  console.log(\"伤害应用完成:\", finalDamage, flavor);\n})();",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "WqWGW8MuBm7BNHxt": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1756909416808,
+    "modifiedTime": 1756909430215,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+  },
+  "_key": "!macros!TieKALdNaRKh4Ld4"
+}

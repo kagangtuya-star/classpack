@@ -1,0 +1,197 @@
+{
+  "name": "简易远程武器Simple Ranged Weapons",
+  "type": "weapon",
+  "_id": "ZAuoISQs6Hd8y3yA",
+  "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p>@UUID[Compendium.dnd5e_classpack.itempack.Item.15A3A6D6FEF0A465]{轻弩 Light Crossbow}</p><p>@UUID[Compendium.dnd5e_classpack.itempack.Item.D39AC491B799FEC3]{飞镖 Dart}</p><p>@UUID[Compendium.dnd5e_classpack.itempack.Item.567A278AA577CF7D]{短弓 Shortbow}</p><p>@UUID[Compendium.dnd5e_classpack.itempack.Item.7D2577156D15CAD1]{投石索 Sling}</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "",
+      "reach": null
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "simpleR",
+      "baseItem": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "proficient": null,
+    "activities": {
+      "A8x8w4AWWSJmBAWQ": {
+        "_id": "A8x8w4AWWSJmBAWQ",
+        "type": "attack",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {}
+        },
+        "damage": {
+          "critical": {},
+          "includeBase": true,
+          "parts": []
+        }
+      }
+    },
+    "identifier": "simple-ranged-weapons",
+    "ammunition": {}
+  },
+  "effects": [],
+  "folder": "dk7xenthNksvaOay",
+  "sort": 1500000,
+  "ownership": {
+    "default": 0,
+    "pF5tIzH2aEMuTR6D": 3
+  },
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": 1724939054314,
+    "modifiedTime": 1754809421024,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ZAuoISQs6Hd8y3yA"
+}

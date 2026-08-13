@@ -1,0 +1,183 @@
+{
+  "_id": "fpQitllyAWE6eqjR",
+  "name": "色彩龙赋礼（FTD） Gift of the Chromatic Dragon",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-peace-alliance.webp",
+  "system": {
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>你掌握了一些色彩龙的力量，你获得以下好处：<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">繁彩注魔。</span></strong>以一个附赠动作，你可以触碰一把简易武器或军用武器，向它注入以下能量之一：强酸，寒冷，火焰，闪电或毒素。在之后一分钟内，该武器在命中时额外造成<span>1d4</span>你所选伤害类型的伤害。使用此特性后，你在完成一次长休前不能再次使用。<span><br />      </span><strong><span style=\"font-family:宋体;mso-bidi-font-family:宋体\">反应抗性。</span></strong>当你受到强酸，寒冷，火焰，闪电或毒素伤害时，你可以使用你的反应，使自己在当此伤害中获得对应伤害类型的抗性。你可以使用该特性等同于你熟练加值的次数，你在完成一次长休后重获所有已使用的次数。<span><br /><br /></span></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "FTD",
+      "revision": 1,
+      "rules": "2014",
+      "book": "FTD"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 4,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "ftd",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "BSYEYR6K0I87AE33",
+  "sort": 100000,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e_classpack.feats-all.2eERcMAG44Qj6Kwm"
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757864553944,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": "Compendium.dnd5e_classpack.feats-all.2eERcMAG44Qj6Kwm",
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fpQitllyAWE6eqjR"
+}

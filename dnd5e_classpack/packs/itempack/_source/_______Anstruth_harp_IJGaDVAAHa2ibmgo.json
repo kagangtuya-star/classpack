@@ -1,0 +1,153 @@
+{
+  "_id": "IJGaDVAAHa2ibmgo",
+  "name": "安斯翠瑟竖琴 Anstruth harp",
+  "type": "tool",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "effects": [],
+  "folder": "lcetqoieNd14KxUF",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"WordSection1\" style=\"LAYOUT-GRID:15.6pt none\"><p class=\"MsoNormal\">你可以用一个动作弹奏这把琴，并从中施放下列法术之一：@UUID[Compendium.dnd5e_classpack.new-icon.Item.t09Fa4kTkkIgMoDu]{化兽为友}、@UUID[Compendium.dnd5e_classpack.new-icon.Item.QFBZcGORjnBRgAYo]{魅惑人类}、@UUID[Compendium.dnd5e_classpack.new-icon.Item.YfT8hNtZ4Qt8aLKc]{注目术}、@UUID[Compendium.dnd5e_classpack.new-icon.Item.Ubl35siOKv9ihW2M]{暗示术}。如果该法术需要豁免，法术<span>DC</span>为<span>13</span>。</p><p class=\"MsoNormal\">一旦该琴被用来施法，在下一个黎明之前不能再用来施展那个法术。</p></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "MOT",
+      "revision": 1,
+      "rules": "2014",
+      "book": "MOT"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "ability": "cha",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "music",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "check": {
+          "ability": "cha",
+          "associated": [],
+          "dc": {}
+        },
+        "sort": 0
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "identifier": "-anstruth-harp",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010443297,
+    "modifiedTime": 1757871291351,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 1900000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!IJGaDVAAHa2ibmgo"
+}

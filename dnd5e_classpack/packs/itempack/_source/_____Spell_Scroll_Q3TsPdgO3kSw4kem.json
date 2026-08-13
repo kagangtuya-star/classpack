@@ -1,0 +1,112 @@
+{
+  "_id": "Q3TsPdgO3kSw4kem",
+  "name": "法术卷轴 Spell Scroll",
+  "type": "consumable",
+  "img": "icons/sundries/scrolls/scroll-bound-orange-tan.webp",
+  "effects": [],
+  "folder": "y1fVWTD0mou2DyMJ",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>每张法术卷轴都以神秘暗语记录了一道法术。如果卷轴记载的法术在你职业的法术列表内，你可以用一个动作阅读卷轴以施展其中的法术，而无需支付任何法术成分。反之，卷轴上的文字对你是晦涩难懂的。</p>\n<p>假如卷轴记载的法术在你职业的法术列表内，但其环数超过了你目前能施展的水平，则你必须以你的施法关键属性通过一次DC为10+法术环数的属性检定。如果检定失败，卷轴上记载的法术将消失而不生效。</p>\n<p>卷轴上的法术一经施展即消失。卷轴本身则化为尘埃。</p>\n<p>卷轴的稀有度、其法术的豁免DC和攻击加值由它所记载的法术环数决定，如下表所示：</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<td><strong> 法术环数</strong></td>\n<td><strong>稀有度</strong></td>\n<td><strong>豁免DC</strong></td>\n<td><strong>攻击加值</strong></td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.5CE844FA6882C3CA]{戏法}</td>\n<td>普通</td>\n<td>13</td>\n<td>+5</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.A8FA9E9D797EC9FB]{1环}</td>\n<td>普通</td>\n<td>13</td>\n<td>+5</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.A89D32C1547860BD]{2环}</td>\n<td>非普通</td>\n<td>13</td>\n<td>+5</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.FCF8BB7DED76F020]{3环}</td>\n<td>非普通</td>\n<td>15</td>\n<td>+7</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.715BBC418336D60C]{4环}</td>\n<td>珍稀</td>\n<td>15</td>\n<td>+7</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.65F9D59D32AB1F8A]{5环}</td>\n<td>珍稀</td>\n<td>17</td>\n<td>+9</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.B12F44C54857E8C4]{6环}</td>\n<td>非常珍稀</td>\n<td>17</td>\n<td>+9</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.640A205537D9E0A6]{7环}</td>\n<td>非常珍稀</td>\n<td>18</td>\n<td>+10</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.494BDB7966E03AAB]{8环}</td>\n<td>非常珍稀</td>\n<td>18</td>\n<td>+10</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.30E78A964F9F425B]{9环}</td>\n<td>传说</td>\n<td>19</td>\n<td>+11</td>\n</tr>\n</tbody>\n</table>\n<p>你可以如同抄录法术书上的法术一般抄录法术卷轴上的法师法术。抄录卷轴上的法术时，抄录者必须通过一次DC为10+法术环数的智力（神秘）检定以成功抄录。无论检定成功与否，法术卷轴都将被摧毁。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 200",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "scroll",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [],
+    "activities": {},
+    "identifier": "-spell-scroll",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010444188,
+    "modifiedTime": 1757876092101,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 1000000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!Q3TsPdgO3kSw4kem"
+}

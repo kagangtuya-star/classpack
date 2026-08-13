@@ -1,0 +1,200 @@
+{
+  "_id": "1C00AB87199779A5",
+  "name": "黄铜瓦尔哈拉号角 Brass Horn of Valhalla",
+  "type": "consumable",
+  "img": "icons/tools/instruments/flute-simple-wood.webp",
+  "effects": [],
+  "folder": "tBltNHvQID4vNcLI",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>你可以用一个动作吹响号角。作为回应，约瑟园Ysgard的战士英灵们将在你周围60尺内出现。这些英灵使用@UUID[Compendium.dnd5e_classpack.monsterspack.kz1t6xeXVwODpYb2]{狂战士 Berserker}的资料。生命值降至0，或者1小时之后英灵们将返回约瑟园。使用后，号角需要经过7日才能再次启动。</p>\n<p>已知共有四种类型的瓦尔哈拉号角，分别由不同的金属制成。号角的类型决定了使用它的前提条件，以及回应你呼唤的狂战士数量。号角的类型由DM决定或随机决定。</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<th>[[/r d100]]</th>\n<th>号角类型</th>\n<th>狂战士数量</th>\n<th>前提条件</th>\n</tr>\n<tr>\n<td>41~75</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.1C00AB87199779A5]{黄铜}</td>\n<td>[[/r 3d4+3]]</td>\n<td>所有简易武器熟练项</td>\n</tr>\n</tbody>\n</table>\n<p>如果你在不满足前提条件的情况下吹响了号角，则召唤出的英灵们将对你发动攻击。如果你满足前提条件，他们将对你和你的同伴态度友善，并听从你的命令。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 175",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8400,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": 3,
+        "denomination": 4,
+        "bonus": "3",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-brass-horn-of-valhalla",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010438641,
+    "modifiedTime": 1757875183546,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 6500000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!1C00AB87199779A5"
+}

@@ -1,0 +1,224 @@
+{
+  "_id": "NOdNl8paEppqJs10",
+  "name": "灵能武士 Psi Warrior（TCE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_AuraOfLight.png",
+  "effects": [],
+  "folder": "dqzc0s0n6BEoFqEm",
+  "sort": 100391,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>觉醒了内在心灵力量的灵能战士使用灌注灵能力量的武器攻击、念力鞭挞和灵能屏障来强化自己肉体力量的战士。很多吉斯洋基人受训成为这样的战士，一些极度自律的高等精灵也会这么做。在艾伯伦的世界中，许多年轻的离梦人（kalashtar）梦想着成为灵能武士。</p><p>作为一个灵能武士，你必须通过极度的自律来磨砺灵能力量，在一个大师的指导下觉醒，或在一个学院中精进对于灵能粉尘化为武器或盾牌力量的掌握。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "identifier": "psi-warrior",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "9gd70onmans30zvr",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.sE0eWBfIdzrqoNWO",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.IGFbodPoYQ6aujAT",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.uaPefnuz8mYlc7Th",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.w6wzRcoxxL5rrnxe",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.siAeTtoqnGz0fsI5",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "xrbp5zb11dgdzq36",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.0eSDePMWApq9RHqv",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.6s7P6OwuQlVpfnDQ",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.dkpQJsciaVomruu7",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.X45yHNAw6pvDmWji",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "a3dzqoxh385uu51q",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.gUogqXt5i3DjyA2j",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "ac1adrmivci6ryf4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.2dqkKB0KNItEKuCk",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.vZXnOtXH7hJT4seL",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "ohit44ogojqgyzso",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.new-icon.MTNfEcCXSJZ2m2nG"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.P7AyHQ1wqI7fLw1B"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.PjbFvDngvjDQjezs"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "innate",
+            "uses": {
+              "max": "1",
+              "per": "lr",
+              "requireSlot": false
+            },
+            "ability": [
+              "int"
+            ]
+          }
+        },
+        "value": {},
+        "level": 18,
+        "title": "职业特性",
+        "hint": ""
+      },
+      {
+        "_id": "i01stcnnemosv88y",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "psionic-die",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": null,
+              "faces": 6,
+              "modifiers": []
+            },
+            "5": {
+              "number": null,
+              "faces": 8,
+              "modifiers": []
+            },
+            "11": {
+              "number": null,
+              "faces": 10,
+              "modifiers": []
+            },
+            "17": {
+              "number": null,
+              "faces": 12,
+              "modifiers": []
+            }
+          }
+        },
+        "value": {},
+        "title": "灵能骰",
+        "icon": null,
+        "hint": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!NOdNl8paEppqJs10"
+}

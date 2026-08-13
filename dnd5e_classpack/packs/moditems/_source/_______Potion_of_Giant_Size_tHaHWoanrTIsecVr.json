@@ -1,0 +1,216 @@
+{
+  "_id": "tHaHWoanrTIsecVr",
+  "name": "巨人体型药水 Potion of Giant Size",
+  "type": "consumable",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "effects": [
+    {
+      "_id": "Xao2vwPOv1yf1DlL",
+      "changes": [
+        {
+          "key": "system.abilities.str.value",
+          "mode": 5,
+          "value": "25",
+          "priority": null
+        },
+        {
+          "key": "system.attributes.hp.value",
+          "mode": 1,
+          "value": "2",
+          "priority": null
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "rounds": 1,
+        "startTime": null,
+        "seconds": 86400,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Item.tHaHWoanrTIsecVr",
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "12.324",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "name": "力量 = 25;当前HP * 2",
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!tHaHWoanrTIsecVr.Xao2vwPOv1yf1DlL"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>这是一种由巨型蛤蜊的舌头制成的苍白色液体，有一种类似腐烂海藻的刺激性气味。不过，它喝起来味道是甜的。</em></p>\n<p>当你喝下此药水时，若你是中型或更小，则你的体型会变为巨型，持续24小时，其他情况下则无效。在此期间，你的力量值若还未达到25的话则会变成25，并且你的最大生命值会翻倍（当你喝下药水时，你的当前生命值也会翻倍）。此外，你的近战攻击触及增加5尺。</p>\n<p>在此期间，你所携带和穿着的所有物品也同样会增大。当以此方式增大的武器投掷伤害时，投三倍于正常数量的骰子；例如，长剑会造成[[/r 3d8]]（而非[[/r 1d8]]）点挥砍伤害，或者在使用双手时，会造成[[/r 3d10]]（而非[[/r 1d10]]）点挥砍伤害。</p>\n<p>当此效果结束时，任何超过你生命值上限的生命都变成临时生命。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SKT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "24",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-potion-of-giant-size",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!tHaHWoanrTIsecVr"
+}

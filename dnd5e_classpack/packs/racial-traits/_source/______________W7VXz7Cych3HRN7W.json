@@ -1,0 +1,85 @@
+{
+  "name": "酸液喷吐 (析米克混生体)",
+  "type": "feat",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>使用动作你可以从口腔的腺体中喷射出一股酸性物质，选择30英尺内你能看到的生物或物体作为目标。</p>\n<p>除非其成功通过DC等于8 +你的体质调整值+你的熟练加值的敏捷豁免检定，否则目标受到2d10强酸伤害。</p>\n<p>当你达到第11级(3d10)和第17级(4d10)时，伤害增加1d10。该特性的可用次数等于你的体质调整值（至少一次）。</p>\n<p>通过完成一次长休你可以恢复全部已消耗次数。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "GTR",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "析米克混生体",
+    "activities": {},
+    "identifier": "-",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 5,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "img": "icons/magic/acid/projectile-stream-bubbles.webp",
+  "_id": "W7VXz7Cych3HRN7W",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "folder": "n5k7X9bpHuXzYhUw",
+  "sort": 62500,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757178552740,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!W7VXz7Cych3HRN7W"
+}

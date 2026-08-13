@@ -1,0 +1,335 @@
+{
+  "_id": "S2Julj2sEMwh4rdc",
+  "name": "塔莎心灵鞭 Tasha’s Mind Whip  (TCE)",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "halfdam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/spell_priest_voidform.jpg",
+  "effects": [
+    {
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "startRound": null,
+        "startTime": null,
+        "startTurn": null,
+        "turns": null,
+        "combat": null
+      },
+      "flags": {
+        "core": {
+          "sourceId": "ActiveEffect.SDrUwzuaGgY9Zvev",
+          "overlay": false
+        },
+        "dfreds-convenient-effects": {
+          "description": "缓慢 Slowed 如同缓慢术的效果，如果在缓慢状态下再次受到缓慢影响将会陷入失能",
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "times-up": {
+          "isPassive": false
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "count",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnEnd"
+          ],
+          "disableIncapacitated": false,
+          "dontApply": false,
+          "showIcon": false,
+          "enableCondition": "",
+          "disableCondition": ""
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "nameOverride": "",
+          "customCheck": "",
+          "wallsBlock": "system",
+          "statuses": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.S2Julj2sEMwh4rdc",
+      "tint": "#ffffff",
+      "transfer": false,
+      "_id": "VfdhnTyZRUgnBemB",
+      "name": "恍惚",
+      "description": "<div class=\"Section0\" style=\"LAYOUT-GRID:15.6pt none\"><h4 style=\"MARGIN:2pt 0pt;mso-pagination:widow-orphan\"><strong>恍惚</strong></h4><p class=\"26\" style=\"MARGIN-BOTTOM:0pt;MARGIN-TOP:0pt;LINE-HEIGHT:13pt;MARGIN-RIGHT:0pt;TEXT-INDENT:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0000;mso-add-space:auto;mso-line-height-rule:exactly\">·恍惚的生物不能执行反应。</p><p class=\"26\" style=\"MARGIN-BOTTOM:0pt;MARGIN-TOP:0pt;LINE-HEIGHT:13pt;MARGIN-RIGHT:0pt;TEXT-INDENT:12pt;mso-pagination:widow-orphan;mso-char-indent-count:1.0000;mso-add-space:auto;mso-line-height-rule:exactly\">·恍惚的生物在自己的回合内，只能从动作、附赠动作、消耗移动力三种行为中选择一项执行。</p></div>",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": null,
+        "modifiedTime": 1756930411671,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "img": "icons/svg/daze.svg",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!S2Julj2sEMwh4rdc.VfdhnTyZRUgnBemB"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div>        你对施法距离内一个你可见的生物进行心灵猛击。目标必须进行一次智力豁免。若豁免失败，目标会受到 3d6 精神伤害，并且直到其下一回合结束前不能做出反应。此外，它在自己的下一回合中，只能选择在移动、动作或附赠动作中采取一种。若豁免成功，目标只受到半额伤害，并且不会受到该法术的其他效应。<br />　　<strong>升环施法效应：</strong>使用三环或更高的法术位施展该法术时，你使用的法术位每比二环高 1 环就可以额外指定一个生物。被你选为目标的生物互相之间的距离不能超过 30 尺。</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 2,
+    "school": "enc",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "VfdhnTyZRUgnBemB",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "tashas-mind-whip-tce"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "eKWjH0NyoSjvzeog",
+  "sort": 1800000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1711704938975,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!S2Julj2sEMwh4rdc"
+}

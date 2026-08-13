@@ -1,0 +1,1762 @@
+{
+  "_id": "srjt2KPpCAtQGe7W",
+  "name": "元素武器 Elemental Weapon",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "元素武器——强酸",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "_id": "Dsb0MzzXxpkGsihc",
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 1, \"denomination\": 4, \"types\": [\"acid\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756830717073,
+        "modifiedTime": 1757426912830,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.Dsb0MzzXxpkGsihc"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——冷冻",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 1, \"denomination\": 4, \"types\": [\"cold\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756831102708,
+        "modifiedTime": 1757426885807,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "osUXhtxH1xL4h5hn",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.osUXhtxH1xL4h5hn"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——火焰",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 1, \"denomination\": 4, \"types\": [\"fire\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756831104108,
+        "modifiedTime": 1757423917376,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "Eiow8CkT2Ngd31el",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.Eiow8CkT2Ngd31el"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——闪电",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 1, \"denomination\": 4, \"types\": [\"lightning\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756831105339,
+        "modifiedTime": 1757426963368,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "mdam2epmUDTEMi8o",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.mdam2epmUDTEMi8o"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——雷鸣",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 1, \"denomination\": 4, \"types\": [\"thunder\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756831106627,
+        "modifiedTime": 1757423960944,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "78Zql5RE1KLQAxoH",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.78Zql5RE1KLQAxoH"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——火焰 （5-6环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+2",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 2, \"denomination\": 4, \"types\": [\"fire\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832080962,
+        "modifiedTime": 1757423946394,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "66eFLblAc8RjFtpD",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.66eFLblAc8RjFtpD"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——火焰 （7-9环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+3",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 3, \"denomination\": 4, \"types\": [\"fire\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832084226,
+        "modifiedTime": 1757423939729,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "QVLykPqhWBCpFtwl",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.QVLykPqhWBCpFtwl"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——雷鸣 （5-6环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+2",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 2, \"denomination\": 4, \"types\": [\"thunder\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832085573,
+        "modifiedTime": 1757423968453,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "QHzaiJpE9GaySpFU",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.QHzaiJpE9GaySpFU"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——雷鸣 （7-9环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+3",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 3, \"denomination\": 4, \"types\": [\"thunder\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832087115,
+        "modifiedTime": 1757426867774,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "rbSaIcGD3zsD0iww",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.rbSaIcGD3zsD0iww"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——冷冻 （5-6环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+2",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 2, \"denomination\": 4, \"types\": [\"cold\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832088444,
+        "modifiedTime": 1757426895424,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "RjiIN2coYpIq8nwD",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.RjiIN2coYpIq8nwD"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——冷冻 （7-9环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+3",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 3, \"denomination\": 4, \"types\": [\"cold\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832089898,
+        "modifiedTime": 1757426902128,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "bsHNMjmdyAVfhAnz",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.bsHNMjmdyAVfhAnz"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——强酸 （5-6环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+2",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 2, \"denomination\": 4, \"types\": [\"acid\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832091385,
+        "modifiedTime": 1757426940990,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "AzjhlnKV5JJWKq2s",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.AzjhlnKV5JJWKq2s"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——强酸 （7-9环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+3",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 3, \"denomination\": 4, \"types\": [\"acid\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832093171,
+        "modifiedTime": 1757426949085,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "SEFSIKueJtzqDbRM",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.SEFSIKueJtzqDbRM"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——闪电 （5-6环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+2",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 2, \"denomination\": 4, \"types\": [\"lightning\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832094835,
+        "modifiedTime": 1757426972133,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "UXWEahQa9xqJGI1f",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.UXWEahQa9xqJGI1f"
+    },
+    {
+      "type": "enchantment",
+      "name": "元素武器——闪电 （7-9环）",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_DualWieldSpecialization.png",
+      "disabled": true,
+      "system": {},
+      "changes": [
+        {
+          "key": "activities[attack].attack.bonus",
+          "mode": 2,
+          "value": "+3",
+          "priority": 20
+        },
+        {
+          "key": "activities[attack].damage.parts",
+          "mode": 2,
+          "value": "{ \"number\": 3, \"denomination\": 4, \"types\": [\"lightning\"] }",
+          "priority": 20
+        },
+        {
+          "key": "system.properties",
+          "mode": 2,
+          "value": "mgc",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756832096644,
+        "modifiedTime": 1757426980143,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_id": "6y2pkQzTJvZXpimJ",
+      "_key": "!items.effects!srjt2KPpCAtQGe7W.6y2pkQzTJvZXpimJ"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \">\n<div class=\"description \">你触碰的一把非魔法武器并使其变成魔法武器。选择以下伤害类型其中之一：强酸、冷冻、火焰、闪电、雷鸣。在法术持续时间内，该武器进行攻击检定时将获得+1 加值，且在命中时额外造成1d4 点所选类型的伤害。</div>\n<div class=\"description \"> </div>\n<div class=\"description \">升环施法效应。</div>\n<div class=\"description \">使用5 环或6 环法术位施展该法术时，攻击检定的加值变为+2，额外伤害变为2d4。使用7 环或更高法术位施展该法术时，攻击检定的加值变为+3，额外伤害变为3d4。</div>\n</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 256",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 3,
+    "school": "trs",
+    "materials": {
+      "value": "",
+      "consumed": true,
+      "cost": 100,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "5Ft4dh7Qj0o40NUw": {
+        "type": "enchant",
+        "_id": "5Ft4dh7Qj0o40NUw",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Dsb0MzzXxpkGsihc",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "osUXhtxH1xL4h5hn",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "Eiow8CkT2Ngd31el",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "mdam2epmUDTEMi8o",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "78Zql5RE1KLQAxoH",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "66eFLblAc8RjFtpD",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "QVLykPqhWBCpFtwl",
+            "level": {
+              "min": 7,
+              "max": 9
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "QHzaiJpE9GaySpFU",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "rbSaIcGD3zsD0iww",
+            "level": {
+              "min": 7,
+              "max": 9
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "RjiIN2coYpIq8nwD",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "bsHNMjmdyAVfhAnz",
+            "level": {
+              "min": 7,
+              "max": 9
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "AzjhlnKV5JJWKq2s",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "SEFSIKueJtzqDbRM",
+            "level": {
+              "min": 7,
+              "max": 9
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "UXWEahQa9xqJGI1f",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "6y2pkQzTJvZXpimJ",
+            "level": {
+              "min": 7,
+              "max": 9
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {},
+        "restrictions": {
+          "allowMagical": false,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": true,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "Dsb0MzzXxpkGsihc",
+          "osUXhtxH1xL4h5hn",
+          "Eiow8CkT2Ngd31el",
+          "mdam2epmUDTEMi8o",
+          "78Zql5RE1KLQAxoH",
+          "66eFLblAc8RjFtpD",
+          "QVLykPqhWBCpFtwl",
+          "QHzaiJpE9GaySpFU",
+          "rbSaIcGD3zsD0iww",
+          "RjiIN2coYpIq8nwD",
+          "bsHNMjmdyAVfhAnz",
+          "AzjhlnKV5JJWKq2s",
+          "SEFSIKueJtzqDbRM",
+          "UXWEahQa9xqJGI1f",
+          "6y2pkQzTJvZXpimJ"
+        ]
+      }
+    },
+    "identifier": "elemental-weapon"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "hSoScUNgYYqpKuFk",
+  "sort": 35200000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!srjt2KPpCAtQGe7W"
+}

@@ -1,0 +1,165 @@
+{
+  "name": "皇冠骑士 Knight of The Crown",
+  "type": "feat",
+  "img": "icons/skills/melee/hand-grip-sword-white-brown.webp",
+  "system": {
+    "description": {
+      "value": "<blockquote><p>前置专长：@UUID[Compendium.dnd5e_classpack.feats-all.Item.K514K3cwFSluLevE]{索兰尼亚扈从 Squire of Solamnia}</p></blockquote><p>你是一名隶属于皇冠骑士团的索兰尼亚骑士，该骑士团颂扬合作、忠诚和服从的美德。你善于团体作战，并获得下列增益：</p><ul><li><p><strong>属性值提升Ability Score Increase.</strong>你的力量、敏捷或体质提升1，最高不能超过20。</p></li><li><p><strong>号令集结Commanding Rally.</strong>以一个附赠动作，你可以命令你30尺内的一个友军攻击。若其能听见你的声音或看见你，其可以立刻使用反应来进行一次武器攻击。若此次攻击命中，这名盟友可以投掷一粒d8并将骰出的数值加入到攻击的伤害掷骰中。你可使用此特性的次数等同于你的熟练加值，并且在完成一次长休后会恢复所有已消耗的使用次数。</p></li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DSotDQ",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "requirements": "等级 4，索兰尼亚扈从专长",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "30尺内能听见你的声音或看见你的一个盟友。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": true,
+                "formula": "d8"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-knight-of-the-crown",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 2,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": 1686470748837,
+    "modifiedTime": 1749711029989,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "folder": "ThWE2BfGEbiZsk1k",
+  "_id": "3S1gwW448LAjav0D",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "Jo05tXxu7yf2dQe3": 3
+  },
+  "_key": "!items!3S1gwW448LAjav0D"
+}

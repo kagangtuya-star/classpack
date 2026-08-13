@@ -1,0 +1,27 @@
+{
+  "name": "DeleteAuraEffect",
+  "type": "script",
+  "author": "WqWGW8MuBm7BNHxt",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "(async () => {\n  // 检查 args[0] 是否为 \"off\"，表示效果被删除\n  if (args[0] !== \"off\") {\n    console.log(\"❌ 宏未触发：args[0] 不是 'off'，当前值为\", args[0]);\n    return;\n  }\n\n  // 获取目标 Token 和 Actor\n  const tokenId = args[1]?.tokenId || args[1]?.token?.id;\n  const token = canvas.tokens.get(tokenId);\n  const actor = token?.actor;\n  if (!actor) {\n    console.log(\"❌ 未找到目标 Actor，无法继续执行宏\");\n    return;\n  }\n\n  console.log(\"✅ 成功获取 Actor：\", actor.name);\n\n  // 查找名为“艾伐黑触手 Black Tentacles (In Aura)”的效果\n  const auraEffect = actor.effects.find(e => e.label === \"艾伐黑触手 Black Tentacles (In Aura)\");\n  if (!auraEffect) {\n    console.log(\"⚠️ 未找到 '艾伐黑触手 Black Tentacles (In Aura)' 效果\");\n    return;\n  }\n\n  // 删除该效果\n  await auraEffect.delete();\n  console.log(\"🧹 已成功删除 '艾伐黑触手 Black Tentacles (In Aura)' 效果\");\n})();",
+  "folder": "MpqrsZjgun8U0Udi",
+  "ownership": {
+    "default": 0,
+    "WqWGW8MuBm7BNHxt": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1756529882843,
+    "modifiedTime": 1756529882843,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+  },
+  "_id": "q0ytDPXNkJoqabx5",
+  "sort": 0,
+  "_key": "!macros!q0ytDPXNkJoqabx5"
+}

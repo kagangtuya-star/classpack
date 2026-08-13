@@ -1,0 +1,157 @@
+{
+  "_id": "GfUulhUzjEKtTs2G",
+  "name": "命运的十二面体 Dodecahedron of Doom",
+  "type": "equipment",
+  "img": "icons/sundries/gaming/dice-pair-white-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>这个有着 12 个金属面的骰子，其五边形的侧面有 12 寸宽，刻有数 字 1-12。十二面体装有奥术发条装置，一旦投出骰子就会发出呼呼和滴滴的声音。</p>\n<p>作为一个动作，这个十二面体可以用力投出 60 尺高，落地滚动至少 10 尺静止后，将触发一个随机的魔法效果。如果效果需要一个目标但有效距离内没有合适的目标，那什么也不会发生。十二面体施放法术不需要任何材料。投掷一次[[/r d12]] 并根据下面的表格确定效果：</p>\n<table>\n<thead>\n<tr>\n<th><strong>[[/r D12]]</strong></th>\n<th><strong>效果</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1-2</td>\n<td>十二面体爆炸并且损坏。在爆炸范围 20 尺内的每个生物需要做一个 DC13 的敏捷检定，失败受到 40 ([[/r 9D8]])点力场伤害，成功的话伤害减半。</td>\n</tr>\n<tr>\n<td>3-4</td>\n<td>十二面体为自己点亮一盏灯。这个效果持续到下 一个生物触碰骰子。</td>\n</tr>\n<tr>\n<td>5-6</td>\n<td>十二面体施放@UUID[Compendium.dnd5e_classpack.new-icon.tJzKo2vpEhXZfuJO]{冷冻射线 Ray of Frost}(命中+5)，随机攻击 60 尺 内 1 个没有处在完全遮蔽状态下的生物。</td>\n</tr>\n<tr>\n<td>7-8</td>\n<td>十二面体对下一个触碰它的生物施放@UUID[Compendium.dnd5e_classpack.new-icon.0kzjiCnyoMHwijsp]{电爪 Shocking Grasp}(命中 +5)。</td>\n</tr>\n<tr>\n<td>9-10</td>\n<td>十二面体对自己施放@UUID[Compendium.dnd5e_classpack.new-icon.UyQ9nYcQlFdEbmeV]{黑暗术 Darkness}，效果持续 10 分钟。</td>\n</tr>\n<tr>\n<td>11-12</td>\n<td>下一个触碰十二面体的生物获得[[/r 1D10]]的临时生命，持续 1 小时。</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "WDMM",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "attuned": false,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "d12",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-dodecahedron-of-doom",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!GfUulhUzjEKtTs2G"
+}

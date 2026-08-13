@@ -1,0 +1,159 @@
+{
+  "_id": "NOMp4AVrFi5GaTCb",
+  "name": "魔力泉涌 Font of Magic",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Shaman_RepulsionTotem.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第2级时，你解除了体内魔力之源的封印，从中涌现的魔力体现为你的可用术法点。你可以使用术法点创造各种魔法效应。</p>\n<h3><strong>术法点</strong></h3>\n<p>开始时，你拥有2个术法点。此后你每提升一个术士等级，都会获得更多的术法点，详见“术士职业表”中“术法点”一栏。你的术法点永远不能超过表中所列对应你当前等级的数值。而已消耗的术法点则可以通过完成一次长休进行恢复。</p>\n<h3><strong>易变施法</strong></h3>\n<p>你可以使用术法点来获得额外的法术位，或是消耗法术位来换取额外的术法点。随着术士等级的提升，你还可以学会其他术法点的使用方法。</p>\n<p><strong>生成法术位:</strong></p>\n<table>\n<tbody>\n<tr>\n<th>法术位环阶</th>\n<th>术法点消耗</th>\n</tr>\n<tr>\n<td>1环</td>\n<td>2</td>\n</tr>\n<tr>\n<td>2环</td>\n<td>3</td>\n</tr>\n<tr>\n<td>3环</td>\n<td>5</td>\n</tr>\n<tr>\n<td>4环</td>\n<td>6</td>\n</tr>\n<tr>\n<td>5环</td>\n<td>7</td>\n</tr>\n</tbody>\n</table>\n<p><strong>法术位转换术法点：</strong>你可以在自己回合内使用附赠动作将未使用的法术位转化为术法点。你消耗一枚法术位并获得等于该法术位环阶的术法点。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 101",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "术士等级 2",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 18200000,
+  "flags": {
+    "_sheetTab": "description",
+    "entityorder": {
+      "order": 67
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "12.343",
+    "createdTime": null,
+    "modifiedTime": 1757136550803,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NOMp4AVrFi5GaTCb"
+}

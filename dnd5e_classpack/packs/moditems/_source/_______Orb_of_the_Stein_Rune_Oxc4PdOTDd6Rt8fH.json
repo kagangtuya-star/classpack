@@ -1,0 +1,173 @@
+{
+  "_id": "Oxc4PdOTDd6Rt8fH",
+  "name": "岩石符文之球 Orb of the Stein Rune",
+  "type": "consumable",
+  "img": "icons/commodities/stone/stone-white-quartz-ball.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>这个花岗岩球体大约与有一个成年人类的拳头大小。stein（岩石）符文以水晶状纹理的形式出现在它的表面。该球体具有以下特性，这些特性只在此球体装备在你身上时才能生效。</p>\n<p><strong>顽强Indomitable Stand</strong>。 以一个动作，你可以引导球体的魔法来维持住你的阵脚。在接下来的一分钟或直到你进行任何移动之前，你在所有抵抗迫使你移动效果的检定和豁免上具有优势。此外，任何移动到距离你10尺内的敌人必须通过DC12的力量豁免，否则不能在此回合中移动更多的距离。</p>\n<p><strong>岩石之魂Stone Soul</strong>。 你不会被石化。</p>\n<p><strong>土之脚步Earthen Step</strong>。 你可以以一个附赠动作施展@UUID[Compendium.dnd5e_classpack.new-icon.pJ6hE8Vab5Ypuqm4]{融身入石 Meld into Stone}法术。一旦你使用了这个特性，直到完成一次短休息或长休息之前，都无法再次使用，</p>\n<p><strong>岩石之赠礼Gift of Stone</strong>。 通过用你的手指在一件非魔法物品——一面盾牌或一双靴子上描摹stein符文，你可以将球体的魔法转移到上面。转移需要花费8小时时间，并且需要两件物品在此期间互相间隔在5尺之内。在这8小时结束时，球体会被摧毁，并且银色的符文会出现在你所选择的物品上，这会使得该物品获得一项基于其形态的增益：</p>\n<ul>\n<li><strong>盾牌Shield</strong>。 该盾牌现在成为一件珍稀的魔法物品，需要同调。当你使用它时，你对所有远程武器攻击所造成的伤害具有抗性。</li>\n<li><strong>靴子Boots</strong>。 这双靴子现在成为一件非普通的魔法物品，需要同调。当你穿上靴子时候，你在力量豁免上获得优势，并且你可以使用你的反应动作来避免被击倒在地。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SKT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "12"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-orb-of-the-stein-rune",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!Oxc4PdOTDd6Rt8fH"
+}

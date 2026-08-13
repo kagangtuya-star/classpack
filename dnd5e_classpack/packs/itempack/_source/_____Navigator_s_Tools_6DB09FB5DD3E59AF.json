@@ -1,0 +1,151 @@
+{
+  "_id": "6DB09FB5DD3E59AF",
+  "name": "领航工具 Navigator’s Tools",
+  "type": "tool",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "effects": [],
+  "folder": "Bf7NK3IUK930qcHb",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "一整副的领航工具被用于海上航行的导航工作。拥有领航工具熟练项的角色，在使用该工具进行绘制航线和跟随航线的属性检定时，可以将其熟练加值加入检定结果中。此外，在进行避免在海上迷失方形的属性检定时，拥有该熟练项的角色也可以将其熟练加值加入检定结果中。",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 154",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "ability": "int",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "",
+      "baseItem": "navg"
+    },
+    "container": null,
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "check": {
+          "ability": "int",
+          "associated": [],
+          "dc": {}
+        },
+        "sort": 0
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "identifier": "-navigators-tools",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010439659,
+    "modifiedTime": 1757275698084,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 1800000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!6DB09FB5DD3E59AF"
+}

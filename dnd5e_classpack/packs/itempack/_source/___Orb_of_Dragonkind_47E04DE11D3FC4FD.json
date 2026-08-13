@@ -1,0 +1,282 @@
+{
+  "_id": "47E04DE11D3FC4FD",
+  "name": "龙珠 Orb of Dragonkind",
+  "type": "equipment",
+  "img": "icons/commodities/gems/pearl-storm.webp",
+  "effects": [],
+  "folder": "KxddzR3lW5nazNsK",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 7,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>很久以前，在一个叫克莱恩Krynn的世界，精灵与人类对邪恶巨龙发动了一场惨烈的战争。在最后世界接近崩溃之际，大法师诸塔Towers of High Sorcery的法师们齐聚一堂，运用其最强大的魔法制作了五颗龙珠Orb of Dragonkind（或称龙族宝珠Dragon Orbs），希望以此击败巨龙。制作完成后，五颗龙珠分给了五座法师塔，手持龙珠法师们使用神器的力量引诱巨龙们前来，然后用强大的魔法对其进行轰杀。此后，人类联盟凭借龙珠的力量开始加速通往胜利的步伐。</p>\n<p>随着历史的变迁，大法师诸塔也走向没落。其持有的五颗龙珠也相继被破坏或遗失在传奇之中。相传仍然有三颗保存完好的龙珠流传在世，虽然它们的魔法随着岁月的变迁而扭曲变换，但其呼唤巨龙的原始功能却依然健全，还能在一定程度上控制巨龙。</p>\n<p>每颗龙珠内包含着一只邪恶巨龙的精华，其存在让龙珠愤恨被人用以施展诱惑魔法。这些个性情绪不断释出，有时会使被奴役者有所察觉，并发现自身正被龙珠控制的事实。</p>\n<p>龙珠的主体是一枚装饰着蚀刻的水晶球。它直径10寸，而在使用时则会增长为20寸直径，并且在内部萦绕着盘旋的迷雾。</p>\n<p>与龙珠同调后，你可以用一个动作深入窥视龙珠深处并说出其命令语。你必须进行一次DC 15的魅力检定。检定成功时，你将成功控制龙珠直至同调中断。检定失败时，你将被龙珠魅惑，并持续至同调中断。</p>\n<p>被龙珠迷惑时，你不能自行中断同调，而龙珠可以随意对你施展暗示术suggestion（豁免DC 18），并敦促你施行邪恶行径以满足其欲望。龙珠里的巨龙精华有着各种需求：歼灭某个特定人物；从龙珠里获得解放；四处折磨世人；为塔克西丝Takhisis（即提亚马特Tiamat在克莱恩的称呼）传诵信仰，或是其他由DM决定的事情。</p>\n<p><strong>随机属性Random Properties。</strong>龙珠具有下列已知的随机属性：</p>\n<ul>\n<li>2项弱效增益属性</li>\n<li>1项弱效减益属性</li>\n<li>1项强效减益属性</li>\n</ul>\n<p><strong>法术Spells。</strong>龙珠拥有7发充能，并且每天黎明时分可以恢复[[/r 1d4+3]]发已消耗的充能。你可以使用一个动作并花费1发或更多充能，然后从龙珠中施展以下法术（豁免DC 18）之一：</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.new-icon.a5wqDP53A5UvGvSK]{疗伤术 Cure Wounds}（5环版本，3充能）</li>\n<li>@UUID[Compendium.dnd5e_classpack.new-icon.uRF0L8no150cYca4]{昼明术 Daylight}（1充能）</li>\n<li>@UUID[Compendium.dnd5e_classpack.new-icon.4gLdaCM7rxoNhj8d]{防死结界 Death Ward}（2充能）</li>\n<li>@UUID[Compendium.dnd5e_classpack.new-icon.OA4mCsVxg6nUrLjV]{探知 Scrying}（3充能）。</li>\n<li>你还可以从龙珠中随意施展@UUID[Compendium.dnd5e_classpack.new-icon.cGO3m3Xu4mtPegr4]{侦测魔法 Detect Magic}且不需花费任何充能。</li>\n</ul>\n<p><strong>呼唤巨龙Call Dragons。</strong>控制龙珠时，你可以使用一个动作让神器向所有方向释放40里远的心灵呼唤。在影响范围内的邪恶巨龙将感受到龙珠的呼唤，并被强制以最快的方式来到龙珠身边。只有龙神提亚马特可以无视龙珠的呼唤。由于被迫违背自己的意志，龙珠唤来的巨龙可能对你抱有敌意。使用该属性后，你不能在接下来的1小时内再次使用。</p>\n<p><strong>破坏龙珠Destroying an Orb。</strong>龙珠表面上十分脆弱，却可以抵挡大多数伤害，其中就包括巨龙的吐息武器和各种攻击。尽管如此，法术@UUID[Compendium.dnd5e_classpack.new-icon.j4LqpyfXhYoUpUCz]{解离术 Disintegrate}以及+3魔法武器的攻击伤害都可以直接摧毁龙珠。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG. pg 225",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 500000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "artifact",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "7",
+      "recovery": [
+        {
+          "period": "day",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "armor": {
+      "value": 0,
+      "dex": 0,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "proficient": null,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "18"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-orb-of-dragonkind",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "12.343",
+    "createdTime": 1713010439307,
+    "modifiedTime": 1757877747351,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!47E04DE11D3FC4FD"
+}

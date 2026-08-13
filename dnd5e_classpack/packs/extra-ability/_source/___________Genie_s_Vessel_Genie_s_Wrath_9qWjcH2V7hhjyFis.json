@@ -1,0 +1,85 @@
+{
+  "_id": "9qWjcH2V7hhjyFis",
+  "name": "巨灵器皿:巨灵之怒  Genie's Vessel:Genie's Wrath",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_DrunkenHaze1.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>在你的每个回合仅限一次，你可以在你攻击骰命中时对目标造成等同于你熟练加值的额外伤害。伤害类型取决于你的宗主类型：钝击（土巨灵），雷鸣（@UUID[Compendium.dnd5e_classpack.monsterspack.5P1VGAZQwOilwZQf]{气巨灵}），火焰（@UUID[Compendium.dnd5e_classpack.monsterspack.LTomFUTBrkRi0Pj5]{火巨灵}），冷冻（水巨灵）。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 1,
+      "recovery": [
+        {
+          "period": "turn",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "巨灵宗主等级 1",
+    "activities": {},
+    "identifier": "-genies-vesselgenies-wrath",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 13100000,
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757407882425,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9qWjcH2V7hhjyFis"
+}

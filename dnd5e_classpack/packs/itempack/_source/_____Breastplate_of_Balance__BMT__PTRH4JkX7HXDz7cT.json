@@ -1,0 +1,212 @@
+{
+  "_id": "PTRH4JkX7HXDz7cT",
+  "name": "平衡胸甲 Breastplate of Balance (BMT)",
+  "type": "equipment",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "34",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>护甲（胸甲），珍稀（需同调）</em><br />这件抛光的铜胸甲看起来像是由互锁的齿轮交错而成的，其胸前饰有天平的图案。这套护甲有4发充能。着装护甲期间，你可以通过以下方式消耗充能：<br /><em><strong>均衡Equalize。</strong></em>当你或距你60尺内的可见生物即将以优势或劣势进行[[/r d20]]掷骰时，你可以用一个反应消耗1发充能使这次掷骰免受优势或劣势的影响。<br /><em><strong>抹除不均Expunge Imbalance。</strong></em>以一个附赠动作，你可以消耗2发充能用护甲施放<em>@UUID[Compendium.dnd5e_classpack.new-icon.Item.I1C2EQxwynPd7dOC]{次级复原术 Lesser Restoration}</em>。<br />护甲在每个黎明时恢复[[/r 1d4]]发已消耗的充能。</p><p>This burnished copper breastplate looks as if it were made of interlocking gears. Merchant's scales are emblazoned across the chest.</p><p>The armor has 4 charges. You can use the charges in the following ways while wearing the armor:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Equalize\"><span class=\"bold rd__list-item-name\">Equalize.</span> When you or a creature you can see within 60 feet of yourself is about to roll a [[/r d20]] with advantage or disadvantage, you can expend 1 charge and take a reaction to prevent the roll from being affected by advantage or disadvantage.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Expunge Imbalance\"><span class=\"bold rd__list-item-name\">Expunge Imbalance.</span> As a bonus action, you can expend 2 charges to cast the @spell[Lesser Restoration] spell from the armor.</p></li></ul><p>The armor regains [[/r 1d4]] expended charges daily at dawn.</p><p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 20,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "rare",
+    "type": {
+      "value": "medium",
+      "baseItem": "breastplate"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "4",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d4"
+        }
+      ]
+    },
+    "armor": {
+      "value": 14,
+      "dex": 2,
+      "magicalBonus": 0
+    },
+    "strength": null,
+    "activities": {
+      "0eyuql71z4BX5qSV": {
+        "_id": "0eyuql71z4BX5qSV",
+        "type": "cast",
+        "img": "systems/dnd5e/icons/svg/activity/cast.svg",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "spell": {
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "uuid": "Compendium.plutonium-faux-id--7b22746167223a227370656c6c222c2274657874223a226c657373657220726573746f726174696f6e227d.custom.Item.0000000000000000"
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "breastplate-of-balance-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false
+  },
+  "img": "icons/equipment/chest/breastplate-collared-steel-grey.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "breastplate%20of%20balance_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "4TOAfkeg3rPfaVef",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738836954,
+    "modifiedTime": 1751738836954,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "sort": 100000,
+  "_key": "!items!PTRH4JkX7HXDz7cT"
+}

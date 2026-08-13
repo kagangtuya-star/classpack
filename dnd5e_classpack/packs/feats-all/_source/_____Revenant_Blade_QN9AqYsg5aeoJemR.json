@@ -1,0 +1,182 @@
+{
+  "name": "英魂之刃 Revenant Blade",
+  "type": "feat",
+  "_id": "QN9AqYsg5aeoJemR",
+  "img": "modules/plutonium/media/icon/feat/erlw-revenant-blade.webp",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>先决条件: 精灵</em><br />你是一个双刃弯刀大师的后代，而这种能力的一部分已经传给了你。你获得下列增益：<br />· 你的力量或敏捷增加1，上限为20。<br />· 当你双手持握双刃弯刀时，你的AC得到+1加值。<br />· 在使用双刃弯刀时视同具有灵巧属性。</p>",
+      "chat": ""
+    },
+    "identifier": "-",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "ERLW"
+    },
+    "advancement": [
+      {
+        "type": "AbilityScoreImprovement",
+        "_id": "fd996cyRqMVaqBEm",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "",
+        "hint": "你的力量或敏捷增加1，上限为20"
+      }
+    ],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "精灵",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    }
+  },
+  "effects": [
+    {
+      "name": "英魂之刃 Revenant Blade",
+      "img": "modules/plutonium/media/icon/feat/erlw-revenant-blade.webp",
+      "origin": "Compendium.dnd5e_classpack.feats-all.Item.QN9AqYsg5aeoJemR",
+      "_id": "fuwpfOU8aH9RdEAS",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p><span style=\"font-family:'Roboto Condensed', sans-serif\">· 当你双手持握双刃弯刀时，你的AC得到+1加值。<br style=\"box-sizing:border-box;user-select:text;scrollbar-width:thin;scrollbar-color:var(--color-scrollbar) var(--color-scrollbar-track);color:rgb(25, 24, 19);font-family:'Roboto Condensed', sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(248, 244, 241);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\" />· 在使用双刃弯刀时视同具有灵巧属性。</span></p>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756717337534,
+        "modifiedTime": 1756717425054,
+        "lastModifiedBy": "WlyFYC2sYFseAvyj"
+      },
+      "_key": "!items.effects!QN9AqYsg5aeoJemR.fuwpfOU8aH9RdEAS"
+    }
+  ],
+  "folder": "J3ShE9vempANVrJE",
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "WlyFYC2sYFseAvyj": 3
+  },
+  "flags": {
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1756716583326,
+    "modifiedTime": 1757350333724,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+  },
+  "_key": "!items!QN9AqYsg5aeoJemR"
+}

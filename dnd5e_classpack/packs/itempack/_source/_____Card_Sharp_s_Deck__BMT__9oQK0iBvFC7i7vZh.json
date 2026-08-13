@@ -1,0 +1,206 @@
+{
+  "_id": "9oQK0iBvFC7i7vZh",
+  "name": "老千牌组 Card Sharp's Deck (BMT)",
+  "type": "equipment",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "40",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>奇物，非普通</em> <br />这副牌的牌组有着闪闪发光的边缘。持握此牌组期间，你可以使用其以下能力： <br /><strong>致命发牌Deadly Deal。</strong>以一个动作，你可以通过从中投掷一枚灵体卡牌用于发动远程法术攻击，攻击检定中使用敏捷调整值。该卡牌具有120尺的射程，在命中时造成[[/damage 1d8 type=force]]伤害。 <br /><strong>卡牌喷射Spray of Cards。</strong>以一个动作，你洗切牌组并用其施展3环版本的法术 <em>@UUID[Compendium.dnd5e_classpack.new-icon.Item.QeeoKnO9JbeAkvQz]{卡牌喷射 Spray of Cards}</em>（法术豁免DC 15；详见第七章的法术部分）。一旦此牌组被用于施展这一法术，直到次日黎明后才能再次用于施展该法术。</p><p>The cards of this deck shimmer around the edges. While holding this deck, you can use the following properties:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Deadly Deal\"><span class=\"bold rd__list-item-name\">Deadly Deal.</span> As an action, you can use this deck to make a ranged spell attack by throwing a spectral card and using Dexterity for the attack roll. The card has a range of 120 feet and deals [[/damage 1d8 type=force]] damage on a hit.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Spray of Cards\"><span class=\"bold rd__list-item-name\">Spray of Cards.</span> As an action, you can shuffle the deck and cast the @spell[Spray of Cards|BMT] spell at 3rd level from the deck (spell save DC <span class=\"rd__dc\">15</span>). Once the deck has cast the spell, it can't cast the spell again until the next dawn.</p></li></ul></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": false,
+    "identified": true,
+    "equipped": true,
+    "rarity": "uncommon",
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "attunement": "",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": null,
+    "activities": {
+      "aML7zTNMwkHl03GB": {
+        "_id": "aML7zTNMwkHl03GB",
+        "type": "cast",
+        "img": "systems/dnd5e/icons/svg/activity/cast.svg",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "spell": {
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "uuid": "Compendium.plutonium-faux-id--7b22746167223a227370656c6c222c2274657874223a227370726179206f662063617264737c626d74227d.custom.Item.0000000000000000"
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "card-sharps-deck-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false
+  },
+  "img": "systems/dnd5e/icons/svg/items/equipment.svg",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "card%20sharp's%20deck_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "hwopJR0mBnCHlBOU",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738869001,
+    "modifiedTime": 1751738869001,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L"
+  },
+  "sort": 100000,
+  "_key": "!items!9oQK0iBvFC7i7vZh"
+}

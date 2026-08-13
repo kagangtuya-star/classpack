@@ -1,0 +1,251 @@
+{
+  "_id": "a05XJIH3FTA4AxZw",
+  "name": "黑颅骨护符 Amulet of the Black Skull",
+  "type": "equipment",
+  "img": "icons/equipment/neck/necklace-simple-bone-skull.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 6,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>这枚护符由黑曜石雕刻而成，形如一个尖叫着的类人生物颅骨，红宝石为眼，绿宝石为牙。它挂在一条铁链项链上。</p>\n<p>这个护符具有6次充能，并在黎明时重新获得[[/r 1d6]]次充能。佩戴护符时，你可以以一个动作以及一次充能将你自己以及你所穿戴以及佩戴的东西传送到当前位置周围一百尺的一个地方。你选择的目标并不需要在你的视线内，但你必须熟悉那个地方（换句话说你曾看见过或是经过到过的地方），且必须与你在同一个位面。这一效果并不受九神古墓内的魔法限制；因此，这一护符可以被用于进出古墓。</p>\n<p>如果你并非不死者，每次使用护符传送你必须进行一次DC16的体质豁免检定。如果失败，黑色颅骨会因你在传送过程中的变形而咯咯嘲笑。这一变形会在你到达目的地时即刻生效。投[[/r d100]]并根据结果查询黑颅骨变形表。</p>\n<table>\n<thead>\n<tr>\n<th colspan=\"3\">黑颅骨变形表</th>\n</tr>\n<tr>\n<th><strong> [[/r D100]] </strong></th>\n<th><strong> 变形 </strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1-20</td>\n<td>阿瑟瑞拉克的徽记熔进了你的血肉，这是一个只能够通过@UUID[Compendium.dnd5e_classpack.new-icon.ewDH2w8w2yLSM021]法术或是类似魔法才能够移除的诅咒。诅咒结束前，你的生命值无法通过魔法恢复</td>\n</tr>\n<tr>\n<td>21-35</td>\n<td>你的体型变得更大了，如同受到了@UUID[Compendium.dnd5e_classpack.new-icon.1bUnNgI45qffE1P9]的影响，但这一效益持续一小时</td>\n</tr>\n<tr>\n<td>36-50</td>\n<td>你变得更小了，如同受到了@UUID[Compendium.dnd5e_classpack.new-icon.1bUnNgI45qffE1P9]{变巨/缩小术 Enlarge/Reduce}的影响，但这一效益持续一小时</td>\n</tr>\n<tr>\n<td>51-70</td>\n<td>在到达目的地时，你只佩戴了黑颅骨护符，其他你所穿戴的携带的物品都被转移到了你100尺内一个未被占据的地方</td>\n</tr>\n<tr>\n<td>71-95</td>\n<td>你被麻痹了，除非以@UUID[Compendium.dnd5e_classpack.new-icon.I1C2EQxwynPd7dOC]或是类似法术解除效果，否则麻痹持续1分钟。</td>\n</tr>\n<tr>\n<td>96-100</td>\n<td>你被石化了，这一效益只能够通过@UUID[Compendium.dnd5e_classpack.new-icon.7dqplcsKNYQgRh2S]或类似法术解除。</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "ToA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "6",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "proficient": null,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "必须熟悉那个地方。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "100",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "d100",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "必须熟悉那个地方。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "100",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "16"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-amulet-of-the-black-skull",
+    "container": null,
+    "attuned": false,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!a05XJIH3FTA4AxZw"
+}

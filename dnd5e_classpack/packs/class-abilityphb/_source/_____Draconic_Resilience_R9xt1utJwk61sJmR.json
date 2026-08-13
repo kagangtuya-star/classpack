@@ -1,0 +1,169 @@
+{
+  "_id": "R9xt1utJwk61sJmR",
+  "name": "龙族体魄 Draconic Resilience",
+  "type": "feat",
+  "img": "icons/creatures/claws/claw-scaled-red.webp",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>魔法在你的体内流动，并使你显露出你@UUID[Compendium.dnd5e_classpack.class-abilityphb.02apnvdAC94ksZIV]{巨龙先祖}的部分身体特质。第1级时，你的生命值上限提升1点，此后每提升一个术士等级，都将再次提升1点。</p>\n<p>此外，你部分皮肤覆盖着龙鳞样式的柔鳞。未着装护甲时，你的AC等于13＋你的敏捷调整值。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 102",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "龙族血脉等级 1",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "龙族体魄",
+      "img": "icons/creatures/claws/claw-scaled-red.webp",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.R9xt1utJwk61sJmR",
+      "_id": "oJx5N4CNZ1Ox0AXW",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.hp.bonuses.overall",
+          "mode": 2,
+          "value": "+@classes.sorcerer.levels",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.ac.calc",
+          "mode": 2,
+          "value": "draconic",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757135501174,
+        "modifiedTime": 1757135950134,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt"
+      },
+      "_key": "!items.effects!R9xt1utJwk61sJmR.oJx5N4CNZ1Ox0AXW"
+    }
+  ],
+  "folder": null,
+  "sort": 21100000,
+  "flags": {
+    "_sheetTab": "description",
+    "entityorder": {
+      "order": 70
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757135985649,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!R9xt1utJwk61sJmR"
+}
