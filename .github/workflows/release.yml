@@ -35,6 +35,28 @@ jobs:
       - name: Install Foundry VTT CLI
         run: npm install -g @foundryvtt/foundryvtt-cli
 
+      # Update module.json in the working tree so the release archive and the
+      # standalone manifest carry the correct version and point at this repo's
+      # release assets. The committed module.json in the repository is left
+      # untouched; it is regenerated here for each release.
+      - name: Generate module.json manifest
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          REPO: ${{ github.repository }}
+        run: |
+          node - <<'EOF'
+          const fs = require("fs");
+          const file = "dnd5e_classpack/module.json";
+          const data = JSON.parse(fs.readFileSync(file, "utf8"));
+          const tag = (process.env.RELEASE_TAG || "").replace(/^v/i, "");
+          if (tag) data.version = tag;
+          const base = `https://github.com/${process.env.REPO}/releases/latest/download`;
+          data.manifest = `${base}/module.json`;
+          data.download = `${base}/dnd5e_classpack.zip`;
+          fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
+          console.log(`module.json: version=${data.version} manifest=${data.manifest}`);
+          EOF
+
       # Compile every pack from the JSON source. `--inputDirectory` points at the
       # pack's JSON, which may be organized into Folder subdirectories; the
       # `--recursive` flag descends into those. `--outputDirectory` places the
@@ -73,9 +95,10 @@ jobs:
           path: dnd5e_classpack.zip
           if-no-files-found: error
 
-      # Attach the archive to the release (or to the tag supplied via a manual
-      # workflow_dispatch run). Skipped for manual runs that omit the tag.
-      - name: Attach archive to release
+      # Attach the archive and the manifest to the release (or to the tag
+      # supplied via a manual workflow_dispatch run). Skipped for manual runs
+      # that omit the tag.
+      - name: Attach release assets
         if: ${{ github.event_name == 'release' || inputs.tag != '' }}
         uses: ncipollo/release-action@v1
         with:
@@ -83,5 +106,5 @@ jobs:
           tag: ${{ github.event.release.tag_name || inputs.tag }}
           omitName: true
           omitBody: true
-          artifacts: dnd5e_classpack.zip
+          artifacts: dnd5e_classpack.zip,dnd5e_classpack/module.json
           token: ${{ secrets.GITHUB_TOKEN }}
