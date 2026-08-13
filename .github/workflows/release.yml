@@ -29,9 +29,10 @@ jobs:
       - name: Install Foundry VTT CLI
         run: npm install -g @foundryvtt/foundryvtt-cli
 
-      # Compile every pack: `--inputDirectory` points at the JSON source, and
-      # `--outputDirectory` places the compiled LevelDB files in the same pack
-      # directory (packs/<name>/), next to the JSON.
+      # Compile every pack from the JSON source. `--inputDirectory` points at the
+      # pack's JSON, which may be organized into Folder subdirectories; the
+      # `--recursive` flag descends into those. `--outputDirectory` places the
+      # compiled LevelDB files in the same pack directory (packs/<name>/).
       - name: Pack compendium packs to LevelDB
         working-directory: dnd5e_classpack
         run: |
@@ -41,7 +42,8 @@ jobs:
             echo "Packing ${name} ..."
             fvtt package pack -n "$name" \
               --inputDirectory "${pack%/}" \
-              --outputDirectory "packs"
+              --outputDirectory "packs" \
+              --recursive
           done
 
       # Remove the JSON source from the release build so only the compiled packs
