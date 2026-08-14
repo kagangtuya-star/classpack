@@ -1,0 +1,308 @@
+{
+  "_id": "MZ1jwLEJukFjSv1a",
+  "name": "困惑术 Confusion",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "otherCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "otherSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/httpsvignettewikianocookienetwowimages552Spellmiscemotionafraidpngrevisionlatestcb20090317211041pathprefixru.png",
+  "effects": [
+    {
+      "name": "困惑术 Confusion",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.MZ1jwLEJukFjSv1a",
+      "duration": {
+        "rounds": 10,
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "KqoO6YMACsipILrX",
+      "changes": [],
+      "description": "",
+      "transfer": false,
+      "statuses": [],
+      "flags": {
+        "dae": {
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system"
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/httpsvignettewikianocookienetwowimages552Spellmiscemotionafraidpngrevisionlatestcb20090317211041pathprefixru.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!MZ1jwLEJukFjSv1a.KqoO6YMACsipILrX"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 此法术冲击并扭曲生物的意志，并使其产生错觉并引发不受控的行动。在施法距离内指定一点，以该点为中心的10尺半径球状区域内的生物必须进行一次感知豁免并成功通过，否则将受到该法术的影响。\n<br />受术目标不能执行反应并且必须在其回合开始时掷一次d10以决定该生物本回合的行为。\n<br />d10行为\n<br />1 该生物使用其所有移动力向一个随机方向移动。你可以掷一次d8并设定每个骰值代表的方向以决定其最终移动方向。该生物本回合不执行任何动作。\n<br />2-6该生物本回合不移动也不执行任何动作。\n<br />7-8该生物使用其动作对可触及范围内一个随机目标发动一次近战攻击。如果没有生物在其触及范围内，则该生物本回合什么都不做。\n<br />9-10该生物本回合内可以正常的移动和行动。受术生物在其每回合结束时可以在进行一次感知豁免。如果该豁免成功，则该目标身上该法术的效应终止\n<br /><strong>升环施法效应。</strong>使用5环或更高法术位施展该法术时，你使用的法术位每比4环高一环，球状区域半径就增加5尺。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 224",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "sphere",
+        "size": "5*(@item.level-2)",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 4,
+    "school": "enc",
+    "materials": {
+      "value": "三颗坚果壳",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "KqoO6YMACsipILrX",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "turnChoice": "end"
+        },
+        "otherActivityId": "",
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "KqoO6YMACsipILrX"
+        ]
+      }
+    },
+    "identifier": "confusion"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "ZmO2ZE1E5wu6WU0S",
+  "sort": 15400000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711698178594,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!MZ1jwLEJukFjSv1a"
+}

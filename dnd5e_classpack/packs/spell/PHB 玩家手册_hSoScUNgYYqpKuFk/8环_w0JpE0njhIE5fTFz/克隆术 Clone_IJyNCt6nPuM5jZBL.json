@@ -1,0 +1,212 @@
+{
+  "_id": "IJyNCt6nPuM5jZBL",
+  "name": "克隆术 Clone",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_mage_massinvisibility.png",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 此法术用以培养一个活体生物的无意识复制体作为其死亡时的保险措施。该克隆体在一个密封容器中成长，并在120日后成熟；你还可以为同一个生物制作较年轻版本的肉体。在未被使用前，该躯体会一直保持无意识的静止状态。\n<br />克隆体成长成熟后，如果本体生物死亡，则其灵魂转移到克隆体中，前提是该灵魂必须保持自由且自愿复活。克隆体的肉体特质与本体相同，并具有相同的个性、记忆和能力，但并不拥有本体随身的装备。由于灵魂已经转移到别处，该生物原本的遗体（如果依然存在）失去活力，且不能被复活\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 222",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "hour",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 8,
+    "school": "nec",
+    "materials": {
+      "value": "一枚至少价值 1000gp 的钻石以及被克隆生物 1 立方寸的肉，作为该法术的耗材。外加一副至少价值 2000gp 的带密封功能的大容器，其尺寸必须足以存放一个要被克隆的生物，例如一个巨大的瓮或灵柩，或是立在地上充满浆状物质的卵囊，又或者充满盐水的水晶棺",
+      "consumed": true,
+      "cost": null,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "clone"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "w0JpE0njhIE5fTFz",
+  "sort": 15100000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!IJyNCt6nPuM5jZBL"
+}

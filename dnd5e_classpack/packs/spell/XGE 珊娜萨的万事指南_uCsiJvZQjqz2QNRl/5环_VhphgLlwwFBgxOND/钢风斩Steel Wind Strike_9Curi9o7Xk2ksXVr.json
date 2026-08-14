@@ -1,0 +1,248 @@
+{
+  "name": "钢风斩Steel Wind Strike",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "icons/weapons/polearms/spear-flared-silver-pink.webp",
+  "_id": "9Curi9o7Xk2ksXVr",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>你舞动用于施法的武器，随后忽然消失并发起袭击，恰如同一阵钢铁的疾风。选择施法距离内最多5个可见生物。进行一次近战法术攻击检定对抗每个生物。若击中，目标承受6d10力场伤害。<br />在这之后，你可以传送到一个你击中或未击中的生物周围5尺内，你可以看见的未被占据的空间。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "5",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 5,
+    "school": "con",
+    "materials": {
+      "value": "一把价值至少1SP的近战武器",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "somatic",
+      "material",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 6,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": ""
+      }
+    },
+    "identifier": "steel-wind-strike"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "VhphgLlwwFBgxOND",
+  "sort": 8400000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!9Curi9o7Xk2ksXVr"
+}

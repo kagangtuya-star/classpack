@@ -1,0 +1,288 @@
+{
+  "_id": "KSMVJWpOg82yVTWG",
+  "name": "法师护甲 Mage Armor",
+  "type": "spell",
+  "flags": {
+    "_sheetTab": {},
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/spell_fire_twilightfireward.png",
+  "effects": [
+    {
+      "origin": "Compendium.dnd5e_classpack.spell.Item.KSMVJWpOg82yVTWG",
+      "duration": {
+        "seconds": 28800,
+        "startTime": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "zN6iaLGxE8WdmN8C",
+      "changes": [
+        {
+          "key": "system.attributes.ac.calc",
+          "mode": 5,
+          "value": "mage",
+          "priority": 20
+        }
+      ],
+      "tint": "#ffffff",
+      "transfer": false,
+      "flags": {
+        "dfreds-convenient-effects": {
+          "description": ""
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "multi",
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "statusId": "1243423"
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "name": "法师护甲 Mage Armor",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Actor.GabJyoAElcOKQvnt.Item.CUaTRGlIbRyC5Hgb.ActiveEffect.3MzNlP0djs40IBUx",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/spell_fire_twilightfireward.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!KSMVJWpOg82yVTWG.zN6iaLGxE8WdmN8C"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你触碰一个未着装护甲的自愿生物，使其受一个保护性魔法力场环绕直至法术终止。目标的基础AC变为13＋它的敏捷调整值。目标着装护甲或你以一个动作解散该法术后法术随之终止。</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 256",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "8",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "units": "touch"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 1,
+    "school": "abj",
+    "materials": {
+      "value": "一块鞣制过的皮革",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "zN6iaLGxE8WdmN8C"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "mage-armor"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "UpyidlPmP73pCiWN",
+  "sort": 4300000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711690166053,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!KSMVJWpOg82yVTWG"
+}

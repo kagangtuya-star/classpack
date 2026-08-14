@@ -1,0 +1,431 @@
+{
+  "name": "艾伐黑触手 Black Tentacles",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "onUseMacroName": "[preActiveEffects]ItemMacro"
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "fulldam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "艾伐黑触手 Black Tentacles",
+        "img": "modules/dnd5e_classpack/Nicons/spell_priest_voidtendrils.jpg",
+        "type": "script",
+        "scope": "global",
+        "command": "if (args[0].macroPass === \"preActiveEffects\" || args[0].tag === \"OnUse\") {\n  return await game.modules.get(\"ActiveAuras\").api.AAHelpers.applyTemplate(args);\n}",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.3.9",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/spell_priest_voidtendrils.jpg",
+  "effects": [
+    {
+      "name": "艾伐黑触手 Black Tentacles",
+      "img": "modules/dnd5e_classpack/Nicons/spell_priest_voidtendrils.jpg",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.JMAmXdzvxTU27pP2",
+      "transfer": false,
+      "_id": "46qS6lWyqqCkSFj8",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.execute",
+          "mode": 0,
+          "value": "applyTentacleEffect",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": true,
+          "aura": "All",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": true,
+          "hostile": true,
+          "onlyOnce": true,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!v8x6SQFAOTzUIRnU.46qS6lWyqqCkSFj8"
+    },
+    {
+      "name": "艾伐黑触手—束缚",
+      "img": "modules/dnd5e_classpack/Nicons/spell_priest_voidtendrils.jpg",
+      "origin": "Item.DaFw5hy4Jm917XYy",
+      "transfer": false,
+      "_id": "BGrMxlhDntW2tPxW",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.OverTime",
+          "mode": 0,
+          "value": "turn=start, label=艾伐黑触手—束缚, rollType=check, saveAbility=str, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=3d6, damageType=bludgeoning, damageBeforeSave=true, saveDamage=fulldamage, saveCount=1-, actionSave=dialog, rollMode=publicroll, allowIncapacitated=true",
+          "priority": 20
+        },
+        {
+          "key": "macro.execute",
+          "mode": 0,
+          "value": "DeleteAuraEffect",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "restrained"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [],
+          "macroRepeat": "none"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": 1786656160533,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
+      },
+      "_key": "!items.effects!v8x6SQFAOTzUIRnU.BGrMxlhDntW2tPxW"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"><p>你指定一处施法距离内你能看见的20尺方形区域，使其内布满蠕动的乌黑触须，进而使该区域成为困难地形。 <br />任何生物在一个回合内第一次进入该区域，或者在区域内开始其回合时，必须进行一次敏捷豁免。豁免失败者将受到3d6点钝击伤害，并且被触须束缚直至法术终止。生物在区域内开始其回合时，如果已受触须束缚则受到3d6点钝击伤害。 <br />受触须束缚的生物可以使用动作进行一次对抗法术豁免DC的力量检定或敏捷检定（自选其一），检定成功则挣脱束缚。 <br /></p><p>使用本法术时请从合集包的宏文件夹中导入艾伐黑触手中的所有宏</p></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB",
+      "page": "",
+      "license": ""
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "square",
+        "size": "20",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 4,
+    "school": "con",
+    "materials": {
+      "value": "巨章鱼或巨鱿鱼的一条触须",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "46qS6lWyqqCkSFj8"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "black-tentacles"
+  },
+  "folder": "ZmO2ZE1E5wu6WU0S",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1753358091998,
+    "modifiedTime": 1757256808586,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "exportSource": null
+  },
+  "_id": "v8x6SQFAOTzUIRnU",
+  "sort": 150000,
+  "ownership": {
+    "default": 0,
+    "WqWGW8MuBm7BNHxt": 3
+  },
+  "_key": "!items!v8x6SQFAOTzUIRnU"
+}

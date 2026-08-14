@@ -1,0 +1,330 @@
+{
+  "_id": "Nyi51I1ZPVV1gNpo",
+  "name": "精神监狱Mental Prison",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "fulldam",
+      "bonusSaveDamage": "fulldam",
+      "otherSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": true,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "otherCondition": "",
+      "effectCondition": "",
+      "reactionCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_imprison.png",
+  "effects": [
+    {
+      "name": "精神监狱Mental Prison",
+      "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_imprison.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.Nyi51I1ZPVV1gNpo",
+      "transfer": false,
+      "_id": "vP39Ils1v92w5Ys6",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "restrained"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            ""
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756838420235,
+        "modifiedTime": 1756838458253,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!Nyi51I1ZPVV1gNpo.vP39Ils1v92w5Ys6"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>你试图将目标生物束缚在一个只有他自己能感知的幻觉牢房中。在距离内你可见的一个生物必须进行智力豁免检定。如果目标免疫魅惑，它在这次豁免中自动成功。若豁免成功，目标受到5d10精神伤害，同时法术结束。若豁免失败，在造成5d10精神伤害的同时你立即创造出环绕目标所在空间的某种危险区域。你也许会让目标感觉到自己被烈火、被浮动的刀锋、被可怕的獠牙所包围。<br />无论你采用什么形式的幻象，目标都不能越过它看到或听到任何事物，并且在法术持续时间内被束缚。如果目标移动出幻象，穿过它进行一次近战攻击检定，或尝试用身体的任何部分穿过它，目标受到10d10精神伤害，然后法术结束。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 6,
+    "school": "ill",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "vP39Ils1v92w5Ys6"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "full",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 5,
+              "denomination": "10",
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": ""
+              }
+            }
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "mental-prison"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "O81p78gJCkzXjmec",
+  "sort": 9700000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711697241362,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Nyi51I1ZPVV1gNpo"
+}

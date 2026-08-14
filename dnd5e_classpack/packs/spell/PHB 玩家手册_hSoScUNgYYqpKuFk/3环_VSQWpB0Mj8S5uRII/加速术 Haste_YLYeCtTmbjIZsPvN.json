@@ -1,0 +1,305 @@
+{
+  "_id": "YLYeCtTmbjIZsPvN",
+  "name": "加速术 Haste",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Druid_Dash.png",
+  "effects": [
+    {
+      "origin": "Compendium.dnd5e_classpack.spell.Item.YLYeCtTmbjIZsPvN",
+      "duration": {
+        "seconds": 60,
+        "startTime": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "HXYm8TL3PBhtueJq",
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "value": "+2",
+          "mode": 2,
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.advantage.save.dex",
+          "value": "1",
+          "mode": 2,
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.movement.all",
+          "value": "*2",
+          "mode": 0,
+          "priority": 20
+        }
+      ],
+      "tint": "#ffffff",
+      "transfer": false,
+      "flags": {
+        "dfreds-convenient-effects": {
+          "description": ""
+        },
+        "dae": {
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "stackable": "multi",
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "statusId": "21344123"
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "name": "加速术 Haste",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1786693328505,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "compendiumSource": "Actor.GabJyoAElcOKQvnt.Item.CxCCaJ1II1vgEo79.ActiveEffect.uskiI7TpExnyA67H",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Druid_Dash.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!YLYeCtTmbjIZsPvN.HXYm8TL3PBhtueJq"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 指定施法距离内一个你能看见的自愿生物。直至法术终止前，你使目标速度翻倍；其AC获得 +2加值；其进行敏捷豁免时具有优势；其每个回合都可作出一个额外的动作，但该动作只能发动攻击（只限一次武器攻击），或者疾行、撤离、躲藏和使用物件。\n<br />法术终止时，目标将泛起一阵倦意使其不能移动也无法执行动作，并持续至其下一回合结束。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 250",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 3,
+    "school": "trs",
+    "materials": {
+      "value": "一片甘草根切片",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "HXYm8TL3PBhtueJq"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "haste"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "VSQWpB0Mj8S5uRII",
+  "sort": 12300000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711696235976,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YLYeCtTmbjIZsPvN"
+}

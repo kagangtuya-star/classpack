@@ -1,0 +1,307 @@
+{
+  "_id": "OZMc9g7XaWuRc36J",
+  "name": "行动自如 Freedom of Movement",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": true,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Rogue_FleetFooted.png",
+  "effects": [
+    {
+      "name": "行动自如 Freedom of Movement",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Rogue_FleetFooted.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.OZMc9g7XaWuRc36J",
+      "transfer": false,
+      "_id": "1h58pfop9idQ0QwX",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.traits.ci.value",
+          "mode": 0,
+          "value": "restrained",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.ci.value",
+          "mode": 2,
+          "value": "paralyzed",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 3600,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1753496819566,
+        "modifiedTime": 1753496890497,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!OZMc9g7XaWuRc36J.1h58pfop9idQ0QwX"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你触碰一个自愿生物，并使目标在法术持续时间内移动时不受困难地形限制，并使任何降低目标速度，或者使目标陷入麻痹或束缚的法术或魔法效应对其无法生效。\n<br />该目标还可以花费5尺移动力直接从非魔法的束缚中挣脱（诸如镣铐或生物的擒抱等）。此外，目标在水下进行移动和攻击时不再受减益规则的限制。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 244",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 4,
+    "school": "abj",
+    "materials": {
+      "value": "一条绑在手臂或其他肢体上的皮带",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "1h58pfop9idQ0QwX"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "freedom-of-movement"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "ZmO2ZE1E5wu6WU0S",
+  "sort": 30700000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OZMc9g7XaWuRc36J"
+}

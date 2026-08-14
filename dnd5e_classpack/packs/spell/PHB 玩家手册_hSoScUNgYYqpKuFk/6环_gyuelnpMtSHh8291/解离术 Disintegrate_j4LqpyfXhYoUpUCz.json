@@ -1,0 +1,245 @@
+{
+  "_id": "j4LqpyfXhYoUpUCz",
+  "name": "解离术 Disintegrate",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "halfdam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_MoonGlow.png",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 一束纤细的绿射线从你的指尖射向施法距离内一个你能看见的目标。该目标可以是一个生物或一个物件，或者是一个魔法力场（比如由力场墙wall of force 创造的墙壁）。目标生物必须进行一次敏捷豁免，豁免失败则受10d6+40点力场伤害，如果目标生命值因此降至0，则目标被解离。\n<br />除魔法物品外，被解离的生物连同其穿着携带的所有随身物品一起变成一堆灰尘。此后该生物只能通过完全复生术trueresurrection 和祈愿术wish 复活。\n<br />此法术会直接解离大型或更小的非魔法物件或魔法力场。如果目标是巨型或更大的物件或魔法力场，则此法术会解离其10尺立方大小的部分。魔法物品不受此法术影响。\n<br /><strong>升环施法效应。</strong>使用7环或更高法术位施展该法术时，你使用的法术位每比6环高一环，伤害就提高3d6。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 233",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 6,
+    "school": "trs",
+    "materials": {
+      "value": "一块磁石和一撮灰尘",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 10,
+              "denomination": 6,
+              "bonus": "40",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 3,
+                "formula": ""
+              }
+            }
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "disintegrate"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "gyuelnpMtSHh8291",
+  "sort": 13300000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!j4LqpyfXhYoUpUCz"
+}

@@ -1,0 +1,320 @@
+{
+  "_id": "T39k39dbE2poIFc5",
+  "name": "死云术 Cloudkill",
+  "type": "spell",
+  "flags": {
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": "",
+      "onUseMacroName": "[preActiveEffects]ItemMacro"
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dae": {
+      "macro": {
+        "name": "死云术 Cloudkill",
+        "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_sealarmorbreachgreen.png",
+        "type": "script",
+        "scope": "global",
+        "command": "if (args[0].macroPass === \"preActiveEffects\" || args[0].tag === \"OnUse\") {\n  return await game.modules.get(\"ActiveAuras\").api.AAHelpers.applyTemplate(args);\n}",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.3.9",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_sealarmorbreachgreen.png",
+  "effects": [
+    {
+      "name": "死云术 Cloudkill",
+      "img": "modules/dnd5e_classpack/Nicons/ability_deathwing_sealarmorbreachgreen.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.T39k39dbE2poIFc5",
+      "transfer": false,
+      "_id": "qXsoz5KOVCGvztLr",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.OverTime",
+          "mode": 2,
+          "value": "turn=start, label=死云术 Cloudkill, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, damageRoll=[@flags.dnd5e.spellLevel]d8, damageType=poison, saveDamage=halfdamage, allowIncapacitated=true",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 600,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [],
+          "macroRepeat": "none"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": true,
+          "aura": "All",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": true,
+          "hostile": true,
+          "onlyOnce": true,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1756370650943,
+        "modifiedTime": 1786655485362,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "exportSource": null
+      },
+      "_key": "!items.effects!T39k39dbE2poIFc5.qXsoz5KOVCGvztLr"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你在施法距离内指定一点，并以该点为中心创造一片20尺半径的球状黄绿色剧毒浓雾，且该浓雾会围绕拐角扩散。雾气在法术持续时间内维持存在，但仍会被强风吹散。而其存在区域则视为重度遮蔽。\n<br />任何生物在一个回合内第一次进入法术区域，或者在区域内开始其回合时，必须进行一次体质豁免。豁免失败者将受到5d8点毒素伤害，豁免成功则伤害减半。该生物就算屏住呼吸或者不需要呼吸也会受到浓雾效应的影响。\n<br />浓雾在你每回合开始时沿着地面向远离你的方向移动10尺。雾气比空气重，因此会沉落低洼地面甚至渗进地隙中。\n<br /><strong>升环施法效应。</strong>使用6环或更高法术位施展该法术时，你使用的法术位每比5环高一环，法术的伤害就增加1d8。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 222",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "sphere",
+        "size": "20",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 5,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "JGq83CrBanBEasm5": {
+        "type": "utility",
+        "_id": "JGq83CrBanBEasm5",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "qXsoz5KOVCGvztLr"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "cloudkill"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "dP07MxenLzAZwePt",
+  "sort": 26600000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!T39k39dbE2poIFc5"
+}

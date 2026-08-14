@@ -1,0 +1,248 @@
+{
+  "_id": "fJxQtdinEoAnrUG3",
+  "name": "棘雹术Hail of Thorns",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "fulldam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_hunter_piercingshots.jpg",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \">\n<div class=\"description \">你在法术终止前进行的下一次远程武器攻击命中时会你</div>\n<div class=\"description \">的远程武器或弹药中创造出棘刺，并形成一片棘刺雨。除了攻击产生的正常效果外，受攻击的目标及目标身边5 尺范围内的所有生物还必须进行一次敏捷豁免，豁免失败者将受到1d10 点穿刺伤害，豁免成功则伤害减半。</div>\n<div class=\"description \"> </div>\n<div class=\"description \">升环施法效应。</div>\n<div class=\"description \">使用2 环或更高法术位施展该法术时，你使用的法术位每比1 环高一环，伤害就增加1d10（最大伤害6d10）。</div>\n</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 277",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "radius",
+        "size": "5",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "units": "any",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 1,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "(min(floor((@flags.dnd5e.spellLevel)),6))d10"
+              },
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "hail-of-thorns"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "UpyidlPmP73pCiWN",
+  "sort": 39400000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!fJxQtdinEoAnrUG3"
+}

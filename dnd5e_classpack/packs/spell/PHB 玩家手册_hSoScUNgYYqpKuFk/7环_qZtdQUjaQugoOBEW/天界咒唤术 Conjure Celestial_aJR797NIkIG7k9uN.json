@@ -1,0 +1,261 @@
+{
+  "_id": "aJR797NIkIG7k9uN",
+  "name": "天界咒唤术 Conjure Celestial",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/httpcloud3steamusercontentcomugc842585136115869684C9C9F90108B8E18485A3B668FBF0DE79280B0176.jpg",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你召唤一个挑战等级4或更低的天界生物，并使其显现在施法范围内一处你能看见且未被占据的空间。该天界生物在生命值降至0时，或者法术终止时消失不见。\n<br />被召唤的天界生物对你和你的伙伴保持友善关系。你为召唤出来的天界生物掷先攻权，并依此获得其自己的行动回合。该天界生物服从你发出的所有语言命令（不需要你作动作），前提是该命令必须不违反其所属阵营。如果你不发出任何命令，该生物会在敌对生物前保护自己，如果没有敌对生物则不执行任何动作。\n<br />该天界生物的具体数值由DM 掌控。\n<br /><strong>升环施法效应。</strong>使用9环法术位施展该法术时，你将召唤一个挑战等级5或者更低的天界生物。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 225",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "count": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "any",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 7,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "gss2oHnYpRzl0fv6": {
+        "type": "summon",
+        "_id": "gss2oHnYpRzl0fv6",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "cr": "4",
+            "name": "",
+            "_id": "vE57kIQpv5x44T0a",
+            "uuid": "",
+            "types": [
+              "celestial"
+            ],
+            "level": {
+              "min": 7,
+              "max": 8
+            }
+          },
+          {
+            "count": "",
+            "cr": "5",
+            "name": "",
+            "_id": "4qy1wkosfG2WbUK9",
+            "uuid": "",
+            "types": [
+              "celestial"
+            ],
+            "level": {
+              "min": 9,
+              "max": 9
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "cr"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "conjure-celestial"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "qZtdQUjaQugoOBEW",
+  "sort": 27600000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aJR797NIkIG7k9uN"
+}

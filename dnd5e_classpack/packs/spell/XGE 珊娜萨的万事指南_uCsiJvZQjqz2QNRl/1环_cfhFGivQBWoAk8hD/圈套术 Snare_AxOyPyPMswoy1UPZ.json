@@ -1,0 +1,225 @@
+{
+  "_id": "AxOyPyPMswoy1UPZ",
+  "name": "圈套术 Snare",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/spell_animaardenweald_groundstate.jpg",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>当你施展此法术时，用线绳在一处处于你触及内的地面或地板上创造一个5英尺半径的圆圈。当你完成施法时，线绳消失，化为一个魔法陷阱。<br />陷阱几乎是隐形的，要找到它需要一次成功的对抗你的法术豁免DC的智力（调查）检定。<br />当一个小型Small、中型Medium或大型Large的生物移动进入受到此法术保护的区域时，陷阱就会触发。触发的生物必须通过一次敏捷豁免检定否则摔倒、变成俯卧，并被魔法性地上下颠倒的举到半空中，直到它距离被保护的地面或地板3英尺高。生物被束缚在那里直到法术结束。<br />被束缚的生物可以在其每个回合的结束时进行一次敏捷豁免检定，成功则结束被束缚。或者，其他能触及被束缚的生物可以进行一次智力（神秘）检定，对抗你的法术豁免DC。成功则束缚的效果也会结束。<br />在陷阱被触发之后，当没有生物被它束缚时，法术将会结束。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "8",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "radius",
+        "size": "5",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 1,
+    "school": "abj",
+    "materials": {
+      "value": "25英尺的线绳，它将被此法术消耗",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "somatic",
+      "material",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "snare"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "cfhFGivQBWoAk8hD",
+  "sort": 12400000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!AxOyPyPMswoy1UPZ"
+}

@@ -1,0 +1,233 @@
+{
+  "_id": "pumDQ5z7GSGX16nY",
+  "name": "轰雷剑 Booming Blade",
+  "type": "spell",
+  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave4.jpg",
+  "effects": [],
+  "folder": "MRmYanjxoJBXdaX8",
+  "sort": 600000,
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>         作为施展这个法术的一部分，你必须用你的武器对 5 尺内的一个生物进行一次近战攻击。如果攻击命中，目标受到这次攻击的正常影响，并且被包复在爆发性的能量之中直到你的下回合开始。如果目标在这之前自愿移动了 5 尺或更多，其立即受到 1d8 雷鸣伤害，法术结束。</p>\n<p>　　这道法术的伤害随着你的等级提升而增加。你到达 5 级时，这次近战攻击将造成额外 1d8 雷鸣伤害，并且目标进行移动时受到的伤害提升为 2d8。两个伤害骰都会在 11 级时增加 1d8（2d8 和 3d8），17 级时再加 1d8（3d8 和 4d8）。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "",
+        "type": "radius",
+        "size": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "5",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 0,
+    "school": "evo",
+    "materials": {
+      "value": "一把至少价值 1sp 的近战武器",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "thunder"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "booming-bladetce"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pumDQ5z7GSGX16nY"
+}

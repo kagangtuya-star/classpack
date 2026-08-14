@@ -1,0 +1,298 @@
+{
+  "name": "群体变形术Mass Polymorph",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": true,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "icons/environment/creatures/frog-spotted-green.webp",
+  "_id": "aKVZ57BueXJL9xpO",
+  "effects": [
+    {
+      "name": "群体变形术Mass Polymorph",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.aKVZ57BueXJL9xpO",
+      "duration": {
+        "rounds": 600,
+        "startTime": null,
+        "seconds": 3600,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "_id": "7L96pVRsjWLxA4Iu",
+      "changes": [],
+      "description": "",
+      "transfer": false,
+      "statuses": [],
+      "flags": {
+        "dae": {
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system"
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/environment/creatures/frog-spotted-green.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!aKVZ57BueXJL9xpO.7L96pVRsjWLxA4Iu"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>你可以转变施法距离内最多10个由你选择的可见生物。非自愿的目标必须通过一次感知豁免检定来对抗变形。非自愿的变形者（shapechanger）在这次豁免中自动成功。<br />每一个目标都获得由你选择的、相同或是不同的野兽形态。新的形态可以是你曾见过的、挑战等级低于或等于目标挑战等级任意野兽（如果目标没有挑战等级，那么上限是目标等级的一半）。这些目标的游戏数据，包括心智属性值，将被你所选择的野兽数据所取代，但仍然保留他们的生命值、阵营和人格。<br />每一个目标都得到等同于新形态生命值的临时生命值。这些临时生命值不能被其他来源的临时生命值替换。生物会在失去这些临时生命值或者死亡时变回原本的形态。如果法术在这之前结束，这些临时生命值也会失去且生物变回原形。<br />生物能进行的动作被它新形态的特质所限制。它将不能说话、施展法术、或是做其他需要用到手或言语的事情。<br />目标的装备融合进新形态，目标生物不能启动，使用，挥舞或其他方式从它的装备上获得增益。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "10",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 9,
+    "school": "trs",
+    "materials": {
+      "value": "一个毛毛虫的茧",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "7L96pVRsjWLxA4Iu",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "mass-polymorph"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "oWXtFzFBo4Ciuyd4",
+  "sort": 12500000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711724049461,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!aKVZ57BueXJL9xpO"
+}

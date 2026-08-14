@@ -1,0 +1,375 @@
+{
+  "_id": "h3GLhrJzhakxicz1",
+  "name": "火焰刀 Flame Blade",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_UnrelentingAssault.png",
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "火焰刀 Flame Blade",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_UnrelentingAssault.png",
+      "disabled": true,
+      "_id": "CXNhbyAaJAHVurQj",
+      "system": {},
+      "changes": [
+        {
+          "key": "",
+          "mode": 2,
+          "value": "",
+          "priority": 20
+        }
+      ],
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!h3GLhrJzhakxicz1.CXNhbyAaJAHVurQj"
+    },
+    {
+      "name": "火焰刀 Flame Blade",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_UnrelentingAssault.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.h3GLhrJzhakxicz1",
+      "transfer": false,
+      "_id": "FFOfIam1FkGc3TEZ",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 600,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!h3GLhrJzhakxicz1.FFOfIam1FkGc3TEZ"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你在一只空闲的手上召唤出一把炽热的刀刃。该到刀刃的尺\n<br />寸和形状近似于一把弯刀并在法术持续时间内维持存在。当你放\n<br />下刀刃时其将消失不见，但你可以用一个附赠动作重新将其唤出。\n<br />你可以用你的动作以该热刃发动一次近战法术攻击。若命中，\n<br />则目标受到3d6点火焰伤害。\n<br />烈焰刀向周围提供半径10尺的明亮光照，以及该范围外10\n<br />尺的微光光照。\n<br />升环施法效应。使用3环或更高法术位施展该法术时，你使\n<br />用的法术位每比2环高两环，其伤害就增加1d6。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 242",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "ability": "",
+    "level": 2,
+    "school": "evo",
+    "materials": {
+      "value": "漆树的叶子",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "btGYkOHxQn9dXFVv": {
+        "type": "attack",
+        "_id": "btGYkOHxQn9dXFVv",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "",
+        "ammunition": "",
+        "otherActivityUuid": "",
+        "name": "火焰刀攻击"
+      }
+    },
+    "identifier": "flame-blade"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "v66iuyCJ9YOa7g5p",
+  "sort": 11200000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757419719404,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!h3GLhrJzhakxicz1"
+}

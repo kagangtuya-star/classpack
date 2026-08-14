@@ -1,0 +1,297 @@
+{
+  "_id": "QoPqj3mhjxq3gPle",
+  "name": "卓姆吉瞬间召唤 Instant Summons",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "ritual"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Arcane_ArcanePotency.png",
+  "effects": [
+    {
+      "name": "召唤标记 Instant Summons",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Arcane_ArcanePotency.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.QoPqj3mhjxq3gPle",
+      "transfer": false,
+      "_id": "sX0D9uIhKSpG9jkh",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p><span style=\"font-family:'Roboto Condensed', sans-serif\">你可以使用动作唤出该物件的名称并粉碎这颗蓝宝石，该物件将无视任何距离和位面的限制立即出现在你的手上。物件出现后该随即法术终止。</span></p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1756432560465,
+        "modifiedTime": 1756432593318,
+        "lastModifiedBy": "vFLRCDyc5l72uRlV",
+        "exportSource": null
+      },
+      "_key": "!items.effects!QoPqj3mhjxq3gPle.sX0D9uIhKSpG9jkh"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你触碰一个重量至多10磅，长度至多6尺的物件。该法术将在该物品表面留下一个隐形的印记，并在你用以施法的蓝宝石上留下该物件的名称。你每次施展该法术时都必须使用不同的蓝宝石作为其材料成分。\n<br />在随后的时间里，你可以使用动作唤出该物件的名称并粉碎这颗蓝宝石，该物件将无视任何距离和位面的限制立即出现在你的手上。物件出现后该随即法术终止。\n<br />如果另一个生物正持握或携带着该物件，则粉碎蓝宝石的动作无法将该物品传送过来。不过你会知晓是谁占有了该物品，以及其此刻身处的何处。\n<br />解除魔法dispel magic 或成功生效的类似效应作用于这颗蓝宝石时，将提前终止该法术。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB",
+      "page": "",
+      "license": ""
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "perm"
+    },
+    "target": {
+      "affects": {
+        "type": "object",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 6,
+    "school": "con",
+    "materials": {
+      "value": "一枚价值 1000gp 的蓝宝石",
+      "consumed": false,
+      "cost": 1000,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "ritual"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "sX0D9uIhKSpG9jkh"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "instant-summons"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "gyuelnpMtSHh8291",
+  "sort": 39000000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757235114937,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!QoPqj3mhjxq3gPle"
+}

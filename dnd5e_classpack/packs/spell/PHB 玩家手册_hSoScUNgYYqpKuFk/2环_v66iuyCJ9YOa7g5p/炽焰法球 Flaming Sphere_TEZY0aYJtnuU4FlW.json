@@ -1,0 +1,425 @@
+{
+  "_id": "TEZY0aYJtnuU4FlW",
+  "name": "炽焰法球 Flaming Sphere",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "fulldam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/INV_Elemental_Primal_Fire.png",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 一个直径5尺的球状火焰显现在施法距离内你指定的一处未被占据空间，并在法术持续时间内维持存在。任何生物在火球周围5尺内结束其回合时必须进行一次敏捷豁免。豁免失败者将受到2d6点火焰伤害，豁免成功则伤害减半。\n<br />你可以用一个附赠动作将火球移动30尺。如果你将火球推向某生物，则该生物必须进行抵抗火球伤害的豁免，而火球在该回合内停止移动。\n<br />移动火球时，你可以指引它越过不高于5尺的障碍，或者越过不宽过10尺的陷坑。火球将点燃任何未被着装或携带的可燃物件，并向其周围散发出半径20尺的明亮光照，以及该范围外20尺的微光光照。\n<br /><strong>升环施法效应。</strong>使用3环或更高法术位施展该法术时，你使用的法术位每比2环高一环，其伤害就增加1d6。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 242",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "sphere",
+        "size": "5",
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "ability": "",
+    "level": 2,
+    "school": "con",
+    "materials": {
+      "value": "一小块兽脂、一小撮硫磺石和少量铁粉",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "summon",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "bonuses": {
+          "ac": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": "",
+          "hd": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "proficiency": true,
+          "attacks": false,
+          "saves": true,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "BsDHNoyyyCf5TXYa",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.VrniO3THxd996TDD",
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "JSnY7inHNmPYMvJi",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.doLk6LKxmwzlxN4k",
+            "level": {
+              "min": 7,
+              "max": 7
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "07UfocZNsveQdVrr",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.67Q8YSlJh5MLKxx5",
+            "level": {
+              "min": 6,
+              "max": 6
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "nLUXvGus2YRpHUVx",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.XQKmDYlCzGxRUTeI",
+            "level": {
+              "min": 5,
+              "max": 5
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "GYBss297Pf1dYKgk",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.Av1riv5YEVOPKbII",
+            "level": {
+              "min": 4,
+              "max": 4
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "9UQvRbAbX3GtzlpD",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.JnPUNl4GXPFvEd8l",
+            "level": {
+              "min": 3,
+              "max": 3
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "TKA2shuIb62DcNBS",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.7TDEayDL0PGhU4yt",
+            "level": {
+              "min": 8,
+              "max": 8
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "JZJDTtaGn5bDmi9S",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.nuwHG2G6ulp8mkLk",
+            "level": {
+              "min": 9,
+              "max": 9
+            },
+            "types": []
+          }
+        ],
+        "summon": {
+          "identifier": "",
+          "mode": "",
+          "prompt": true
+        },
+        "sort": 0,
+        "name": "",
+        "midiProperties": {
+          "automationOnly": true,
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      },
+      "8FeLgI16840MQgwt": {
+        "type": "save",
+        "_id": "8FeLgI16840MQgwt",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "damage": {
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [],
+          "dc": {
+            "calculation": "initial"
+          }
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "flaming-sphere"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "v66iuyCJ9YOa7g5p",
+  "sort": 900000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!TEZY0aYJtnuU4FlW"
+}

@@ -1,0 +1,375 @@
+{
+  "name": "地颤 Earth Tremor",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": false,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "nodam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "icons/environment/settlement/watchtower-silhouette-yellow.webp",
+  "_id": "dADmhYuYM063hyy2",
+  "effects": [
+    {
+      "changes": [
+        {
+          "key": "flags.midi-qol.grants.advantage.attack.mwak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.grants.advantage.attack.msak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.grants.disadvantage.attack.rwak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.grants.disadvantage.attack.rsak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.attack.all",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "system.attributes.movement.all",
+          "mode": 0,
+          "value": "*0.5",
+          "priority": 25
+        }
+      ],
+      "description": "<p>- A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.<br />- The creature has disadvantage on attack rolls.<br />- An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.</p>",
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "turns": null,
+        "startTime": null,
+        "combat": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "dfreds-convenient-effects": {
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "name": "Prone",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.dADmhYuYM063hyy2",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "prone"
+      ],
+      "_id": "3EsHBstwrMw1ddPE",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": null,
+        "modifiedTime": 1756996918158,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/environment/settlement/watchtower-silhouette-yellow.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!dADmhYuYM063hyy2.3EsHBstwrMw1ddPE"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>你在施法距离内引发地面颤动。处于该区域，除你之外的其他生物必须进行一次敏捷豁免检定。若检定失败，该生物受到1d6点钝击伤害并倒地。若区域的地表为松软的土壤或石头，其在被清理之前成为困难地形。每5尺直径的部分都需要至少1分钟来手动清理。</p>\n<p><br /><strong>升环效果：</strong>当你使用2环或更高的法术位施放该法术时，使用的法术位每高一环，伤害便增加1d6。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": "any",
+        "count": "",
+        "special": "-self"
+      },
+      "template": {
+        "units": "ft",
+        "type": "radius",
+        "size": "10",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 1,
+    "school": "evo",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "3EsHBstwrMw1ddPE",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "earth-tremor"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "cfhFGivQBWoAk8hD",
+  "sort": 7100000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711689533295,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!dADmhYuYM063hyy2"
+}

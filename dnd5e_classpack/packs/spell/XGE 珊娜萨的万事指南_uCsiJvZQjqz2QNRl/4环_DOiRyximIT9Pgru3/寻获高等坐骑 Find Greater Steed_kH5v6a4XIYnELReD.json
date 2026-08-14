@@ -1,0 +1,257 @@
+{
+  "name": "寻获高等坐骑 Find Greater Steed",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "icons/tools/smithing/horseshoe-steel-blue.webp",
+  "_id": "kH5v6a4XIYnELReD",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<p>你召唤一个圣魂并呈现出忠诚的、雄伟的坐骑外观。坐骑出现在施法范围内未被占据的空间内，坐骑的外形由你从以下形态中选择：狮鹫Griffon、飞马Pegasus、鹿鹰兽Peryton、恐狼Dire Wolf、犀牛Rhinoceros或者剑齿虎Saber-toothed Tiger。坐骑拥有你选择的形态数据如同怪物手册，但它实际上是天界、精类或炼狱生物（由你选择）而不是通常类型。另外，如果你的坐骑智力为5或以下，它的智力变为6，同时能听懂一种你所说的语言。<br />你在战斗中控制坐骑。当坐骑在你周围1英里内，你可以通过心灵感应和它沟通。当骑乘在你的魔法坐骑上时，所有你施展的只以你为目标法术同时也影响你的魔法坐骑。<br />当魔法坐骑的hp降为0时，它会暂时消失。你也可以以一个动作解散你的魔法坐骑使得它消失。再次施放这个法术可以重新召唤绑定的坐骑，此时它的生命值全部恢复，并且任何状态都被移除。<br />你不能通过这个法术或获得坐骑法术同时拥有与1个以上的魔法坐骑的联系，以一个动作，你可以在任何时候将你的坐骑从你们的联系中解放，使得它消失。<br />每当坐骑消失，它会留下所有它穿戴或者携带的物品。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 10
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "level": 4,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "mgc"
+    ],
+    "activities": {
+      "PX0c5f9a3eD654FY": {
+        "type": "summon",
+        "_id": "PX0c5f9a3eD654FY",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "bonuses": {},
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false
+        },
+        "profiles": [
+          {
+            "_id": "Adkrr3bcDBHZHkPY",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.h052EIIUmRwJum65"
+          },
+          {
+            "_id": "mkmU0ubkf3loZaJT",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.tYYoifu9teGLetVI"
+          },
+          {
+            "_id": "VzMJRfFIoIzE8KQk",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.SBCe2BSa6opTS5M4"
+          },
+          {
+            "_id": "gTXIpfGuprcaMbm9",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.EYiQZ3rFL25fEJY5"
+          },
+          {
+            "_id": "tl34ikiFxpAm3S2F",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": [],
+            "uuid": "Compendium.dnd5e_classpack.monsterspack.Actor.EIgAW1dWVPpyWLUh"
+          }
+        ],
+        "summon": {
+          "prompt": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "find-greater-steed"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "DOiRyximIT9Pgru3",
+  "sort": 15300000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!kH5v6a4XIYnELReD"
+}

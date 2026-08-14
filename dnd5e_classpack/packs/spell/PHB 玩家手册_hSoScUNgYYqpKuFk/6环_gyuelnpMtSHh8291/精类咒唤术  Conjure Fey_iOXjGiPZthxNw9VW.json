@@ -1,0 +1,249 @@
+{
+  "_id": "iOXjGiPZthxNw9VW",
+  "name": "精类咒唤术  Conjure Fey",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/spell_animaardenweald_groundstate.jpg",
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你召唤一个挑战等级6或更低的精类生物，或者一个挑战等级6或更低的野兽形态精魂。被召唤生物显现在施法距离内一处你能看见且未被占据的空间。该精类生物在生命值降至0时，或者法术终止时消失不见。\n<br />被召唤的精类生物对你和你的伙伴保持友善关系。你为每次召唤出来的精类生物掷先攻权，并依此获得其自己的行动回合。该精类生物服从你发出的所有语言命令（不需要你作动作），前提是该命令必须不违反其所属阵营。如果你不发出任何命令，该生物会在敌对生物前保护自己，如果没有敌对生物则不执行任何动作。\n<br />如果你的专注被打断，该精类生物并不会因此消失不见，但你会因此失去该生物的控制权。失去控制的精类生物对你和你的伙伴变为敌对，并随时准备发动攻击。不受控的精类生物无法被你解散，并在你的召唤开始算起1小时后消失不见。\n<br />该精类生物的具体数值由DM 掌控。\n<br /><strong>升环施法效应。</strong>使用7环或更高法术位施展该法术时，你使用的法术位每比6环高一环，召唤生物挑战等级就增加1。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 226",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "count": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "any",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 6,
+    "school": "con",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "bahxqXFkgdI3nskq": {
+        "type": "summon",
+        "_id": "bahxqXFkgdI3nskq",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [
+          "fey"
+        ],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "1",
+            "cr": "9",
+            "name": "",
+            "_id": "uHeA6x7kU4BMxZY0",
+            "uuid": "",
+            "types": [
+              "fey",
+              "beast"
+            ],
+            "level": {
+              "min": 6,
+              "max": 9
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "cr"
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "conjure-fey"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "effects": [],
+  "folder": "gyuelnpMtSHh8291",
+  "sort": 14000000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!iOXjGiPZthxNw9VW"
+}

@@ -1,0 +1,365 @@
+{
+  "_id": "OVgmvEJHFmGeeu7g",
+  "name": "削弱芒刺Sapping Sting",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "nodam",
+      "bonusSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": true,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "icons/skills/melee/strike-dagger-arcane-pink.webp",
+  "effects": [
+    {
+      "changes": [
+        {
+          "key": "flags.midi-qol.grants.advantage.attack.mwak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.grants.advantage.attack.msak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.grants.disadvantage.attack.rwak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.grants.disadvantage.attack.rsak",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.attack.all",
+          "mode": 0,
+          "value": "1",
+          "priority": 0
+        },
+        {
+          "key": "system.attributes.movement.all",
+          "mode": 0,
+          "value": "*0.5",
+          "priority": 25
+        }
+      ],
+      "description": "<p>- A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.<br />- The creature has disadvantage on attack rolls.<br />- An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.</p>",
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": null,
+        "turns": null,
+        "startTime": null,
+        "combat": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "dfreds-convenient-effects": {
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": []
+        },
+        "dae": {
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "isMoved"
+          ]
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system"
+        }
+      },
+      "name": "Prone",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.OVgmvEJHFmGeeu7g",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "Convenient Effect: Prone",
+        "prone"
+      ],
+      "_id": "bLGEl1iaM754WulO",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dfreds-convenient-effects/images/prone.svg",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!OVgmvEJHFmGeeu7g.bLGEl1iaM754WulO"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>你削弱施法距离内一个你看得见的生物的生命活力。目标必须通过一个体质豁免，否则就会受到1d4点暗蚀伤害并且倒地。<br />该法术的伤害会在你到达5级（2d4），11级（3d4）与17级（4d4）时增加1d4。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "EGtW",
+      "revision": 1,
+      "rules": "2014",
+      "book": "EGW",
+      "page": "",
+      "license": ""
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 0,
+    "school": "nec",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "bLGEl1iaM754WulO",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "sapping-sting"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "da96tvp1MeYoCZxj",
+  "sort": 1300000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711705729210,
+    "modifiedTime": 1757260583005,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!OVgmvEJHFmGeeu7g"
+}

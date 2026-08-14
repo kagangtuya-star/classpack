@@ -1,0 +1,212 @@
+{
+  "_id": "XIw3jNqRlLXFo4AX",
+  "name": "高等幻影 Major Image",
+  "type": "spell",
+  "flags": {
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Arcane_PrismaticCloak.png",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你创造一个影像，其形象来自一个大小不超过边长20尺立方体的物件，生物或其他的可视现象。影像出现在施法距离内你能看见的一处位置并在法术持续时间内持续存在。它看起来完全是真实的，并且还具有相应的声音、气味和温度。你不能创造出足以造成伤害的酷热或严寒，也不能创造出音量大到足以造成雷鸣伤害或者震聋生物的声响，同样不能创造出会使生物恶心的气味（近似战蜥人的恶臭那种）。\n<br />你在此幻术的施法距离内时，可以用你的动作将影像移动到施法距离内的另一个位置。影像改变位置时，你可以改变影像的外表来使它移动得更自然。例如，如果你创造了一个生物的影像并移动它，则你可以改变影像，使它看起来就像是在走路。或者你也可以让影像在不同的时间发出不同的声音，甚至可以让它参与一场对话。\n<br />由于影像无法被碰到，任何与该影像进行的物理互动都会暴露其幻象的本质。一个生物用其动作调查影像时，它可以进行一次对抗你的法术豁免DC 的智力（调查）检定，以判定是否看穿幻象。辨出幻象的生物可以看破该影像，而影像的其他感官效应在该生物看来会变得微弱而模糊。\n<br /><strong>升环施法效应。</strong>使用6环或更高法术位施展该法术时，法术会持续至解除且不需要你保持专注。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 258",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "cube",
+        "size": "20",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 3,
+    "school": "ill",
+    "materials": {
+      "value": "一小块羊毛",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "major-image"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "VSQWpB0Mj8S5uRII",
+  "sort": 7400000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!XIw3jNqRlLXFo4AX"
+}

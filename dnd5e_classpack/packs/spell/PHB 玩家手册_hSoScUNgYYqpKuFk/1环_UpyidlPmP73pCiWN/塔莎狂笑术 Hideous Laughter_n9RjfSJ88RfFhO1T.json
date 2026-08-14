@@ -1,0 +1,307 @@
+{
+  "_id": "n9RjfSJ88RfFhO1T",
+  "name": "塔莎狂笑术 Hideous Laughter",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/httpsvignettewikianocookienetwowimages999Spellmiscemotionhappypngrevisionlatestcb20090317211041pathprefixru.png",
+  "effects": [
+    {
+      "name": "塔莎狂笑术 Hideous Laughter",
+      "img": "modules/dnd5e_classpack/Nicons/httpsvignettewikianocookienetwowimages999Spellmiscemotionhappypngrevisionlatestcb20090317211041pathprefixru.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.n9RjfSJ88RfFhO1T",
+      "transfer": false,
+      "_id": "GaW3obmPEzhahVJq",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": 10,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [
+            ""
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1753012326783,
+        "modifiedTime": 1753012341144,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!n9RjfSJ88RfFhO1T.GaW3obmPEzhahVJq"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 指定施法距离内一个你能看见的生物，如果该生物可受法术影响，则一切事物在该生物眼中都变得滑稽可笑，使它开始狂笑起来。目标必须进行一次感知豁免，豁免失败则俯身倒地，并在法术持续时间内陷入失能状态且无法起立。该效应对智力为4或更低的生物无效。\n<br />目标在其每回合结束或受到伤害时，可以再进行一次感知豁免。豁免成功则法术终止。再进行豁免时，如果是因受到伤害所致则该次豁免具有优势。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB",
+      "page": "",
+      "license": ""
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 1,
+    "school": "enc",
+    "materials": {
+      "value": "一些小甜饼以及一片空中飘荡的羽毛",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "j9T1W77fJiWdKl0X",
+            "onSave": false
+          },
+          {
+            "_id": "AF8c5CCcPSt2QoSO",
+            "onSave": false
+          },
+          {
+            "_id": "GaW3obmPEzhahVJq"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "j9T1W77fJiWdKl0X",
+          "AF8c5CCcPSt2QoSO"
+        ]
+      }
+    },
+    "identifier": "hideous-laughter"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "UpyidlPmP73pCiWN",
+  "sort": 27200000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711704831246,
+    "modifiedTime": 1757351481243,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!n9RjfSJ88RfFhO1T"
+}

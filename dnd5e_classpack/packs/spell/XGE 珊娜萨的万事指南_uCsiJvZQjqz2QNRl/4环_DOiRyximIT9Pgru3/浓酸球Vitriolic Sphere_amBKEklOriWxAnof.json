@@ -1,0 +1,365 @@
+{
+  "name": "浓酸球Vitriolic Sphere",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "otherCondition": "",
+      "effectCondition": "",
+      "reactionCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "saveDamage": "fulldam",
+      "bonusSaveDamage": "halfdam",
+      "otherSaveDamage": "fulldam",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "浓酸球Vitriolic Sphere",
+        "img": "modules/dnd5e_classpack/Nicons/spell_fire_ragnaros_lavaboltgreen.png",
+        "type": "script",
+        "scope": "global",
+        "command": "(async () => {\n  // 确认宏触发时 args[0] 存在“on”或“off”\n  const hook = args[0];\n  const tokenD = canvas.tokens.get(args[1]?.tokenId);\n  if (!tokenD) return;\n\n  if (hook === \"off\") {\n    // 效果创建时：立即造成 5d10 力场伤害\n    const roll = await new Roll(\"5d4[acid]\").roll({async: true});\n    await new MidiQOL.DamageOnlyWorkflow(\n      actor,\n      token,\n      roll.total,\n      'acid',\n      tokenD ? [tokenD] : [],\n      roll,\n      { flavor: \"浓酸球派生伤害\" }\n    );\n  }\n  // hook === \"on\" 时，无操作\n})();",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.4.4",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/spell_fire_ragnaros_lavaboltgreen.png",
+  "effects": [
+    {
+      "name": "浓酸球Vitriolic Sphere",
+      "img": "modules/dnd5e_classpack/Nicons/spell_fire_ragnaros_lavaboltgreen.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.amBKEklOriWxAnof",
+      "transfer": false,
+      "_id": "5vvraQxWF4m4DRDA",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.itemMacro",
+          "mode": 0,
+          "value": "",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnEnd"
+          ]
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757001518085,
+        "modifiedTime": 1757001618280,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!amBKEklOriWxAnof.5vvraQxWF4m4DRDA"
+    }
+  ],
+  "_id": "amBKEklOriWxAnof",
+  "system": {
+    "description": {
+      "value": "<p>你指定距离之内的一点，一颗发光的1英尺直径的强酸球飞向那里爆炸，酸液飞溅到20英尺半径内的球形区域。在该区域中的每个生物必须进行一次敏捷豁免检定。若检定失败，其受到10d4点强酸伤害，并在其下个回合结束时再受到5d4点强酸伤害。若豁免成功，该生物只受到初始伤害的一半且不会在其下个回合结束时受到伤害。</p>\n<p><strong>升环效果：</strong>当你使用5环或更高的法术位施放该法术时，使用的法术位每高一环，初始伤害便增加2d4。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "sphere",
+        "size": "20",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "150",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 4,
+    "school": "evo",
+    "materials": {
+      "value": "一滴巨型蜗牛的胆汁",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "5vvraQxWF4m4DRDA"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 10,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "acid"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 2,
+                "formula": ""
+              }
+            }
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": "9"
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "vitriolic-sphere"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "DOiRyximIT9Pgru3",
+  "sort": 12000000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!amBKEklOriWxAnof"
+}

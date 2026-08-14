@@ -1,0 +1,218 @@
+{
+  "_id": "mac7quHJaKMYwCeM",
+  "name": "动物形态 Animal Shapes",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Druid_CatForm.png",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你施法把其他生物变成野兽。指定施法距离内任意数量的自愿生物，并使每个目标变形为一只挑战等级不超过4，体型不大于大型的野兽。你可以在法术持续时间内以一个动作将受术生物变成其他野兽形态。\n<br />每个受术生物的变形效应持续至法术终止，其生命值降至0或是死亡时，法术效应也将随之终止。你可以分别为每个目标选择不同的形态。而目标的游戏资料则以所选野兽的游戏资料作替换，并保留其本来的阵营，以及智力、感知和魅力值。目标将使用新形态的生命值。而当其变回通常形态时，该目标的生命值也恢复为变形前的数值。如果目标是因为生命值降至0而变回通常形态，则由通常形态承受溢出的伤害。只要溢出伤害不足以将通常形态生命值降至0，他就不会因此而昏迷。受术生物只能使用新形态的动作，且无法说话或施法。\n<br />目标的装备融入其新形态，而且不能激活或持用装备，也无法以其他任何方式从其装备上获益。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 212",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "24",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "willing",
+        "count": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 8,
+    "school": "trs",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "jOoMspzgTe5IldAa": {
+        "type": "transform",
+        "_id": "jOoMspzgTe5IldAa",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "profiles": [
+          {
+            "cr": "4",
+            "name": "",
+            "_id": "bDJwtyW5BaSPeJnK",
+            "sizes": [
+              "tiny",
+              "sm",
+              "med",
+              "lg"
+            ],
+            "types": [
+              "beast"
+            ],
+            "movement": [],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "settings": {
+          "preset": "",
+          "effects": [
+            "origin",
+            "otherOrigin",
+            "background",
+            "class",
+            "feat",
+            "equipment",
+            "spell"
+          ],
+          "keep": [
+            "mental",
+            "vision"
+          ],
+          "merge": [],
+          "other": [],
+          "transformTokens": true
+        },
+        "transform": {
+          "customize": true,
+          "preset": "wildshape"
+        },
+        "name": "",
+        "img": "",
+        "tempFormula": "",
+        "transformTokens": true
+      }
+    },
+    "identifier": "animal-shapes"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "w0JpE0njhIE5fTFz",
+  "sort": 3600000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!mac7quHJaKMYwCeM"
+}
