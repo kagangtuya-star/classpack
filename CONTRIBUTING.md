@@ -51,7 +51,7 @@ npm install -g @foundryvtt/foundryvtt-cli
 
 ## 工作流程
 
-### 方式 A：在游戏内修改（适合内容维护者）
+### 方式 A：在游戏内修改
 
 1. 在 Foundry VTT 里正常编辑合集包条目。
 2. **退出 Foundry VTT 或是退出当前世界**（它运行时会锁定每个 pack 的 `LOCK` 文件）。
@@ -84,7 +84,7 @@ npm install -g @foundryvtt/foundryvtt-cli
    git commit -m "同步游戏内改动"
    ```
 
-### 方式 B：直接编辑 JSON（适合小改 / 批量改）
+### 方式 B：直接编辑 JSON
 
 1. 直接编辑 `dnd5e_classpack/packs/<包名>/` 下的 `.json` 文件。
 2. （可选）本地验证能否正常打包，并用统一命名规则重命名：
