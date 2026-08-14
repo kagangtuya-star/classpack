@@ -1,0 +1,345 @@
+{
+  "_id": "oLtyOvrWeLNEJDIE",
+  "name": "石化术 Flesh to Stone",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "石化术 Flesh to Stone",
+        "img": "modules/dnd5e_classpack/Nicons/INV_Mask_02.png",
+        "type": "script",
+        "scope": "global",
+        "command": "(async () => {\n  console.log(\"Stone macro 启动 mode:\", args[0]);\n  const mode = args[0];\n  const last = args.at(-1);\n  const actor = canvas.tokens.get(last.tokenId)?.actor;\n  if (!actor) return console.warn(\"找不到 actor\");\n  const origin = last.origin;\n  const active = await fromUuid(origin);\n  const caster = active?.parent;\n  const dc = caster?.getRollData()?.attributes?.spelldc;\n  if (!active || !caster || typeof dc !== \"number\") return console.warn(\"Source 或 DC 有误\");\n\n  if (mode === \"on\") {\n    console.log(\"注册 updateCombat 钩子 for\", actor.name);\n    const hookId = Hooks.on(\"updateCombat\", async combat => {\n      const turn = combat.turns?.[combat.turn];\n      if (!turn?.actor || turn.actor.id !== actor.id) return;\n      const hasFlesh = actor.effects.some(e => e.label === \"石化术 Flesh to Stone\");\n      if (!hasFlesh) return console.log(\"未持有 Flesh to Stone 效果\");\n\n      let succ = actor.flags.world?.success ?? 0;\n      let fail = actor.flags.world?.failure ?? 0;\n\n      const roll = await actor.rollAbilitySave(\"con\", { flavor: `Stone Save DC ${dc}` });\n      const total = roll.total;\n      total >= dc ? succ++ : (fail++, !actor.effects.some(e=>e.label===\"Restrained\") &&\n        await actor.createEmbeddedDocuments(\"ActiveEffect\", [{\n          label:\"Restrained\", icon:\"icons/svg/locked.svg\",\n          changes:[{key:\"macro.StatusEffect\", mode:0, value:\"restrained\"}],\n          duration:{turns:1}\n        }]));\n\n      await actor.setFlag(\"world\",\"success\", succ);\n      await actor.setFlag(\"world\",\"failure\", fail);\n\n      const chatHtml = `<div class=\"dnd5e chat-card\">\n        <header class=\"card-header\"><h3>Flesh to Stone 豁免</h3></header>\n        <div class=\"card-content\">\n          <p><strong>${actor.name}</strong> 掷骰：<strong>${total}</strong>（DC ${dc}）</p>\n          <p>累计 成功：<strong>${succ}</strong>，失败：<strong>${fail}</strong></p>\n        </div></div>`;\n      ChatMessage.create({content: chatHtml, speaker: ChatMessage.getSpeaker({actor})});\n\n      if (succ >= 3) {\n        console.log(\"三次成功，删除原始 Flesh 效果，解绑 hook\", hookId);\n        const orig = actor.effects.find(e => e.origin === origin);\n        if (orig) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",[orig.id]);\n        Hooks.off(\"updateCombat\", hookId);\n      } else if (fail >= 3) {\n        console.log(\"三次失败，添加 Petrified，解除 restrain，解绑 hook\", hookId);\n        if (!actor.effects.some(e=>e.label===\"Petrified\")) {\n          await actor.createEmbeddedDocuments(\"ActiveEffect\",[{\n            label:\"Petrified\", icon:\"icons/svg/petrified.svg\",\n            changes:[{key:\"macro.StatusEffect\", mode:0, value:\"petrified\"}],\n            duration:{}\n          }]);\n        }\n        const res = actor.effects.filter(e=>e.label===\"Restrained\");\n        if (res.length) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",res.map(e=>e.id));\n        Hooks.off(\"updateCombat\", hookId);\n      }\n    });\n    console.log(\"hook 注册完成, id:\", hookId);\n  }\n\n  if (mode === \"off\") {\n    console.log(\"mode off：清理 flags、Restrained、Petrified，并解绑 hook\");\n    const orig = actor.effects.find(e => e.origin === origin);\n    if (orig) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",[orig.id]);\n    const pe = actor.effects.filter(e => e.label === \"Petrified\");\n    if (pe.length) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",pe.map(e=>e.id));\n    const re = actor.effects.filter(e => e.label === \"Restrained\");\n    if (re.length) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",re.map(e=>e.id));\n    await actor.unsetFlag(\"world\",\"success\");\n    await actor.unsetFlag(\"world\",\"failure\");\n    // 主动删除效果时也要解绑 hook\n    Hooks.off(\"updateCombat\");\n  }\n})();",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.3.9",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/INV_Mask_02.png",
+  "effects": [
+    {
+      "name": "石化术 Flesh to Stone",
+      "img": "modules/dnd5e_classpack/Nicons/INV_Mask_02.png",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.oLtyOvrWeLNEJDIE",
+      "transfer": false,
+      "_id": "DOEuUpjwYchEF2hm",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "macro.itemMacro",
+          "mode": 0,
+          "value": "",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "restrained"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1753587042919,
+        "modifiedTime": 1753605725985,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!oLtyOvrWeLNEJDIE.DOEuUpjwYchEF2hm"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你尝试将施法距离内一个你能看见的生物变为石头。如果该目标的身体由血肉组成，则其必须进行一次体质豁免。豁免失败者的肉体将变得生硬并因此而受到束缚。豁免成功者将不受该效应的影响。\n<br />因该法术受束缚的生物必须在其每回合结束时再进行一次体质豁免。在累计三次豁免成功后，该法术终止。在累计三次豁免失败后，该生物变为石头并在持续时间内视为陷入石化状态。成功或失败的检定不需要连续；只要记录各情况的次数直至其中一方累计三次为止。\n<br />如果该生物被石化的身体遭破坏，则其在恢复原形时将遭受同样的破坏。\n<br />如果你在为该法术维持了最长持续时间的专注，则该生物变为石头的效应将保持至被移除为止。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 243",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 6,
+    "school": "trs",
+    "materials": {
+      "value": "A pinch of lime, water, and earth",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "WK4JymDdY2Mx8TG6": {
+        "type": "save",
+        "_id": "WK4JymDdY2Mx8TG6",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "DOEuUpjwYchEF2hm"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [],
+          "critical": {
+            "allow": false
+          },
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "DOEuUpjwYchEF2hm"
+        ]
+      }
+    },
+    "identifier": "flesh-to-stone"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "hSoScUNgYYqpKuFk",
+  "sort": 25200000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711725524543,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!oLtyOvrWeLNEJDIE"
+}

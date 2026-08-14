@@ -1,0 +1,589 @@
+{
+  "name": "魂灵环绕 Spirit Shroud",
+  "type": "spell",
+  "flags": {
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_ardenweald_priest.jpg",
+  "_id": "TH2wXQ3yssrGZ821",
+  "effects": [
+    {
+      "name": "魂灵环绕光耀SpiritShroud",
+      "img": "modules/dnd5e_classpack/Nicons/ability_ardenweald_priest.jpg",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.TH2wXQ3yssrGZ821",
+      "transfer": false,
+      "_id": "kjydidYoNaarZI0M",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕光耀SpiritShroud.activation",
+          "mode": 2,
+          "value": "computeDistance(tokenUuid, targetUuid)<=10",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕光耀SpiritShroud.damage.msak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[radiant]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕光耀SpiritShroud.damage.mwak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[radiant]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕光耀SpiritShroud.damage.rsak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[radiant]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕光耀SpiritShroud.damage.rwak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[radiant]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕光耀SpiritShroud.count",
+          "mode": 2,
+          "value": "every",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕光耀SpiritShroud.criticalDamage",
+          "mode": 2,
+          "value": "true",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [],
+          "macroRepeat": "none"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756661562876,
+        "modifiedTime": 1756990793024,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!TH2wXQ3yssrGZ821.kjydidYoNaarZI0M"
+    },
+    {
+      "name": "魂灵环绕黯蚀SpiritShroud",
+      "img": "modules/dnd5e_classpack/Nicons/ability_ardenweald_priest.jpg",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.TH2wXQ3yssrGZ821",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕黯蚀SpiritShroud.activation",
+          "mode": 2,
+          "value": "computeDistance(tokenUuid, targetUuid)<=10",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕黯蚀SpiritShroud.damage.msak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[necrotic]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕黯蚀SpiritShroud.damage.mwak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[necrotic]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕黯蚀SpiritShroud.damage.rsak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[necrotic]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕黯蚀SpiritShroud.damage.rwak",
+          "mode": 2,
+          "value": "((@scaling+1)/2)d8[necrotic]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕黯蚀SpiritShroud.count",
+          "mode": 2,
+          "value": "every",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕黯蚀SpiritShroud.criticalDamage",
+          "mode": 2,
+          "value": "true",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [],
+          "macroRepeat": "none"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756990698656,
+        "modifiedTime": 1756990888370,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_id": "lBHWltVhN1lBQLaO",
+      "_key": "!items.effects!TH2wXQ3yssrGZ821.lBHWltVhN1lBQLaO"
+    },
+    {
+      "name": "魂灵环绕寒冷SpiritShroud",
+      "img": "modules/dnd5e_classpack/Nicons/ability_ardenweald_priest.jpg",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.TH2wXQ3yssrGZ821",
+      "transfer": false,
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕寒冷SpiritShroud.activation",
+          "mode": 2,
+          "value": "computeDistance(tokenUuid, targetUuid)<=10",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕寒冷SpiritShroud.damage.msak",
+          "mode": 2,
+          "value": "+((@scaling+1)/2)d8[cold]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕寒冷SpiritShroud.damage.mwak",
+          "mode": 2,
+          "value": "+((@scaling+1)/2)d8[cold]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕寒冷SpiritShroud.damage.rsak",
+          "mode": 2,
+          "value": "+((@scaling+1)/2)d8[cold]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕寒冷SpiritShroud.damage.rwak",
+          "mode": 2,
+          "value": "+((@scaling+1)/2)d8[cold]",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕寒冷SpiritShroud.count",
+          "mode": 2,
+          "value": "every",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.魂灵环绕寒冷SpiritShroud.criticalDamage",
+          "mode": 2,
+          "value": "true",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [],
+          "macroRepeat": "none"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756990699864,
+        "modifiedTime": 1756991099498,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_id": "XWlwr9BXnrhm1gzy",
+      "_key": "!items.effects!TH2wXQ3yssrGZ821.XWlwr9BXnrhm1gzy"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div>        你召来亡者的魂灵，而它们在法术持续时间内环绕于你的身边。这些魂灵无形且不可伤害。<br />　　直到法术终止前，你的所有命中你 10 尺内生物的攻击造成 1d8 额外伤害。伤害类型为光耀、黯蚀或寒冷（由你在施展法术的时候选择）。任何受到此伤害的生物无法恢复生命值直到你的下个回合开始。<br />　　此外，任何你 10 尺内可见生物回合开始时，你可以使其速度降低 10 尺直到你的下个回合开始。<br />　　<strong>升环施法效应：</strong>使用四环或更高法术位施展该法术时，你使用的法术位每比三环高 2 环，其伤害就增加 1d8。</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "",
+        "type": "radius",
+        "size": "",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "10",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 3,
+    "school": "nec",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activities": {
+      "GA2HtHj76ohoI6JJ": {
+        "type": "utility",
+        "_id": "GA2HtHj76ohoI6JJ",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "kjydidYoNaarZI0M"
+          },
+          {
+            "_id": "lBHWltVhN1lBQLaO"
+          },
+          {
+            "_id": "XWlwr9BXnrhm1gzy"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": true,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "kjydidYoNaarZI0M",
+          "lBHWltVhN1lBQLaO",
+          "XWlwr9BXnrhm1gzy"
+        ]
+      }
+    },
+    "identifier": "spirit-shroud-tce"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "eKWjH0NyoSjvzeog",
+  "sort": 700000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!TH2wXQ3yssrGZ821"
+}

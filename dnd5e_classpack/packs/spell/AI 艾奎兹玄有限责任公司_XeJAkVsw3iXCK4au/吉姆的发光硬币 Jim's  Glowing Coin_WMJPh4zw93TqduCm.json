@@ -1,0 +1,313 @@
+{
+  "name": "吉姆的发光硬币 Jim's  Glowing Coin",
+  "type": "spell",
+  "img": "icons/commodities/currency/coin-inset-lightning-green.webp",
+  "system": {
+    "description": {
+      "value": "<blockquote><h3><strong>版税成分</strong></h3><p>　　吉姆·达克马奇的独特施法品牌混合了专业的奥术知识和特殊的财富热情。起初由吉姆开发的新法术产生了新的法术成分，此后，这个成分扩散到了收购公司的雇员和特许经营人所创造的其他法术：这也就是版税成分。</p><p>　　如果要施展一个使用版税成分的法术（包括使用魔法卷轴或其他储存了这个法术的魔法物品），施法者必须拥有足够的个人资金。施法的成本由创造了这个法术的施法者确定，通常是每个法术位等级 1gp。当这个法术被施展时，版税成分将魔法性地传送到由法术创造者设计的一个保险柜或其他物品中。无论施展法术的施法者是否知道版税成分，付款都将会产生。如果这个施法者没有足够的资金，法术并不会丢失，但也不能被施展。</p><p>　　虽然有许多施法者曾经试着绕开版税成分，但并没有人完全成功。不过，据说一名角色可以在施展拥有版税成分的法术同时尝试进行一次 DC15 的智力（奥秘）检定。若检定成功，这个付款将由施法者周围 10 尺内的随机生物进行，而那个生物并不知情。</p></blockquote><p>　　在魔术大师、大冒险家吉姆·达克马奇运用过的许多骗术中，“发光的旧硬币”是其中最为经典的。当你施法时，你将作为法术材料成分的硬币丢往法术距离内任意一点。这枚硬币将会像处于@UUID[Compendium.dnd5e_classpack.spell.rW5ZoeX4jjZw4hBO]{光亮术 light }法术影响一般闪闪发光。在硬币周围 30尺 内，你所能看到、并且由你选择的每一个生物必须通过一次感知豁免检定，否则将会在持续时间内被硬币所分心。在被分心时，生物在感知（察觉）检定和先攻检定中具有劣势。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "AI",
+      "revision": 1,
+      "rules": "2014",
+      "book": "AI",
+      "page": "",
+      "license": ""
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "radius",
+        "size": "30",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "wis",
+    "level": 2,
+    "school": "enc",
+    "materials": {
+      "value": "一枚硬币，版税：2gp",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "somatic",
+      "material"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "hNX8gwY3eg5IZdLH"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": ""
+      }
+    },
+    "identifier": "jims-glowing-coin"
+  },
+  "effects": [
+    {
+      "name": "吉姆的发光硬币 Jim's  Glowing Coin",
+      "img": "icons/commodities/currency/coin-inset-lightning-green.webp",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.WMJPh4zw93TqduCm",
+      "transfer": false,
+      "_id": "hNX8gwY3eg5IZdLH",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.disadvantage.skill.prc",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        },
+        {
+          "key": "flags.dnd5e.initiativeDisadv",
+          "mode": 0,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756708600904,
+        "modifiedTime": 1756709012366,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!WMJPh4zw93TqduCm.hNX8gwY3eg5IZdLH"
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "migratedProperties": [
+        "somatic",
+        "material"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_id": "WMJPh4zw93TqduCm",
+  "folder": "XeJAkVsw3iXCK4au",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757256743402,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!WMJPh4zw93TqduCm"
+}

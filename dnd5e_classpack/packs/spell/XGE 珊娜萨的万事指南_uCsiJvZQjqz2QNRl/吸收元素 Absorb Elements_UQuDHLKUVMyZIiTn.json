@@ -1,0 +1,426 @@
+{
+  "name": "吸收元素 Absorb Elements",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": true,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "effectCondition": "",
+      "otherCondition": "",
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "somatic"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "吸收元素 Absorb Elements",
+        "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+        "type": "script",
+        "scope": "global",
+        "command": "const version = \"11.0.7\";\ntry {\n  let tactor;\n  let itemName = args[0].itemData.name;\n  if (args[0].tokenUuid) tactor = (await fromUuid(args[0].tokenUuid)).actor;\n  else tactor = game.actors.get(args[0].actorId);\n\n  let dialog = new Promise((resolve, reject) => {\n      new Dialog({\n          title: 'Choose a damage type',\n          content: `\n            <form class=\"flexcol\">\n              <div class=\"form-group\">\n                <select id=\"element\">\n                  <option value=\"acid\">Acid</option>\n                  <option value=\"cold\">Cold</option>\n                  <option value=\"fire\">Fire</option>\n                  <option value=\"lightning\">Lightning</option>\n                  <option value=\"thunder\">Thunder</option>\n                </select>\n              </div>\n            </form>\n          `,\n          //select element type\n          buttons: {\n              yes: {\n                  icon: '<i class=\"fas fa-bolt\"></i>',\n                  label: 'Select',\n                  callback: async (html) => {\n                      let element = html.find('#element').val();\n                      let effect =  tactor.effects.find(i => i.label === itemName);\n                      let changes = duplicate(effect.changes);\n                      changes[0].value = `${Math.max(1, args[0].spellLevel)}d6[${element}]`;\n                      changes[1].value = `${Math.max(1,args[0].spellLevel)}d6[${element}]`;\n                      await effect.update({changes});\n                      effect =  tactor.effects.find(i => i.label === `${itemName} Resistance`);\n                      changes = duplicate(effect.changes);\n                      changes[0].value = element;\n                      await effect.update({changes});\n                      resolve();\n                  },\n              },\n          }\n      }).render(true);\n  })\n  await dialog;\n} catch (err) {\n    console.error(`${itemName} - Absorb Elements ${version}`, err);\n}",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.3.9",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "_id": "UQuDHLKUVMyZIiTn",
+  "effects": [
+    {
+      "name": "吸收元素 Absorb Elements",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.UQuDHLKUVMyZIiTn",
+      "_id": "VQcYXWMVQ1IDg4Kx",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.msak.damage",
+          "mode": 2,
+          "value": "0",
+          "priority": 20
+        },
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "0",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": 1,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [
+            "1Hit:mwak",
+            "1Hit:msak"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1754985861193,
+        "modifiedTime": 1754986117531,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!UQuDHLKUVMyZIiTn.VQcYXWMVQ1IDg4Kx"
+    },
+    {
+      "name": "吸收元素 Absorb Elements Resistance",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.UQuDHLKUVMyZIiTn",
+      "_id": "B02H8ldCyC7qrG1y",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "fire",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": 1,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [
+            "None"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1754985954259,
+        "modifiedTime": 1754986307286,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!UQuDHLKUVMyZIiTn.B02H8ldCyC7qrG1y"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<p>此法术捕获了部分袭来的能量，减轻它对你的效果，并将之储存起来以用在你的下一次近战攻击中。在你的下个回合的开始之前，你对于触发法术的伤害类型具有抗力。此外，在你的下个回合，第一次以近战攻击命中时，目标额外受到1d6点触发法术的伤害类型的伤害，同时此法术终结。</p>\n<p><strong>升环效果：</strong>当你使用2环或更高的法术位施放该法术时，使用的法术位每高一环，额外伤害便增加1d6。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "activation": {
+      "type": "reaction",
+      "condition": "于你受到强酸，寒冷，火焰，电击或雷鸣伤害时进行",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "type": "self",
+        "count": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 1,
+    "school": "abj",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "somatic",
+      "mgc"
+    ],
+    "activities": {
+      "nAlToOuDOe4Nsrug": {
+        "type": "utility",
+        "_id": "nAlToOuDOe4Nsrug",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "VQcYXWMVQ1IDg4Kx"
+          },
+          {
+            "_id": "B02H8ldCyC7qrG1y"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "reaction === \"isDamaged\"",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "VQcYXWMVQ1IDg4Kx",
+          "B02H8ldCyC7qrG1y"
+        ]
+      }
+    },
+    "identifier": "absorb-elements"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "uCsiJvZQjqz2QNRl",
+  "sort": 14700000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!UQuDHLKUVMyZIiTn"
+}
