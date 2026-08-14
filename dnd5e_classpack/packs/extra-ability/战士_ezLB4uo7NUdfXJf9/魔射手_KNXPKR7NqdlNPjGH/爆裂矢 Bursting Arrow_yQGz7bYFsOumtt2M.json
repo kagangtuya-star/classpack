@@ -1,0 +1,181 @@
+{
+  "_id": "yQGz7bYFsOumtt2M",
+  "name": "爆裂矢 Bursting Arrow",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_Assassinate2.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         你将从塑能魔法中汲取的力场能量注入到箭中，这股能量会在你攻击后爆炸。当箭击中目标后，目标和其10尺内所有的角色都受到[[/r 2d6]]的力场伤害。</p><p>         当你的战士等级到18级时该力场伤害增加到[[/r 4d6]]。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "魔射手等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "special",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Compendium.dnd5e_classpack.extra-ability.Item.w3EVK3XBgi1HZ5K2"
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "any",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "radius",
+            "size": "10",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "enemy",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(ceil(@classes.fighter.levels/17)*2)d6"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ]
+            }
+          ]
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "-bursting-arrow",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "KNXPKR7NqdlNPjGH",
+  "sort": 51700000,
+  "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yQGz7bYFsOumtt2M"
+}

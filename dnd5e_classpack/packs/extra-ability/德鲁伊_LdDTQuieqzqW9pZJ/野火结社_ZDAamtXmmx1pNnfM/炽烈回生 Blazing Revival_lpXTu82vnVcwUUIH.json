@@ -1,0 +1,170 @@
+{
+  "_id": "lpXTu82vnVcwUUIH",
+  "name": "炽烈回生 Blazing Revival",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Mage_FieryPayback.png",
+  "system": {
+    "description": {
+      "value": "<p>你与野火精魂的连接可以使你免于死亡。</p>\n<p>当你生命值降至 0 从而昏迷时，如果精魂在你的 120 尺内，你可以使精魂降至 0 生命值。之后你就会恢复一半生命值，并立刻站起来。</p>\n<p>一旦你使用这一特性，直到你结束一次长休前你不能再次使用。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "野火结社 Lv.14",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "生命值降至 0 从而昏迷时；精魂在 120 尺内。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-blazing-revival",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "ZDAamtXmmx1pNnfM",
+  "sort": 41600000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757682838504,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!lpXTu82vnVcwUUIH"
+}

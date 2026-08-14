@@ -1,0 +1,362 @@
+{
+  "name": "火焰符文 Fire Rune",
+  "type": "feat",
+  "img": "icons/commodities/treasure/token-engraved-red-glowing.webp",
+  "system": {
+    "description": {
+      "value": "<blockquote style=\"MARGIN-RIGHT:0px\" dir=\"ltr\"><p>此符文的魔法可以引导伟大铁匠的高超技艺。若你穿着或携带着一个铭刻着此符文的物品，你进行与你熟练的工具相关的属性检定时，你的熟练加值翻倍。<br />此外，当你使用武器发动攻击，并命中生物时，你可以激活此符文来召唤出炽热的镣铐：攻击目标将额外受到[[/r 2d6]]点火焰伤害，并需要通过一次力量豁免，若豁免失败将被炽热的镣铐 束缚Restrained 住，持续1分钟。被炽热镣铐束缚期间，目标在自己的每回合开始时将受到[[/r 2d6]]点火焰伤害。目标可以在每个自己回合结束时重复此豁免检定，豁免成功时镣铐将提前消失。<br />一旦你激活了此符文，直到你完成一次短休或长休为止你都不能再次激活它。</p></blockquote>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "@scale.rune-knight.rune_number",
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": "rune"
+    },
+    "requirements": "符文骑士等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": 1,
+          "condition": "使用一次武器攻击击中了一个生物",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "aOu97CRvHPMHPgQr"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "full",
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": "6",
+              "bonus": "",
+              "types": [
+                "fire"
+              ]
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "con",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "name": "符文豁免",
+        "img": "",
+        "appliedEffects": [
+          "aOu97CRvHPMHPgQr"
+        ]
+      },
+      "GLyyEN5rRerhSiCP": {
+        "type": "damage",
+        "_id": "GLyyEN5rRerhSiCP",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": null,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": "6",
+              "bonus": "",
+              "types": [
+                "fire"
+              ]
+            }
+          ]
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "火焰伤害",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "-fire-rune",
+    "advancement": [],
+    "enchant": {
+      "max": "",
+      "period": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "火焰符文 Fire Rune",
+      "img": "icons/commodities/treasure/token-engraved-red-glowing.webp",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.bhJ4eR9o9RgyaEku",
+      "transfer": false,
+      "_id": "aOu97CRvHPMHPgQr",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1749884235790,
+        "modifiedTime": 1749884255882,
+        "lastModifiedBy": "uXKCmWFprrvnSIDm",
+        "exportSource": null
+      },
+      "_key": "!items.effects!bhJ4eR9o9RgyaEku.aOu97CRvHPMHPgQr"
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": 1686420484950,
+    "modifiedTime": 1749887645740,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "uPvUfYC2ROI6knSu",
+  "_id": "bhJ4eR9o9RgyaEku",
+  "sort": 1500000,
+  "ownership": {
+    "default": 0,
+    "Jo05tXxu7yf2dQe3": 3
+  },
+  "_key": "!items!bhJ4eR9o9RgyaEku"
+}

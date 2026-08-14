@@ -1,0 +1,199 @@
+{
+  "_id": "jo4tImzlVO1EqvZj",
+  "name": "神佑医者 Blessed Healer",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_SelflessHealer.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第6级起，你施展的治疗法术也会治疗你自身。你对其他生物施展1环或更高环阶法术法术时，可对自身恢复2＋法术环阶数值的生命值。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 60",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "生命领域等级 6",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "神佑医者",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_SelflessHealer.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.jo4tImzlVO1EqvZj",
+      "_id": "uLHSOou6krEXlDvB",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.onUseMacroName",
+          "mode": 0,
+          "value": "ItemMacro, postActiveEffects",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "none",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757148259875,
+        "modifiedTime": 1757148303232,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!jo4tImzlVO1EqvZj.uLHSOou6krEXlDvB"
+    }
+  ],
+  "folder": "ekBsIjtT8dTU1Hdy",
+  "sort": 33300000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "神佑医者",
+        "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_SelflessHealer.png",
+        "type": "script",
+        "scope": "global",
+        "command": "const version = \"12.4.7\";\ntry {\n    if (rolledItem.type !== \"spell\" || rolledActivity.actionType !== \"heal\") return;\n    // no healing done?\n    if (workflow.v3Damages) {\n        if (!Object.entries(workflow.v3Damages).some(entry => {\n            const [uuid, damages] = entry;\n            return damages.appliedDamage < 0;\n        })) return;\n    } else if (!(workflow.damageList?.some(li => li.oldHP < li.newHP))) return;\n    // only targets self?\n    \n    if (!(workflow.hitTargets.some(t => t.uuid !== workflow.tokenUuid))) return;\n    // await (new Promise(resolve => setTimeout(resolve, 100)))\n    \n    \n    const tactor = workflow.actor;\n    const spellLevel = args[0].spellLevel;\n    const currentHP = tactor.system.attributes.hp.value;\n    const newHP = Math.min(tactor.system.attributes.hp.max, tactor.system.attributes.hp.value + 2 + spellLevel);\n    ChatMessage.create({content: `${tactor.name} cures ${newHP - currentHP} HP of bonus healing`})\n    return tactor.update({\"system.attributes.hp.value\": newHP});\n} catch (err) {\n    console.error(`${macroItem.name} - Blessed Healer ${version}`, err);\n}",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.4.4",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757148320779,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jo4tImzlVO1EqvZj"
+}

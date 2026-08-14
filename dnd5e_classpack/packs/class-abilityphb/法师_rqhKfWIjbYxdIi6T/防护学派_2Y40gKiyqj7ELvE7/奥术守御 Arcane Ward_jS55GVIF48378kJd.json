@@ -1,0 +1,204 @@
+{
+  "_id": "jS55GVIF48378kJd",
+  "name": "奥术守御 Arcane Ward",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_TwilightFireward.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>        第2级起，你可以编织周围的魔法来保护自己。你施展一个1环或更高环阶的防护系法术时，可以用该法术的一丝魔力创造一个保护自己的魔法结界，该结界将持续至你完成一次长休。结界的生命值等于你法师等级的两倍+你的智力调整值。每当你受到伤害时，结界都会代你承受伤害。如果伤害使结界的生命值降至0，则你将承受剩余的伤害。</p>\n<p>        奥术守御的生命值降至0时不再吸收伤害，但其魔法仍然存在。你施展1环或更高环阶的防护系法术时，结界回复两倍于该法术环阶数量的生命值。</p>\n<p>        创造奥术守御后，你必须完成一次长休才能再次创造新的奥术守御。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 79",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 1,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "防护学派等级 2",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "CotpzvNWdiDJUcBC"
+          }
+        ],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "2 * @classes.wizard.levels + @abilities.wis.mod",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "奥术守御",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_TwilightFireward.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.jS55GVIF48378kJd",
+      "transfer": false,
+      "_id": "CotpzvNWdiDJUcBC",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1749900877667,
+        "modifiedTime": 1749900877667,
+        "lastModifiedBy": "Y5bWIYpxDhkJkvP2",
+        "exportSource": null
+      },
+      "_key": "!items.effects!jS55GVIF48378kJd.CotpzvNWdiDJUcBC"
+    }
+  ],
+  "folder": "2Y40gKiyqj7ELvE7",
+  "sort": 33000000,
+  "flags": {
+    "_sheetTab": {},
+    "entityorder": {
+      "order": 171
+    },
+    "dynamiceffects": {
+      "equipActive": false,
+      "alwaysActive": false,
+      "effects": []
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757409180753,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jS55GVIF48378kJd"
+}

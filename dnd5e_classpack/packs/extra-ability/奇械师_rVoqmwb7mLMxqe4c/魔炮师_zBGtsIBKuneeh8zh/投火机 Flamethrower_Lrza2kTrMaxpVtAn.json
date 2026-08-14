@@ -1,0 +1,173 @@
+{
+  "_id": "Lrza2kTrMaxpVtAn",
+  "name": "投火机 Flamethrower",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_Ragnaros_LavaBolt.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>炮台在你指定的一个15尺锥形范围内发射火焰。该区域内的每个生物必须对你的法术豁免DC做一次敏捷豁免检定，如果豁免失败则受到[[/r 2d8]]火焰伤害，成功的豁免检定将使伤害减半。火焰会点燃该地区内任何未被穿戴或携带的易燃物品。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "ERLW",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "魔炮师等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "cone",
+            "size": "15",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-flamethrower",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "zBGtsIBKuneeh8zh",
+  "sort": 21200000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757420910468,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Lrza2kTrMaxpVtAn"
+}

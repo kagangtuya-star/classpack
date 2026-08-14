@@ -1,0 +1,161 @@
+{
+  "_id": "Kz5Ylv8DxVzoXvV9",
+  "name": "超然抗性 Supernatural Resistance",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_DeathKnight_IceBoundFortitude.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         第 15级时，该圣骑士获得对非魔法武器的钝击、刺穿、挥砍伤害的抗性。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "破誓者等级 15",
+    "activities": {},
+    "identifier": "-supernatural-resistance",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "VvH1R7vylcS99tLw",
+      "changes": [
+        {
+          "key": "system.traits.dr.midi.non-magical-physical",
+          "mode": 2,
+          "value": "+1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.Kz5Ylv8DxVzoXvV9",
+      "transfer": true,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": null,
+        "modifiedTime": 1757682743134,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "获得非魔法的钝击、刺穿、挥砍抗性",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_DeathKnight_IceBoundFortitude.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!Kz5Ylv8DxVzoXvV9.VvH1R7vylcS99tLw"
+    }
+  ],
+  "folder": "Ijhn9cDop3SHIsxn",
+  "sort": 20200000,
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1751430685725,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Kz5Ylv8DxVzoXvV9"
+}

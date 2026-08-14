@@ -1,0 +1,156 @@
+{
+  "_id": "H5J2aANa4OhuuPmv",
+  "name": "精魂之盾 Spirit Shield",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_VictoryRush.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>从6级开始，卫士之魂会帮助你为你的盟友提供超自然保护。若你处于@UUID[Compendium.dnd5e_classpack.class-abilityphb.gLNFWGL05O0FUNTD]{狂暴}，而一个处于你周围30尺内的，你能看到的其他生物受到伤害，你可以用一个反应动作来降低[[/r 2d6]]的伤害。</p>\n<p>当你达到这一范型的更高等级，你可以防止更多的伤害：10级[[/r 3d6]]，14级[[/r 4d6]]。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "先祖守卫等级 6",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "@scale.path-of-the-ancestral-guardian.spirit-shield",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-spirit-shield",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "EP9g39NGInJOOWLK",
+  "sort": 17400000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default"
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757420910468,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!H5J2aANa4OhuuPmv"
+}

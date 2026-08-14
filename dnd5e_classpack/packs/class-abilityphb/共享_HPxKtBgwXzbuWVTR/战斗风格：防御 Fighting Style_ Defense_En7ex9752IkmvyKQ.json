@@ -1,0 +1,135 @@
+{
+  "_id": "En7ex9752IkmvyKQ",
+  "name": "战斗风格：防御 Fighting Style: Defense",
+  "type": "feat",
+  "img": "icons/equipment/shield/heater-stone-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>着装护甲时，你的AC获得 +1加值。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 72; 73; 85; 91",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "fightingStyle"
+    },
+    "requirements": "战士等级 1，勇士等级 10，圣武士等级 2，游侠等级 2",
+    "activities": {},
+    "identifier": "-defense",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "9GSYQ3AW6Uz3mel0",
+      "flags": {
+        "core": {}
+      },
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.En7ex9752IkmvyKQ",
+      "tint": "#ffffff",
+      "transfer": true,
+      "name": "战斗风格：防御",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.classfeatures.Item.zSlV0O2rQMdoq6pB.ActiveEffect.U3so0zDcVt4sIBRz",
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/equipment/shield/heater-stone-orange.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!En7ex9752IkmvyKQ.9GSYQ3AW6Uz3mel0"
+    }
+  ],
+  "folder": "HPxKtBgwXzbuWVTR",
+  "sort": 13700000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": 1711461566104,
+    "modifiedTime": 1757273483753,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!En7ex9752IkmvyKQ"
+}

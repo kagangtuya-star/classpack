@@ -1,0 +1,178 @@
+{
+  "_id": "5RpPB6Lwkva1meGG",
+  "name": "神圣打击（死亡） Divine Strike",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/spell_shadow_curse.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         第8级时，该牧师可以使其武器打击充满负能量。该牧师在每个其自己回合里有一次机会，可以在用武器攻击命中某生物时额外造成[[/r 1d8]]的黯蚀伤害。第14级时，该伤害提升到[[/r 2d8]]。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "turn",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "死亡领域等级 8",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.cleric.divine-strike"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-divine-strike",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "woen0aujzat6uiOF",
+  "sort": 9300000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757407470272,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5RpPB6Lwkva1meGG"
+}

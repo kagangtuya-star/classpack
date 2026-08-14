@@ -1,0 +1,217 @@
+{
+  "name": "散打技巧(丧失反应)",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_SecondWind.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第3级选择散打宗后，你可以在击中敌人时操作其体内的气。当你用@UUID[Compendium.dnd5e_classpack.class-abilityphb.vLuoFN1x3tRWTPdm]{疾风连击}特性的攻击击中敌人时，你可以让该目标承受下列效应之一：</p><ul><li>目标直到你的下一回合结束前，无法执行反应。</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 79",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "散打宗等级 3",
+    "cover": null,
+    "crewed": false,
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Vwfq1WoGEy0CZzhu"
+          }
+        ],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "enchant": {}
+  },
+  "effects": [
+    {
+      "name": "散打技巧(丧失反应)",
+      "origin": "Item.uAj0aW9yrfwjHplq",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {},
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "Vwfq1WoGEy0CZzhu",
+      "changes": [],
+      "description": "",
+      "transfer": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_SecondWind.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!fA8C3DfWNfShzZi4.Vwfq1WoGEy0CZzhu"
+    }
+  ],
+  "folder": "GGprLEAtt080JE4q",
+  "flags": {
+    "_sheetTab": {},
+    "entityorder": {
+      "order": 115
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1725887708481,
+    "modifiedTime": 1749711076290,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "e4wUhoMqlYUuBuAF": 3
+  },
+  "_id": "fA8C3DfWNfShzZi4",
+  "sort": 100000,
+  "_key": "!items!fA8C3DfWNfShzZi4"
+}

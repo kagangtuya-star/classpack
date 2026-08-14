@@ -1,0 +1,176 @@
+{
+  "name": "猛力之臂 Empowered Arms",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ability_bastion_monk.jpg",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>当你同时召唤@UUID[Compendium.dnd5e_classpack.extra-ability.Qctmiuim4M9SfU1E]{星我之臂}和@UUID[Compendium.dnd5e_classpack.extra-ability.vimr3VI7xsnK1ydv]{星我之容}时，你可以让你的星我之躯出现（不需要任何动作），这个幽光般的躯体如同一件盔甲般复盖着你的身体，与星我之臂和星我之容相连。你来决定它的外观。</p><p>当星我之躯出现时，你将获得如下增益：</p><ul><li><strong>注能之臂</strong>。你的每回合中有一次机会，当你用星我之臂攻击命中目标时，你可以对目标造成额外伤害，相当于你的武艺骰。</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "星我宗等级 11",
+    "cover": null,
+    "crewed": false,
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.monk.die"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "enchant": {}
+  },
+  "effects": [],
+  "folder": "iCuH82y7M7u0PEJ9",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "otherCondition": "",
+      "effectCondition": "",
+      "reactionCondition": ""
+    },
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1725892381990,
+    "modifiedTime": 1757865035929,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "e4wUhoMqlYUuBuAF": 3
+  },
+  "_id": "K9VJGTVBvQ5PiwIW",
+  "sort": 3000000,
+  "_key": "!items!K9VJGTVBvQ5PiwIW"
+}

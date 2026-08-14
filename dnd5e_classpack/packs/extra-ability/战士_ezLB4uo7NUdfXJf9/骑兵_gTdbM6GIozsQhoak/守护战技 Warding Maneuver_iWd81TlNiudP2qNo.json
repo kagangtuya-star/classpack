@@ -1,0 +1,164 @@
+{
+  "_id": "iWd81TlNiudP2qNo",
+  "name": "守护战技 Warding Maneuver",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Mount_Charger.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         7级起，你学会如何抵御对你、你的坐骑和你附近角色的直接攻击。如果你或者在你5尺之内对你可视的一名角色被一次攻击击中，且你手持一把近战武器或者一面盾牌，你能以一个反应投一个[[/r 1d8]]，将骰值加入被攻击角色的AC中。如果这次攻击仍然击中，则被攻击目标对这次攻击伤害有抗性。</p>\n<p>         你能够使用该特性的次数等同于你的体质调整值（至少为1），而且你在长休后重新获得所有被消耗的使用次数。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "max(@abilities.con.mod, 1)",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "骑兵等级 7",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d8",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "-warding-maneuver",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "gTdbM6GIozsQhoak",
+  "sort": 37600000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default"
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iWd81TlNiudP2qNo"
+}

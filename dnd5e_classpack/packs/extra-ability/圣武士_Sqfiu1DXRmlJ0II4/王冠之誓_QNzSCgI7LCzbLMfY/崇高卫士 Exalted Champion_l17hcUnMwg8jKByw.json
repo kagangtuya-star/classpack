@@ -1,0 +1,244 @@
+{
+  "_id": "l17hcUnMwg8jKByw",
+  "name": "崇高卫士 Exalted Champion",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_Conviction.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>从20级起，对于那些献身于你所遵从的事业的人而言，你已经成为了一个鼓舞人心的完美典范。你可以用一个动作在接下来1个小时里得到如下好处：</p>\n<ul>\n<li>你对非魔法武器所造成的钝击、穿刺、挥砍伤害具有抗性。</li>\n<li>在你30尺距离内的盟友在进行死亡豁免时具有优势。</li>\n<li>你和你30尺距离内的盟友在感知豁免上具有优势。</li>\n</ul>\n<p>如果你死亡或者进入失能状态，这个效果将提前结束。一旦你使用了这个能力，在你完成一次长休之前你不能再次使用。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SCAG",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "王冠之誓等级 20",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-exalted-champion",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "Qt0n5FAwhS7O9Esf",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "value": "piercing",
+          "mode": 0,
+          "priority": 20
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "bludgeoning",
+          "mode": 0,
+          "priority": 20
+        },
+        {
+          "key": "system.traits.dr.value",
+          "value": "slashing",
+          "mode": 0,
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.advantage.save.wis",
+          "value": "",
+          "mode": 0,
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.l17hcUnMwg8jKByw",
+      "transfer": true,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": 1786693489959,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "获得非魔法的钝击、刺穿、挥砍抗性",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Paladin_Conviction.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!l17hcUnMwg8jKByw.Qt0n5FAwhS7O9Esf"
+    }
+  ],
+  "folder": "QNzSCgI7LCzbLMfY",
+  "sort": 40300000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749972269057,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!l17hcUnMwg8jKByw"
+}

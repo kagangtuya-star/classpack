@@ -1,0 +1,159 @@
+{
+  "_id": "utiy2TGJ0Ue1P3RL",
+  "name": "亦真亦幻 Illusory Reality",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Misc_ConjureManaJewel.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>        第14级起，你学会将暗影魔法编入幻术中的秘法，并以此使你的幻术获得半真实的效果。你施展一个1环或更高环阶的幻术系法术时，可以选择幻象中一个无生命的非魔法物件，并让该物件化作真实。你可以在自己回合中，相应法术持续时间内以一个附赠动作完成此事。被指定的物件将在接下来1分钟内保持真实。例如，你可以用幻术创造出一座桥梁横跨峡谷，而后将之化作真实以让你的队友在持续时间内穿行于桥面。</p>\n<p>        被化作真实的物件无法造成伤害，也无法以任何其他方式直接伤害任何事物。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "幻术学派等级 14",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "folder": "A1KHl3G0Pn70Hot1",
+  "sort": 41200000,
+  "flags": {
+    "_sheetTab": {},
+    "entityorder": {
+      "order": 171
+    },
+    "dynamiceffects": {
+      "equipActive": false,
+      "alwaysActive": false,
+      "effects": []
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757264274994,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!utiy2TGJ0Ue1P3RL"
+}

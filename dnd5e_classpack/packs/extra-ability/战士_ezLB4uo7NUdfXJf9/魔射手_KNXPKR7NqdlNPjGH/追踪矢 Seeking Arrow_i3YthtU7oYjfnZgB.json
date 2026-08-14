@@ -1,0 +1,185 @@
+{
+  "_id": "i3YthtU7oYjfnZgB",
+  "name": "追踪矢 Seeking Arrow",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Hunter_Misdirection.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         使用预言魔法，你赋予你的箭自寻目标的能力。当你使用该选项时，你不用为该次攻击投攻击骰，取而代之，选择一名在过去的1分钟里你见过的角色。如果需要的话，这只箭会立刻掉头飞向那名角色，且忽视四分之三和半遮蔽。如果目标在箭的射程范围内且中间路程适合箭飞行至目标，目标必须做一个敏捷豁免。如果豁免失败，角色会受到如同被这只箭击中的伤害和额外[[/r 1d6]]的穿刺伤害，而且你得知目标的确切位置。如果成功，伤害减半且你无法得知其方位。如果目标不在范围内，箭会在飞行到最大距离后消失。</p>\n<p>         当你的战士等级到18级时该穿刺伤害增加到[[/r 2d6]]。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "魔射手等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "Compendium.dnd5e_classpack.extra-ability.Item.w3EVK3XBgi1HZ5K2"
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(ceil(@classes.fighter.levels/17))d6"
+              },
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ]
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "int",
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "-seeking-arrow",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "KNXPKR7NqdlNPjGH",
+  "sort": 37200000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "saveDamage": "halfdam",
+      "bonusSaveDamage": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!i3YthtU7oYjfnZgB"
+}

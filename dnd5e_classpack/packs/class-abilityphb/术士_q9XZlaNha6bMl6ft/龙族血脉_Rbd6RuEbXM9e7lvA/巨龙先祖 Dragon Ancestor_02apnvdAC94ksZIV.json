@@ -1,0 +1,130 @@
+{
+  "_id": "02apnvdAC94ksZIV",
+  "name": "巨龙先祖 Dragon Ancestor",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ExpansionIcon_Cataclysm.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第1级时，你选择一种巨龙作为你的先祖。对应的伤害类型将在随后获得的特性中用到。<br />你可以说、读、写龙语。此外，你与巨龙互动时进行的魅力检定可以使用熟练加值时，可以加上双倍的加值。</p>\n<table>\n<tbody>\n<tr>\n<th>龙种</th>\n<th>伤害类型</th>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.3uIursokd3KdZrW3]{白龙}</td>\n<td>冰冻</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.M4eX4Mu5IHCr3TMf]{黑龙}</td>\n<td>强酸</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.cGM3iVYTtCsYXjzO]{蓝龙}</td>\n<td>闪电</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.7vswgicsiMfS4ZTS]{黄铜龙}</td>\n<td>火焰</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.VCuG0Z3MrO8kfDU0]{青铜龙}</td>\n<td>闪电</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.irz834sqAxRihtSG]{赤铜龙}</td>\n<td>强酸</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.MO382D2sxtAIuUC5]{金龙}</td>\n<td>火焰</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.GP8JMSDugRxuLOD2]{绿龙}</td>\n<td>毒素</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.ZyIBOoZZD0nDaO2s]{红龙}</td>\n<td>火焰</td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.geM2F7HvVGhtk3h4]{银龙}</td>\n<td>冰冻</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 102",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "龙族血脉等级 1",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "zkcTJBVBrZbjleeB",
+      "changes": [
+        {
+          "key": "system.traits.languages.value",
+          "mode": 2,
+          "value": "draconic",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.02apnvdAC94ksZIV",
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "习得龙语",
+      "img": "modules/dnd5e_classpack/Nicons/ExpansionIcon_Cataclysm.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!02apnvdAC94ksZIV.zkcTJBVBrZbjleeB"
+    }
+  ],
+  "folder": "Rbd6RuEbXM9e7lvA",
+  "sort": 4300000,
+  "flags": {
+    "_sheetTab": {},
+    "entityorder": {
+      "order": 72
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757407021642,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!02apnvdAC94ksZIV"
+}

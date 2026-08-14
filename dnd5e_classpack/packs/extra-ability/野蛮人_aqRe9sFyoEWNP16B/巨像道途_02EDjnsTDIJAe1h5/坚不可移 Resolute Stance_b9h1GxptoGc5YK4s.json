@@ -1,0 +1,279 @@
+{
+  "name": "坚不可移 Resolute Stance",
+  "type": "feat",
+  "_id": "b9h1GxptoGc5YK4s",
+  "img": "modules/dnd5e_classpack/Nicons/images/skill_icon_90.png",
+  "system": {
+    "activities": {
+      "yi0Cwfqv9YBNlgLQ": {
+        "type": "utility",
+        "_id": "yi0Cwfqv9YBNlgLQ",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "LlAFYX1wqQ5BBEtj"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>同样6级起，你能临时性的调配你的战斗能力，让自己成为一堵防御之墙。在你的回合开始时（无需动作），你能够使自己进入防御姿态，持续直至你的下个回合开始。在这一姿态下，你无法被 <strong>擒抱Grappled</strong> ，任何对你发动的攻击都将具有劣势，不过你发动的武器攻击也将具有劣势。</p>",
+      "chat": ""
+    },
+    "identifier": "-",
+    "source": {
+      "revision": 1,
+      "rules": "2024"
+    },
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "巨像道途等级 6",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "坚不可移",
+      "img": "modules/dnd5e_classpack/Nicons/images/skill_icon_90.png",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.b9h1GxptoGc5YK4s",
+      "transfer": false,
+      "_id": "LlAFYX1wqQ5BBEtj",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.traits.ci.value",
+          "mode": 2,
+          "value": "grappled",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.disadvantage.attack.all",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.grants.disadvantage.attack.all",
+          "mode": 0,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": 6,
+        "combat": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<p><span style=\"font-family:'Roboto Condensed', sans-serif\">你无法被<strong>擒抱</strong> ，任何对你发动的攻击都将具有劣势，不过你发动的武器攻击也将具有劣势。</span></p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": true,
+          "selfTargetAlways": true,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": true,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756617212734,
+        "modifiedTime": 1756617373413,
+        "lastModifiedBy": "vFLRCDyc5l72uRlV",
+        "exportSource": null
+      },
+      "_key": "!items.effects!b9h1GxptoGc5YK4s.LlAFYX1wqQ5BBEtj"
+    }
+  ],
+  "folder": "02EDjnsTDIJAe1h5",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "vFLRCDyc5l72uRlV": 3
+  },
+  "flags": {
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1756617138692,
+    "modifiedTime": 1756617212805,
+    "lastModifiedBy": "vFLRCDyc5l72uRlV",
+    "exportSource": null
+  },
+  "_key": "!items!b9h1GxptoGc5YK4s"
+}

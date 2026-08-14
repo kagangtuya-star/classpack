@@ -1,0 +1,180 @@
+{
+  "_id": "1E19Tn2jHof6kqSZ",
+  "name": "凝神聚气Focused Aim",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ability_monk_domeofmist.png",
+  "system": {
+    "description": {
+      "value": "<p>当你攻击检定未命中时，你可以花费1到3点气来使该次攻击检定获得加值，每点气的消耗能获得+2加值，这可能会使原本的未命中改为命中。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "ki"
+    },
+    "requirements": "武僧等级 5",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": 0,
+          "condition": "攻击检定未命中",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.2N9lOBZ0UerzDM55",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "+ 2",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "focused-aim",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "w7xlHztIT8o7aKk6",
+  "sort": 5500000,
+  "flags": {
+    "magic-items-2": {
+      "enabled": false,
+      "default": "",
+      "equipped": false,
+      "attuned": false,
+      "charges": "0",
+      "chargeType": "c1",
+      "destroy": false,
+      "destroyFlavorText": "充能耗尽，它崩碎成了一堆灰烬。",
+      "rechargeable": false,
+      "recharge": "0",
+      "rechargeType": "t1",
+      "rechargeUnit": "r1",
+      "sorting": "l"
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757407218325,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1E19Tn2jHof6kqSZ"
+}

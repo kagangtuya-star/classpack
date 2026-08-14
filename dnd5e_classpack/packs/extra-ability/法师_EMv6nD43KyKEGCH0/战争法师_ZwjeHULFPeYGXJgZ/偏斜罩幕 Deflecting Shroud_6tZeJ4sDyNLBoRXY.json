@@ -1,0 +1,150 @@
+{
+  "_id": "6tZeJ4sDyNLBoRXY",
+  "name": "偏斜罩幕 Deflecting Shroud",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Arcane_MassDispel.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>从14级起，你的@UUID[Compendium.dnd5e_classpack.extra-ability.WsBRhWXSAk452GUy]{奥术偏斜}被灌注了致命的魔法。当你使用你的奥术偏斜特性时，你可以让魔法能量从你身上涌出。至多三个60尺内你能看见的目标受到半数于你法师等级的力场伤害。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "战争法师等级 14",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "any"
+          },
+          "affects": {
+            "count": "3",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "(floor(@classes.wizard.levels /2))"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-deflecting-shroud",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "ZwjeHULFPeYGXJgZ",
+  "sort": 10600000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6tZeJ4sDyNLBoRXY"
+}

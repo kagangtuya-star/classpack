@@ -1,0 +1,163 @@
+{
+  "_id": "pLs9KC0WOibsqE3v",
+  "name": "魔能祈唤: 魔鬼视界 Eldritch Invocations: Devil's Sight",
+  "type": "feat",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "system": {
+    "description": {
+      "value": "<p>你在黑暗中拥有120尺的视野距离，而无论其属于魔法黑暗还是非魔法黑暗。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 110",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "requirements": "邪术师等级 2",
+    "activities": {},
+    "identifier": "-",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 2,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "_id": "bzyNzpePyl1DGzHW",
+      "changes": [
+        {
+          "key": "system.attributes.senses.darkvision",
+          "mode": 4,
+          "value": "120",
+          "priority": 40
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.pLs9KC0WOibsqE3v",
+      "transfer": true,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": null,
+        "modifiedTime": 1757140124055,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "获得 120 尺黑暗视野",
+      "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!pLs9KC0WOibsqE3v.bzyNzpePyl1DGzHW"
+    }
+  ],
+  "folder": "o5aPffxN3VG2SeQa",
+  "sort": 1200000,
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757263777603,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!pLs9KC0WOibsqE3v"
+}

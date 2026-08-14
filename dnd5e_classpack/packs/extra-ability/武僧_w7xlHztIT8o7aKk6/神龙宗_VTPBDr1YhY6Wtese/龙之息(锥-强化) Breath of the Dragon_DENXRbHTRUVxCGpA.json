@@ -1,0 +1,295 @@
+{
+  "name": "龙之息(锥-强化) Breath of the Dragon",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/inv_10_enchanting2_magicswirl_bronze.png",
+  "system": {
+    "description": {
+      "value": "<p>你可以引导气来将其化为毁灭性的能量波，如同你所模仿的巨龙。当你在你的回合进行攻击动作，你可以将其中一次攻击替换为喷吐出一团20尺锥状或30尺长5尺宽线状（由你选择）的龙类能量。选择以下一种伤害类型：强酸，冷冻，火焰，闪电或毒素。范围内的每个生物必须通过一次对抗你的气豁免DC的敏捷豁免，豁免失败者将于受到等同两个你武艺骰的对应类型的伤害，豁免成功则伤害减半。</p><p>第11级时，你的吐息伤害提升到三个你的武艺骰。</p><p>你可以使用此特性的次数等同于你的熟练加值（PB），且在完成一次长休后恢复所有使用次数。当你没有使用次数时，你可以花费2点气来使用此特性。</p><ul style=\"box-sizing:border-box;user-select:text;margin:0.5em 0px;padding:0px 0px 0px 1.5em;color:rgb(25, 24, 19);font-family:Signika, sans-serif;font-size:13px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\"><li style=\"box-sizing:border-box;user-select:text\"><span style=\"font-family:Signika, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text\">强化吐息。</strong>当你使用你的龙之息时，你可以消耗1点气对其塑形并增强其威力。你呼出的龙类能量增长至60尺锥状或90尺长5尺宽线状（由你选择），且范围内的每个生物豁免失败时会受到等同四个你武艺骰的对应类型的伤害，豁免成功则伤害减半。 </span></li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "FTD",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "神龙宗等级 3",
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "当你在你的回合进行攻击动作；当你没有使用次数时，2点气。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "Compendium.dnd5e_classpack.extra-ability.Item.VDcmX8LlO92IGktH",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "cone",
+            "size": "60",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": true,
+                "formula": "4@scale.monk.die"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "当你在你的回合进行攻击动作；当你没有使用次数时，2点气。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "Compendium.dnd5e_classpack.extra-ability.Item.VDcmX8LlO92IGktH",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "cone",
+            "size": "60",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": true,
+                "formula": "4@scale.monk.die"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "--breath-of-the-dragon",
+    "advancement": [],
+    "enchant": {}
+  },
+  "effects": [],
+  "flags": {
+    "core": {},
+    "dynamiceffects": {
+      "equipActive": false,
+      "alwaysActive": false
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "saveDamage": "default",
+      "bonusSaveDamage": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default"
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 2,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": 1725894030722,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "VTPBDr1YhY6Wtese",
+  "ownership": {
+    "default": 0,
+    "e4wUhoMqlYUuBuAF": 3
+  },
+  "_id": "DENXRbHTRUVxCGpA",
+  "sort": 800000,
+  "_key": "!items!DENXRbHTRUVxCGpA"
+}

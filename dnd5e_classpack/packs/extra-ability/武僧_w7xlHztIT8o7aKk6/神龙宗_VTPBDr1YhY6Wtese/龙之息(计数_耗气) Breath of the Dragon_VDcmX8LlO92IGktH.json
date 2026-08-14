@@ -1,0 +1,259 @@
+{
+  "name": "龙之息(计数/耗气) Breath of the Dragon",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/inv_10_enchanting2_magicswirl_bronze.png",
+  "system": {
+    "description": {
+      "value": "<p>你可以引导气来将其化为毁灭性的能量波，如同你所模仿的巨龙。当你在你的回合进行攻击动作，你可以将其中一次攻击替换为喷吐出一团20尺锥状或30尺长5尺宽线状（由你选择）的龙类能量。选择以下一种伤害类型：强酸，冷冻，火焰，闪电或毒素。范围内的每个生物必须通过一次对抗你的气豁免DC的敏捷豁免，豁免失败者将于受到等同两个你武艺骰的对应类型的伤害，豁免成功则伤害减半。</p><p>第11级时，你的吐息伤害提升到三个你的武艺骰。</p><p>你可以使用此特性的次数等同于你的熟练加值（PB），且在完成一次长休后恢复所有使用次数。当你没有使用次数时，你可以花费2点气来使用此特性。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "FTD",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "神龙宗等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "当你在你的回合进行攻击动作；当你没有使用次数时，2点气。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.2N9lOBZ0UerzDM55",
+              "value": "2",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "当你在你的回合进行攻击动作；当你没有使用次数时，2点气。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "Compendium.dnd5e_classpack.class-abilityphb.Item.2N9lOBZ0UerzDM55",
+              "value": "2",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-breath-of-the-dragon",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {
+    "core": {},
+    "dynamiceffects": {
+      "equipActive": false,
+      "alwaysActive": false
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "saveDamage": "default",
+      "bonusSaveDamage": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 2,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": "Compendium.dnd5e_classpack.extra-ability.bolUalIQ1Ad2I6Mg",
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "VDcmX8LlO92IGktH",
+  "folder": "VTPBDr1YhY6Wtese",
+  "sort": 27300000,
+  "ownership": {
+    "default": 0,
+    "wovyjRBV4JoGHRB8": 3
+  },
+  "_key": "!items!VDcmX8LlO92IGktH"
+}

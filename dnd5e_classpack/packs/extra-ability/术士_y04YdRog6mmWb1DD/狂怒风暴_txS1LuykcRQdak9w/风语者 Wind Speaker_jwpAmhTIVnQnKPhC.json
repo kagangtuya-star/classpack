@@ -1,0 +1,150 @@
+{
+  "_id": "jwpAmhTIVnQnKPhC",
+  "name": "风语者 Wind Speaker",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Shaman_AncestralGuidance.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         从1级起，你操纵的奥术魔法浸染着风元素之力。你可以听、说、读、写原初语 Primordial。（了解这种语言允许你了解这些说这种语言的种族，同时你说的话也被他们理解：水族语Aquan,气族语Auran,火族语Ignan,土族语Terran）。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SCAG",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "狂怒风暴等级 1",
+    "activities": {},
+    "identifier": "-wind-speaker",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "z6rTlgYXWv4On4bY",
+      "changes": [
+        {
+          "key": "system.traits.languages.value",
+          "mode": 2,
+          "value": "primordial",
+          "priority": null
+        },
+        {
+          "key": "system.traits.languages.value",
+          "mode": 2,
+          "value": "aquan",
+          "priority": null
+        },
+        {
+          "key": "system.traits.languages.value",
+          "mode": 2,
+          "value": "auran",
+          "priority": null
+        },
+        {
+          "key": "system.traits.languages.value",
+          "mode": 2,
+          "value": "ignan",
+          "priority": null
+        },
+        {
+          "key": "system.traits.languages.value",
+          "mode": 2,
+          "value": "terran",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.extra-ability.jwpAmhTIVnQnKPhC",
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "习得原初语、水族语、气族语、火族语、土族语",
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Shaman_AncestralGuidance.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!jwpAmhTIVnQnKPhC.z6rTlgYXWv4On4bY"
+    }
+  ],
+  "folder": "txS1LuykcRQdak9w",
+  "sort": 38800000,
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757415988570,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jwpAmhTIVnQnKPhC"
+}

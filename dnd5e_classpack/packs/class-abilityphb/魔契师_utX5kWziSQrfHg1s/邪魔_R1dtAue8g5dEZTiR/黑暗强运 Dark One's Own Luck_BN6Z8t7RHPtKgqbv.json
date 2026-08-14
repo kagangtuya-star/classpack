@@ -1,0 +1,190 @@
+{
+  "_id": "BN6Z8t7RHPtKgqbv",
+  "name": "黑暗强运 Dark One's Own Luck",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Shadow_DemonicEmpathy.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第6级起，你可以呼唤你的宗主有利的改写你的命运。当你进行属性检定或豁免检定时，可以使用该特性为此次掷骰增添一个[[/r d10]]骰。你可以在看到掷骰结果后，但其结果生效前使用该特性。</p>\n<p>直到你必须完成一次长休或短休才能再次使用该特性。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 109",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "邪魔等级 6",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "黑暗强运",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Shadow_DemonicEmpathy.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.BN6Z8t7RHPtKgqbv",
+      "_id": "fsZVcTbUy4cBfvyC",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.黑暗强运.count",
+          "mode": 2,
+          "value": "ItemUses.黑暗强运 Dark One's Own Luck",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.黑暗强运.check.all",
+          "mode": 2,
+          "value": "+1d10",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.黑暗强运.save.all",
+          "mode": 2,
+          "value": "+1d10",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.NAME.label",
+          "mode": 2,
+          "value": "黑暗强运",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757099113766,
+        "modifiedTime": 1757100345052,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!BN6Z8t7RHPtKgqbv.fsZVcTbUy4cBfvyC"
+    }
+  ],
+  "folder": "R1dtAue8g5dEZTiR",
+  "sort": 11900000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757099560407,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BN6Z8t7RHPtKgqbv"
+}

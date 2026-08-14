@@ -1,0 +1,164 @@
+{
+  "_id": "kQbdBnEVZWpyM4oT",
+  "name": "狂暴牵引 Violent Attraction",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/003142.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         10级起，当一个除你以外，位于你60尺内且你可见的生物被武器攻击命中时，你能用你的反应加快这次攻击的速度，使得被攻击的目标额外受到[[/r 1d10]]的该武器类型所造成的伤害。</p>\n<p>          此外，如果一个位于你60尺内的生物遭受了坠落伤害，你能用你的反应来增加这次坠落所造成的伤害，增加值为[[/r 1d10]]。</p>\n<p>         你能使用本特性的次数等于你的智力调整值（最少一次）。当你完成一次长休后，你恢复所有的使用次数。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "EGtW",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "max(@abilities.int.mod,1)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "重力魔法等级 10",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-violent-attraction",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "e8uUlfrnkbMmJzV8",
+  "sort": 39400000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kQbdBnEVZWpyM4oT"
+}

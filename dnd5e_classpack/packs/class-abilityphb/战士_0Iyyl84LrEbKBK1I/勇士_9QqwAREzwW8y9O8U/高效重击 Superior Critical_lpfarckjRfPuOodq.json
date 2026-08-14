@@ -1,0 +1,146 @@
+{
+  "_id": "lpfarckjRfPuOodq",
+  "name": "高效重击 Superior Critical",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Gouge.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第15级起，你的武器攻击掷出18~20时即可造成重击。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 73",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "勇士等级 15",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "高效重击",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.lpfarckjRfPuOodq",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {},
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "hHFBbuR7WyH89ig0",
+      "changes": [
+        {
+          "key": "flags.dnd5e.weaponCriticalThreshold",
+          "mode": 0,
+          "value": "18",
+          "priority": 20
+        }
+      ],
+      "description": "",
+      "transfer": true,
+      "statuses": [],
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Gouge.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!lpfarckjRfPuOodq.hHFBbuR7WyH89ig0"
+    }
+  ],
+  "folder": "9QqwAREzwW8y9O8U",
+  "sort": 34600000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1725706963274,
+    "modifiedTime": 1757097860731,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lpfarckjRfPuOodq"
+}

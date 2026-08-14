@@ -1,0 +1,235 @@
+{
+  "_id": "pJzyebuSKqOCNpAN",
+  "name": "狂热存在 Zealous Presence",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Crusade.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>在10级时，你学会了引导神力，让其他人也被狂热所感染。以一个附赠动作，你愤怒的怒吼并释放出一道蕴含神圣能量的战吼。选择至多10个距离你60尺以内并且能听到你吼叫的其他生物（不包括你自己），直到你的下个回合开始，在攻击检定和豁免检定中获得优势。</p>\n<p>一旦你使用了此特性，你不能再次使用它，直到你完成了一次长休。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "狂热者等级 10",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "c7ZVNdKNDNUkGE9q"
+          }
+        ],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "10",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-zealous-presence",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "狂热存在 Zealous Presence",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.pJzyebuSKqOCNpAN",
+      "duration": {
+        "rounds": 1,
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {},
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "c7ZVNdKNDNUkGE9q",
+      "changes": [
+        {
+          "key": "flags.midi-qol.advantage.attack.all",
+          "value": "1",
+          "mode": 0,
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.advantage.save.all",
+          "value": "1",
+          "mode": 0,
+          "priority": 20
+        }
+      ],
+      "description": "",
+      "transfer": false,
+      "statuses": [],
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": 1786693489963,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_Crusade.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!pJzyebuSKqOCNpAN.c7ZVNdKNDNUkGE9q"
+    }
+  ],
+  "folder": "e1N9gUl3eH3gHgex",
+  "sort": 44400000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1724868059026,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pJzyebuSKqOCNpAN"
+}

@@ -1,0 +1,249 @@
+{
+  "name": "山丘符文 Hill Rune",
+  "type": "feat",
+  "img": "icons/commodities/treasure/token-engraved-alpha-grey.webp",
+  "system": {
+    "description": {
+      "value": "<blockquote style=\"MARGIN-RIGHT:0px\" dir=\"ltr\"><p>此符文的魔力可以赋予你如山丘巨人一般的坚韧。若你穿着或携带着一个铭刻着此符文的物品，你对抗 中毒poisoned 状态所进行的豁免检定将具有优势，你获得毒素伤害的抗性。<br />此外，你可以使用附赠动作激活此符文，以此获得钝击、挥砍和穿刺伤害抗性，持续1分钟。<br />一旦你激活了此符文，直到你完成一次短休或长休为止你都不能再次激活它。</p></blockquote>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "@scale.rune-knight.rune_number",
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": "rune"
+    },
+    "requirements": "符文骑士等级 7",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Ofb8ThGpoiJflXBF"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "-hill-rune",
+    "advancement": [],
+    "enchant": {
+      "max": "",
+      "period": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "name": "山丘符文 Hill Rune",
+      "img": "icons/commodities/treasure/token-engraved-alpha-grey.webp",
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.YW7dnQCKzyuLDZQ2",
+      "transfer": false,
+      "_id": "Ofb8ThGpoiJflXBF",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "piercing",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "bludgeoning",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "slashing",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": 1749885967442,
+        "modifiedTime": 1749886028335,
+        "lastModifiedBy": "uXKCmWFprrvnSIDm",
+        "exportSource": null
+      },
+      "_key": "!items.effects!YW7dnQCKzyuLDZQ2.Ofb8ThGpoiJflXBF"
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": 1686421561430,
+    "modifiedTime": 1749887719626,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "uPvUfYC2ROI6knSu",
+  "_id": "YW7dnQCKzyuLDZQ2",
+  "sort": 1300000,
+  "ownership": {
+    "default": 0,
+    "Jo05tXxu7yf2dQe3": 3
+  },
+  "_key": "!items!YW7dnQCKzyuLDZQ2"
+}

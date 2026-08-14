@@ -1,0 +1,160 @@
+{
+  "_id": "ThMexbKa7IGupvI1",
+  "name": "引导神力：鼓舞一击 Channel Divinity: Inspiring Smite",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_HolyNova.png",
+  "system": {
+    "description": {
+      "value": "<p>         在你以@UUID[Compendium.dnd5e_classpack.class-abilityphb.qV59DzEZQ58IAzfm]{至圣斩}造成一次伤害后，你可以用附赠动作消耗一次@UUID[Compendium.dnd5e_classpack.class-abilityphb.3eyfqXMTJMG9AxYH]{引导神力}，给予你周围30尺任意个你选择的生物（包括你）临时生命。临时生命＝2d8+你的圣武士等级，你可以任意分配这些生命值。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "MOT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "channelDivinity"
+    },
+    "requirements": "荣耀之誓等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "heal",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "healing": {
+          "number": 2,
+          "denomination": 8,
+          "bonus": "@class.paladin.levels",
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-channel-divinityinspiring-smite",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "qwBvXP2uIA1n4EBE",
+  "sort": 26400000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1757865101907,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!ThMexbKa7IGupvI1"
+}

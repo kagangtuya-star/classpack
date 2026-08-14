@@ -1,0 +1,227 @@
+{
+  "name": "狂怒风暴-海洋Raging Storm:Sea",
+  "type": "feat",
+  "img": "icons/environment/wilderness/island.webp",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<ul><li><strong>海洋。</strong>任何处于你灵光中的生物若被你以一次攻击击中，你可以用你的反应迫使该生物进行一次力量豁免，否则如同被波浪拍打般被击倒在地，变为俯卧状态。</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "风暴先驱等级 14",
+    "cover": null,
+    "crewed": false,
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "reactionmanual",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "J0TkCCvnHvgfBdP5",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "con",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-",
+    "advancement": [],
+    "enchant": {}
+  },
+  "effects": [
+    {
+      "name": "狂怒风暴-海洋",
+      "origin": "Item.PyLXKXjfBKhGOqo3",
+      "duration": {
+        "rounds": 1,
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {},
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "J0TkCCvnHvgfBdP5",
+      "changes": [],
+      "description": "",
+      "transfer": false,
+      "statuses": [
+        "prone"
+      ],
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/environment/wilderness/island.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!i5id1stUZVT8CAzS.J0TkCCvnHvgfBdP5"
+    }
+  ],
+  "folder": "gYYlcB68sC05G2ak",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "removeAttackDamageButtons": "default",
+      "otherCondition": ""
+    },
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1724858142458,
+    "modifiedTime": 1757102319318,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "e4wUhoMqlYUuBuAF": 3
+  },
+  "_id": "i5id1stUZVT8CAzS",
+  "sort": 1400000,
+  "_key": "!items!i5id1stUZVT8CAzS"
+}

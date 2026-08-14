@@ -1,0 +1,169 @@
+{
+  "_id": "sE0eWBfIdzrqoNWO",
+  "name": "灵能力量 Psionic Power",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ability_socererking_arcanemines.png",
+  "system": {
+    "description": {
+      "value": "<p>你内心拥有一个灵能力量的源泉。这股能量表现为每个[[/r d6]]的灵能骰。你拥有两倍熟练加值的灵能骰数量，且它们为你所拥有的各种心灵异能提供能量，详情如下。</p>\n<p>你在使用一些能力时需要消耗灵能骰，如异能描述中所述，如果一些异能在你的灵能骰全部掷完后还需要你使用一个灵能骰，你就不能使用该异能。你可以在完成一次长休后恢复所有已使用的灵能骰。此外，你可以使用一个附赠动作重新获得一个已使用的灵能骰，但你在完成一次短休或长休之前不能再次获得。</p>\n<p>当你升级到特定战士等级时，你的灵能骰大小有所增长：第5级[[/r d8]]，第11级[[/r d10]]，第17级[[/r d12]]。</p>\n<p>可以在以下异能使用你的灵能骰：</p>\n<ul>\n<li>@UUID[Compendium.dnd5e_classpack.extra-ability.IGFbodPoYQ6aujAT]{庇护力场 Protective Field}</li>\n<li>@UUID[Compendium.dnd5e_classpack.extra-ability.uaPefnuz8mYlc7Th]{灵能击打 Psionic Strike}</li>\n<li>@UUID[Compendium.dnd5e_classpack.extra-ability.w6wzRcoxxL5rrnxe]{念力控物 Telekinetic Movement}</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "@attributes.prof * 2",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "灵能武士等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": null,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "-psionic-power",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "lWuuznvhf9tYdVAU",
+  "sort": 46200000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 4,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!sE0eWBfIdzrqoNWO"
+}

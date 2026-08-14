@@ -1,0 +1,155 @@
+{
+  "_id": "aIXN1FpSuEH3Midz",
+  "name": "自然之护 Nature’s Ward",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Druid_Cyclone.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第10级起，你免疫元素生物或精类生物造成的魅惑或恐慌状态，并且免疫中毒和疾病。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 69",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "requirements": "大地结社等级 10",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "UkGE1b9xNjD3rsHc",
+      "changes": [
+        {
+          "key": "system.traits.ci.value",
+          "mode": 2,
+          "value": "poisoned",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.ci.value",
+          "mode": 2,
+          "value": "diseased",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.aIXN1FpSuEH3Midz",
+      "transfer": true,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "tint": "#ffffff",
+      "name": "免疫疾病、中毒",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "modules/dnd5e_classpack/Nicons/Ability_Druid_Cyclone.png",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!aIXN1FpSuEH3Midz.UkGE1b9xNjD3rsHc"
+    }
+  ],
+  "folder": "peLqGhHi1vYFyNUP",
+  "sort": 27400000,
+  "flags": {
+    "_sheetTab": {},
+    "entityorder": {
+      "order": 123
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1725697670500,
+    "modifiedTime": 1757407650518,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!aIXN1FpSuEH3Midz"
+}

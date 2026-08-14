@@ -1,0 +1,152 @@
+{
+  "_id": "UHIZXCLTWbG6nDr4",
+  "name": "灵能天赋Psionic Power",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/ability_mage_massinvisibility.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>　　你的内在潜藏着一个心灵异能的源泉，当你以各种形式引导它时，其能量会上下起伏。这一力量被表现为你的灵能骰，它的起始大小是[[/r d6]]。你拥有等同于你熟练加值两倍数量的灵能骰，并且他们供你发挥出你拥有的多种灵能力量，这些选项在后面列出。</p>\n<p>一些你的能力会消耗它们使用的灵能骰，如能力中确切描述的一样，而且你不能在你灵能骰全部用完的时候使用要求你使用灵能骰的能力。你在完成一次长休之后恢复所有的灵能骰。此外，作为一个附赠动作，你可以恢复一个你消耗的灵能骰，但是直到你完成一次短休或者长休之前，你都无法再次这样做。</p>\n<p>每当你在这个职业中达到特定等级，你的灵能骰会增大，5级达到[[/r d8]]。11级[[/r d10]]，17级为[[/r d12]]。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "@prof*2",
+      "spent": 1,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "魂刃等级 3",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "psionic-power",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": "U9XMm2JRSxd8vwqr",
+  "sort": 26600000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 2,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UHIZXCLTWbG6nDr4"
+}

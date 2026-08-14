@@ -1,0 +1,150 @@
+{
+  "_id": "5M9eFqLMIbkwKy0b",
+  "name": "战斗风格：盲斗 Fighting Style: Blind Fighting",
+  "type": "feat",
+  "img": "icons/magic/perception/third-eye-blue-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>        </strong>你获得10尺盲视。在10尺范围内，你可以看见除了处于全遮掩后的任何东西，哪怕你正在被目盲或是在黑暗之中。另外，你可以看见该范围内的未对你成功躲藏的隐形生物。   </p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "fightingStyle"
+    },
+    "requirements": "战士等级 1，勇士等级 10，圣武士等级 2，游侠等级 2",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "wa874yOJTDAQmPEy",
+      "changes": [
+        {
+          "key": "system.attributes.senses.blindsight",
+          "mode": 2,
+          "value": "10",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.extra-ability.Item.5M9eFqLMIbkwKy0b",
+      "transfer": true,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": 1749734560119,
+        "lastModifiedBy": "00Hmaouu4SsMyc7n",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "获得 10 尺盲视",
+      "img": "icons/magic/perception/third-eye-blue-red.webp",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!5M9eFqLMIbkwKy0b.wa874yOJTDAQmPEy"
+    }
+  ],
+  "folder": "TVv24pNCtOeWM8On",
+  "sort": 9200000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1757864940428,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!5M9eFqLMIbkwKy0b"
+}

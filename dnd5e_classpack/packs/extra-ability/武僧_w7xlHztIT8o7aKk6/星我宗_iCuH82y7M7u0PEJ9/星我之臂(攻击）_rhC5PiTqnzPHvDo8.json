@@ -1,0 +1,271 @@
+{
+  "name": "星我之臂(攻击）",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_DeadlyReach.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>第3级起，你对气的掌握允许你召唤出星我的一部分。以一个附赠动作，你可以花费1点气来召唤你的星我之臂，当你这么做时，你选择的每一个你所见的10尺范围内的生物必须进行一次敏捷豁免检定，如果失败则受到相当于你两倍武艺骰的力场伤害。</p>\n<p>在10分钟内，这些幽光般的手臂会盘旋在你的肩膀附近或环绕着你的手臂（由你选择），你来决定手臂们的外观，如果你失能或死亡，它们就会立即消失。</p>\n<p>当星我之臂出现时，你将获得如下增益：</p>\n<ul>\n<li>你进行力量检定和力量豁免检定时，可以用你的感知调整值来代替力量力量调整值。</li>\n<li>你可以用星我之臂进行徒手攻击。</li>\n<li>当你在自己回合用星我之臂进行徒手攻击时，你的触及范围增加5尺。</li>\n<li>当你用星我之臂进行徒手攻击时，可以用感知调整值代替力量或敏捷调整值来进行攻击检定和伤害检定，它们的伤害类型是力场。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "星我宗等级 3",
+    "cover": null,
+    "crewed": false,
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1@scale.monk.die + @mod"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1@scale.monk.die + @mod"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "enchant": {}
+  },
+  "effects": [],
+  "folder": "iCuH82y7M7u0PEJ9",
+  "flags": {
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "saveDamage": "default",
+      "bonusSaveDamage": "default",
+      "otherSaveDamage": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1725891895972,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0,
+    "e4wUhoMqlYUuBuAF": 3
+  },
+  "_id": "rhC5PiTqnzPHvDo8",
+  "sort": 3100000,
+  "_key": "!items!rhC5PiTqnzPHvDo8"
+}

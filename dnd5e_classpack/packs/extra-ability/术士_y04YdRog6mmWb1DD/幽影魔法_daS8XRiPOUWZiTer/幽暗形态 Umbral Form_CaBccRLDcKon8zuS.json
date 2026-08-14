@@ -1,0 +1,260 @@
+{
+  "_id": "CaBccRLDcKon8zuS",
+  "name": "幽暗形态 Umbral Form",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_TwilightImmolation.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>18级时，你可以耗费6点术法点以一个附赠动作魔法地将自己转变为暗影形态。在此形态中，你对除力场和光耀之外的所有伤害形式都具有抗性。并且你可以像穿越困难地形一般地穿过其他生物或物体。若回合结束时你处于某个物体内则会受到5点的力场伤害。</p>\n<p>         你能维持这种状态1分钟。当你以一个附赠动作来解除暗影形态、处于失能或死亡时会提前结束状态效果。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "requirements": "幽影魔法等级 18",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "6 术法点。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-umbral-form",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [
+    {
+      "_id": "uc4fBHgD49zwKKjL",
+      "changes": [
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "acid",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "cold",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "bludgeoning",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "piercing",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "slashing",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "fire",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "lightning",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "necrotic",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "poison",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "psychic",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "thunder",
+          "priority": null
+        },
+        {
+          "key": "system.traits.dr.value",
+          "mode": 2,
+          "value": "physical",
+          "priority": null
+        }
+      ],
+      "disabled": true,
+      "duration": {
+        "startTime": null,
+        "seconds": 60,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "origin": "Compendium.dnd5e_classpack.extra-ability.CaBccRLDcKon8zuS",
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "name": "获得力场、光耀外抗性",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Fire_TwilightImmolation.png",
+      "type": "base",
+      "system": {},
+      "description": "",
+      "statuses": [],
+      "sort": 0,
+      "_key": "!items.effects!CaBccRLDcKon8zuS.uc4fBHgD49zwKKjL"
+    }
+  ],
+  "folder": "daS8XRiPOUWZiTer",
+  "sort": 14700000,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 0,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757420910468,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CaBccRLDcKon8zuS"
+}
