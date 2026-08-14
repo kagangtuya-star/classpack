@@ -1,17 +1,14 @@
 {
-  "_id": "9ez2X9q9mQmDqJ8Q",
-  "name": "闪电牵引 Lightning Lure（TCE）",
+  "name": "心灵之楔 Mind Sliv",
   "type": "spell",
   "flags": {
     "midiProperties": {
       "confirmTargets": "always",
-      "saveDamage": "nodam",
-      "bonusSaveDamage": "fulldam",
       "autoFailFriendly": false,
       "autoSaveFriendly": false,
       "critOther": false,
       "offHandWeapon": false,
-      "magicdam": true,
+      "magicdam": false,
       "magiceffect": false,
       "concentration": false,
       "noConcentrationCheck": false,
@@ -36,11 +33,99 @@
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_CracklingJadeLightning.png",
-  "effects": [],
+  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave2.jpg",
+  "_id": "Il0iA9nttKqh0ACr",
+  "effects": [
+    {
+      "name": "心灵之楔 Mind Sliver（TCE）",
+      "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave2.jpg",
+      "origin": "Compendium.dnd5e_classpack.new-icon.Item.Il0iA9nttKqh0ACr",
+      "transfer": false,
+      "_id": "ZXv7eRn3xf5tzP8x",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.abilities.save",
+          "mode": 2,
+          "value": "-1d4",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": 1,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "specialDuration": [
+            "isSave",
+            "turnEndSource"
+          ],
+          "macroRepeat": "none"
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1756665012171,
+        "modifiedTime": 1756930437681,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!Il0iA9nttKqh0ACr.ZXv7eRn3xf5tzP8x"
+    }
+  ],
   "system": {
     "description": {
-      "value": "<p>        你创造出鞭状闪电能量袭向你 15 尺内可见的一个生物。目标必须进行一次力量豁免，豁免失败则其以直线被你拉近 10 尺。如果拉近以后目标在你周围 5 尺内，那么他将受到 1d8 闪电伤害。<br />　　你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
+      "value": "<p>         你将由灵能塑成的迷惘尖刺注入施法距离内一个你可见的生物的心灵。目标必须成功通过一次智力豁免，否则受到 1d6 精神伤害并在你的下回合结束前其下一次豁免检定中减去 1d4。<br />　　当你到达 Lv.5/11/17 时，该法术伤害增加 1d6 以分别至 2d6/3d6/4d6。</p>",
       "chat": ""
     },
     "source": {
@@ -56,21 +141,23 @@
     },
     "duration": {
       "value": "",
-      "units": ""
+      "units": "inst"
     },
     "target": {
       "affects": {
+        "type": "creature",
+        "count": "1",
         "choice": false,
-        "type": ""
+        "special": ""
       },
       "template": {
-        "units": "self",
+        "units": "",
         "contiguous": false,
         "type": ""
       }
     },
     "range": {
-      "value": "15",
+      "value": "60",
       "units": "ft",
       "special": ""
     },
@@ -79,9 +166,9 @@
       "recovery": [],
       "spent": null
     },
-    "ability": "",
+    "ability": "int",
     "level": 0,
-    "school": "evo",
+    "school": "enc",
     "materials": {
       "value": "",
       "consumed": false,
@@ -120,7 +207,11 @@
           "concentration": false,
           "override": false
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "ZXv7eRn3xf5tzP8x"
+          }
+        ],
         "range": {
           "override": false
         },
@@ -145,10 +236,10 @@
           "parts": [
             {
               "number": 1,
-              "denomination": 8,
+              "denomination": 6,
               "bonus": "",
               "types": [
-                "lightning"
+                "psychic"
               ],
               "custom": {
                 "enabled": false,
@@ -216,13 +307,13 @@
         "otherActivityId": ""
       }
     },
-    "identifier": "lightning-luretce"
+    "identifier": "mind-slivertce"
   },
   "ownership": {
     "default": 0
   },
   "folder": "eKWjH0NyoSjvzeog",
-  "sort": 1300000,
+  "sort": 2200000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
@@ -234,5 +325,5 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!9ez2X9q9mQmDqJ8Q"
+  "_key": "!items!Il0iA9nttKqh0ACr"
 }

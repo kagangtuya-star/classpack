@@ -1,25 +1,12 @@
 {
-  "_id": "pumDQ5z7GSGX16nY",
-  "name": "轰雷剑 Booming Blade（TCE）",
+  "_id": "9ez2X9q9mQmDqJ8Q",
+  "name": "闪电牵引 Lightning Lu",
   "type": "spell",
-  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave4.jpg",
-  "effects": [],
-  "folder": "eKWjH0NyoSjvzeog",
-  "sort": 600000,
   "flags": {
-    "midi-qol": {
-      "AoETargetType": "any",
-      "AoETargetTypeIncludeSelf": true,
-      "autoTarget": "default",
-      "rollAttackPerTarget": "always",
-      "removeAttackDamageButtons": "default",
-      "itemCondition": "",
-      "effectCondition": "",
-      "reactionCondition": "",
-      "otherCondition": ""
-    },
     "midiProperties": {
       "confirmTargets": "always",
+      "saveDamage": "nodam",
+      "bonusSaveDamage": "fulldam",
       "autoFailFriendly": false,
       "autoSaveFriendly": false,
       "critOther": false,
@@ -31,10 +18,17 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
     "dnd5e": {
       "migratedProperties": [
-        "somatic",
-        "material"
+        "vocal"
       ],
       "riders": {
         "activity": [],
@@ -42,9 +36,11 @@
       }
     }
   },
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_CracklingJadeLightning.png",
+  "effects": [],
   "system": {
     "description": {
-      "value": "<p>         作为施展这个法术的一部分，你必须用你的武器对 5 尺内的一个生物进行一次近战攻击。如果攻击命中，目标受到这次攻击的正常影响，并且被包复在爆发性的能量之中直到你的下回合开始。如果目标在这之前自愿移动了 5 尺或更多，其立即受到 1d8 雷鸣伤害，法术结束。</p>\n<p>　　这道法术的伤害随着你的等级提升而增加。你到达 5 级时，这次近战攻击将造成额外 1d8 雷鸣伤害，并且目标进行移动时受到的伤害提升为 2d8。两个伤害骰都会在 11 级时增加 1d8（2d8 和 3d8），17 级时再加 1d8（3d8 和 4d8）。</p>",
+      "value": "<p>        你创造出鞭状闪电能量袭向你 15 尺内可见的一个生物。目标必须进行一次力量豁免，豁免失败则其以直线被你拉近 10 尺。如果拉近以后目标在你周围 5 尺内，那么他将受到 1d8 闪电伤害。<br />　　你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
       "chat": ""
     },
     "source": {
@@ -59,8 +55,8 @@
       "value": 1
     },
     "duration": {
-      "value": "1",
-      "units": "round"
+      "value": "",
+      "units": ""
     },
     "target": {
       "affects": {
@@ -68,15 +64,13 @@
         "type": ""
       },
       "template": {
-        "units": "",
-        "type": "radius",
-        "size": "",
+        "units": "self",
         "contiguous": false,
-        "count": ""
+        "type": ""
       }
     },
     "range": {
-      "value": "5",
+      "value": "15",
       "units": "ft",
       "special": ""
     },
@@ -89,7 +83,7 @@
     "level": 0,
     "school": "evo",
     "materials": {
-      "value": "一把至少价值 1sp 的近战武器",
+      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -99,14 +93,12 @@
       "prepared": false
     },
     "properties": [
-      "somatic",
-      "material",
-      "mgc"
+      "vocal"
     ],
     "activities": {
       "dnd5eactivity000": {
         "_id": "dnd5eactivity000",
-        "type": "damage",
+        "type": "save",
         "activation": {
           "type": "action",
           "value": null,
@@ -149,17 +141,14 @@
           "recovery": []
         },
         "damage": {
-          "critical": {
-            "allow": false,
-            "bonus": ""
-          },
+          "onSave": "none",
           "parts": [
             {
               "number": 1,
               "denomination": 8,
               "bonus": "",
               "types": [
-                "thunder"
+                "lightning"
               ],
               "custom": {
                 "enabled": false,
@@ -171,7 +160,19 @@
                 "formula": ""
               }
             }
-          ]
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
         },
         "sort": 0,
         "useConditionText": "",
@@ -211,14 +212,17 @@
           "saveRemoves": true,
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
-        }
+        },
+        "otherActivityId": ""
       }
     },
-    "identifier": "booming-bladetce"
+    "identifier": "lightning-luretce"
   },
   "ownership": {
     "default": 0
   },
+  "folder": "eKWjH0NyoSjvzeog",
+  "sort": 1300000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
@@ -230,5 +234,5 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!pumDQ5z7GSGX16nY"
+  "_key": "!items!9ez2X9q9mQmDqJ8Q"
 }

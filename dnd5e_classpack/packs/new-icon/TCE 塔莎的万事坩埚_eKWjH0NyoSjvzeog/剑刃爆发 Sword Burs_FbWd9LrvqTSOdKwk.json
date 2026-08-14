@@ -1,25 +1,25 @@
 {
-  "name": "翠炎剑 Green-Flame Blade（TCE）",
+  "name": "剑刃爆发 Sword Burs",
   "type": "spell",
   "flags": {
     "midi-qol": {
       "AoETargetType": "any",
-      "AoETargetTypeIncludeSelf": true,
+      "AoETargetTypeIncludeSelf": false,
       "autoTarget": "default",
       "rollAttackPerTarget": "always",
       "removeAttackDamageButtons": "default",
       "itemCondition": "",
-      "effectCondition": "",
-      "reactionCondition": "",
-      "otherCondition": ""
+      "effectCondition": ""
     },
     "midiProperties": {
       "confirmTargets": "always",
+      "saveDamage": "nodam",
+      "bonusSaveDamage": "fulldam",
       "autoFailFriendly": false,
       "autoSaveFriendly": false,
       "critOther": false,
       "offHandWeapon": false,
-      "magicdam": false,
+      "magicdam": true,
       "magiceffect": false,
       "concentration": false,
       "noConcentrationCheck": false,
@@ -28,8 +28,7 @@
     },
     "dnd5e": {
       "migratedProperties": [
-        "somatic",
-        "material"
+        "vocal"
       ],
       "riders": {
         "activity": [],
@@ -37,11 +36,11 @@
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_chaosstrike.jpg",
-  "_id": "0TR7HOOqbttnAGzj",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "_id": "FbWd9LrvqTSOdKwk",
   "system": {
     "description": {
-      "value": "<p>        作为施展这个法术的一部分，你必须用你的武器对 5 尺内的一个生物进行一次近战攻击。如果攻击命中，目标受到这次攻击的正常影响，并且翠绿色火焰将从目标身上跳转至其 5 尺内的另一个生物。第二个生物受到等于你施法主属性的调整值的火焰伤害。<br />　　这道法术的伤害随着你的等级提升而增加。你到达 5 级时，这次近战攻击将造成额外 1d8 火焰伤害，且第二个目标将受到的伤害提升至 1d8+你的施法主属性调整值。两个伤害骰都会在 11 级时增加 1d8（2d8 和 2d8），17 级时再加 1d8（3d8 和 3d8）。</p>",
+      "value": "<p>        你在瞬间制造出一圈半透明利刃横扫你的周围。法术范围内除你以外的每一个生物都必须成功进行一次敏捷豁免，否则将受到 1d6 力场伤害。<br />　　你到达 5 级时，该法术的伤害增加 1d6（变为 2d6）。11 级时再加 1d6（变为3d6），17 级时再加 1d6（变为 4d6）。</p>",
       "chat": ""
     },
     "source": {
@@ -57,25 +56,22 @@
     },
     "duration": {
       "value": "",
-      "units": "inst"
+      "units": ""
     },
     "target": {
       "affects": {
-        "choice": false,
-        "type": ""
+        "choice": false
       },
       "template": {
-        "units": "",
+        "units": "ft",
         "type": "radius",
-        "size": "",
-        "contiguous": false,
-        "count": ""
+        "size": "6",
+        "contiguous": false
       }
     },
     "range": {
       "value": "5",
-      "units": "ft",
-      "special": ""
+      "units": "ft"
     },
     "uses": {
       "max": "",
@@ -84,9 +80,9 @@
     },
     "ability": "",
     "level": 0,
-    "school": "evo",
+    "school": "con",
     "materials": {
-      "value": "一把价值至少 1sp 的近战武器",
+      "value": "",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -96,14 +92,13 @@
       "prepared": false
     },
     "properties": [
-      "somatic",
-      "material",
+      "vocal",
       "mgc"
     ],
     "activities": {
       "dnd5eactivity000": {
         "_id": "dnd5eactivity000",
-        "type": "damage",
+        "type": "save",
         "activation": {
           "type": "action",
           "value": null,
@@ -146,21 +141,18 @@
           "recovery": []
         },
         "damage": {
-          "critical": {
-            "allow": false,
-            "bonus": ""
-          },
+          "onSave": "none",
           "parts": [
             {
-              "number": null,
-              "denomination": null,
+              "number": 1,
+              "denomination": 6,
               "bonus": "",
               "types": [
-                "fire"
+                "force"
               ],
               "custom": {
-                "enabled": true,
-                "formula": "@mod"
+                "enabled": false,
+                "formula": ""
               },
               "scaling": {
                 "mode": "whole",
@@ -168,7 +160,19 @@
                 "formula": ""
               }
             }
-          ]
+          ],
+          "critical": {
+            "allow": false
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
         },
         "sort": 0,
         "useConditionText": "",
@@ -208,17 +212,18 @@
           "saveRemoves": true,
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
-        }
+        },
+        "otherActivityId": ""
       }
     },
-    "identifier": "green-flame-bladetce"
+    "identifier": "sword-burst-tce"
   },
   "ownership": {
     "default": 0
   },
   "effects": [],
   "folder": "eKWjH0NyoSjvzeog",
-  "sort": 200000,
+  "sort": 900000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
@@ -230,5 +235,5 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!0TR7HOOqbttnAGzj"
+  "_key": "!items!FbWd9LrvqTSOdKwk"
 }

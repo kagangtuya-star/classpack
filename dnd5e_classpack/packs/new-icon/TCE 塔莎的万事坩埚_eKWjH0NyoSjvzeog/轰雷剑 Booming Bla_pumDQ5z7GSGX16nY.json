@@ -1,9 +1,16 @@
 {
-  "name": "灾厄之刃 Blade of Disaster (TCE)",
+  "_id": "pumDQ5z7GSGX16nY",
+  "name": "轰雷剑 Booming Bla",
   "type": "spell",
+  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave4.jpg",
+  "effects": [],
+  "folder": "eKWjH0NyoSjvzeog",
+  "sort": 600000,
   "flags": {
     "midi-qol": {
-      "fumbleThreshold": null,
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
       "rollAttackPerTarget": "always",
       "removeAttackDamageButtons": "default",
       "itemCondition": "",
@@ -17,18 +24,17 @@
       "autoSaveFriendly": false,
       "critOther": false,
       "offHandWeapon": false,
-      "magicdam": false,
+      "magicdam": true,
       "magiceffect": false,
-      "concentration": true,
+      "concentration": false,
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
     "dnd5e": {
       "migratedProperties": [
-        "vocal",
         "somatic",
-        "concentration"
+        "material"
       ],
       "riders": {
         "activity": [],
@@ -36,12 +42,9 @@
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/ability_revendreth_deathknight.jpg",
-  "_id": "NvJ2XLsbQkA7XEvq",
-  "effects": [],
   "system": {
     "description": {
-      "value": "<div>         你在法术范围内你能看见的一个未被占据的空间创造出一把形态如同剑一般的，长约 3 尺的位面裂缝。该剑刃持续存在，直至法术结束。当你施展此法术时，你可以用该剑刃进行至多两次近战法术攻击，每次攻击的目标为位于剑刃5尺内的一个生物、未被携带的物件或建筑。若命中，则目标受到 4d12 力场伤害。该攻击在 d20 投出 18 或更高时造成重击，并在重击时造成额外 8d12 力场伤害（共计 12d12 力场伤害）。</div>\n<div>\n<div>\n<div id=\"msg_1085612\">　　你可以在自己回合内以一个附赠动作让该武器移动至多 30 尺到一个你可以看见的未被占据的空间，随后再用其进行两次近战法术攻击。<br />　　该剑刃可以无害地通过任何屏障，包括一道力场墙。</div>\n</div>\n</div>",
+      "value": "<p>         作为施展这个法术的一部分，你必须用你的武器对 5 尺内的一个生物进行一次近战攻击。如果攻击命中，目标受到这次攻击的正常影响，并且被包复在爆发性的能量之中直到你的下回合开始。如果目标在这之前自愿移动了 5 尺或更多，其立即受到 1d8 雷鸣伤害，法术结束。</p>\n<p>　　这道法术的伤害随着你的等级提升而增加。你到达 5 级时，这次近战攻击将造成额外 1d8 雷鸣伤害，并且目标进行移动时受到的伤害提升为 2d8。两个伤害骰都会在 11 级时增加 1d8（2d8 和 3d8），17 级时再加 1d8（3d8 和 4d8）。</p>",
       "chat": ""
     },
     "source": {
@@ -51,29 +54,29 @@
       "book": "TCE"
     },
     "activation": {
-      "type": "bonus",
+      "type": "action",
       "condition": "",
       "value": 1
     },
     "duration": {
       "value": "1",
-      "units": "minute"
+      "units": "round"
     },
     "target": {
       "affects": {
-        "type": "space",
-        "count": "",
         "choice": false,
-        "special": ""
+        "type": ""
       },
       "template": {
-        "units": "any",
+        "units": "",
+        "type": "radius",
+        "size": "",
         "contiguous": false,
-        "type": ""
+        "count": ""
       }
     },
     "range": {
-      "value": "60",
+      "value": "5",
       "units": "ft",
       "special": ""
     },
@@ -83,12 +86,12 @@
       "spent": null
     },
     "ability": "",
-    "level": 9,
-    "school": "con",
+    "level": 0,
+    "school": "evo",
     "materials": {
-      "value": "",
+      "value": "一把至少价值 1sp 的近战武器",
       "consumed": false,
-      "cost": 500,
+      "cost": 0,
       "supply": 0
     },
     "preparation": {
@@ -96,27 +99,26 @@
       "prepared": false
     },
     "properties": [
-      "vocal",
       "somatic",
-      "concentration",
+      "material",
       "mgc"
     ],
     "activities": {
-      "qRcMIxn5lOuutXW7": {
-        "type": "summon",
-        "_id": "qRcMIxn5lOuutXW7",
-        "sort": 0,
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
         "activation": {
           "type": "action",
           "value": null,
           "override": false
         },
         "consumption": {
+          "targets": [],
           "scaling": {
-            "allowed": false
+            "allowed": false,
+            "max": ""
           },
-          "spellSlot": true,
-          "targets": []
+          "spellSlot": true
         },
         "description": {
           "chatFlavor": ""
@@ -128,10 +130,10 @@
         },
         "effects": [],
         "range": {
-          "units": "self",
           "override": false
         },
         "target": {
+          "prompt": true,
           "template": {
             "contiguous": false,
             "units": "ft"
@@ -139,46 +141,39 @@
           "affects": {
             "choice": false
           },
-          "override": false,
-          "prompt": true
+          "override": false
         },
         "uses": {
           "spent": 0,
-          "recovery": [],
-          "max": ""
+          "max": "",
+          "recovery": []
         },
-        "bonuses": {
-          "ac": "",
-          "hd": "",
-          "hp": "",
-          "attackDamage": "",
-          "saveDamage": "",
-          "healing": ""
-        },
-        "creatureSizes": [],
-        "creatureTypes": [],
-        "match": {
-          "attacks": true,
-          "proficiency": false,
-          "saves": false,
-          "ability": ""
-        },
-        "profiles": [
-          {
-            "count": "",
-            "name": "",
-            "_id": "PVbcn8fuBvsVCX4O",
-            "uuid": "Compendium.dnd5e_classpack.summons.Actor.qOyIfe2ftUO7FLtd",
-            "level": {
-              "min": null,
-              "max": null
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "thunder"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
             }
-          }
-        ],
-        "summon": {
-          "prompt": true,
-          "mode": ""
+          ]
         },
+        "sort": 0,
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
@@ -216,19 +211,14 @@
           "saveRemoves": true,
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
-        },
-        "name": "",
-        "img": "",
-        "appliedEffects": []
+        }
       }
     },
-    "identifier": "blade-of-disaster-tce"
+    "identifier": "booming-bladetce"
   },
   "ownership": {
     "default": 0
   },
-  "folder": "eKWjH0NyoSjvzeog",
-  "sort": 2700000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
@@ -240,5 +230,5 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!NvJ2XLsbQkA7XEvq"
+  "_key": "!items!pumDQ5z7GSGX16nY"
 }

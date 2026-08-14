@@ -1,34 +1,34 @@
 {
-  "name": "剑刃爆发 Sword Burst (TCE)",
+  "name": "灾厄之刃 Blade of Disaste",
   "type": "spell",
   "flags": {
     "midi-qol": {
-      "AoETargetType": "any",
-      "AoETargetTypeIncludeSelf": false,
-      "autoTarget": "default",
+      "fumbleThreshold": null,
       "rollAttackPerTarget": "always",
       "removeAttackDamageButtons": "default",
       "itemCondition": "",
-      "effectCondition": ""
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
     },
     "midiProperties": {
       "confirmTargets": "always",
-      "saveDamage": "nodam",
-      "bonusSaveDamage": "fulldam",
       "autoFailFriendly": false,
       "autoSaveFriendly": false,
       "critOther": false,
       "offHandWeapon": false,
-      "magicdam": true,
+      "magicdam": false,
       "magiceffect": false,
-      "concentration": false,
+      "concentration": true,
       "noConcentrationCheck": false,
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
     "dnd5e": {
       "migratedProperties": [
-        "vocal"
+        "vocal",
+        "somatic",
+        "concentration"
       ],
       "riders": {
         "activity": [],
@@ -36,11 +36,12 @@
       }
     }
   },
-  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
-  "_id": "FbWd9LrvqTSOdKwk",
+  "img": "modules/dnd5e_classpack/Nicons/ability_revendreth_deathknight.jpg",
+  "_id": "NvJ2XLsbQkA7XEvq",
+  "effects": [],
   "system": {
     "description": {
-      "value": "<p>        你在瞬间制造出一圈半透明利刃横扫你的周围。法术范围内除你以外的每一个生物都必须成功进行一次敏捷豁免，否则将受到 1d6 力场伤害。<br />　　你到达 5 级时，该法术的伤害增加 1d6（变为 2d6）。11 级时再加 1d6（变为3d6），17 级时再加 1d6（变为 4d6）。</p>",
+      "value": "<div>         你在法术范围内你能看见的一个未被占据的空间创造出一把形态如同剑一般的，长约 3 尺的位面裂缝。该剑刃持续存在，直至法术结束。当你施展此法术时，你可以用该剑刃进行至多两次近战法术攻击，每次攻击的目标为位于剑刃5尺内的一个生物、未被携带的物件或建筑。若命中，则目标受到 4d12 力场伤害。该攻击在 d20 投出 18 或更高时造成重击，并在重击时造成额外 8d12 力场伤害（共计 12d12 力场伤害）。</div>\n<div>\n<div>\n<div id=\"msg_1085612\">　　你可以在自己回合内以一个附赠动作让该武器移动至多 30 尺到一个你可以看见的未被占据的空间，随后再用其进行两次近战法术攻击。<br />　　该剑刃可以无害地通过任何屏障，包括一道力场墙。</div>\n</div>\n</div>",
       "chat": ""
     },
     "source": {
@@ -50,28 +51,31 @@
       "book": "TCE"
     },
     "activation": {
-      "type": "action",
+      "type": "bonus",
       "condition": "",
       "value": 1
     },
     "duration": {
-      "value": "",
-      "units": ""
+      "value": "1",
+      "units": "minute"
     },
     "target": {
       "affects": {
-        "choice": false
+        "type": "space",
+        "count": "",
+        "choice": false,
+        "special": ""
       },
       "template": {
-        "units": "ft",
-        "type": "radius",
-        "size": "6",
-        "contiguous": false
+        "units": "any",
+        "contiguous": false,
+        "type": ""
       }
     },
     "range": {
-      "value": "5",
-      "units": "ft"
+      "value": "60",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
       "max": "",
@@ -79,12 +83,12 @@
       "spent": null
     },
     "ability": "",
-    "level": 0,
+    "level": 9,
     "school": "con",
     "materials": {
       "value": "",
       "consumed": false,
-      "cost": 0,
+      "cost": 500,
       "supply": 0
     },
     "preparation": {
@@ -93,24 +97,26 @@
     },
     "properties": [
       "vocal",
+      "somatic",
+      "concentration",
       "mgc"
     ],
     "activities": {
-      "dnd5eactivity000": {
-        "_id": "dnd5eactivity000",
-        "type": "save",
+      "qRcMIxn5lOuutXW7": {
+        "type": "summon",
+        "_id": "qRcMIxn5lOuutXW7",
+        "sort": 0,
         "activation": {
           "type": "action",
           "value": null,
           "override": false
         },
         "consumption": {
-          "targets": [],
           "scaling": {
-            "allowed": false,
-            "max": ""
+            "allowed": false
           },
-          "spellSlot": true
+          "spellSlot": true,
+          "targets": []
         },
         "description": {
           "chatFlavor": ""
@@ -122,10 +128,10 @@
         },
         "effects": [],
         "range": {
+          "units": "self",
           "override": false
         },
         "target": {
-          "prompt": true,
           "template": {
             "contiguous": false,
             "units": "ft"
@@ -133,48 +139,46 @@
           "affects": {
             "choice": false
           },
-          "override": false
+          "override": false,
+          "prompt": true
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
-        "damage": {
-          "onSave": "none",
-          "parts": [
-            {
-              "number": 1,
-              "denomination": 6,
-              "bonus": "",
-              "types": [
-                "force"
-              ],
-              "custom": {
-                "enabled": false,
-                "formula": ""
-              },
-              "scaling": {
-                "mode": "whole",
-                "number": 1,
-                "formula": ""
-              }
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": true,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "PVbcn8fuBvsVCX4O",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.qOyIfe2ftUO7FLtd",
+            "level": {
+              "min": null,
+              "max": null
             }
-          ],
-          "critical": {
-            "allow": false
           }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": ""
         },
-        "save": {
-          "ability": [
-            "dex"
-          ],
-          "dc": {
-            "calculation": "spellcasting",
-            "formula": ""
-          }
-        },
-        "sort": 0,
         "useConditionText": "",
         "useConditionReason": "",
         "effectConditionText": "",
@@ -213,17 +217,18 @@
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
         },
-        "otherActivityId": ""
+        "name": "",
+        "img": "",
+        "appliedEffects": []
       }
     },
-    "identifier": "sword-burst-tce"
+    "identifier": "blade-of-disaster-tce"
   },
   "ownership": {
     "default": 0
   },
-  "effects": [],
   "folder": "eKWjH0NyoSjvzeog",
-  "sort": 900000,
+  "sort": 2700000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
@@ -235,5 +240,5 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!FbWd9LrvqTSOdKwk"
+  "_key": "!items!NvJ2XLsbQkA7XEvq"
 }

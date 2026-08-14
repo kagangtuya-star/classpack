@@ -1,7 +1,18 @@
 {
-  "name": "心灵之楔 Mind Sliver（TCE）",
+  "name": "翠炎剑 Green-Flame Bla",
   "type": "spell",
   "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
     "midiProperties": {
       "confirmTargets": "always",
       "autoFailFriendly": false,
@@ -15,17 +26,10 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "midi-qol": {
-      "rollAttackPerTarget": "always",
-      "removeAttackDamageButtons": "default",
-      "itemCondition": "",
-      "effectCondition": "",
-      "reactionCondition": "",
-      "otherCondition": ""
-    },
     "dnd5e": {
       "migratedProperties": [
-        "vocal"
+        "somatic",
+        "material"
       ],
       "riders": {
         "activity": [],
@@ -33,99 +37,11 @@
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave2.jpg",
-  "_id": "Il0iA9nttKqh0ACr",
-  "effects": [
-    {
-      "name": "心灵之楔 Mind Sliver（TCE）",
-      "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave2.jpg",
-      "origin": "Compendium.dnd5e_classpack.new-icon.Item.Il0iA9nttKqh0ACr",
-      "transfer": false,
-      "_id": "ZXv7eRn3xf5tzP8x",
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "system.bonuses.abilities.save",
-          "mode": 2,
-          "value": "-1d4",
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": 1,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": [
-            "isSave",
-            "turnEndSource"
-          ],
-          "macroRepeat": "none"
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        },
-        "ActiveAuras": {
-          "isAura": false,
-          "aura": "None",
-          "nameOverride": "",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
-        "createdTime": 1756665012171,
-        "modifiedTime": 1756930437681,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "_key": "!items.effects!Il0iA9nttKqh0ACr.ZXv7eRn3xf5tzP8x"
-    }
-  ],
+  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_chaosstrike.jpg",
+  "_id": "0TR7HOOqbttnAGzj",
   "system": {
     "description": {
-      "value": "<p>         你将由灵能塑成的迷惘尖刺注入施法距离内一个你可见的生物的心灵。目标必须成功通过一次智力豁免，否则受到 1d6 精神伤害并在你的下回合结束前其下一次豁免检定中减去 1d4。<br />　　当你到达 Lv.5/11/17 时，该法术伤害增加 1d6 以分别至 2d6/3d6/4d6。</p>",
+      "value": "<p>        作为施展这个法术的一部分，你必须用你的武器对 5 尺内的一个生物进行一次近战攻击。如果攻击命中，目标受到这次攻击的正常影响，并且翠绿色火焰将从目标身上跳转至其 5 尺内的另一个生物。第二个生物受到等于你施法主属性的调整值的火焰伤害。<br />　　这道法术的伤害随着你的等级提升而增加。你到达 5 级时，这次近战攻击将造成额外 1d8 火焰伤害，且第二个目标将受到的伤害提升至 1d8+你的施法主属性调整值。两个伤害骰都会在 11 级时增加 1d8（2d8 和 2d8），17 级时再加 1d8（3d8 和 3d8）。</p>",
       "chat": ""
     },
     "source": {
@@ -145,19 +61,19 @@
     },
     "target": {
       "affects": {
-        "type": "creature",
-        "count": "1",
         "choice": false,
-        "special": ""
+        "type": ""
       },
       "template": {
         "units": "",
+        "type": "radius",
+        "size": "",
         "contiguous": false,
-        "type": ""
+        "count": ""
       }
     },
     "range": {
-      "value": "60",
+      "value": "5",
       "units": "ft",
       "special": ""
     },
@@ -166,11 +82,11 @@
       "recovery": [],
       "spent": null
     },
-    "ability": "int",
+    "ability": "",
     "level": 0,
-    "school": "enc",
+    "school": "evo",
     "materials": {
-      "value": "",
+      "value": "一把价值至少 1sp 的近战武器",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -180,12 +96,14 @@
       "prepared": false
     },
     "properties": [
-      "vocal"
+      "somatic",
+      "material",
+      "mgc"
     ],
     "activities": {
       "dnd5eactivity000": {
         "_id": "dnd5eactivity000",
-        "type": "save",
+        "type": "damage",
         "activation": {
           "type": "action",
           "value": null,
@@ -207,11 +125,7 @@
           "concentration": false,
           "override": false
         },
-        "effects": [
-          {
-            "_id": "ZXv7eRn3xf5tzP8x"
-          }
-        ],
+        "effects": [],
         "range": {
           "override": false
         },
@@ -232,18 +146,21 @@
           "recovery": []
         },
         "damage": {
-          "onSave": "none",
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
           "parts": [
             {
-              "number": 1,
-              "denomination": 6,
+              "number": null,
+              "denomination": null,
               "bonus": "",
               "types": [
-                "psychic"
+                "fire"
               ],
               "custom": {
-                "enabled": false,
-                "formula": ""
+                "enabled": true,
+                "formula": "@mod"
               },
               "scaling": {
                 "mode": "whole",
@@ -251,19 +168,7 @@
                 "formula": ""
               }
             }
-          ],
-          "critical": {
-            "allow": false
-          }
-        },
-        "save": {
-          "ability": [
-            "str"
-          ],
-          "dc": {
-            "calculation": "spellcasting",
-            "formula": ""
-          }
+          ]
         },
         "sort": 0,
         "useConditionText": "",
@@ -303,17 +208,17 @@
           "saveRemoves": true,
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
-        },
-        "otherActivityId": ""
+        }
       }
     },
-    "identifier": "mind-slivertce"
+    "identifier": "green-flame-bladetce"
   },
   "ownership": {
     "default": 0
   },
+  "effects": [],
   "folder": "eKWjH0NyoSjvzeog",
-  "sort": 2200000,
+  "sort": 200000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
@@ -325,5 +230,5 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!Il0iA9nttKqh0ACr"
+  "_key": "!items!0TR7HOOqbttnAGzj"
 }
