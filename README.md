@@ -12,3 +12,6 @@
 
 更新日志见
 https://github.com/HJSmile/classpack/releases
+
+如需为本项目贡献，请参阅：
+https://github.com/observer1236/classpack/blob/master/CONTRIBUTING.md
