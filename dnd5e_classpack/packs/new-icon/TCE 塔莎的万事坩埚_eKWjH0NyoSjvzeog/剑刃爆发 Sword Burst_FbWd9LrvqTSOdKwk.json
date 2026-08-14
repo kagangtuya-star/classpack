@@ -1,8 +1,16 @@
 {
-  "_id": "9ez2X9q9mQmDqJ8Q",
-  "name": "闪电牵引 Lightning Lu",
+  "name": "剑刃爆发 Sword Burst",
   "type": "spell",
   "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": false,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
     "midiProperties": {
       "confirmTargets": "always",
       "saveDamage": "nodam",
@@ -18,14 +26,6 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "midi-qol": {
-      "rollAttackPerTarget": "always",
-      "removeAttackDamageButtons": "default",
-      "itemCondition": "",
-      "effectCondition": "",
-      "reactionCondition": "",
-      "otherCondition": ""
-    },
     "dnd5e": {
       "migratedProperties": [
         "vocal"
@@ -36,11 +36,11 @@
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/Ability_Monk_CracklingJadeLightning.png",
-  "effects": [],
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "_id": "FbWd9LrvqTSOdKwk",
   "system": {
     "description": {
-      "value": "<p>        你创造出鞭状闪电能量袭向你 15 尺内可见的一个生物。目标必须进行一次力量豁免，豁免失败则其以直线被你拉近 10 尺。如果拉近以后目标在你周围 5 尺内，那么他将受到 1d8 闪电伤害。<br />　　你到达 5 级时，该法术的伤害增加 1d8（变为 2d8）。11 级时再加 1d8（变为 3d8），17 级时再加 1d8（变为 4d8）。</p>",
+      "value": "<p>        你在瞬间制造出一圈半透明利刃横扫你的周围。法术范围内除你以外的每一个生物都必须成功进行一次敏捷豁免，否则将受到 1d6 力场伤害。<br />　　你到达 5 级时，该法术的伤害增加 1d6（变为 2d6）。11 级时再加 1d6（变为3d6），17 级时再加 1d6（变为 4d6）。</p>",
       "chat": ""
     },
     "source": {
@@ -64,13 +64,15 @@
         "type": ""
       },
       "template": {
-        "units": "self",
+        "units": "ft",
+        "type": "radius",
+        "size": "6",
         "contiguous": false,
-        "type": ""
+        "count": ""
       }
     },
     "range": {
-      "value": "15",
+      "value": "5",
       "units": "ft",
       "special": ""
     },
@@ -81,7 +83,7 @@
     },
     "ability": "",
     "level": 0,
-    "school": "evo",
+    "school": "con",
     "materials": {
       "value": "",
       "consumed": false,
@@ -145,10 +147,10 @@
           "parts": [
             {
               "number": 1,
-              "denomination": 8,
+              "denomination": 6,
               "bonus": "",
               "types": [
-                "lightning"
+                "force"
               ],
               "custom": {
                 "enabled": false,
@@ -167,7 +169,7 @@
         },
         "save": {
           "ability": [
-            "str"
+            "dex"
           ],
           "dc": {
             "calculation": "spellcasting",
@@ -216,13 +218,14 @@
         "otherActivityId": ""
       }
     },
-    "identifier": "lightning-luretce"
+    "identifier": "sword-burst-tce"
   },
   "ownership": {
     "default": 0
   },
+  "effects": [],
   "folder": "eKWjH0NyoSjvzeog",
-  "sort": 1300000,
+  "sort": 900000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
@@ -234,5 +237,5 @@
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!9ez2X9q9mQmDqJ8Q"
+  "_key": "!items!FbWd9LrvqTSOdKwk"
 }

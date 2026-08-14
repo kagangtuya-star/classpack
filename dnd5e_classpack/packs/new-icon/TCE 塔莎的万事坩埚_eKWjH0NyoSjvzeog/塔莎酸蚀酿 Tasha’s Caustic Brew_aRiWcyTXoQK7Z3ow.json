@@ -1,9 +1,23 @@
 {
-  "name": "心灵之楔 Mind Sliv",
+  "_id": "aRiWcyTXoQK7Z3ow",
+  "name": "塔莎酸蚀酿 Tasha’s Caustic Brew",
   "type": "spell",
   "flags": {
+    "midi-qol": {
+      "AoETargetType": "any",
+      "AoETargetTypeIncludeSelf": true,
+      "autoTarget": "default",
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
     "midiProperties": {
       "confirmTargets": "always",
+      "saveDamage": "fulldam",
+      "bonusSaveDamage": "fulldam",
       "autoFailFriendly": false,
       "autoSaveFriendly": false,
       "critOther": false,
@@ -15,17 +29,12 @@
       "toggleEffect": false,
       "ignoreTotalCover": false
     },
-    "midi-qol": {
-      "rollAttackPerTarget": "always",
-      "removeAttackDamageButtons": "default",
-      "itemCondition": "",
-      "effectCondition": "",
-      "reactionCondition": "",
-      "otherCondition": ""
-    },
     "dnd5e": {
       "migratedProperties": [
-        "vocal"
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
       ],
       "riders": {
         "activity": [],
@@ -33,106 +42,20 @@
       }
     }
   },
-  "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave2.jpg",
-  "_id": "Il0iA9nttKqh0ACr",
-  "effects": [
-    {
-      "name": "心灵之楔 Mind Sliver（TCE）",
-      "img": "modules/dnd5e_classpack/Nicons/ability_demonhunter_soulcleave2.jpg",
-      "origin": "Compendium.dnd5e_classpack.new-icon.Item.Il0iA9nttKqh0ACr",
-      "transfer": false,
-      "_id": "ZXv7eRn3xf5tzP8x",
-      "type": "base",
-      "system": {},
-      "changes": [
-        {
-          "key": "system.bonuses.abilities.save",
-          "mode": 2,
-          "value": "-1d4",
-          "priority": 20
-        }
-      ],
-      "disabled": false,
-      "duration": {
-        "startTime": null,
-        "seconds": null,
-        "combat": null,
-        "rounds": 1,
-        "turns": null,
-        "startRound": null,
-        "startTurn": null
-      },
-      "description": "",
-      "tint": "#ffffff",
-      "statuses": [],
-      "sort": 0,
-      "flags": {
-        "dae": {
-          "enableCondition": "",
-          "disableCondition": "",
-          "disableIncapacitated": false,
-          "selfTarget": false,
-          "selfTargetAlways": false,
-          "dontApply": false,
-          "stackable": "noneName",
-          "showIcon": false,
-          "durationExpression": "",
-          "specialDuration": [
-            "isSave",
-            "turnEndSource"
-          ],
-          "macroRepeat": "none"
-        },
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
-        "core": {
-          "overlay": false
-        },
-        "ActiveAuras": {
-          "isAura": false,
-          "aura": "None",
-          "nameOverride": "",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "customCheck": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false,
-          "wallsBlock": "system",
-          "statuses": []
-        }
-      },
-      "_stats": {
-        "compendiumSource": null,
-        "duplicateSource": null,
-        "coreVersion": "13.351",
-        "systemId": "dnd5e",
-        "systemVersion": "4.4.4",
-        "createdTime": 1756665012171,
-        "modifiedTime": 1756930437681,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
-        "exportSource": null
-      },
-      "_key": "!items.effects!Il0iA9nttKqh0ACr.ZXv7eRn3xf5tzP8x"
-    }
-  ],
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Creature_Poison_02.png",
+  "effects": [],
   "system": {
     "description": {
-      "value": "<p>         你将由灵能塑成的迷惘尖刺注入施法距离内一个你可见的生物的心灵。目标必须成功通过一次智力豁免，否则受到 1d6 精神伤害并在你的下回合结束前其下一次豁免检定中减去 1d4。<br />　　当你到达 Lv.5/11/17 时，该法术伤害增加 1d6 以分别至 2d6/3d6/4d6。</p>",
+      "value": "<p>        一股 30 尺长，5 尺宽的线状强酸从你的位置向你指定的任意方向喷射而出。在线状区域内的每个生物必须进行一次敏捷豁免，豁免失败者将在法术持续时间内被强酸复盖，或直到自己或其他生物用一个动作从其身上刮下或洗下。被强酸复盖的生物在每个自己回合开始时受到 2d4 强酸伤害。<br />　　<strong>升环法术效应：</strong>使用二环或更高法术位施展该法术时，你使用的法术位每比一环高 1 环，法术的伤害就增加 2d4。</p>",
       "chat": ""
     },
     "source": {
-      "custom": "TCE",
+      "custom": "",
       "revision": 1,
       "rules": "2014",
-      "book": "TCE"
+      "book": "TCE",
+      "page": "",
+      "license": ""
     },
     "activation": {
       "type": "action",
@@ -140,24 +63,25 @@
       "value": 1
     },
     "duration": {
-      "value": "",
-      "units": "inst"
+      "value": "1",
+      "units": "minute"
     },
     "target": {
       "affects": {
-        "type": "creature",
-        "count": "1",
         "choice": false,
-        "special": ""
+        "type": ""
       },
       "template": {
         "units": "",
+        "type": "line",
+        "size": "",
         "contiguous": false,
-        "type": ""
+        "width": "",
+        "count": ""
       }
     },
     "range": {
-      "value": "60",
+      "value": "30",
       "units": "ft",
       "special": ""
     },
@@ -166,11 +90,11 @@
       "recovery": [],
       "spent": null
     },
-    "ability": "int",
-    "level": 0,
-    "school": "enc",
+    "ability": "dex",
+    "level": 1,
+    "school": "evo",
     "materials": {
-      "value": "",
+      "value": "一点腐烂的食物",
       "consumed": false,
       "cost": 0,
       "supply": 0
@@ -180,7 +104,10 @@
       "prepared": false
     },
     "properties": [
-      "vocal"
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
     ],
     "activities": {
       "dnd5eactivity000": {
@@ -207,11 +134,7 @@
           "concentration": false,
           "override": false
         },
-        "effects": [
-          {
-            "_id": "ZXv7eRn3xf5tzP8x"
-          }
-        ],
+        "effects": [],
         "range": {
           "override": false
         },
@@ -232,14 +155,14 @@
           "recovery": []
         },
         "damage": {
-          "onSave": "none",
+          "onSave": "half",
           "parts": [
             {
-              "number": 1,
-              "denomination": 6,
+              "number": 2,
+              "denomination": 4,
               "bonus": "",
               "types": [
-                "psychic"
+                "acid"
               ],
               "custom": {
                 "enabled": false,
@@ -247,7 +170,7 @@
               },
               "scaling": {
                 "mode": "whole",
-                "number": 1,
+                "number": 2,
                 "formula": ""
               }
             }
@@ -258,7 +181,7 @@
         },
         "save": {
           "ability": [
-            "str"
+            "dex"
           ],
           "dc": {
             "calculation": "spellcasting",
@@ -307,23 +230,23 @@
         "otherActivityId": ""
       }
     },
-    "identifier": "mind-slivertce"
+    "identifier": "tashas-caustic-brew-tce"
   },
   "ownership": {
     "default": 0
   },
   "folder": "eKWjH0NyoSjvzeog",
-  "sort": 2200000,
+  "sort": 1600000,
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.4",
     "coreVersion": "13.351",
     "createdTime": null,
-    "modifiedTime": 1757259979391,
+    "modifiedTime": 1757260887904,
     "lastModifiedBy": "WqWGW8MuBm7BNHxt",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
-  "_key": "!items!Il0iA9nttKqh0ACr"
+  "_key": "!items!aRiWcyTXoQK7Z3ow"
 }
