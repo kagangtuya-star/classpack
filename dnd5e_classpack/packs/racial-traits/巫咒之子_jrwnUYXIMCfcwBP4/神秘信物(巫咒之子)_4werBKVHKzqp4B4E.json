@@ -1,0 +1,165 @@
+{
+  "name": "神秘信物(巫咒之子)",
+  "type": "feat",
+  "_id": "4werBKVHKzqp4B4E",
+  "img": "icons/commodities/materials/feather-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>以一个附赠动作，你可以无害地移除你的一缕头发，一片指甲，或者一颗牙齿。这信物被灌注了魔力，持续到你结束一次长休息。当此信物被以此法灌注魔力时，你可以执行以下动作：</p><ul><li><p><strong>心灵传信Telepathic Message</strong>。如果你和握持或携带此信物的生物相距在10里之内，你可以以一个动作向他传递一条心灵感应信息。这条信息最多包含二十五个单词。</p></li><li><p><strong>遥远视野Remote Viewing</strong>。如果你在信物的10里内，你可以以一个动作进入一种出神状态。此出神状态持续1分钟，若你解消此状态（无需动作）或失能则提前结束。在此出神状态下，你可以通过信物来看和听，就如同你身处那里一样。当你使你的感官处于信物的位置时，你对自身周围的状况处于目盲与耳聋状态。当此出神状态结束时，信物无害地被摧毁。</p></li></ul><p>一旦你使用此特性创造一个信物，你便不能再次这样做，直到你结束了一次长休，长休结束时你失去的部分会长回来。</p>",
+      "chat": ""
+    },
+    "source": {
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    }
+  },
+  "effects": [],
+  "folder": "jrwnUYXIMCfcwBP4",
+  "sort": 40300000,
+  "ownership": {
+    "default": 0,
+    "krICnnplyRFIq4Sm": 3
+  },
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": 1711692105423,
+    "modifiedTime": 1756544420586,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4werBKVHKzqp4B4E"
+}
