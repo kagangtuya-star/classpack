@@ -40,11 +40,7 @@
         "somatic",
         "material",
         "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      ]
     },
     "chris-premades": {
       "info": {
@@ -332,7 +328,9 @@
           "spellSlot": true,
           "targets": []
         },
-        "description": {},
+        "description": {
+          "chatFlavor": ""
+        },
         "duration": {
           "units": "inst",
           "concentration": false,
@@ -355,7 +353,8 @@
         },
         "uses": {
           "spent": 0,
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
         "damage": {
           "parts": [],
@@ -364,9 +363,12 @@
           }
         },
         "save": {
-          "ability": [],
+          "ability": [
+            "dex"
+          ],
           "dc": {
-            "calculation": "initial"
+            "calculation": "spellcasting",
+            "formula": ""
           }
         },
         "useConditionText": "",
@@ -407,7 +409,15 @@
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
         },
-        "otherActivityId": ""
+        "otherActivityId": "",
+        "name": "",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "flaming-sphere"

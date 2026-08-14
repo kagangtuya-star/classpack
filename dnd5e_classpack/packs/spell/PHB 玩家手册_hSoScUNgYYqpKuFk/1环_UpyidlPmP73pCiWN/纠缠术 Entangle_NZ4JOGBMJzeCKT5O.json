@@ -32,11 +32,7 @@
         "vocal",
         "somatic",
         "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      ]
     }
   },
   "img": "modules/dnd5e_classpack/Nicons/Spell_Nature_StrangleVines.png",
@@ -218,7 +214,12 @@
         },
         "effects": [
           {
-            "_id": "swQkComQ0XWPyWLV"
+            "_id": "swQkComQ0XWPyWLV",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -248,7 +249,9 @@
           "onSave": "half"
         },
         "save": {
-          "ability": [],
+          "ability": [
+            "str"
+          ],
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
@@ -298,7 +301,13 @@
         "img": "",
         "appliedEffects": [
           "swQkComQ0XWPyWLV"
-        ]
+        ],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "entangle"

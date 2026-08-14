@@ -32,8 +32,7 @@
         "concentration"
       ],
       "riders": {
-        "activity": [],
-        "effect": []
+        "activity": []
       }
     }
   },
@@ -98,7 +97,7 @@
       "sort": 0,
       "flags": {
         "dae": {
-          "enableCondition": "!([\"undead\"].includes(details.race)) || !([\"undead\"].includes(details.type.value))",
+          "enableCondition": "",
           "disableCondition": "",
           "disableIncapacitated": false,
           "selfTarget": false,
@@ -143,7 +142,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1756366698952,
-        "modifiedTime": 1786654458540,
+        "modifiedTime": 1786724095103,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
@@ -240,7 +239,12 @@
         },
         "effects": [
           {
-            "_id": "S3VFDLWN86iFWfox"
+            "_id": "S3VFDLWN86iFWfox",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -279,9 +283,9 @@
           }
         },
         "sort": 0,
-        "useConditionText": "!['undead'].includes(typeOrRace)",
+        "useConditionText": "",
         "useConditionReason": "",
-        "effectConditionText": "",
+        "effectConditionText": "!['undead'].includes(typeOrRace)",
         "macroData": {
           "name": "",
           "command": ""
@@ -322,7 +326,13 @@
         "img": "",
         "appliedEffects": [
           "S3VFDLWN86iFWfox"
-        ]
+        ],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "hold-monster"

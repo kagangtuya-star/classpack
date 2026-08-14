@@ -30,11 +30,7 @@
         "somatic",
         "material",
         "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      ]
     },
     "dae": {
       "macro": {
@@ -42,8 +38,8 @@
         "img": "modules/dnd5e_classpack/Nicons/INV_Mask_02.png",
         "type": "script",
         "scope": "global",
-        "command": "(async () => {\n  console.log(\"Stone macro 启动 mode:\", args[0]);\n  const mode = args[0];\n  const last = args.at(-1);\n  const actor = canvas.tokens.get(last.tokenId)?.actor;\n  if (!actor) return console.warn(\"找不到 actor\");\n  const origin = last.origin;\n  const active = await fromUuid(origin);\n  const caster = active?.parent;\n  const dc = caster?.getRollData()?.attributes?.spelldc;\n  if (!active || !caster || typeof dc !== \"number\") return console.warn(\"Source 或 DC 有误\");\n\n  if (mode === \"on\") {\n    console.log(\"注册 updateCombat 钩子 for\", actor.name);\n    const hookId = Hooks.on(\"updateCombat\", async combat => {\n      const turn = combat.turns?.[combat.turn];\n      if (!turn?.actor || turn.actor.id !== actor.id) return;\n      const hasFlesh = actor.effects.some(e => e.label === \"石化术 Flesh to Stone\");\n      if (!hasFlesh) return console.log(\"未持有 Flesh to Stone 效果\");\n\n      let succ = actor.flags.world?.success ?? 0;\n      let fail = actor.flags.world?.failure ?? 0;\n\n      const roll = await actor.rollAbilitySave(\"con\", { flavor: `Stone Save DC ${dc}` });\n      const total = roll.total;\n      total >= dc ? succ++ : (fail++, !actor.effects.some(e=>e.label===\"Restrained\") &&\n        await actor.createEmbeddedDocuments(\"ActiveEffect\", [{\n          label:\"Restrained\", icon:\"icons/svg/locked.svg\",\n          changes:[{key:\"macro.StatusEffect\", mode:0, value:\"restrained\"}],\n          duration:{turns:1}\n        }]));\n\n      await actor.setFlag(\"world\",\"success\", succ);\n      await actor.setFlag(\"world\",\"failure\", fail);\n\n      const chatHtml = `<div class=\"dnd5e chat-card\">\n        <header class=\"card-header\"><h3>Flesh to Stone 豁免</h3></header>\n        <div class=\"card-content\">\n          <p><strong>${actor.name}</strong> 掷骰：<strong>${total}</strong>（DC ${dc}）</p>\n          <p>累计 成功：<strong>${succ}</strong>，失败：<strong>${fail}</strong></p>\n        </div></div>`;\n      ChatMessage.create({content: chatHtml, speaker: ChatMessage.getSpeaker({actor})});\n\n      if (succ >= 3) {\n        console.log(\"三次成功，删除原始 Flesh 效果，解绑 hook\", hookId);\n        const orig = actor.effects.find(e => e.origin === origin);\n        if (orig) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",[orig.id]);\n        Hooks.off(\"updateCombat\", hookId);\n      } else if (fail >= 3) {\n        console.log(\"三次失败，添加 Petrified，解除 restrain，解绑 hook\", hookId);\n        if (!actor.effects.some(e=>e.label===\"Petrified\")) {\n          await actor.createEmbeddedDocuments(\"ActiveEffect\",[{\n            label:\"Petrified\", icon:\"icons/svg/petrified.svg\",\n            changes:[{key:\"macro.StatusEffect\", mode:0, value:\"petrified\"}],\n            duration:{}\n          }]);\n        }\n        const res = actor.effects.filter(e=>e.label===\"Restrained\");\n        if (res.length) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",res.map(e=>e.id));\n        Hooks.off(\"updateCombat\", hookId);\n      }\n    });\n    console.log(\"hook 注册完成, id:\", hookId);\n  }\n\n  if (mode === \"off\") {\n    console.log(\"mode off：清理 flags、Restrained、Petrified，并解绑 hook\");\n    const orig = actor.effects.find(e => e.origin === origin);\n    if (orig) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",[orig.id]);\n    const pe = actor.effects.filter(e => e.label === \"Petrified\");\n    if (pe.length) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",pe.map(e=>e.id));\n    const re = actor.effects.filter(e => e.label === \"Restrained\");\n    if (re.length) await actor.deleteEmbeddedDocuments(\"ActiveEffect\",re.map(e=>e.id));\n    await actor.unsetFlag(\"world\",\"success\");\n    await actor.unsetFlag(\"world\",\"failure\");\n    // 主动删除效果时也要解绑 hook\n    Hooks.off(\"updateCombat\");\n  }\n})();",
-        "author": "WqWGW8MuBm7BNHxt",
+        "command": "",
+        "author": "TEhQZHmGMOcY5c4a",
         "ownership": {
           "default": 3
         },
@@ -52,14 +48,15 @@
         "sort": 0,
         "flags": {},
         "_stats": {
-          "coreVersion": "12.343",
+          "coreVersion": "13.351",
           "systemId": "dnd5e",
-          "systemVersion": "4.3.9",
+          "systemVersion": "5.3.3",
           "createdTime": null,
           "modifiedTime": null,
           "lastModifiedBy": null,
           "compendiumSource": null,
-          "duplicateSource": null
+          "duplicateSource": null,
+          "exportSource": null
         }
       }
     }
@@ -76,9 +73,9 @@
       "system": {},
       "changes": [
         {
-          "key": "macro.itemMacro",
-          "mode": 0,
-          "value": "",
+          "key": "flags.midi-qol.OverTime",
+          "mode": 2,
+          "value": "turn=end, label=石化术 Flesh to Stone, saveAbility=con, saveDC=@attributes.spell.dc, saveMagic=true, saveCount=3-, failCount=2-petrified, allowIncapacitated=true",
           "priority": 20
         }
       ],
@@ -109,7 +106,8 @@
           "stackable": "noneName",
           "showIcon": false,
           "durationExpression": "",
-          "specialDuration": []
+          "specialDuration": [],
+          "macroRepeat": "none"
         },
         "dnd5e": {
           "riders": {
@@ -144,8 +142,8 @@
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": 1753587042919,
-        "modifiedTime": 1753605725985,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1786723890291,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
       "_key": "!items.effects!oLtyOvrWeLNEJDIE.DOEuUpjwYchEF2hm"
@@ -241,7 +239,12 @@
         },
         "effects": [
           {
-            "_id": "DOEuUpjwYchEF2hm"
+            "_id": "DOEuUpjwYchEF2hm",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -271,7 +274,9 @@
           "onSave": "half"
         },
         "save": {
-          "ability": [],
+          "ability": [
+            "con"
+          ],
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
@@ -320,7 +325,13 @@
         "img": "",
         "appliedEffects": [
           "DOEuUpjwYchEF2hm"
-        ]
+        ],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "flesh-to-stone"

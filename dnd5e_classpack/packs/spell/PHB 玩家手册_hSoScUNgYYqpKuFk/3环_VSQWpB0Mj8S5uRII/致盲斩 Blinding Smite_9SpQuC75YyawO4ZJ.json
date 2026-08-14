@@ -28,11 +28,7 @@
       "migratedProperties": [
         "vocal",
         "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      ]
     },
     "chris-premades": {
       "info": {
@@ -264,7 +260,9 @@
           "onSave": "half"
         },
         "save": {
-          "ability": [],
+          "ability": [
+            "con"
+          ],
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
@@ -311,7 +309,13 @@
         "otherActivityId": "none",
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "blinding-smite"

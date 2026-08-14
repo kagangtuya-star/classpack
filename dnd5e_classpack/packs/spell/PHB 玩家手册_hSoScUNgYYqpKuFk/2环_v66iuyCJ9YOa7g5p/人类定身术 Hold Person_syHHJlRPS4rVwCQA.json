@@ -35,11 +35,7 @@
         "somatic",
         "material",
         "concentration"
-      ],
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      ]
     },
     "chris-premades": {
       "info": {
@@ -89,7 +85,7 @@
           "showIcon": false,
           "durationExpression": "",
           "specialDuration": [],
-          "enableCondition": "[\"human\", \"humanoid\"].includes(details.race) || [\"human\", \"humanoid\"].includes(details.type.value)",
+          "enableCondition": "",
           "selfTarget": false,
           "selfTargetAlways": false,
           "dontApply": false,
@@ -128,7 +124,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.3.9",
         "createdTime": null,
-        "modifiedTime": 1786654441893,
+        "modifiedTime": 1786724049799,
         "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
@@ -276,7 +272,7 @@
         },
         "useConditionText": "",
         "useConditionReason": "",
-        "effectConditionText": "",
+        "effectConditionText": "[\"humanoid\"].includes(typeOrRace)",
         "macroData": {
           "name": "",
           "command": ""

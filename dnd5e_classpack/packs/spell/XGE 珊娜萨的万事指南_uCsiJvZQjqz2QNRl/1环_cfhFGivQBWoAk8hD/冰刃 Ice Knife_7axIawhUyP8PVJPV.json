@@ -34,8 +34,7 @@
         "material"
       ],
       "riders": {
-        "activity": [],
-        "effect": []
+        "activity": []
       }
     }
   },
@@ -269,8 +268,9 @@
           },
           "affects": {
             "choice": false,
-            "type": "self",
-            "special": ""
+            "type": "creature",
+            "special": "",
+            "count": ""
           },
           "override": true,
           "prompt": true
@@ -288,7 +288,9 @@
           "onSave": "half"
         },
         "save": {
-          "ability": [],
+          "ability": [
+            "dex"
+          ],
           "dc": {
             "calculation": "spellcasting",
             "formula": ""
@@ -335,7 +337,18 @@
         "otherActivityId": "none",
         "name": "",
         "img": "",
-        "appliedEffects": []
+        "appliedEffects": [],
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        },
+        "flags": {
+          "region-attacher": {
+            "attachRegionToTemplate": false
+          }
+        }
       }
     },
     "identifier": "ice-knife"

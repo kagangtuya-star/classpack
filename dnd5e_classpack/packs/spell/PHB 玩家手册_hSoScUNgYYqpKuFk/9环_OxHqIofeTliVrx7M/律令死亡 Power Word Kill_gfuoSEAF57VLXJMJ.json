@@ -29,8 +29,7 @@
         "vocal"
       ],
       "riders": {
-        "activity": [],
-        "effect": []
+        "activity": []
       }
     }
   },
@@ -68,7 +67,7 @@
       "sort": 0,
       "flags": {
         "dae": {
-          "enableCondition": "attributes.hp.value <= 100",
+          "enableCondition": "",
           "disableCondition": "",
           "disableIncapacitated": false,
           "selfTarget": false,
@@ -113,8 +112,8 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.4",
         "createdTime": 1756659195958,
-        "modifiedTime": 1757002128698,
-        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "modifiedTime": 1786724140159,
+        "lastModifiedBy": "TEhQZHmGMOcY5c4a",
         "exportSource": null
       },
       "_key": "!items.effects!gfuoSEAF57VLXJMJ.QGTBaE1SH7WtQy8z"
@@ -197,7 +196,9 @@
           "spellSlot": true,
           "targets": []
         },
-        "description": {},
+        "description": {
+          "chatFlavor": ""
+        },
         "duration": {
           "units": "inst",
           "concentration": false,
@@ -205,7 +206,11 @@
         },
         "effects": [
           {
-            "_id": "QGTBaE1SH7WtQy8z"
+            "_id": "QGTBaE1SH7WtQy8z",
+            "level": {
+              "min": null,
+              "max": null
+            }
           }
         ],
         "range": {
@@ -225,15 +230,18 @@
         },
         "uses": {
           "spent": 0,
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
         "roll": {
           "prompt": false,
-          "visible": false
+          "visible": false,
+          "name": "",
+          "formula": ""
         },
         "useConditionText": "",
         "useConditionReason": "",
-        "effectConditionText": "",
+        "effectConditionText": "target.attributes.hp.value <= 100",
         "macroData": {
           "name": "",
           "command": ""
@@ -269,7 +277,15 @@
           "preRemoveConditionText": "",
           "postRemoveConditionText": ""
         },
-        "otherActivityId": "none"
+        "otherActivityId": "none",
+        "name": "",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
       }
     },
     "identifier": "power-word-kill"
