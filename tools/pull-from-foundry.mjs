@@ -30,7 +30,8 @@ import path from "node:path";
 import fs from "node:fs";
 import fsp from "node:fs/promises";
 import {
-  PACKS_ROOT, transformName, transformFolderName, loadCliApi, removeJson, copyTree, isFileLocked
+  PACKS_ROOT, transformName, transformFolderName, loadCliApi, removeJson, copyTree, isFileLocked,
+  collectStatsById, applyStats
 } from "./lib/pack-utils.mjs";
 
 const { extractPack } = await loadCliApi();
@@ -42,17 +43,21 @@ Options:
   -d, --data <path>    Foundry VTT "Data" directory (contains modules/, worlds/).
   -m, --module <dir>   Module folder name (default: dnd5e_classpack).
   -p, --pack <name>    Only this pack (repeatable). Default: all packs.
+      --include-stats  Pull Foundry's "_stats" metadata too. By default the
+                       existing "_stats" in the repo is preserved so metadata
+                       churn (modifiedTime, lastModifiedBy, etc.) is ignored.
   -h, --help           Show this help.
 `);
 }
 
 function parseArgs(argv) {
-  const opts = { data: process.env.FOUNDRY_DATA_PATH, module: "dnd5e_classpack", packs: [] };
+  const opts = { data: process.env.FOUNDRY_DATA_PATH, module: "dnd5e_classpack", packs: [], includeStats: false };
   for ( let i = 0; i < argv.length; i++ ) {
     const a = argv[i];
     if ( a === "-d" || a === "--data" ) opts.data = argv[++i];
     else if ( a === "-m" || a === "--module" ) opts.module = argv[++i];
     else if ( a === "-p" || a === "--pack" ) opts.packs.push(argv[++i]);
+    else if ( a === "--include-stats" ) opts.includeStats = true;
     else if ( a === "-h" || a === "--help" ) { printHelp(); process.exit(0); }
     else { console.error(`Unknown argument: ${a}\n`); printHelp(); process.exit(1); }
   }
@@ -108,9 +113,15 @@ for ( const name of names ) {
   try {
     console.log(`[${name}] extracting Foundry LevelDB -> JSON ...`);
     await extractPack(src, tmp, { folders: true, transformName, transformFolderName, log: false });
+    if ( !opts.includeStats ) {
+      // Ignore Foundry's volatile _stats churn: restore the _stats already in
+      // the repo (matched by _id), leaving brand-new documents untouched.
+      const statsById = await collectStatsById(dest);
+      await applyStats(tmp, statsById);
+    }
     await removeJson(dest);
     await copyTree(tmp, dest);
-    console.log(`[${name}] done`);
+    console.log(`[${name}] done${opts.includeStats ? "" : " (preserving existing _stats)"}`);
   } catch ( err ) {
     console.error(`[${name}] failed: ${err.message}`);
     failed = true;

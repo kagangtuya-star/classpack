@@ -149,3 +149,54 @@ export function isFileLocked(filepath) {
     throw err;
   }
 }
+
+/**
+ * Collect each document's `_stats` block from an existing JSON tree, keyed by
+ * `_id`. A document with no `_stats` is stored as `undefined` so callers can
+ * distinguish "no prior `_stats`" from "`_stats` was null".
+ * @param {string} root  Directory tree of JSON files.
+ * @returns {Promise<Map<string, object|undefined>>}
+ */
+export async function collectStatsById(root) {
+  const map = new Map();
+  if ( !fs.existsSync(root) ) return map;
+  const walk = async dir => {
+    for ( const e of await fsp.readdir(dir, { withFileTypes: true }) ) {
+      const p = path.join(dir, e.name);
+      if ( e.isDirectory() ) await walk(p);
+      else if ( e.name.endsWith(".json") ) {
+        const data = JSON.parse(await fsp.readFile(p, "utf8"));
+        if ( data._id ) map.set(data._id, data._stats);
+      }
+    }
+  };
+  await walk(root);
+  return map;
+}
+
+/**
+ * Replace each document's `_stats` with the previously-stored value, matched by
+ * `_id`. Documents without a prior entry (new documents) are left untouched.
+ * Used to ignore Foundry's volatile `_stats` metadata churn when pulling edits
+ * back into the repository.
+ * @param {string} root                       Directory tree of freshly extracted JSON.
+ * @param {Map<string, object|undefined>} statsById  Existing `_stats` keyed by `_id`.
+ */
+export async function applyStats(root, statsById) {
+  const walk = async dir => {
+    for ( const e of await fsp.readdir(dir, { withFileTypes: true }) ) {
+      const p = path.join(dir, e.name);
+      if ( e.isDirectory() ) await walk(p);
+      else if ( e.name.endsWith(".json") ) {
+        const data = JSON.parse(await fsp.readFile(p, "utf8"));
+        if ( data._id && statsById.has(data._id) ) {
+          const stats = statsById.get(data._id);
+          if ( stats === undefined ) delete data._stats;
+          else data._stats = stats;
+          await fsp.writeFile(p, JSON.stringify(data, null, 2) + "\n");
+        }
+      }
+    }
+  };
+  await walk(root);
+}
