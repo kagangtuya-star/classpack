@@ -9,6 +9,9 @@
       "flags": {}
     }
   ],
+  "esmodules": [
+    "scripts/migrate-new-icon-to-spell.mjs"
+  ],
   "packs": [
     {
       "name": "rtable",
@@ -88,9 +91,9 @@
       }
     },
     {
-      "name": "new-icon",
+      "name": "spell",
       "label": "法术",
-      "path": "packs/new-icon",
+      "path": "packs/spell",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
@@ -261,7 +264,7 @@
             "races",
             "BackgroundList",
             "feats-all",
-            "new-icon"
+            "spell"
           ],
           "folders": []
         },
@@ -300,8 +303,8 @@
   ],
   "url": "https://github.com/HJSmile/classpack",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12",
+    "minimum": "13",
+    "verified": "13",
     "maximum": "13"
   },
   "manifest": "https://github.com/HJSmile/classpack/releases/latest/download/module.json",
@@ -368,15 +371,11 @@
     ],
     "recommends": [
       {
-        "id": "dnd5e_DMTools",
-        "type": "module",
-        "manifest": "https://raw.githubusercontent.com/feederze/DMTools/main/module.json",
-        "compatibility": {}
-      },
-      {
         "id": "midi-qol",
         "type": "module",
-        "compatibility": {}
+        "compatibility": {
+          "minimum": "13.0.59"
+        }
       }
     ]
   }

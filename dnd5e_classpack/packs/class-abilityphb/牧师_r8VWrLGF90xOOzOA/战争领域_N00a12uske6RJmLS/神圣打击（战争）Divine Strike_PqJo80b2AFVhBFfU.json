@@ -1,0 +1,201 @@
+{
+  "_id": "PqJo80b2AFVhBFfU",
+  "name": "神圣打击（战争）Divine Strike",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_Incite.png",
+  "system": {
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>         第8级起，你可以使你的武器充满神圣能量。你在每个自己回合里有一次机会,可以在用武器攻击命中某生物时使该攻击额外造成[[/r 1d8]]点与该武器伤害类型相同的伤害。14 级时，该伤害提升到[[/r 2d8]]。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 60",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "turnStart",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "战争领域等级 8",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "神圣打击（战争）",
+      "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_CrusaderStrike.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.PqJo80b2AFVhBFfU",
+      "_id": "fm2eXYSIM5cMYK92",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.神圣打击（战争）.damage.mwak",
+          "mode": 2,
+          "value": "+1@scale.cleric.divine-strike",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.神圣打击（战争）.damage.rwak",
+          "mode": 2,
+          "value": "+1@scale.cleric.divine-strike",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.神圣打击（战争）.count",
+          "mode": 2,
+          "value": "ItemUses.神圣打击（战争）Divine Strike",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.神圣打击（战争）.criticalDamage",
+          "mode": 2,
+          "value": "true",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Compendium.dnd5e_classpack.class-abilityphb.Item.twDzAZCJeSqZnLTW.ActiveEffect.DQnaCQ8dcfCWxKRr",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757146464133,
+        "modifiedTime": 1757147527647,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!PqJo80b2AFVhBFfU.fm2eXYSIM5cMYK92"
+    }
+  ],
+  "folder": "N00a12uske6RJmLS",
+  "sort": 20500000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "chris-premades": {
+      "info": {
+        "identifier": "divineStrike",
+        "source": "chris-premades",
+        "version": "0.0.0"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757146437825,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PqJo80b2AFVhBFfU"
+}

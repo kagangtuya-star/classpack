@@ -1,0 +1,174 @@
+{
+  "_id": "ylAmUiS71YoiU73g",
+  "name": "扎孢菇 Zabou",
+  "type": "consumable",
+  "img": "icons/consumables/mushrooms/umbontae-green.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<blockquote>\n<p>这是楚尔特当地不同寻常的野生动植物。熟练自然技能的冒险者能够一眼认出这些动植物，并通过一个成功 的 DC 15 的智力(自然)检定来回忆起它的详细属性。如果冒险者们是楚尔特本地人，则该检定具优势。</p>\n<p>此处描述的野生动植物可以在南扎路港和其他聚居地内以动植物价格表内对应的价格进行买卖。</p>\n<p>有的野生动植物中会使生物承受一小时或更久的中毒状态。请记住，@UUID[Compendium.dnd5e_classpack.spell.I1C2EQxwynPd7dOC]{次级复原术 Lesser Restoration}以及类似魔法可以结束该状态。</p>\n</blockquote>\n<p>扎孢菇靠摄取内脏和枯树的腐木的营养为生。谨慎处理的情况下，可以将扎孢菇采摘或拔除并使其不释放孢子。一旦受到挤压或是遭到打击，扎孢菇就会释放出孢子，覆盖半径 10 尺的球形范围。扎孢菇也可以像手雷一样被丢出最多 30 尺远或者原地丢下，在受到冲击时释放它的孢子云。位于这片区域内的生物必须进行 DC 10 的体质豁免，豁免失败则中毒一分钟。生物在中毒期间会持续发痒。中毒生物在其每回合结束时可以重 复该豁免，豁免成功则结束该状态。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "ToA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "sphere",
+            "size": "10",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "10"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-zabou",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!ylAmUiS71YoiU73g"
+}

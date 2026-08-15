@@ -1,0 +1,321 @@
+{
+  "_id": "k0Edsji19UVt4i12",
+  "name": "和平领域 Peace Domain（TCE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Spell_Holy_GreaterBlessingofSalvation.png",
+  "effects": [],
+  "folder": "Xih0AZJHkJZLWGw4",
+  "sort": 100196,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>在每个健康的社群，友好的诸国，以及善良的灵魂心中，永远存在着对和平的向往。和平之神们激励着所有人平息冲突，并对试图打破和平的力量奋起反抗。和平神祗表格中包含了一部分拥有该领域的神明。</p>\n<p>和平领域的牧师会主持条约的签订仪式，同时还常常被请求秉公裁断，解决争端。这些牧师的祝福让人们众志成城，同舟共济。而这些牧师的魔法对于那些为和平而战之人则如同雪中送炭。</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<th>神祗范例</th>\n<th>神系</th>\n</tr>\n<tr>\n<td>安格芮丝 Angharradh</td>\n<td>精灵</td>\n</tr>\n<tr>\n<td>蓓伦妮·真银 Berronar Truesilver</td>\n<td>矮人</td>\n</tr>\n<tr>\n<td>博得雷 Boldrei</td>\n<td>艾伯伦</td>\n</tr>\n<tr>\n<td>希劳拉妮 Cyrrollalee</td>\n<td>半身人</td>\n</tr>\n<tr>\n<td>埃达丝 Eldath</td>\n<td>被遗忘的国度</td>\n</tr>\n<tr>\n<td>盖尔达尔·铁手 Gaerdal Ironhand</td>\n<td>侏儒</td>\n</tr>\n<tr>\n<td>帕拉丁 Paladine</td>\n<td>龙枪</td>\n</tr>\n<tr>\n<td>拉奥Rao</td>\n<td>灰鹰</td>\n</tr>\n</tbody>\n</table>\n<table border=\"1\">\n<tbody>\n<tr>\n<th>牧师等级</th>\n<th>法术</th>\n</tr>\n<tr>\n<td>1st</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.eatsvLyUqyzEFzCv]{英雄气概}@UUID[Compendium.dnd5e_classpack.spell.FbxdKcDpSPWuGTLA]{庇护术}</td>\n</tr>\n<tr>\n<td>3rd</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.hAL0Dxp9w7gvkfZm]{援助术}@UUID[Compendium.dnd5e_classpack.spell.DLyjjM6qTHBCSFCx]{守护之链}</td>\n</tr>\n<tr>\n<td>5th</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.dU8oQCE5dA1qZ6TD]{希望信标}@UUID[Compendium.dnd5e_classpack.spell.kRO1zjPXuOLm4qUU]{短讯术}</td>\n</tr>\n<tr>\n<td>7th</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.ujZGFLEqgI0L6oli]{净化灵光}@UUID[Compendium.dnd5e_classpack.spell.cdeQPacCcm540OPy]{欧提路克弹力法球}</td>\n</tr>\n<tr>\n<td>9th</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.7dqplcsKNYQgRh2S]{高等复原术}@UUID[Compendium.dnd5e_classpack.spell.mdnvLsKRorF3cx5S]{拉瑞心灵联结}</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "identifier": "peace-domain",
+    "classIdentifier": "cleric",
+    "advancement": [
+      {
+        "_id": "lowv6o578jo7dqnq",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.eatsvLyUqyzEFzCv"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.FbxdKcDpSPWuGTLA"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "hae6czro96iqw4dp",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.hAL0Dxp9w7gvkfZm"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.DLyjjM6qTHBCSFCx"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "fk77z2wwcw4n25l4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.dU8oQCE5dA1qZ6TD"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.kRO1zjPXuOLm4qUU"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 5,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "s2c8unanjhicb4sd",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.ujZGFLEqgI0L6oli"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.cdeQPacCcm540OPy"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 7,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "zd4fuedgf1zxqiyg",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.7dqplcsKNYQgRh2S"
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.spell.mdnvLsKRorF3cx5S"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "always",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 9,
+        "title": "获得领域法术",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "2pbio9g7r1c48uqm",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.39vgDk1ARYUxfuoE",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.BZ23vIogBlpajzOM",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "w23y6jcwldhqnfh2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.oHj6AFAm66d9qYd7",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "4tobypdfms4ciha1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.viW2PkM3OfKDK0o9",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "cb32azsgazjyrx8d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.lTR0ojCE1yFRvIjT",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 8,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "96yky860nofemqc4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.fP9l4SdYuSPi0ofQ",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "2Rmm4GJM3jgmq2Lc",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:prf",
+                "skills:ins",
+                "skills:per"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "",
+        "hint": "",
+        "icon": null
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    }
+  },
+  "_key": "!items!k0Edsji19UVt4i12"
+}

@@ -1,0 +1,185 @@
+{
+  "_id": "494BDB7966E03AAB",
+  "name": "8环法术卷轴 Spell Scroll 8th Level",
+  "type": "consumable",
+  "img": "icons/sundries/scrolls/scroll-bound-sealed-red-green.webp",
+  "effects": [],
+  "folder": "y1fVWTD0mou2DyMJ",
+  "flags": {
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>每张法术卷轴都以神秘暗语记录了一道法术。如果卷轴记载的法术在你职业的法术列表内，你可以用一个动作阅读卷轴以施展其中的法术，而无需支付任何法术成分。反之，卷轴上的文字对你是晦涩难懂的。</p>\n<p>假如8环卷轴记载的法术在你职业的法术列表内，但其环数超过了你目前能施展的水平，则你必须以你的施法关键属性通过一次DC为18的属性检定。如果检定失败，8环卷轴上记载的法术将消失而不生效。</p>\n<p>卷轴上的法术一经施展即消失。卷轴本身则化为尘埃。</p>\n<p>卷轴的稀有度、其法术的豁免DC和攻击加值由它所记载的法术环数决定，如下表所示：</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<td><strong> 法术环数</strong></td>\n<td><strong>稀有度</strong></td>\n<td><strong>豁免DC</strong></td>\n<td><strong>攻击加值</strong></td>\n</tr>\n<tr>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.494BDB7966E03AAB]{8环}</td>\n<td>非常珍稀</td>\n<td>18</td>\n<td>+10</td>\n</tr>\n</tbody>\n</table>\n<p>你可以如同抄录法术书上的法术一般抄录8环法术卷轴上的法师法术。抄录8环卷轴上的法术时，抄录者必须通过一次DC为18的智力（神秘）检定以成功抄录。无论检定成功与否，8环法术卷轴都将被摧毁。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 200",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5120,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "scroll",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "法术在你职业的法术列表内。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "10",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "8-spell-scroll-8th-level",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010439307,
+    "modifiedTime": 1757871143505,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!494BDB7966E03AAB"
+}

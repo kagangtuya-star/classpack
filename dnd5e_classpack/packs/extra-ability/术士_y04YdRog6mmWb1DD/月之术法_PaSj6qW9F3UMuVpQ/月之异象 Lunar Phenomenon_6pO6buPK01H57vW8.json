@@ -1,0 +1,144 @@
+{
+  "name": "月之异象 Lunar Phenomenon",
+  "type": "feat",
+  "img": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>以一个附赠动作，你可以激发你当前所处@UUID[Compendium.dnd5e_classpack.extra-ability.Item.93SWuqQa3gbWs70m]{月之化身}月相的特殊能力。或者，以你@UUID[Compendium.dnd5e_classpack.extra-ability.Item.uaTAid19VLIGlP7S]{阴晴圆缺}特性转换月相的附赠动作的一部分，你可以立刻使用你正进入的月相的能力：</p><ul><li><p><strong>满月Full Moon.</strong>你短暂地辐射出月光。每个你选择的距你30尺内的生物必须通过一次对抗你法术豁免DC的体质豁免，否则陷入目盲直到其下一回合结束。此外，该区域内一个你选择的生物恢复3d8生命值。</p></li><li><p><strong>朔月New Moon.</strong>你瞬间散发出幽暗。每个你选择的距你30尺内的生物必须通过一次DC对抗你法术豁免DC的敏捷豁免，否则受到[[/r 3d10]]黯蚀伤害，并且速度降为0至其下一回合结束。此外，你变为隐形，直至你下一回合结束。你进行攻击或施放法术后，隐形也会立刻结束。</p></li><li><p><strong>新月Crescent Moon.</strong>你魔法性地传送至你60尺内可见的未被占据位置。你可以携带一个距你5尺内的可见自愿生物。该生物传送至你传送目的地内5尺你选择的可见未被占据位置。此外，直至你下一回合开始，你和该生物获得所有伤害的抗性。</p></li></ul><p>一旦你使用了上述附赠动作，在你完成一次长休之前再次使用需要消耗5点术法点。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DSotDQ",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "spent": null,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "月之术法等级 18",
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-lunar-phenomenon",
+    "advancement": [],
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": 1686483811692,
+    "modifiedTime": 1749883542518,
+    "lastModifiedBy": "uXKCmWFprrvnSIDm",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "folder": "PaSj6qW9F3UMuVpQ",
+  "_id": "6pO6buPK01H57vW8",
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "Jo05tXxu7yf2dQe3": 3
+  },
+  "_key": "!items!6pO6buPK01H57vW8"
+}

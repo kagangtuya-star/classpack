@@ -1,0 +1,311 @@
+{
+  "_id": "Au584WRiGch84PXI",
+  "name": "高等隐形术 Greater Invisibility",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Vanish.png",
+  "effects": [
+    {
+      "changes": [],
+      "description": "Grants advantage on attack rolls while forcing disadvantage to all who attack for 1 minute",
+      "disabled": false,
+      "duration": {
+        "rounds": null,
+        "seconds": 60,
+        "turns": null,
+        "startTime": null,
+        "combat": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "dfreds-convenient-effects": {
+          "isConvenient": true,
+          "isDynamic": false,
+          "isViewable": true,
+          "nestedEffects": [],
+          "subEffects": [
+            {
+              "changes": [
+                {
+                  "key": "flags.midi-qol.advantage.attack.all",
+                  "mode": 0,
+                  "value": "1",
+                  "priority": null
+                },
+                {
+                  "key": "flags.midi-qol.grants.disadvantage.attack.all",
+                  "mode": 0,
+                  "value": "1",
+                  "priority": null
+                }
+              ],
+              "description": "- An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.<br/>- Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.",
+              "disabled": false,
+              "duration": {
+                "rounds": null,
+                "seconds": null,
+                "turns": null,
+                "startTime": null,
+                "combat": null,
+                "startRound": null,
+                "startTurn": null
+              },
+              "flags": {
+                "dfreds-convenient-effects": {
+                  "isConvenient": true,
+                  "isDynamic": false,
+                  "isViewable": true,
+                  "nestedEffects": [],
+                  "subEffects": []
+                }
+              },
+              "icon": "modules/dfreds-convenient-effects/images/invisible.svg",
+              "name": "Invisible",
+              "origin": null,
+              "tint": null,
+              "transfer": false,
+              "statuses": [
+                "Convenient Effect: Invisible",
+                "invisible"
+              ],
+              "_id": null
+            }
+          ]
+        }
+      },
+      "name": "Greater Invisibility",
+      "origin": "Compendium.dnd5e_classpack.spell.Item.Au584WRiGch84PXI",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "Convenient Effect: Greater Invisibility",
+        "invisible"
+      ],
+      "_id": "Q2ysBPgga2azZbiJ",
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": null,
+        "systemVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "img": "icons/magic/air/fog-gas-smoke-swirling-gray.webp",
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!Au584WRiGch84PXI.Q2ysBPgga2azZbiJ"
+    }
+  ],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你或一个你触碰的生物变为隐形，直至法术终止。任何保持在目标身上的着装物和携带物也可以维持隐形状态。</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 246",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "units": "touch"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 4,
+    "school": "ill",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Q2ysBPgga2azZbiJ"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "greater-invisibility"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "ZmO2ZE1E5wu6WU0S",
+  "sort": 7500000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1711692744620,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!Au584WRiGch84PXI"
+}

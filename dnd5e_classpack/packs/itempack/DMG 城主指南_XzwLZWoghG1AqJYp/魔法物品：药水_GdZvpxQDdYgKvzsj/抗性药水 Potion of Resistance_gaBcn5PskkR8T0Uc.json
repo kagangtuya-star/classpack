@@ -1,0 +1,193 @@
+{
+  "_id": "gaBcn5PskkR8T0Uc",
+  "name": "抗性药水 Potion of Resistance",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-corked-empty.webp",
+  "effects": [],
+  "folder": "GdZvpxQDdYgKvzsj",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>饮用此药水时，你获得对某种伤害类型的抗性，持续1小时。DM可以自行选定伤害类型，或从下表中随机选择。</p>\n<table>\n<thead>\n<tr>\n<th><strong>[[/r d10]] </strong></th>\n<th><strong> 伤害类型 </strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.1A0487DD4E1E5DB8]{强酸}</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.7F76E1C3445A298D]{冷冻}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.E4441C5846053CF7]{火焰}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.D65C1CEA85F72C27]{力场}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.4D60697BB4C4F99E]{闪电}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.6678FBCE5053C4F9]{黯蚀}</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.BA06FFE37A326CFD]{毒素}</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.F384D7728CA043B0]{心灵}</td>\n</tr>\n<tr>\n<td>9</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.3BF53FC51F0AD47A]{光耀}</td>\n</tr>\n<tr>\n<td>10</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.50AA1EDB633FD33C]{雷鸣}</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-potion-of-resistance",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010445086,
+    "modifiedTime": 1757877023428,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 2100000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!gaBcn5PskkR8T0Uc"
+}

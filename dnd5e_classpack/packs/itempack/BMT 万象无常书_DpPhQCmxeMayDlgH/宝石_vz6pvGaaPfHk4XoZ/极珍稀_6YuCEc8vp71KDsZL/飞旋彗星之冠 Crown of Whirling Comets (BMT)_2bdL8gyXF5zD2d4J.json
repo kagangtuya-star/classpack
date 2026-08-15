@@ -1,0 +1,256 @@
+{
+  "_id": "2bdL8gyXF5zD2d4J",
+  "name": "飞旋彗星之冠 Crown of Whirling Comets (BMT)",
+  "type": "equipment",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "35",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>奇物，极珍稀（需同调） </em><br />这顶精致的银色王冠饰有星星图案。你戴上王冠时，王冠尖端上的宝石会分离并紧密围绕你的头部旋转。</p><p>王冠有6发充能，你可在着装王冠期间消耗充能使用以下特性： <br /><em><strong>星翔Star Flight。</strong></em>以一个附赠动作，你可以消耗1发充能获得持续10分钟等同于你的步行速度的飞行速度，并且可以悬浮。飞行时，你会发出微弱的星光。<br /><em><strong>星光打击Starlight Strike。</strong></em>以一个动作，你可以消耗任意数量的充能来发射寒冷的星光。 你发射的星矢数量等于所花费的充能数量，你可以决定这些星矢攻击120尺内可见的同一个生物或分别攻击不同的生物。星矢的攻击自动命中，每发星矢都会造成[[/damage 2d4 type=cold]]伤害。<br /><em><strong>飞旋冰雹Whirling Hail。</strong></em>以一个动作，你可以消耗3发充能施展<em>@UUID[Compendium.dnd5e_classpack.spell.Item.u2MG84qW8YLuECHa]{冰风暴 ice storm}</em>（豁免 DC16）。</p><p>王冠在每个黎明时恢复[[/r 1d6]]发已消耗的充能。</p><p>This delicate silver tiara is decorated with stellar iconography. While you wear the crown, the gems on the tiara's points detach and closely orbit your head.</p><p>The crown has 6 charges for the following properties, which you can use while wearing the crown:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Star Flight\"><span class=\"bold rd__list-item-name\">Star Flight.</span> As a bonus action, you can spend 1 charge to gain the power of flight for 10 minutes. For the duration, you gain a flying speed equal to your walking speed, and you can hover. While flying, you glow faintly with starlight.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Starlight Strike\"><span class=\"bold rd__list-item-name\">Starlight Strike.</span> As an action, you can spend any number of charges to launch bolts of frigid starlight. You launch a number of bolts equal to the number of charges spent, and you can direct the bolts to target one creature or several, so long as all creatures are within 120 feet of you and you can see them. The bolts automatically strike their targets, and each bolt deals [[/damage 2d4 type=cold]] damage.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Whirling Hail\"><span class=\"bold rd__list-item-name\">Whirling Hail.</span> As an action, you can spend 3 charges and cast the @spell[Ice Storm] spell (save DC <span class=\"rd__dc\">16</span>).</p></li></ul><p>The crown regains [[/r 1d6]] expended charges daily at dawn.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "veryRare",
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "6",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6"
+        }
+      ]
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": null,
+    "activities": {
+      "P3Ksc6BWmmsZu5xz": {
+        "_id": "P3Ksc6BWmmsZu5xz",
+        "type": "cast",
+        "img": "systems/dnd5e/icons/svg/activity/cast.svg",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "spell": {
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": null,
+          "properties": [
+            "vocal",
+            "somatic",
+            "material"
+          ],
+          "spellbook": true,
+          "uuid": "Compendium.plutonium-faux-id--7b22746167223a227370656c6c222c2274657874223a226963652073746f726d227d.custom.Item.0000000000000000"
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "crown-of-whirling-comets-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false
+  },
+  "img": "modules/dnd5e_classpack/Nicons/img/items/BMT/Crown of Whirling Comets.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "crown%20of%20whirling%20comets_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "GyPHGqpeIG4zed8m",
+      "name": "Speed Adjustment",
+      "img": "modules/dnd5e_classpack/Nicons/img/items/BMT/Crown of Whirling Comets.webp",
+      "description": "",
+      "changes": [
+        {
+          "key": "system.attributes.movement.fly",
+          "mode": 5,
+          "value": "@attributes.movement.walk",
+          "priority": 4
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "plutonium": {
+          "dedupeId": "speed-adjustment"
+        }
+      },
+      "type": "base",
+      "system": {},
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!2bdL8gyXF5zD2d4J.GyPHGqpeIG4zed8m"
+    }
+  ],
+  "folder": "6YuCEc8vp71KDsZL",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738836954,
+    "modifiedTime": 1751738836954,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "exportSource": null
+  },
+  "sort": 3800000,
+  "_key": "!items!2bdL8gyXF5zD2d4J"
+}

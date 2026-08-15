@@ -1,0 +1,185 @@
+{
+  "_id": "U1ob4EUYid48WJrs",
+  "name": "抗性戒指 Ring of Resistance",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-ball-gold.webp",
+  "effects": [],
+  "folder": "PhIMgbBSIF3PmyeK",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>戒指（需同调）</em></p>\n<p>着装该戒指时，你获得对某种类型伤害的抗性。戒指上镶嵌的宝石种类决定抗性的种类，具体由DM决定或随机选择。</p>\n<table>\n<thead>\n<tr>\n<th><strong> [[/r d10]] </strong></th>\n<th><strong> 伤害类型 </strong></th>\n<th><strong> 宝石 </strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.7F1258BC9D2193D8]{强酸}</td>\n<td>珍珠pearl</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.3CE7EC266DE4FA80]{冷冻}</td>\n<td>电气石tourmaline</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.63256B05CF195553]{火焰}</td>\n<td>石榴石garnet</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.BAA6D60FCF6D4F3B]{力场}</td>\n<td>蓝宝石sapphire</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.39DC4B8FD23549F3]{闪电}</td>\n<td>黄水晶citrine</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.DF85416B0ECD6EA8]{黯蚀}</td>\n<td>黑玉jet</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.84D673A61CAFED0D]{毒素}</td>\n<td>紫晶amethyst</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.C4633399A6D5BA78]{心灵}</td>\n<td>翡翠jade</td>\n</tr>\n<tr>\n<td>9</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.9310DD39F7608B51]{光耀}</td>\n<td>黄玉topaz</td>\n</tr>\n<tr>\n<td>10</td>\n<td>@UUID[Compendium.dnd5e_classpack.itempack.69D3E42F5C4D1897]{雷鸣}</td>\n<td>尖晶石spinel</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 192",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-ring-of-resistance",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010444188,
+    "modifiedTime": 1757876936003,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 1000000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!U1ob4EUYid48WJrs"
+}

@@ -1,0 +1,205 @@
+{
+  "_id": "9E9094FFFCC513E7",
+  "name": "龙鳞甲 Dragon Scale Mail",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+  "effects": [],
+  "folder": "v3V4BJIslRqB1yV5",
+  "flags": {
+    "dnd5e": {
+      "migratedProperties": [
+        "stealthDisadvantage"
+      ],
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>（需同调）</em></p>\n<p>龙鳞甲是以某一种龙的鳞片制成的盔甲。有时候是龙把自己褪下的鳞片送给了类人生物；有时候则是猎人们小心的剥下了死去的龙的鳞片并仔细保存起来。无论如何，龙鳞甲都是非常珍贵的。</p>\n<p>穿着此盔甲时，你在AC上获得+1加值，并且在对抗龙威和龙的喷吐武器的豁免上具有优势。根据龙鳞甲使用的龙鳞种类不同，你还会获得对一种伤害类型的抗性（见下表）。</p>\n<p>另外，你可以用一个动作集中精神感知距离你最近的和龙鳞甲的鳞片提供者类型相同的龙相对于你的方向和距离。这条龙必须在你周围30英里以内且和你处于同一位面。直到次日黎明前，这个特性都无法再次启动。</p>\n<table>\n<thead>\n<tr>\n<th>龙的种类</th>\n<th>抗性</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>黑龙</td>\n<td>强酸</td>\n</tr>\n<tr>\n<td>蓝龙</td>\n<td>闪电</td>\n</tr>\n<tr>\n<td>黄铜龙</td>\n<td>火焰</td>\n</tr>\n<tr>\n<td>青铜龙</td>\n<td>闪电</td>\n</tr>\n<tr>\n<td>赤铜龙</td>\n<td>强酸</td>\n</tr>\n<tr>\n<td>金龙</td>\n<td>火焰</td>\n</tr>\n<tr>\n<td>绿龙</td>\n<td>毒素</td>\n</tr>\n<tr>\n<td>红龙</td>\n<td>火焰</td>\n</tr>\n<tr>\n<td>银龙</td>\n<td>寒冷</td>\n</tr>\n<tr>\n<td>白龙</td>\n<td>寒冷</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 165",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 45,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "day",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "armor": {
+      "value": 15,
+      "dex": 2,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "medium",
+      "baseItem": "scalemail"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "mi",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-dragon-scale-mail",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010440538,
+    "modifiedTime": 1757877744725,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 5500000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!9E9094FFFCC513E7"
+}

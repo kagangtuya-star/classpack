@@ -1,0 +1,166 @@
+{
+  "_id": "4YLIQ267JpGzRgzm",
+  "name": "凛冬魔杖 Wand of Winter",
+  "type": "consumable",
+  "img": "icons/weapons/wands/wand-gem-teal.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 7,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>（需同调）</em></p>\n<p>这根魔杖看起来和摸起来都像是一根冰柱。你必须之同调才能使用它。</p>\n<p>魔杖有 7 发充能，用来作为施展其内法术的能量。你在持 握该魔杖时，可以用你的动作从魔杖施展下列法术之一：@UUID[Compendium.dnd5e_classpack.spell.tJzKo2vpEhXZfuJO]{冷冻射线 Ray of Frost}（无充能，或 1 充能作为 5 环法术施展：远程法术攻击命中+5）、@UUID[Compendium.dnd5e_classpack.spell.InxRn0MsZsH5wslj]{雪雨暴 Sleet Storm}（3 充能：法术豁免 DC 15）或是@UUID[Compendium.dnd5e_classpack.spell.u2MG84qW8YLuECHa]{冰风暴 Ice Storm}（4 充能：法术豁免 DC 15）。所有这些法术都无需任何法术成分。</p>\n<p>每日黎明时分魔杖将回复[[/r 1d6+1]]的充能，若你耗尽魔杖的最后一发充能，骰一次[[/r d20]]。骰值为 20 时，魔杖融化并永久损坏。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "HotDQ",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "7",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "wand",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-wand-of-winter",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!4YLIQ267JpGzRgzm"
+}

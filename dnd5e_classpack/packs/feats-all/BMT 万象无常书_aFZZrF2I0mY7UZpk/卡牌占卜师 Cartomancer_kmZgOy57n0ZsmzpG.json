@@ -1,0 +1,182 @@
+{
+  "name": "卡牌占卜师 Cartomancer",
+  "type": "feat",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "49",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<div><hr /><div><p>先决条件：第4级，施法特性</p><p>你学会了通过一副牌组来引导你的魔法，你可以用一副牌组作为你的法器，并获得下列增益：</p><p>卡牌诈术Card Tricks。你习得戏法 @UUID[Compendium.dnd5e_classpack.spell.Item.zaUmr54yGtLyvUVC]{魔法伎俩Prestidigitation}，并可以用其创造幻象来复制舞台魔术的效果。当你以此法使用魔法伎俩时，你可以隐藏此法术的言语和姿势成分</p><p>隐藏王牌Hidden Ace。当你完成一次长休时，你可以从你的职业法术列表中选择一个法术，并将其注入一张卡牌之中，被选择的法术施法时间必须为1动作，并必须是你拥有法术位的环阶。卡牌将被魔法侵染8小时，期间，你可以以你的附赠动作展示出卡牌并且施展其内的法术。之后卡牌立刻失去魔力。</p><p>（注：隐藏王牌效果没有明确说明是否需要法术位以及何时需要法术位，导致出现严重的歧义并在外网备受争论。使用前请询问你的DM该专长与法术位如何互动，并静候本书的Errata（若有）。）</p></div></div>",
+      "chat": ""
+    },
+    "requirements": "Spellcasting Feature",
+    "prerequisites": {
+      "level": 4,
+      "repeatable": false
+    },
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "properties": [],
+    "cover": null,
+    "crewed": false,
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-cartomancer",
+    "advancement": [],
+    "enchant": {}
+  },
+  "ownership": {
+    "default": 0,
+    "pF5tIzH2aEMuTR6D": 3
+  },
+  "img": "icons/sundries/misc/admission-ticket-white.webp",
+  "flags": {
+    "plutonium": {
+      "page": "feats.html",
+      "source": "BMT",
+      "hash": "cartomancer_bmt",
+      "propDroppable": "feat"
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "core": {},
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "effects": [],
+  "folder": "aFZZrF2I0mY7UZpk",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": 1724941882525,
+    "modifiedTime": 1757057486358,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "kmZgOy57n0ZsmzpG",
+  "sort": 0,
+  "_key": "!items!kmZgOy57n0ZsmzpG"
+}

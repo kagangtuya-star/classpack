@@ -1,0 +1,167 @@
+{
+  "_id": "GJTg1TvIbQqEq3O9",
+  "name": "水之毁灭法球 Devastation Orb of Water",
+  "type": "consumable",
+  "img": "icons/weapons/thrown/grenade-round.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>毁灭法球是一种元素炸弹，可以在元素节点上通过使用邪恶元素武器进行仪式来制造。创建的法球类型取决于制造所使用的节点。例如，一个气元素节点会产生一个气之毁灭法球。这个仪式需要1个小时完成，需要2000gp的特殊材料，这些成分将会被消耗掉。</p>\n<p>毁灭法球直径12寸，重10磅，外壳坚固。这个球体在诞生后[[/r 1d100]]小时将会爆炸，释放出它所包含的元素能量。这个球体没有任何迹象显示它还需要多久才会爆炸。诸如@UUID[Compendium.dnd5e_classpack.spell.tyshE8ZcV1Xniej3]{鉴定术 Identify}和@UUID[Compendium.dnd5e_classpack.spell.0An7Gb3wSSffcHhV]{预言术 Divination}之类的法术可以用来确定球体爆炸的时间。一个球体有10点AC，15点生命值，对毒素和心灵伤害有免疫。降低到0点生命值会导致法球立刻爆炸。</p>\n<p>好在，可以制作一个特殊的容器来存放一个毁灭法球，以此防止它一言不合就爆炸。容器必须刻有球体相反元素的符号。例如，一个刻有大地符号的盒子可以用来封存一个气之毁灭法球。在容器中，球体会缓缓旋转。如果在本应引爆的时间之后将其从容器中取出，则法球会在[[/r 1d6]]轮之后爆炸，除非将其放回容器。</p>\n<p>无论法球的类型如何，它的作用范围都是一个半径为1里的球型区域。区域的中心是法球所在位置。一次使用后球体会被摧毁。</p>\n<p><strong>激雨法球Water Orb</strong>。当这个法球爆炸时，它会产生持续24小时的暴雨。在有效区域内，适用《地下城主指南》第5章中详细介绍的强降雨规则。如果有大量的雨水滞留在该地区，会在[[/r 2d10]]小时的大雨后导致洪水泛滥，洪水超过河岸10尺，淹没周围地区。此后，洪水以每轮100尺的速度向前推进，以河道水体为起点，直到到达影响区域的边缘：抵达该位置后，水向低处流动（可能会退回到它的源头）。轻型建筑倒塌并被冲走。任何位于洪水的路径上的大型或更小的生物都将被冲走。洪水毁坏庄稼，并可能引发泥石流，效果取决于地形。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PotA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 10,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "ammo",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "24",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "radius",
+            "size": "1",
+            "width": "",
+            "height": "",
+            "units": "mi"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "2d12",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-devastation-orb-of-water",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!GJTg1TvIbQqEq3O9"
+}

@@ -1,0 +1,199 @@
+{
+  "_id": "oHR3mIF1648gsmeo",
+  "name": "魔术袋 Bag of Tricks",
+  "type": "consumable",
+  "img": "icons/containers/bags/coinpouch-simple-tan.webp",
+  "effects": [],
+  "folder": "XzwLZWoghG1AqJYp",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 3,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>这种普通布袋有三种不同颜色的版本：灰色、铁锈色和棕褐色。布袋看起来是空无一物，但把手伸进去会摸到一个小小的毛绒物件。整个袋子重1/2磅。</p>\n<p>你可以用一个动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时骰一次[[/r d8]]，参考对应颜色布袋的表格决定物件变成的生物。该生物在次日黎明时分消散，其生命值降至0时也随即消失。</p>\n<p>扔出的生物对你和你的同伴态度友善，且会在你的回合内行动。你可以用一个附赠动作命令该生物在其下一回合执行特定的移动方式，做特定的动作。你也可以下达宽泛的命令，例如攻击你的敌人。没接到命令时，该生物按自己天性行动。</p>\n<p>袋子抽出三件毛绒物件后，要经过下次黎明才能再用。</p>\n<table><caption>@UUID[Compendium.dnd5e_classpack.itempack.285AE1053681284A]{魔术袋（灰色）Bag of Tricks (Grey)}</caption>\n<thead>\n<tr>\n<th><strong>[[/r d8]]</strong></th>\n<th><strong>生物</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.WOdeacKCYVhgLDuN]{鼬鼠Weasel}</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.q1YJIeIt6rK8fCKn]{巨鼠Giant Rat}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.oQvORD924obyPdCc]{獾Badger}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.lZR4lhNmYSf89s4Q]{野猪Boar}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.AijNdqMurWxDxUSl]{黑豹Panther}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.cJGY1ZywUOo6heNR]{巨獾Giant Badger}</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.EYiQZ3rFL25fEJY5]{恐狼Dire Wolf}</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.hQt3qIahnB1Odb40]{巨麋鹿Giant Elk}</td>\n</tr>\n</tbody>\n</table>\n<table><caption>@UUID[Compendium.dnd5e_classpack.itempack.5C50B5D89E39A78A]{魔术袋（铁锈色）Bag of Tricks (Rust)}</caption>\n<thead>\n<tr>\n<th><strong>[[/r d8]]</strong></th>\n<th><strong>生物</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.pozQUPTnLZW8epox]{老鼠Rat}</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.d0prpsGSAorDadec]{猫头鹰Owl}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.YTpL2c3NO4sOn2UA]{獒犬Mastiff}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.y8sRU8Ks2lcrGsaf]{山羊Goat}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.rjqk7ToMD8sGr3n4]{巨山羊Giant Goat}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.SsuCaF2fIEoDdFA3]{巨野猪Giant Boar}</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.hjhERRzafCiFFVLA]{狮子Lion}</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.omcDpBoB69esCXeM]{棕熊Brown Bear}</td>\n</tr>\n</tbody>\n</table>\n<table><caption>@UUID[Compendium.dnd5e_classpack.itempack.9B3FFFB08DBF80EE]{魔术袋（褐色）Bag of Tricks (Tan)}</caption>\n<thead>\n<tr>\n<th><strong>[[/r d8]]</strong></th>\n<th><strong>生物</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.MZYCPIVoBs918qGZ]{豺狗Jackal}</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.K5cKmPoFkpuOotis]{猿Ape}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.JW8bXggOMBx1S6tF]{狒狒Baboon}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.SXXvwaLBNuzBymp3]{斧嘴鸟Axe Beak}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.D5WjGwKskeUT8HXa]{黑熊Black Bear}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.8VXxqeBvN54rPh81]{巨鼬Giant Weasel}</td>\n</tr>\n<tr>\n<td>7</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.aAqfEHPiVbhMwZ6j]{巨鬣狗Giant Hyena}</td>\n</tr>\n<tr>\n<td>8</td>\n<td>@UUID[Compendium.dnd5e_classpack.monsterspack.FayqbnjBMszO6Pat]{老虎Tiger}</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 154",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "3",
+      "recovery": [
+        {
+          "period": "day",
+          "type": "recoverAll"
+        }
+      ],
+      "autoDestroy": false,
+      "spent": 0
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "5",
+            "type": "space",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-bag-of-tricks",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010446109,
+    "modifiedTime": 1757871354481,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 39400000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!oHR3mIF1648gsmeo"
+}

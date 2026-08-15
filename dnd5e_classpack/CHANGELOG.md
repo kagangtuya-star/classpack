@@ -1,3 +1,71 @@
+# v5.0.5 — chris-premades 预匹配（实验性）
+
+发布日期：2026-08-14
+
+- 为已被 chris-premades（CPR）自动化的条目写入 `flags.chris-premades.info` 预匹配标记（`identifier` / `source` / `version`），安装 CPR 后无需修改物品名即可在医药箱中直接匹配自动化。
+- 新增 `dnd5e_classpack/cpr-mapping.json`（477 条），记录 CPR 自动化物品与 classpack 物品之间的映射（`collection` / `id` / `name` / `identifier` / `version`），便于日后维护。
+- 覆盖法术、职业特性、种族特性、专长、背景特性、物品（仅 **2014 / legacy** 规则）。
+
+**实验性声明**
+
+- 映射未经全量人工核对，仅做抽样校验与少量人工确认，可能存在误匹配或漏匹配，欢迎反馈修正。
+- 仅覆盖 CPR 在 2014 规则下实际提供自动化的条目（约 477 条）；CPR 仅 2024 版才有的特性（如回气、暗杀、基础战斗风格等）不在映射内。
+- 暂未处理 Gambit's Premades 与 MISC 的预匹配。
+- 写入的仅为预匹配 flag，未挂载 CPR 的实际自动化，仍需通过 CPR 医药箱的「应用 / 确认」按钮把自动化导入到物品内。
+
+**版本做旧说明（重要）**
+
+- 写入的 `info.version` 统一为 `0.0.0`，刻意低于 CPR 真实版本号，使 CPR 医药箱将这些物品显示为「需更新」，引导用户在医药箱中点「应用 / 更新」拉取完整自动化（宏、特效、行动），避免误以为「已是最新」而实际未挂载任何自动化。
+- 真实版本号保存在 `cpr-mapping.json` 每条目的 `version` 字段中，仅供核对。
+
+# v5.0.4 — 内容分类
+
+
+- 法术包 `spell`：在每本扩展书下按「1环 ~ 9环」建立文件夹分类。
+- 职业特性包 `class-abilityphb`：按「职业 / 子职」建立文件夹分类，跨职业的通用特性归入「共享」文件夹。
+- 种族特性包 `racial-traits`：按「种族」建立文件夹分类。
+
+# v5.0.3 — 法术合集包重命名 new-icon → spell（⚠️ 破坏性变更）
+
+
+- 将法术合集包 `new-icon` 重命名为 `spell`：重命名目录、更新 `module.json` 中的 `name` / `path` / `packFolders`，并同步更新数据中所有 `Compendium.dnd5e_classpack.new-icon.*` 的 UUID 引用为 `.spell.*`。
+- 新增 `scripts/migrate-new-icon-to-spell.mjs`（经 `module.json` 的 `esmodules` 注册）：更新后首次加载时自动把世界文档中残留的旧 UUID 重写为 `spell`。
+
+> ⚠️ 仍属破坏性变更，迁移脚本未必能迁移完全，更新后请检查法术引用。
+
+# v5.0.2 — 迁移 midi 弃用 flag + FVTT v13 兼容
+
+
+- 迁移 midi-qol 弃用 flags 到新格式（涉及约 33 个条目）。
+- Foundry VTT 兼容性由 v12 提升到 v13（`minimum` / `verified` 均改为 `13`）。
+- midi-qol 依赖最低版本提升到 `13.0.59`。
+- 移除文件名中多余的 TCE 法术后缀，并修复因此造成的英文名截断。
+- `pull-from-foundry` 默认忽略 `_stats` 元数据抖动（新增 `--include-stats` 开关），避免污染 git diff。
+- 新增 `CONTRIBUTING.md`，更新 `README.md`。
+
+# v5.0.1 — 仓库现代化与内容修复
+
+
+**仓库源码化**
+
+- 用 Foundry VTT CLI 将全部 21 个合集包解包为 JSON 源码，存放于 `packs/<包名>/` 目录。
+- 删除编译产物（`.ldb` / `MANIFEST` / `LOG` / `CURRENT` / `LOCK`）与百度同步残留的 `.cfg` 文件，并更新 `.gitignore`。
+- 文件夹条目以「子目录 + `_Folder.json`」形式保存，保留合集包目录层级；文件名保留中文（CJK）。
+
+**自动化发布与工具链**
+
+- 新增 `.github/workflows/release.yml`：发布时自动把 JSON 重新打包为 LevelDB 并生成可安装压缩包。
+- 发布时自动生成并附带 `module.json`（版本号取自 tag；`manifest` 指向 `latest`、`download` 固定到对应 tag）。
+- 支持 `workflow_dispatch` 手动触发与 `edited` 事件；可上传打包产物为 workflow artifact。
+- GitHub Actions 依赖升级到 Node 24（checkout v7 / setup-node v7 / upload-artifact v7）。
+- 新增 `tools/pull-from-foundry.mjs`、`tools/repackage.mjs`、`tools/lib/pack-utils.mjs`。
+- 移除过时推荐模组 `dnd5e_DMTools`。
+
+**内容修复**
+
+- 修正带有 overtime effect 的法术的 DC 丢失问题。
+- 对 overtime 效果的 value 进行迁移，以适配 midi 的更新。
+
 # 4.0.0 release
 
 [toc]

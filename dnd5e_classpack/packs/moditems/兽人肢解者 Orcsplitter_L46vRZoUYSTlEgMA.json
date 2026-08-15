@@ -1,0 +1,281 @@
+{
+  "_id": "L46vRZoUYSTlEgMA",
+  "name": "兽人肢解者 Orcsplitter",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-battle-engraved-purple.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<blockquote>\n<h4><strong>贝希默之遗物Relics of Besilmer</strong></h4>\n<p>该物品是贝希默的矮人们为他们的国王托希尔德·焰舌 Torhild Flametongue 制作。</p>\n</blockquote>\n<p><em>（需善良阵营的矮人、战士或圣骑士同调）</em></p>\n<p>兽人肢解者是矮人国王托希尔德·焰舌 Torhild Flametongue 很久以前挥舞的一把威力巨大的斧头。乍一看，它是一件看起来不起眼的武器。它的头上用矮人符文雕刻着“兽人”（ORC）字样，但符文上有一个缺口或一条斜线，使得兽人这个词从字面上被分成了两部分。</p>\n<p>当你持有此魔法武器时，你将获得以下好处：</p>\n<ul>\n<li>你将获得+2的攻击检定和伤害检定加值。</li>\n<li>当你用此武器对兽人进行攻击并且骰出20时，该兽人必须通过DC17的体质豁免，或者生命值降低至0。</li>\n<li>当你未处于失能状态时，你不会被兽人突袭。当兽人距离你不到120尺的时候，你能够意识到这点，虽然你不知道他们的位置。</li>\n<li>你和你周围30尺内的任何盟友在你未失能时都不会被恐惧。</li>\n</ul>\n<p><strong>感官Sentience</strong>。兽人肢解者是一种有知觉的，守序善良的武器，它拥有智力6，感知15，魅力10。它能在120尺外看到和听到声音，黑暗视觉。它通过向持用者传递情感来进行交流，尽管在极少数情况下，它会使用一种有限的心灵感应，给持用者的心灵带来一段古代矮人诗歌的对句或者小节。</p>\n<p><strong>个性Personality</strong>。兽人肢解者冷酷、沉默、顽固。它只怀有一个小小的愿望，就是在战斗中面对兽人并为勇敢、正义的持用者服务。它蔑视懦夫和任何形式的口是心非、欺骗或不忠。该武器的目的是保护矮人，并作为矮人决心的象征。它憎恨所有的矮人仇敌——巨人、哥布林、以及其中最重要的，兽人，并在战斗中无声地敦促它的主人与这些生物相遇。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PotA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 7,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": true,
+          "formula": "1d12 + @mod + 2"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      }
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "properties": [
+      "mgc",
+      "two",
+      "hvy"
+    ],
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "greataxe"
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      },
+      "dnd5eactivity100": {
+        "_id": "dnd5eactivity100",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "17"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-orcsplitter",
+    "container": null,
+    "attuned": false,
+    "cover": null,
+    "crewed": false,
+    "ammunition": {},
+    "magicalBonus": null
+  },
+  "_key": "!items!L46vRZoUYSTlEgMA"
+}

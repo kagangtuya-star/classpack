@@ -1,0 +1,170 @@
+{
+  "_id": "EMgYhjNXzeY8qKUM",
+  "name": "贝希默之失落王冠 Lost Grown of Besilmer",
+  "type": "equipment",
+  "img": "icons/equipment/head/helm-norman-engraved.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 3,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<blockquote>\n<h4><strong>贝希默之遗物Relics of Besilmer</strong></h4>\n<p>该物品是贝希默的矮人们为他们的国王托希尔德·焰舌（Torhild Flametongue）制作。</p>\n</blockquote>\n<p><em>奇物（需同调）</em></p>\n<p>这顶矮人战盔是一顶坚固的开面式钢盔，额头上方装饰着一个金色的圆环，上面有七根金色的尖刺冠。当你穿戴这顶王冠时，你获得以下好处</p>\n<ul>\n<li>你具有对心灵伤害的抗性。</li>\n<li>你在对抗魅惑的豁免检定上具有优势。</li>\n<li>你可以使用一个附赠动作来激励一个你能看见的、离你60尺以内的、能看见或听见你的生物。在你下一次回合结束前，受激励的生物可以掷出一个[[/r d6]]，并将掷出的数字加到它所做的一个属性检定、攻击检定或豁免检定中。这将消耗王冠的1发充能。它有3发充能，并且在每天黎明恢复[[/r 1d3]]发。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PotA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "uses": {
+      "max": "3",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": 0,
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "能看见。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d3",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-lost-grown-of-besilmer",
+    "container": null,
+    "attuned": false,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!EMgYhjNXzeY8qKUM"
+}

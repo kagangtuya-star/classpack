@@ -1,0 +1,552 @@
+{
+  "folder": "cgzxmUqfv16vnnJs",
+  "name": "覆鳞饰物 Scaled Ornament",
+  "type": "equipment",
+  "_id": "CMiMhLMZl0ISvQLI",
+  "img": "icons/equipment/neck/choker-simple-teeth.webp",
+  "system": {
+    "activities": {
+      "1cZRN5ZjAW5k6EX3": {
+        "type": "utility",
+        "_id": "1cZRN5ZjAW5k6EX3",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "你所选择的30英尺内的每一个生物在为避免陷入魅惑或恐惧，或者结束这些状态所做的豁免检定中具有优势。"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "激活--优势豁免",
+        "img": "",
+        "appliedEffects": []
+      },
+      "c38VEcIHl60MIGDg": {
+        "type": "utility",
+        "_id": "c38VEcIHl60MIGDg",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1"
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "dusk",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none",
+        "name": "觉醒--伤害免疫",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><span style=\"font-family:'Roboto Condensed', sans-serif\">覆鳞饰物 Scaled Ornament</span></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">奇物，多种稀有度(需要同调)</span></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">这个饰物可以是珠宝，斗篷或其他可穿戴的装饰品。它似乎是由龙的鳞片、牙齿或爪子塑造而成，或者是包含有这些形状的图像。 </span></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">沉睡(非普通)。你在为避免陷入魅惑或恐惧，或者结束这些状态所做的豁免检定中具有优势。</span></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">激活(珍稀)。你在AC上获得+1加值，并且你不会魅惑或恐惧。此外，你所选择的30英尺内的每一个生物在为避免陷入魅惑或恐惧，或者结束这些状态所做的豁免检定中具有优势。</span></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">觉醒(极珍稀)。觉醒的饰物有激活状态的特性。此外，当你受到使饰物觉醒的宝库主龙的吐息武器的伤害类型的伤害时，你可以用你的反应来免受这次伤害，并且你恢复等同于你原本应受的伤害数值的伤害。一旦这项特性被使用，直到下一个黎明之前它不能被再次使用。</span></p><p><span style=\"font-family:'Roboto Condensed', sans-serif\">神化(传奇)。神化的饰物具有激活和觉醒状态的特性。此外，当你佩戴这个饰物时，你获得等同于步行速度的飞行速度，并且可以悬浮。当你以这种速度飞行时，你的背后出现幽灵般的龙翼。</span></p>",
+      "chat": ""
+    },
+    "identifier": "-",
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "FTD"
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "proficient": null,
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "type": {
+      "value": "",
+      "baseItem": ""
+    }
+  },
+  "effects": [
+    {
+      "name": "覆鳞饰物(沉睡) Scaled Ornament",
+      "img": "icons/equipment/neck/choker-simple-teeth.webp",
+      "origin": "Compendium.dnd5e_classpack.itempack.Item.CMiMhLMZl0ISvQLI",
+      "_id": "rmrv6EqZMt5D5mQu",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "<div id=\"winchm_template_container\" style=\"HEIGHT:1111px;WIDTH:510px;TOP:74px\"><div id=\"winchm_template_content\"><div id=\"msg_1138650\"><p>你在为避免陷入魅惑或恐惧，或者结束这些状态所做的豁免检定中具有优势</p></div></div></div>",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757152944870,
+        "modifiedTime": 1757153624009,
+        "lastModifiedBy": "WlyFYC2sYFseAvyj",
+        "exportSource": null
+      },
+      "_key": "!items.effects!CMiMhLMZl0ISvQLI.rmrv6EqZMt5D5mQu"
+    },
+    {
+      "name": "覆鳞饰物(神化) Scaled Ornament",
+      "img": "icons/equipment/neck/choker-simple-teeth.webp",
+      "origin": "Compendium.dnd5e_classpack.itempack.Item.CMiMhLMZl0ISvQLI",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.movement.fly",
+          "mode": 2,
+          "value": "30",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757153789598,
+        "modifiedTime": 1757154025180,
+        "lastModifiedBy": "WlyFYC2sYFseAvyj",
+        "exportSource": null
+      },
+      "_id": "N1DSiAgv5gys2yg1",
+      "_key": "!items.effects!CMiMhLMZl0ISvQLI.N1DSiAgv5gys2yg1"
+    },
+    {
+      "name": "覆鳞饰物(激活) Scaled Ornament",
+      "img": "icons/equipment/neck/choker-simple-teeth.webp",
+      "origin": "Compendium.dnd5e_classpack.itempack.Item.CMiMhLMZl0ISvQLI",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.traits.ci.value",
+          "mode": 2,
+          "value": "frightened",
+          "priority": 20
+        },
+        {
+          "key": "system.traits.ci.value",
+          "mode": 2,
+          "value": "charmed",
+          "priority": 20
+        },
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757154005623,
+        "modifiedTime": 1757154012371,
+        "lastModifiedBy": "WlyFYC2sYFseAvyj",
+        "exportSource": null
+      },
+      "_id": "bVfkMmyHH4jLy6Tt",
+      "_key": "!items.effects!CMiMhLMZl0ISvQLI.bVfkMmyHH4jLy6Tt"
+    }
+  ],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "WlyFYC2sYFseAvyj": 3
+  },
+  "flags": {
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1757152708990,
+    "modifiedTime": 1757873102303,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "exportSource": null
+  },
+  "_key": "!items!CMiMhLMZl0ISvQLI"
+}

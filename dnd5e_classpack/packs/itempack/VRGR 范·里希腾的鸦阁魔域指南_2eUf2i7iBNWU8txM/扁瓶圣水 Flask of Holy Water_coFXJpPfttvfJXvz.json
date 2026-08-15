@@ -1,0 +1,122 @@
+{
+  "_id": "coFXJpPfttvfJXvz",
+  "name": "扁瓶圣水 Flask of Holy Water",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-round-empty-glass.webp",
+  "effects": [],
+  "folder": "2eUf2i7iBNWU8txM",
+  "flags": {
+    "core": {}
+  },
+  "system": {
+    "description": {
+      "value": "<p>你可以用一个动作将这小瓶液体泼溅到你身边5 尺范围内的一个生物身上，或是将小瓶投到至多20尺远的地方，并利用冲击打破它。两种情况都可以视为对一个生物或物件发动一次远程攻击，并将圣水视为一件临时武器。命中时，如果目标是一只邪魔或不死生物，则目标受到[[/r 2d6]]点光耀伤害。一名牧师或圣武士能通过主持一种特殊的仪式来创造圣水。该仪式花费1 小时进行，且需要花费价值25 gp 的银粉，并消耗施法者一枚1 环法术位。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 151",
+      "book": "PHB"
+    },
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "目标是邪魔或不死生物。"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature",
+      "prompt": true
+    },
+    "range": {
+      "value": 5,
+      "long": 20,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "charges",
+      "recovery": "",
+      "autoDestroy": true,
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null,
+      "scale": false
+    },
+    "ability": "dex",
+    "actionType": "rwak",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2d6",
+          "radiant"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "container": "DvPCQI8OS5cg0lFu",
+    "summons": null,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010440049,
+    "modifiedTime": 1757275698084,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 9300000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!coFXJpPfttvfJXvz"
+}

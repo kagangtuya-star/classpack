@@ -1,0 +1,232 @@
+{
+  "_id": "dP3iX2uL3SU5Mq04",
+  "name": "边界行者 Horizon Walker（XGE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/000407.png",
+  "effects": [],
+  "folder": "TutF2vL1tIQZgRSh",
+  "sort": 88673,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>         边界行者会保护世界不受其他位面的威胁或者通过其他位面的魔法来找到并破坏其他有威胁的位面，他们会找出传送门并看守他们，会为了追捕他们的敌人而穿梭于表里位面。这些游侠也是多元宇宙中任何势力的盟友，尤其是那些守护位面的生灵和秩序的善良龙类，精怪和元素。</p>\n<h3><strong>边界行者魔法</strong></h3>\n<p>         3级起，当你到达指定游侠等级时你学会一个额外法术，如边界行者法术列表所示。这些法术对你视为游侠法术，它不计入你的已知法术总数中。</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<th>职业等级</th>\n<th>法术</th>\n</tr>\n<tr>\n<td>3级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.IuzXxwP3EhWGhtXC]{防护善恶}</td>\n</tr>\n<tr>\n<td>5级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.Cnzcy1Tu7gt6xYHm]{迷踪步}</td>\n</tr>\n<tr>\n<td>9级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.YLYeCtTmbjIZsPvN]{加速术}</td>\n</tr>\n<tr>\n<td>13级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.lopw7wVkPoE7gbNu]{放逐术}</td>\n</tr>\n<tr>\n<td>17级</td>\n<td>@UUID[Compendium.dnd5e_classpack.spell.mcQ5lehafMClomzc]{传送法阵}</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "identifier": "horizon-walker",
+    "classIdentifier": "ranger",
+    "advancement": [
+      {
+        "_id": "8rgvc1g4t4jtszwl",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.bDYWBvMmi2yL8YEa",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.spell.2dKpsNn8QZWECFtd",
+              "optional": false
+            }
+          ],
+          "optional": true,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "职业特性"
+      },
+      {
+        "_id": "glxpcb9suuqvu19u",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.pe25DA4ut0EIbs7s",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "职业特性"
+      },
+      {
+        "_id": "fzcpl7zzfmqyjd3i",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.SFFwY3txdXNZ2f9z",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "职业特性"
+      },
+      {
+        "_id": "1elcvi4ek0i6ggza",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.spell.IuzXxwP3EhWGhtXC",
+              "optional": false
+            }
+          ],
+          "optional": true,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "获得法术"
+      },
+      {
+        "_id": "cwamz1u65hk9h7bd",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.spell.Cnzcy1Tu7gt6xYHm",
+              "optional": false
+            }
+          ],
+          "optional": true,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "获得法术"
+      },
+      {
+        "_id": "8qta7a163ey823ww",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.spell.YLYeCtTmbjIZsPvN",
+              "optional": false
+            }
+          ],
+          "optional": true,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "获得法术"
+      },
+      {
+        "_id": "i14j5gbpjhp98gg5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.spell.lopw7wVkPoE7gbNu",
+              "optional": false
+            }
+          ],
+          "optional": true,
+          "spell": null
+        },
+        "value": {},
+        "level": 13,
+        "title": "获得法术"
+      },
+      {
+        "_id": "4h2m0n9k54p7gryk",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.spell.mcQ5lehafMClomzc",
+              "optional": false
+            }
+          ],
+          "optional": true,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "获得法术"
+      },
+      {
+        "_id": "8gfx89w003406t6j",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.uKJYBwLgpjfLT7VB",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.7BefhtXtZoz4BHvd",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性"
+      },
+      {
+        "_id": "537cqxpfip25eten",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "weimian",
+          "type": "dice",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "number": 1,
+              "faces": 8,
+              "modifiers": []
+            },
+            "11": {
+              "number": 2,
+              "faces": 8,
+              "modifiers": []
+            }
+          }
+        },
+        "value": {},
+        "title": "位面战士伤害骰"
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {}
+    }
+  },
+  "_key": "!items!dP3iX2uL3SU5Mq04"
+}

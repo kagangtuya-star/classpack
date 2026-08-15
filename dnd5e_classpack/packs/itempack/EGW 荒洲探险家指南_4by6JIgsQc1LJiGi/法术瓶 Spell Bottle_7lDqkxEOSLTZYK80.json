@@ -1,0 +1,184 @@
+{
+  "name": "法术瓶 Spell Bottle",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-round-empty-glass.webp",
+  "effects": [],
+  "folder": "4by6JIgsQc1LJiGi",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<div class=\"WordSection1\"><p class=\"MsoNormal\"><span style=\"FONT-SIZE:10pt;COLOR:black\">这个瓶子在同一时间只能储存一道最多</span><span style=\"FONT-SIZE:10pt;COLOR:black;mso-bidi-font-family:'Segoe UI';mso-ascii-font-family:'Segoe UI';mso-hansi-font-family:'Segoe UI'\">五环</span><span style=\"FONT-SIZE:10pt;COLOR:black\">的法术，发现时储存了</span><span class=\"1\">[[/r 1d6-1]]</span><span style=\"FONT-SIZE:10pt;COLOR:black;mso-bidi-font-family:'Segoe UI';mso-ascii-font-family:'Segoe UI';mso-hansi-font-family:'Segoe UI'\">一环</span><span style=\"FONT-SIZE:10pt;COLOR:black\">的法术（由</span><span class=\"1\">DM</span><span style=\"FONT-SIZE:10pt;COLOR:black\">选择法术，</span><span class=\"1\">0</span><span style=\"FONT-SIZE:10pt;COLOR:black\">表示瓶子是空的）。一个旋转的蓝色蒸汽充满了瓶子，它包含着一个咒语。</span><br style=\"WORD-SPACING:0px;ORPHANS:2;WIDOWS:2;font-variant-ligatures:normal;font-variant-caps:normal;-webkit-text-stroke-width:0px;text-decoration-style:initial;text-decoration-color:initial\" /><span style=\"FONT-SIZE:10pt;COLOR:black\">当瓶子是空的时候，任何生物都可以通过在施法的时候接触它来施展</span><span style=\"FONT-SIZE:10pt;COLOR:black;mso-bidi-font-family:'Segoe UI';mso-ascii-font-family:'Segoe UI';mso-hansi-font-family:'Segoe UI'\">一环</span><span style=\"FONT-SIZE:10pt;COLOR:black\">到</span><span style=\"FONT-SIZE:10pt;COLOR:black;mso-bidi-font-family:'Segoe UI';mso-ascii-font-family:'Segoe UI';mso-hansi-font-family:'Segoe UI'\">五环</span><span style=\"FONT-SIZE:10pt;COLOR:black\">的魔法。这个咒语除了储存在瓶子里外没有其他效果。</span><br style=\"WORD-SPACING:0px;ORPHANS:2;WIDOWS:2;font-variant-ligatures:normal;font-variant-caps:normal;-webkit-text-stroke-width:0px;text-decoration-style:initial;text-decoration-color:initial\" /><span style=\"FONT-SIZE:10pt;COLOR:black\">当你拿着瓶子的时候，你可以使用储存在瓶子里的魔法。该法术使用原施法者的施法等级、法术豁免</span><span class=\"1\">DC</span><span style=\"FONT-SIZE:10pt;COLOR:black\">、法术攻击加值和施法能力，但其他方面视为由你施法。一旦法术被施展，瓶子就空了。</span><br style=\"WORD-SPACING:0px;ORPHANS:2;WIDOWS:2;font-variant-ligatures:normal;font-variant-caps:normal;-webkit-text-stroke-width:0px;text-decoration-style:initial;text-decoration-color:initial\" /><span style=\"FONT-SIZE:10pt;COLOR:black\">如果你拿着空瓶子，当你看到一个生物在你周围</span><span class=\"1\">60</span><span style=\"FONT-SIZE:10pt;COLOR:black\">尺范围内施法时，你可以以一个反应动作打开瓶子，并试图打断这个咒语。如果该生物正在施放一个</span><span class=\"1\">3</span><span style=\"FONT-SIZE:10pt;COLOR:black\">级或更低等级的法术，该法术没有效果，并且它被储存在了瓶子里。如果它施展的是</span><span class=\"1\">4</span><span style=\"FONT-SIZE:10pt;COLOR:black\">级或更高的法术，进行一次智力检定。</span><span class=\"1\">DC = 10+</span><span style=\"FONT-SIZE:10pt;COLOR:black\">法术等级。一旦成功，这个咒语就没有效果了，它被储存在瓶子里。</span><br style=\"WORD-SPACING:0px;ORPHANS:2;WIDOWS:2;font-variant-ligatures:normal;font-variant-caps:normal;-webkit-text-stroke-width:0px;text-decoration-style:initial;text-decoration-color:initial\" /></p></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "EGtW",
+      "revision": 1,
+      "rules": "2014",
+      "book": "EGW"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "properties": [
+      "mgc"
+    ],
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "30",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "10",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-spell-bottle",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1692165299391,
+    "modifiedTime": 1757871191625,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "7lDqkxEOSLTZYK80",
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!7lDqkxEOSLTZYK80"
+}

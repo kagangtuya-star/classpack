@@ -1,0 +1,251 @@
+{
+  "_id": "NIKYfznBdtGiBwb2",
+  "name": "力场解构者法杖 Forcebreaker Staff (BMT)",
+  "type": "weapon",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "67",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>武器（法杖），极珍稀</em><br />你用这把魔法武器发动的攻击检定与其伤害掷骰具有+2加值。这把武器专门设计为解构魔法力场结构所用，例如<em>@UUID[Compendium.dnd5e_classpack.spell.Item.juLb5PHooXitZDWI]{力场监牢 Forcecage}</em>或<em>@UUID[Compendium.dnd5e_classpack.spell.Item.31jKHMGJ0vlqdvQU]{力场墙 Wall of Force}</em> 创造的那些。这把武器会自动击碎其打击的任何至大大型的魔法力场结构。如果目标是巨型或更大体型的力场结构，这把武器会击碎其20尺立方的部分。</p><p>奥术法器是为引导奥术法术能量而设计的特殊物品，@UUID[Compendium.dnd5e_classpack.classes-new.Item.dLA1lQ2nRUUWFwZU]{术士sorcerer}、@UUID[Compendium.dnd5e_classpack.classes-new.Item.1bisexH4xwv2Mz5T]{魔契师warlock}、以及@UUID[Compendium.dnd5e_classpack.classes-new.Item.nPAjnlZywUaKTfol]{法师wizard}可以将这样的物品当做法器使用。</p><p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p><p>This weapon was crafted to destroy structures made of force, such as those created by @spell[Forcecage] or @spell[Wall of Force]. Striking a Large or smaller structure of magical force with this weapon automatically shatters that structure. If the target is a Huge or larger structure of force, this weapon shatters a 20-foot-cube portion of it.</p><p>An arcane focus is a special item designed to channel the power of arcane spells. A @class[sorcerer], @class[warlock], or @class[wizard] can use such an item as a spellcasting focus.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": false,
+    "identified": true,
+    "equipped": true,
+    "rarity": "veryRare",
+    "type": {
+      "value": "improv",
+      "baseItem": ""
+    },
+    "range": {
+      "value": 5,
+      "long": 0,
+      "units": "ft",
+      "reach": null
+    },
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "attunement": "",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "magicalBonus": 2,
+    "damage": {
+      "base": {
+        "types": [
+          "bludgeoning"
+        ],
+        "number": 1,
+        "denomination": 6,
+        "bonus": "",
+        "scaling": {
+          "mode": "",
+          "number": 1
+        },
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "types": [
+          "bludgeoning"
+        ],
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "scaling": {
+          "mode": "",
+          "number": 1
+        },
+        "custom": {
+          "enabled": false
+        }
+      }
+    },
+    "ammunition": {
+      "type": ""
+    },
+    "mastery": "",
+    "activities": {
+      "UubPaVlP5G2Tg6Jg": {
+        "_id": "UubPaVlP5G2Tg6Jg",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          },
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": ""
+      }
+    },
+    "identifier": "forcebreaker-staff-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "armor": {
+      "value": null
+    }
+  },
+  "img": "icons/weapons/staves/staff-simple-spiral-grey.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "forcebreaker%20staff_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "JkCcQt5fmlph6h7T",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738888053,
+    "modifiedTime": 1751738888053,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "exportSource": null
+  },
+  "sort": 150000,
+  "_key": "!items!NIKYfznBdtGiBwb2"
+}

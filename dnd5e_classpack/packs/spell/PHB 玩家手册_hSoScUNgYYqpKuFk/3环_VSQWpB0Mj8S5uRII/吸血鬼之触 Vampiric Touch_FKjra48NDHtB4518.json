@@ -1,0 +1,284 @@
+{
+  "_id": "FKjra48NDHtB4518",
+  "name": "吸血鬼之触 Vampiric Touch",
+  "type": "spell",
+  "flags": {
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "always",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "onUseMacroName": "[postDamageRoll]ItemMacro"
+    },
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": true,
+      "magiceffect": false,
+      "concentration": true,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "dae": {
+      "macro": {
+        "name": "吸血鬼之触 Vampiric Touch",
+        "img": "modules/dnd5e_classpack/Nicons/Spell_DeathKnight_BloodPlague.png",
+        "type": "script",
+        "scope": "global",
+        "command": "const workflow = args[0]?.workflow;\nif (!workflow) return console.log(\"宏触发但 workflow 不存在\");\nconsole.log(\"【调试】damageDetail:\", workflow.damageDetail);\n\nlet necroticTotal = 0;\n// 遍历 damageDetail（数组，每项包含 damageType & damage）\nif (Array.isArray(workflow.damageDetail)) {\n  workflow.damageDetail.forEach(entry => {\n    if (entry.type === \"necrotic\") necroticTotal += (entry.damage || 0);\n  });\n}\n\nif (necroticTotal === 0) {\n  return console.log(\"未造成黯蚀伤害，跳过治疗\");\n}\n\nconst healAmount = Math.floor(necroticTotal / 2);\nconsole.log(`黯蚀伤害总计 ${necroticTotal} → 回复 ${healAmount}`);\n\nlet casterToken = null;\nif (workflow.tokenUuid) {\n  const doc = await fromUuid(workflow.tokenUuid);\n  casterToken = doc?.object ?? null;\n} else if (workflow.tokenId) {\n  casterToken = canvas.tokens.get(workflow.tokenId);\n} else {\n  casterToken = canvas.tokens.controlled[0];\n}\nif (!casterToken) return console.log(\"无法找到施法者 token\");\n\nawait MidiQOL.applyTokenDamage(\n  [{ type: \"healing\", damage: healAmount }],\n  healAmount,\n  new Set([casterToken]),\n  workflow,\n  null\n);\n\nChatMessage.create({\n  content: `${casterToken.name} 从黯蚀伤害 ${necroticTotal} 中回复了 ${healAmount} 点生命（只针对黯蚀伤害）`\n});\n\nconsole.log(\"治疗已应用，仅针对黯蚀伤害\");",
+        "author": "WqWGW8MuBm7BNHxt",
+        "ownership": {
+          "default": 3
+        },
+        "_id": null,
+        "folder": null,
+        "sort": 0,
+        "flags": {},
+        "_stats": {
+          "coreVersion": "12.343",
+          "systemId": "dnd5e",
+          "systemVersion": "4.3.9",
+          "createdTime": null,
+          "modifiedTime": null,
+          "lastModifiedBy": null,
+          "compendiumSource": null,
+          "duplicateSource": null
+        }
+      }
+    },
+    "chris-premades": {
+      "info": {
+        "identifier": "vampiricTouch",
+        "source": "chris-premades",
+        "version": "0.0.0"
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/Spell_DeathKnight_BloodPlague.png",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div class=\"description \"> 你的手上环绕着阴影，只要触碰一下就可以吸取他人的生命力来为自己疗伤。对你触及范围内的一个生物进行一次近战法术攻击。若命中，则目标受到3d6点黯蚀伤害，而你则回复数值等于所造成黯蚀伤害一半的生命值。你可以在该法术终止前的每个回合内以一个动作完成一次这样的攻击。\n<br /><strong>升环施法效应。</strong>使用4环或更高法术位施展该法术时，你使用的法术位每比3环高一环，法术的伤害就增加1d6。\n<br /></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 285",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 3,
+    "school": "nec",
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration",
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "spell"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": ""
+      }
+    },
+    "identifier": "vampiric-touch"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "VSQWpB0Mj8S5uRII",
+  "sort": 29500000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!FKjra48NDHtB4518"
+}

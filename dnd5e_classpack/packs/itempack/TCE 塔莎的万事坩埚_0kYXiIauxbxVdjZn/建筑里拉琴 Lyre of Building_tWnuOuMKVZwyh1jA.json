@@ -1,0 +1,154 @@
+{
+  "name": "建筑里拉琴 Lyre of Building",
+  "type": "tool",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "effects": [],
+  "folder": "0kYXiIauxbxVdjZn",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>（需吟游诗人同调）</em></p><p>当持握这把里拉琴时，你可以用一个动作施展<span class=\"bbc_color\" style=\"COLOR:purple\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.2LREP2D10afC4Y3V]{修复术Mending}</em></span>。当一个距离你300尺内的物件或建筑受到伤害时，你也可以用一个反应弹奏这把里拉琴，使其免疫该此次伤害以及其他同类型伤害，直到你的下个回合开始。<br />此外，你可以用一个动作弹奏这把里拉琴，施展<span class=\"bbc_color\" style=\"COLOR:purple\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.u7JAeqMO5fYhTnMy]{鬼斧神工Fabricate}</em></span>、<span class=\"bbc_color\" style=\"COLOR:purple\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.dFZbU4lhcBhzb9p4]{地动术Move Earth}</em></span>、<span class=\"bbc_color\" style=\"COLOR:purple\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.EoIuyVnLAF4DyTO7]{穿墙术Passwall}</em></span>或<span class=\"bbc_color\" style=\"COLOR:purple\"><em>@UUID[Compendium.dnd5e_classpack.spell.Item.46SldCNyO92qIwfQ]{构装体召唤术Summon Construct}</em></span>，直到下次黎明前，该法术不能再以此法施展。<br /></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "ability": "cha",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "music",
+      "baseItem": "lyre"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "check": {
+          "ability": "cha",
+          "associated": [],
+          "dc": {}
+        },
+        "sort": 0
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "identifier": "-lyre-of-building",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1692351801457,
+    "modifiedTime": 1757871362965,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "tWnuOuMKVZwyh1jA",
+  "sort": 1800000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!tWnuOuMKVZwyh1jA"
+}

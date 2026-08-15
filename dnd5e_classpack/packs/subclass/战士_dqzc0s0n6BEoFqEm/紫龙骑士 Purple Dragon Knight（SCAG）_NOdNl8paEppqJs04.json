@@ -1,0 +1,162 @@
+{
+  "_id": "NOdNl8paEppqJs04",
+  "name": "紫龙骑士 Purple Dragon Knight（SCAG）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Achievement_BG_KillXEnemies_GeneralsRoom.png",
+  "effects": [],
+  "folder": "dqzc0s0n6BEoFqEm",
+  "sort": 75391,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<blockquote><h3><strong>限制：限定骑士</strong></h3><p>紫龙骑士是一个特殊的、与科米尔地区的骑士绑定的范型。</p><p><strong>旗将Banneret</strong> 如果你想把它用在其他的战役模组或者是除了紫龙骑士团以外的军阀模型中，把 旗将Banneret 当做是这些范型的通用限制。</p></blockquote><p>        紫龙骑士是来自科米尔王国的战士。他们承诺守护王国的传承，对抗王国领土内的邪恶。他们的任务是作为漫游骑士巡游祖国的土地，他们依靠判断力、英勇无畏、对骑士精神的忠贞来指引他们击败邪恶势力。</p><p>        一名紫龙骑士通过在战斗中的英勇表现激发其他人的战力。在一个小村庄内仅有一名骑士也足以让一些兽人们和土匪们不随便打这个村子的主意。一名孤独的骑士是一名技艺娴熟的战士，但是如果一名骑士领导着一队盟友，即使是装备最差的民兵也会转变成一个激昂的战斗团队。</p><p>        紫龙骑士们用行动而非言语证明自己。他们永远作为先头部队冲锋在队伍的最前方，用他们无畏的战斗唤醒友军的勇气和信念，正如他们自己所一直拥有的那样。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SCAG",
+      "revision": 1,
+      "rules": "2014",
+      "book": "SCAG"
+    },
+    "identifier": "purple-dragon-knight",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "9gd70onmans30zvr",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Z8Rs95GtdznfMCrf",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "xrbp5zb11dgdzq36",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.mvf3Cptm6e0BPxlP",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "a3dzqoxh385uu51q",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.bSAdOpitFQ7qM60V",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "ac1adrmivci6ryf4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.WmhbakjejSlngoD3",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "dcqthy2wuoygp8sj",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "inspiring-surge",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "10": {
+              "value": 1
+            },
+            "18": {
+              "value": 2
+            }
+          }
+        },
+        "value": {},
+        "title": "振奋之潮盟友数",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "VszaRVjP5ASR0pRm",
+        "type": "Trait",
+        "configuration": {
+          "mode": "forcedExpertise",
+          "allowReplacements": false,
+          "grants": [
+            "skills:per"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 7,
+        "title": "",
+        "hint": "",
+        "icon": null
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!NOdNl8paEppqJs04"
+}

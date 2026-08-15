@@ -1,0 +1,157 @@
+{
+  "_id": "OTqJDdMcYVu7OMy3",
+  "name": "召唤冠恐鸟之羽 Feather of Diatryma Summoning",
+  "type": "consumable",
+  "img": "icons/commodities/materials/feather-colored-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物(需同调)</em></p>\n<p>这枚闪闪发光的羽毛饰品是由冠恐鸟 diatryma 的羽 毛制造的。冠恐鸟是一种生活在幽暗地域的有着多彩羽毛但不能飞行的大型鸟类。如果你用一个动作说出命令词并将羽毛扔到你周围 5 英尺内一处大型的未占据区域，它会 变成一只活的冠恐鸟，持续 6 小时。当持续时间结束时、 或冠恐鸟生命值降低到 0 时、或你用一个动作触摸冠恐鸟并说出命令词时，它将变回羽毛形态。</p>\n<p>冠恐鸟变回羽毛形态后，它的魔法效果需要经过 7 天才能再次启动。</p>\n<p>冠恐鸟使用斧嘴鸟 axebeak 的数据，但它的喙啄攻击造成穿刺伤害而非挥砍伤害。它对你和你的同伴友善， 并且可以作为坐骑。它能理解你说的语言并且遵从你的口 头命令。如果你不发布任何命令，它只会自卫。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "WDH",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": true,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "命令词。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "6",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-feather-of-diatryma-summoning",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!OTqJDdMcYVu7OMy3"
+}

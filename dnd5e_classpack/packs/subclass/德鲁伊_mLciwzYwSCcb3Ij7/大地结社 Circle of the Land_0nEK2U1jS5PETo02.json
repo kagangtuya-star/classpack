@@ -1,0 +1,194 @@
+{
+  "_id": "0nEK2U1jS5PETo02",
+  "name": "大地结社 Circle of the Land",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Achievement_Zone_TownlongSteppes.png",
+  "effects": [],
+  "folder": "mLciwzYwSCcb3Ij7",
+  "sort": 0,
+  "flags": {},
+  "system": {
+    "description": {
+      "value": "<p>        创立大地结社的秘术师和智者们守护着远古的知识与各种传统仪式。结社的德鲁伊们聚集在神树之环下或石阵之中，他们用德鲁伊语低声交流，传递着原初的秘密。结社中最睿智的成员地位尊贵，他们如教团的首席祭司一样维护着上古誓约，并为其领导下的众人传道解惑。作为结社的一员，大地结社的仪式与你建立起神秘的连接，使你的魔力受到大地的影响。</p><p><strong>附赠戏法Bonus Cantrip</strong></p><p>        在第2级选择该结社时，你学会一个额外的德鲁伊戏法。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 79",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "identifier": "circle-of-the-land",
+    "classIdentifier": "druid",
+    "advancement": [
+      {
+        "_id": "hsajb6n5oahnputt",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.KCU5siz0zvI8Evwu",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "职业特性"
+      },
+      {
+        "_id": "18n4ff654jbha0pe",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.jQTXDqRdk7L4u3fy",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性"
+      },
+      {
+        "_id": "xpakmn74xcpf4lhs",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.SVVsJmrNTV8gskhi",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "职业特性"
+      },
+      {
+        "_id": "0v93r7wvzu1jq6ld",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.aIXN1FpSuEH3Midz",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "职业特性"
+      },
+      {
+        "_id": "i5r6gk99r58e7ux9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.S42pVI3gy08lxwI4",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "职业特性"
+      },
+      {
+        "_id": "13xi8i08h0egq7k7",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "jieshe",
+          "type": "string",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": "获得 3rd 结社法术"
+            },
+            "5": {
+              "value": "获得 5th 结社法术"
+            },
+            "7": {
+              "value": "获得 7th 结社法术"
+            },
+            "9": {
+              "value": "获得 9th 结社法术"
+            }
+          }
+        },
+        "value": {},
+        "title": "结社法术"
+      },
+      {
+        "_id": "SB99iSOBBjFPx7Pb",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "2": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "spell",
+          "pool": [],
+          "spell": {
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          },
+          "restriction": {
+            "level": "0"
+          }
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "附赠戏法",
+        "hint": "在第2级选择该结社时，你学会一个额外的德鲁伊戏法。",
+        "icon": null
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!0nEK2U1jS5PETo02"
+}

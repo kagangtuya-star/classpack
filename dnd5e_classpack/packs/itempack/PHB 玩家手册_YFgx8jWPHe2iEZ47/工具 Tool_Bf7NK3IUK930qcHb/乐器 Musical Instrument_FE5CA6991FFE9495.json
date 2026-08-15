@@ -1,0 +1,156 @@
+{
+  "_id": "FE5CA6991FFE9495",
+  "name": "乐器 Musical Instrument",
+  "type": "tool",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "effects": [],
+  "folder": "Bf7NK3IUK930qcHb",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。各个种类的乐器之间互不关联，其熟练项只对相应的乐器起效。</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.942A9A51E8893583]{风笛 Bagpipes}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.D885BB3587058E22]{鼓 Drum}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.D4EC909FB6E41FA6]{扬琴 Dulcimer}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.4D2F2EFAE405DBE4]{长笛 Flute}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.ADFEBC8C998B4A9B]{鲁特琴 Lute}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.3248433C044C1038]{里拉琴 Lyre}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.6C49B96341C2C6DB]{角号 Horn}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.742DF300488A3E94]{排箫 Pan Flute}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.C506417B907CCAE6]{芦笛 Shawm}</p>\n<p>@UUID[Compendium.dnd5e_classpack.itempack.9C8E5E13E1651AAE]{提琴 Viol}</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 154",
+      "revision": 1,
+      "rules": "2014",
+      "book": "PHB"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "ability": "cha",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "music",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "check": {
+          "ability": "cha",
+          "associated": [],
+          "dc": {}
+        },
+        "sort": 0
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "identifier": "-musical-instrument",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010443297,
+    "modifiedTime": 1757275698084,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 1500000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!FE5CA6991FFE9495"
+}

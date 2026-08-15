@@ -1,0 +1,108 @@
+{
+  "name": "Dwarf (Mark of Warding) (ERLW)",
+  "type": "race",
+  "system": {
+    "description": {
+      "value": "<div><table class=\"w-100 summary stripe-even\"><tbody><tr><th class=\"ve-col-4 ve-text-center\"><p>Ability Scores</p></th><th class=\"ve-col-4 ve-text-center\"><p>Size</p></th><th class=\"ve-col-4 ve-text-center\"><p>Speed</p></th></tr><tr><td class=\"ve-text-center\"><p>Constitution +2; Intelligence +1</p></td><td class=\"ve-text-center\"><p>Medium</p></td><td class=\"ve-text-center\"><p>25 ft.</p></td></tr></tbody></table><div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Age\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Age.</span> Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years.</p></div><div data-roll-name-ancestor=\"Size\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Size.</span> Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.</p></div><div data-roll-name-ancestor=\"Speed\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Speed.</span> Your speed is not reduced by wearing heavy armor.</p></div><div data-roll-name-ancestor=\"Darkvision\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Darkvision.</span> Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p></div><div data-roll-name-ancestor=\"Dwarven Resilience\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Dwarven Resilience.</span> You have advantage on saving throws against poison, and you have resistance against poison damage.</p></div><div data-roll-name-ancestor=\"Dwarven Combat Training\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Dwarven Combat Training.</span> You have proficiency with the @item[battleaxe|phb], @item[handaxe|phb], @item[light hammer|phb], and @item[warhammer|phb].</p></div><div data-roll-name-ancestor=\"Tool Proficiency\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Tool Proficiency.</span> You gain proficiency with the artisan's tools of your choice: @item[Smith's tools|phb], @item[brewer's supplies|phb], or @item[mason's tools|phb].</p></div><div data-roll-name-ancestor=\"Stonecunning\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Stonecunning.</span> Whenever you make an Intelligence (&amp;Reference[skill=History]) check related to the origin of stonework, you are considered proficient in the &amp;Reference[skill=History] skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p></div><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Languages.</span> You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.</p></div><div data-roll-name-ancestor=\"Warder's Intuition\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Warder's Intuition.</span> When you make an Intelligence (&amp;Reference[skill=Investigation]) check or an ability check using @item[thieves' tools|PHB], you can roll a [[/r d4]] and add the number rolled to the ability check.</p></div><div data-roll-name-ancestor=\"Wards and Seals\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Wards and Seals.</span> You can cast the @spell[alarm] and @spell[mage armor] spells with this trait. Starting at 3rd level, you can also cast the @spell[arcane lock] spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence is your spellcasting ability for these spells, and you don't need material components for them when you cast them with this trait.</p></div><div data-roll-name-ancestor=\"Spells of the Mark\" class=\"rd__b  rd__b--3\"><p><span class=\"entry-title-inner\">Spells of the Mark.</span> If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Warding Spells table are added to the spell list of your spellcasting class.</p><table class=\"w-100 rd__table  stripe-odd-table\" data-roll-name-ancestor=\"Mark of Warding Spells\"><caption>Mark of Warding Spells</caption><thead><tr><th class=\"rd__th ve-col-2 ve-text-center \" data-rd-isroller=\"false\">Spell Level</th><th class=\"rd__th ve-col-10 \" data-rd-isroller=\"false\">Spells</th></tr></thead><tbody><tr><td class=\"rd__th ve-col-2 ve-text-center \">1st</td><td class=\"rd__th ve-col-10 \">@spell[alarm], @spell[armor of Agathys]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">2nd</td><td class=\"rd__th ve-col-10 \">@spell[arcane lock], @spell[knock]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">3rd</td><td class=\"rd__th ve-col-10 \">@spell[glyph of warding], @spell[magic circle]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">4th</td><td class=\"rd__th ve-col-10 \">@spell[Leomund's secret chest], @spell[Mordenkainen's faithful hound]</td></tr><tr><td class=\"rd__th ve-col-2 ve-text-center \">5th</td><td class=\"rd__th ve-col-10 \">@spell[antilife shell]</td></tr></tbody></table></div></div></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "ERLW",
+      "page": "51",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 25,
+      "units": "ft",
+      "hover": false
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "dwarf",
+      "custom": ""
+    },
+    "senses": {
+      "darkvision": 60,
+      "blindsight": null,
+      "truesight": null,
+      "tremorsense": null,
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": [
+      {
+        "_id": "l5gA5UoHeqLwBlhO",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 2,
+            "int": 1,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": []
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      },
+      {
+        "_id": "3k1snRh8UX5yaFwn",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ],
+    "identifier": "dwarf-mark-of-warding-erlw"
+  },
+  "effects": [],
+  "flags": {
+    "plutonium": {
+      "page": "races.html",
+      "source": "ERLW",
+      "hash": "dwarf%20(mark%20of%20warding)_erlw",
+      "propDroppable": "race"
+    }
+  },
+  "img": "icons/environment/wilderness/cave-entrance-rocky.webp",
+  "folder": "upL3J1x4Q6tBxcfl",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751822682555,
+    "modifiedTime": 1756028604752,
+    "lastModifiedBy": "sPF2dtZDreDpJaW6",
+    "exportSource": null
+  },
+  "_id": "GQmOVIt0ElN5scZu",
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "_key": "!items!GQmOVIt0ElN5scZu"
+}

@@ -1,0 +1,167 @@
+{
+  "_id": "sskmH909PPjYQEWJ",
+  "name": "战争符文之旗 Banner of the Krig Rune",
+  "type": "consumable",
+  "img": "icons/sundries/flags/banner-symbol-sun-gold-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>这面旗帜以厚重的红色布料制成，高5尺，宽3尺。布料中锋有一块圆形的金属板，上面铭刻着krig（战争）符文。该旗帜可以接在一根10尺杆子上，当作是一面战旗。展开或收拢该旗帜需要花费一个动作。该旗帜具有以下特性。</p>\n<p><strong>勇气印记Mark of Courage</strong>。以一个附赠动作，你可以接触已展开的旗帜，使它散发出勇气。当位于该旗帜20尺范围内时，你和你的盟友免疫恐慌。这一特性持续10分钟或直至旗帜被收拢。一旦你使用了这个特性，直到完成一次短休息或长休息之前，都无法再次使用。</p>\n<p><strong>哨卫战旗Sentinel Standard</strong>。你可以看到处于你视线范围内、并处于已展开的该旗帜20尺范围内的隐形生物。</p>\n<p><strong>战旗之盾Standard's Shield</strong>。以一个附赠动作，你可以接触已展开的旗帜以激活该特性。当你和你的盟友位于展开旗帜的20尺内时，任何以你们为目标的远程攻击骰具有劣势。此效果持续1分钟，或直到旗帜收拢为止。一旦你使用了这个特性，直到完成一次短休息或长休息之前，都无法再次使用，</p>\n<p><strong>战斗之礼Gift of Battle</strong>。通过用你的手指在地面描绘krig符文，你可以将旗帜的魔法转移到某一地方。由你所描绘的那个点成为一个半径500尺的球形魔法区域的中心，该区域的位置是固定的。传输该项魔力需要花费8小时时间，并且需要旗帜在这期间一直位于你的5尺之内。在此期间，你可以选择受到此法术增益的生物个体，生物的类型，或两者都选。在这8小时结束时，旗帜被摧毁，该区域获得以下特性：</p>\n<ul>\n<li>当位于此500尺半径的球形范围内时，你在转移过程中所选择的生物免疫恐慌，并且在攻击骰和AC上获得+1加值。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SKT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "旗帜展开。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "minute",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "radius",
+            "size": "20",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-banner-of-the-krig-rune",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!sskmH909PPjYQEWJ"
+}

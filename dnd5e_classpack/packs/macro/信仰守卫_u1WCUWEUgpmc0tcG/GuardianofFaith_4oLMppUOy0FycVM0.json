@@ -1,0 +1,28 @@
+{
+  "name": "GuardianofFaith",
+  "type": "script",
+  "author": "WqWGW8MuBm7BNHxt",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "(async () => {\n  const mode = args[0];\n  console.log(\"信仰守卫 Macro.Execute triggered, mode:\", mode);\n\n  if (mode !== \"on\") return;\n\n  const last = args.at(-1);\n  const targetToken = canvas.tokens.get(last.tokenId);\n  const targetActor = targetToken?.actor;\n  if (!targetActor) {\n    return console.warn(\"No target actor found\");\n  }\n\n  const casterDoc = await fromUuid(last.origin);\n  const caster = casterDoc?.actor || casterDoc;\n  const casterToken = caster?.getActiveTokens?.()[0];\n  const saveDC = getProperty(caster, \"system.attributes.spell.dc\");\n\n  const save = await targetActor.rollAbilitySave(\"dex\", {\n    flavor: `DEX Save vs 信仰守卫 DC ${saveDC}`\n  });\n\n  const damage = (save.total >= saveDC ? 10 : 20);\n  console.log(`Applying radiant damage: ${damage}`);\n  const roll = await new Roll(`${damage}`).roll({ async: true });\n  await game.dice3d?.showForRoll(roll);\n\n  await new MidiQOL.DamageOnlyWorkflow(\n    caster,\n    casterToken,\n    damage,\n    \"radiant\",\n    [targetToken],\n    roll,\n    {\n      flavor: `${damage} radiant damage from Faith Guard`,\n      itemCardId: \"new\",\n      isCritical: false\n    }\n  );\n\n  // 清除 Aura 效果以防重复触发\n  const aura = targetActor.effects.find(e => e.origin === last.origin);\n  if (aura) {\n    await aura.delete();\n    console.log(\"🧹 Removed Faith Guard aura from actor\");\n  } else {\n    console.log(\"⚠️ Aura effect not found on actor for removal\");\n  }\n})();",
+  "folder": "u1WCUWEUgpmc0tcG",
+  "ownership": {
+    "default": 0,
+    "WqWGW8MuBm7BNHxt": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1756529889319,
+    "modifiedTime": 1756529889319,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "exportSource": null
+  },
+  "_id": "4oLMppUOy0FycVM0",
+  "sort": 0,
+  "_key": "!macros!4oLMppUOy0FycVM0"
+}

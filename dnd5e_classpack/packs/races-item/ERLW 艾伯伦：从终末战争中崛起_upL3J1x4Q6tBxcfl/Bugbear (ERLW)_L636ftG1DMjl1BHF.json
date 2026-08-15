@@ -1,0 +1,108 @@
+{
+  "name": "Bugbear (ERLW)",
+  "type": "race",
+  "system": {
+    "description": {
+      "value": "<div>\n\t\t\t\t<table class=\"w-100 summary stripe-even\">\n\t\t\t\t<tbody><tr>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Ability Scores</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Size</th>\n\t\t\t\t\t<th class=\"ve-col-4 ve-text-center\">Speed</th>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td class=\"ve-text-center\">Strength +2; Dexterity +1</td>\n\t\t\t\t\t<td class=\"ve-text-center\">Medium</td>\n\t\t\t\t\t<td class=\"ve-text-center\">30 ft. </td>\n\t\t\t\t</tr>\n\t\t\t</tbody></table>\n\t\t\t\t<div class=\"rd__b  rd__b--2\"><div data-roll-name-ancestor=\"Age\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"1\"> <span class=\"entry-title-inner\">Age.</span></span> Bugbears reach adulthood at age 16 and live up to 80 years.</p></div><div data-roll-name-ancestor=\"Alignment\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"2\"> <span class=\"entry-title-inner\">Alignment.</span></span> Bugbears live on the fringes of society even in Darguun, where they value self-sufficiency and violence. They are generally chaotic, organizing in loose tribes under charismatic and powerful leaders.</p></div><div data-roll-name-ancestor=\"Size\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"3\"> <span class=\"entry-title-inner\">Size.</span></span> Your size is Medium.</p></div><div data-roll-name-ancestor=\"Darkvision\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"4\"> <span class=\"entry-title-inner\">Darkvision.</span></span> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p></div><div data-roll-name-ancestor=\"Long-Limbed\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"5\"> <span class=\"entry-title-inner\">Long-Limbed.</span></span> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p></div><div data-roll-name-ancestor=\"Powerful Build\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"6\"> <span class=\"entry-title-inner\">Powerful Build.</span></span> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p></div><div data-roll-name-ancestor=\"Sneaky\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"7\"> <span class=\"entry-title-inner\">Sneaky.</span></span> You are proficient in the &amp;Reference[skill=Stealth] skill.</p></div><div data-roll-name-ancestor=\"Surprise Attack\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"8\"> <span class=\"entry-title-inner\">Surprise Attack.</span></span> If you surprise a creature and hit it with an attack on your first turn in combat, the attack deals an extra [[/damage 2d6]] damage to it. You can use this trait only once per combat.</p></div><div data-roll-name-ancestor=\"Languages\" class=\"rd__b  rd__b--3\"><p><span class=\"rd__h rd__h--3\" data-title-index=\"9\"> <span class=\"entry-title-inner\">Languages.</span></span> You can speak, read, and write Common and Goblin.</p></div></div>\n\t\t\t\t<hr class=\"hr-1\" />\n\t\t\t</div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "ERLW",
+      "page": "25",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "bugbear",
+      "custom": ""
+    },
+    "senses": {
+      "darkvision": 60,
+      "blindsight": null,
+      "truesight": null,
+      "tremorsense": null,
+      "units": "ft",
+      "special": ""
+    },
+    "advancement": [
+      {
+        "_id": "R2RFxNfBl5XXMmDY",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 1,
+          "fixed": {
+            "str": 2,
+            "dex": 1,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 1,
+          "locked": []
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      },
+      {
+        "_id": "pE0JiHJSoLYPTQuG",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "value": {
+          "size": "med"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ],
+    "identifier": "bugbear-erlw"
+  },
+  "effects": [],
+  "flags": {
+    "plutonium": {
+      "page": "races.html",
+      "source": "ERLW",
+      "hash": "bugbear_erlw",
+      "propDroppable": "race"
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/img/races/ERLW/Goblinoids.webp",
+  "folder": "upL3J1x4Q6tBxcfl",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751822677398,
+    "modifiedTime": 1751822681152,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "exportSource": null
+  },
+  "_id": "L636ftG1DMjl1BHF",
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "_key": "!items!L636ftG1DMjl1BHF"
+}

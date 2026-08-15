@@ -1,0 +1,199 @@
+{
+  "_id": "8E0682CA53CCA4B8",
+  "name": "湮灭法球 Sphere of Annihilation",
+  "type": "consumable",
+  "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
+  "effects": [],
+  "folder": "XzwLZWoghG1AqJYp",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "saveDamage": "default",
+      "bonusSaveDamage": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>这个2尺直径的黑色球体是多元宇宙中的一个空洞，由一个围绕在它周围的魔法场维持稳定。</p>\n<p>湮灭法球会毁灭任何穿过它或被它穿过的物质。神器，除非标注了易受湮灭法球影响，否则可以不受影响的穿过法球。其它接触到法球但未被完全毁灭或吞噬的东西都将受到[[/r 4d10]]力场伤害。</p>\n<p>除非被人控制，湮灭法球总是保持静止。如果你在一个未被控制的湮灭法球周围60尺内，你可以用一个动作进行一次DC25的智力（神秘）检定。如果检定成功，你可以让法球向一个你选择的方向移动5*你的智力调整值尺（最少5尺）；如果检定失败，湮灭法球将向你移动10尺。如果法球进入了某名生物占据的空间，该生物必须通过一次DC13的敏捷豁免以避开法球，失败则受到[[/r 4d10]]力场伤害。</p>\n<p>你可以尝试从另一名生物处夺取湮灭法球的控制权。你和该生物进行智力（神秘）对抗，胜者将获得法球的控制权并可以如从操纵它移动。</p>\n<p>如果湮灭法球与位面传送门（例如@UUID[Compendium.dnd5e_classpack.spell.bJdmgHYyhUJv8Zyc]{异界之门 Gate}制造的）或是异位面空间（例如@UUID[Compendium.dnd5e_classpack.itempack.387A15D30FA11064]{次元洞 Portable Hole}内部）接触，DM按下表决定发生的事件：</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<td><strong>[[/r d100]]</strong></td>\n<td><strong>结果</strong></td>\n</tr>\n<tr>\n<td>01-50<p></p>\n</td>\n<td>法球被摧毁</td>\n</tr>\n<tr>\n<td>51-85<p></p>\n</td>\n<td>法球穿过位面传送门或进入异位面空间</td>\n</tr>\n<tr>\n<td>86-00<p></p>\n</td>\n<td>一个空间裂缝出现，将湮灭法球和其周围180尺范围内的生物和物体送到一个随机地点。</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 201",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": 4,
+        "denomination": 10,
+        "bonus": "",
+        "types": [
+          "force"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "未受控制的法球需要一次DC25的智力（神秘）检定。",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "object",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "13"
+          }
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-sphere-of-annihilation",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010440538,
+    "modifiedTime": 1757871200169,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 59000000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!8E0682CA53CCA4B8"
+}

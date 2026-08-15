@@ -1,0 +1,169 @@
+{
+  "_id": "kYZfnwIgnRwqnjTx",
+  "name": "如意箱 Abracadabrus",
+  "type": "equipment",
+  "img": "icons/containers/chest/chest-reinforced-steel-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 20,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>如意箱是一个装饰豪华且镶嵌有宝石的木质箱子，空无一物时重25磅。其内部空间约是一个边长1.5尺的立方体。</p>\n<p>该箱子共有20发充能。一个生物可以以一个动作触摸它紧闭着的盖子并消耗1发充能，同时宣言总价值不超过1gp的一个或多个非魔法物件（包括原料、食物以及液体）的名字。若被宣言的物件能被放置在箱子里，则它们魔法般地出现在其中（且其中没有其他物品）。例如，它可以变出一盘草莓、一碗肉汤、一壶水、一件动物标本或是一袋@UUID[Compendium.dnd5e_classpack.itempack.81C7C7D9F004F3BB]{铁蒺藜 Caltrops}（20个）。该箱子变出的食物和饮料十分美味，但若在24小时后仍未被食用就会腐败变质，它创造的宝石以及贵金属则会在一分钟后消失。</p>\n<p>该箱子在每天黎明时会恢复[[/r 1d20]]发已消耗的充能次数。若你耗尽它的最后一发充能，骰一次[[/r d20]]。骰值为1时，它失去它的魔法（变成一个普通箱子），且镶嵌于其上的宝石将化为尘土。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "IDRotF",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 25,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "20",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "attuned": false,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d20",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-abracadabrus",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!kYZfnwIgnRwqnjTx"
+}

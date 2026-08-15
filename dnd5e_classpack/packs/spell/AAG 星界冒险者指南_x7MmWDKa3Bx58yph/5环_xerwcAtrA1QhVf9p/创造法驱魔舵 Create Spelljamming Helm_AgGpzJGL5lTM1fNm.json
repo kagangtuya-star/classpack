@@ -1,0 +1,206 @@
+{
+  "folder": "xerwcAtrA1QhVf9p",
+  "name": "创造法驱魔舵 Create Spelljamming Helm",
+  "type": "spell",
+  "_id": "AgGpzJGL5lTM1fNm",
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "system": {
+    "activities": {
+      "crhBS5MZCOODxgAu": {
+        "type": "summon",
+        "_id": "crhBS5MZCOODxgAu",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "bonuses": {},
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false
+        },
+        "profiles": [
+          {}
+        ],
+        "summon": {
+          "prompt": true
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>持握用于施法成分的那根权杖并触碰一个不超过大型、未被占据的座椅。水晶权杖消失，且这个座椅被转变为法驱魔舵</p>",
+      "chat": ""
+    },
+    "identifier": "create-spelljamming-helm",
+    "source": {
+      "revision": 1,
+      "rules": "2014",
+      "book": "AAG",
+      "page": "",
+      "custom": "",
+      "license": ""
+    },
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "units": "inst"
+    },
+    "level": 5,
+    "materials": {
+      "value": "一根价值至少5000gp的水晶权杖",
+      "consumed": false,
+      "cost": null,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "school": "",
+    "target": {
+      "template": {
+        "contiguous": false,
+        "units": "ft",
+        "type": ""
+      },
+      "affects": {
+        "choice": false,
+        "type": ""
+      }
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Y5bWIYpxDhkJkvP2": 3
+  },
+  "flags": {
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1749804208377,
+    "modifiedTime": 1757256784020,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "exportSource": null
+  },
+  "_key": "!items!AgGpzJGL5lTM1fNm"
+}

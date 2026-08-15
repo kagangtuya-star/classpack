@@ -1,0 +1,271 @@
+{
+  "name": "野兽召唤术 Summon Beast",
+  "type": "spell",
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "migratedProperties": [
+        "vocal",
+        "somatic",
+        "material",
+        "concentration"
+      ],
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "chris-premades": {
+      "info": {
+        "identifier": "summonBeast",
+        "source": "chris-premades",
+        "version": "0.0.0"
+      }
+    }
+  },
+  "img": "modules/dnd5e_classpack/Nicons/ability_nightfae_flicker.jpg",
+  "_id": "exBreA0aIOBCV2hi",
+  "effects": [],
+  "system": {
+    "description": {
+      "value": "<div><p>        你唤来一个野兽灵魄。其在施法距离内你可见的一个未占据位置化为实体。这一实体使用下面的野兽灵魄Aberrant Spirit的数据。当你施展法术时，从空、地或水中选择一个环境。此生物的外形属于你所选环境的一种动物，其资料表中的部分特性也受此影响。当其生命值降至 0 或法术结束时，生物消失。<br />　　该生物在法术持续时间内对你和你的同伴们友好。在战斗中，该生物使用你的先攻，但在你回合结束后立即行动。它遵从于你的口头指令（无需任何动作）。如果你不发令，它将执行回避动作并远离危险。<br />　　升环施法效应：使用三环或更高法术位施展该法术时，该生物数据中使用更高的法术环数。</p><p><span style=\"font-family:Arial, Helvetica, sans-serif\"><strong>野兽灵魄Bestial Spirit</strong><br /><em>小型野兽，无阵营</em><br />AC：11+法术环阶 (天生护甲)<br />HP：20（仅限空）或 30（仅限陆与水），外加高于二环的每环阶 5 点<br />速度：30尺；攀爬 60尺（仅限陆）；飞行 60尺（仅限空）；游泳 30尺（仅限水）<br />力量18（+4）敏捷11（+0）体质16（+3）<br />智力4（-4）感知14（+2）魅力5（-3）<br />感官：黑暗视觉 60尺，被动察觉 12<br />语言：理解你讲的语言<br />挑战等级：- 熟练加值与你相等</span></p><p style=\"color:rgb(0, 0, 0);font-family:Arial, Helvetica, sans-serif;font-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;text-align:start\"><span style=\"font-family:Arial, Helvetica, sans-serif\"><strong>飞掠Flyby（仅限空）。</strong>该野兽飞出敌人触及范围时不会引起借机攻击。<br /><strong>集群战术Pack Tactics（仅限陆与水）。</strong>该野兽至少有一个未处于失能的盟友在目标生物 5尺内时，它对该生物发动的攻击检定有优势。<br /><strong>水下呼吸Water Breathing（仅限水）。</strong>该野兽只能在水下呼吸。<br /><strong>动作Actions多重攻击Multiattack。</strong>野兽发动等同于法术环阶半数（向下取整）次数的攻击。<br /><strong>撕咬Maul。</strong>近战武器攻击：命中采取你的法术攻击加值，触及5尺，单一目标。命中：1d8+4+法术环阶 点穿刺伤害。</span></p></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "count": "",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "any",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": null
+    },
+    "ability": "",
+    "level": 2,
+    "school": "con",
+    "materials": {
+      "value": "一根羽毛、一簇毛皮和一条装在镀金橡果内的鱼尾，价值至少 200gp",
+      "consumed": false,
+      "cost": 200,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activities": {
+      "aai7i5zvwUA5p6LY": {
+        "type": "summon",
+        "_id": "aai7i5zvwUA5p6LY",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "@scaling+1",
+          "hd": "",
+          "hp": "5*@scaling-5",
+          "attackDamage": "@scaling+1",
+          "saveDamage": "@scaling+1",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "XjOlkb18n5piwBQM",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.pVeXwQLWM8gweoLX",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "T78TU0HKIQgGwM1q",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.gaNfyDBzUEMDQRMz",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "4fenWExctJ1089u7",
+            "uuid": "Compendium.dnd5e_classpack.summons.Actor.cxF3dUKpYC5xQ9BC",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "summon-beast-tce"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": "d4aQ2PblokzbvK41",
+  "sort": 2300000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757259979391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!exBreA0aIOBCV2hi"
+}

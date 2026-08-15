@@ -1,0 +1,246 @@
+{
+  "_id": "KkKcGbqXAgO9QMwx",
+  "name": "毁灭链枷 Ruinous Flail (BMT)",
+  "type": "weapon",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "37",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div class=\"rd__b  rd__b--2\"><p><em>武器（链枷），珍稀（需同调）</em> <br />这把灰色的链枷摸起来是冰冷的。使用这把魔法武器进行的攻击检定和伤害掷骰获得+1加值，并且对物件和建筑物造成双倍伤害。</p><p>此外，当你用此武器击中生物时，你可以迫使该生物进行 [[/save ability=con dc=15]]豁免检定。若豁免失败，则该生物中毒1分钟。中毒生物在每个回合开始时都会受到[[/damage 2d4 type=necrotic]]点暗蚀伤害。该生物可以在每个回合结束时重复豁免检定，成功后结束该效应对自身的效果。此项属性一经使用，直到下次黎明前不能再次使用。</p><p>This ash-gray flail is cold to the touch. You gain a +1 bonus to attack and damage rolls made with this magic weapon, and it deals double damage to objects and structures.</p><p>Additionally, when you hit a creature with this weapon, you can force the creature to make a [[/save ability=con dc=15]] saving throw. On a failed save, the creature has the poisoned condition for 1 minute. The poisoned creature takes [[/damage 2d4 type=necrotic]] damage at the start of each of its turns. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once this property is used in this way, it can't be used again until the next dawn.</p></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "rare",
+    "type": {
+      "value": "martialM",
+      "baseItem": "flail"
+    },
+    "range": {
+      "value": null,
+      "long": 0,
+      "units": "ft",
+      "reach": null
+    },
+    "properties": [
+      "mgc"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "magicalBonus": 1,
+    "damage": {
+      "base": {
+        "types": [
+          "bludgeoning"
+        ],
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "scaling": {
+          "mode": "",
+          "number": 1
+        },
+        "custom": {
+          "enabled": false
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "ammunition": {
+      "type": ""
+    },
+    "mastery": "",
+    "activities": {
+      "cMUmXI0k3FQTYzBu": {
+        "_id": "cMUmXI0k3FQTYzBu",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          },
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "attackMode": "oneHanded",
+        "ammunition": "",
+        "otherActivityUuid": ""
+      }
+    },
+    "identifier": "ruinous-flail-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "armor": {
+      "value": null
+    }
+  },
+  "img": "icons/weapons/maces/flail-triple-grey.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "ruinous%20flail_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [],
+  "folder": "4TOAfkeg3rPfaVef",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": 1751738836954,
+    "modifiedTime": 1757350873391,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "exportSource": null
+  },
+  "sort": 103125,
+  "_key": "!items!KkKcGbqXAgO9QMwx"
+}

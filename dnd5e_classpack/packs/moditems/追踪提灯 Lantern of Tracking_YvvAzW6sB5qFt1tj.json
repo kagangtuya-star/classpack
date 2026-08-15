@@ -1,0 +1,170 @@
+{
+  "_id": "YvvAzW6sB5qFt1tj",
+  "name": "追踪提灯 Lantern of Tracking",
+  "type": "equipment",
+  "img": "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>这个附有灯罩的提灯在点燃后每6小时消耗1品脱的灯油。它提供30尺的明亮光照以及其外30尺的微光光照。</p>\n<p>每个追踪提灯都被设计成用来发现某种生物的踪迹，具体类型由下表的掷骰决定。追踪的生物类型一旦被确定便不能再更改。当提灯距符合其类型的生物300尺以内时，它的火焰将变为亮绿色。不过，该提灯并不能精确定位那些生物的位置。</p>\n<table>\n<thead>\n<tr>\n<th><strong>[[/r d10]]</strong></th>\n<th><strong>生物类型</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>异怪</td>\n</tr>\n<tr>\n<td>2</td>\n<td>天界生物</td>\n</tr>\n<tr>\n<td>3</td>\n<td>构装生物</td>\n</tr>\n<tr>\n<td>4</td>\n<td>龙类</td>\n</tr>\n<tr>\n<td>5</td>\n<td>元素生物</td>\n</tr>\n<tr>\n<td>6</td>\n<td>精类</td>\n</tr>\n<tr>\n<td>7</td>\n<td>邪魔</td>\n</tr>\n<tr>\n<td>8</td>\n<td>巨人</td>\n</tr>\n<tr>\n<td>9</td>\n<td>怪兽</td>\n</tr>\n<tr>\n<td>10</td>\n<td>不死生物</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "IDRotF",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "common",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "attuned": false,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "material",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "6",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "300",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-lantern-of-tracking",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!YvvAzW6sB5qFt1tj"
+}

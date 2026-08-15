@@ -1,0 +1,236 @@
+{
+  "_id": "S9PvcUn2kHwQx8GY",
+  "name": "应答之剑 Sword of Answering",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-red-jewel.webp",
+  "effects": [],
+  "folder": "XzwLZWoghG1AqJYp",
+  "flags": {
+    "core": {},
+    "midi-qol": {
+      "fumbleThreshold": null,
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>（需阵营与剑相同的生物同调）</em></p>\n<p>在灰鹰世界中，已知存在的这种剑仅有九把。这些剑都是传说中被称为“最终遗言Final Word”的宝剑弗拉格拉克Fragarach的仿制品。九把剑的名字和阵营各不相同，且把手末端镶有不同宝石。</p>\n<table>\n<thead>\n<tr>\n<th><strong> 名称 </strong></th>\n<th><strong> 阵营 </strong></th>\n<th><strong> 宝石 </strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>解答者Answer</td>\n<td>混乱善良</td>\n<td>祖母绿emerald</td>\n</tr>\n<tr>\n<td>还击者Back Talker</td>\n<td>混乱邪恶</td>\n<td>黑玉jet</td>\n</tr>\n<tr>\n<td>定论者Concluder</td>\n<td>守序中立</td>\n<td>紫晶amethyst</td>\n</tr>\n<tr>\n<td>讥讽者Last Quip</td>\n<td>混乱中立</td>\n<td>电气石tourmaline</td>\n</tr>\n<tr>\n<td>驳斥者Rebutter</td>\n<td>中立善良</td>\n<td>黄玉topaz</td>\n</tr>\n<tr>\n<td>答复者Replier</td>\n<td>绝对中立</td>\n<td>橄榄石peridot</td>\n</tr>\n<tr>\n<td>反驳者Retorter</td>\n<td>守序善良</td>\n<td>蓝晶aquamarine</td>\n</tr>\n<tr>\n<td>潜伏者Scather</td>\n<td>守序邪恶</td>\n<td>石榴石garnet</td>\n</tr>\n<tr>\n<td>毁灭者Squelcher</td>\n<td>中立邪恶</td>\n<td>尖晶石spinel</td>\n</tr>\n</tbody>\n</table>\n<p>你在使用此剑发动的攻击检定和伤害掷骰获得+3加值。此外，持握该剑时，你可以用反应对你触及范围内任何一个对你造成伤害的生物发动一次攻击。这次攻击的攻击检定具有优势，且这次攻击造成的伤害忽略目标任何伤害免疫或抗性。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": true,
+          "formula": "1d10 + @mod +3"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": true,
+          "formula": "1d8 + @mod +3"
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      }
+    },
+    "armor": {
+      "value": 10
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "longsword"
+    },
+    "container": null,
+    "magicalBonus": null,
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "3",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-sword-of-answering",
+    "attuned": false,
+    "ammunition": {}
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010444188,
+    "modifiedTime": 1757275698084,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 60900000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!S9PvcUn2kHwQx8GY"
+}

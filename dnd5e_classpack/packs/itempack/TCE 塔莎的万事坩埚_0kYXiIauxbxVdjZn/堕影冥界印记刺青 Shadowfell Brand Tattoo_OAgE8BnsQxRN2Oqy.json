@@ -1,0 +1,204 @@
+{
+  "name": "堕影冥界印记刺青 Shadowfell Brand Tattoo",
+  "type": "equipment",
+  "img": "icons/tools/scribal/burnisher-tooth.webp",
+  "system": {
+    "description": {
+      "value": "<div class=\"WordSection1\"><p class=\"wordsection1\">覆盖区域：一条肢体</p><div class=\"WordSection1\"><p class=\"wordsection1\"><span style=\"FONT-SIZE:11pt;mso-bidi-font-family:Arial;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial\">该魔法刺青用一根特殊的针制作，绘有深色的抽象图案。</span> <br /><em><strong>刺青同调 </strong></em><span style=\"FONT-SIZE:11pt;mso-bidi-font-family:Arial;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial\">。同调此物品时，你需要将针持握，并抵在你想要让刺</span><span class=\"GramE\">青出现</span>的那处皮肤上。当同调完成时，针头会化为墨水再变成刺青。若你与刺青的同调结束，刺青会消失，针头会再次出现在你的位置中。<br /><em><strong>阴影精粹</strong></em><span style=\"FONT-SIZE:11pt;mso-bidi-font-family:Arial;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial\">。你获得</span>60<span style=\"FONT-SIZE:11pt;mso-bidi-font-family:Arial;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial\">尺的黑暗视觉，并且你在敏捷（隐匿）检定上具有优势。</span><br /><em><strong>幽影防御 </strong></em><span style=\"FONT-SIZE:11pt;mso-bidi-font-family:Arial;mso-ascii-font-family:Arial;mso-hansi-font-family:Arial\">。当你受到伤害时，你可以用一个反应变为非实体形态，将受到的伤害减半。直到下次日落前，这个反应不能再次使用。</span></p></div></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "TCE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "TCE"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "1",
+      "recovery": [
+        {
+          "period": "day",
+          "type": "recoverAll"
+        }
+      ],
+      "spent": 0
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-shadowfell-brand-tattoo",
+    "attuned": false
+  },
+  "effects": [],
+  "folder": "0kYXiIauxbxVdjZn",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1692356870378,
+    "modifiedTime": 1757872181393,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "OAgE8BnsQxRN2Oqy",
+  "sort": 1200000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!OAgE8BnsQxRN2Oqy"
+}

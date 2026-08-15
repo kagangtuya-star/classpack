@@ -1,0 +1,156 @@
+{
+  "_id": "ea2Ul0WiFfFGRPW5",
+  "name": "辛达莓果 Sinda berries",
+  "type": "consumable",
+  "img": "icons/consumables/fruit/berries-hanging-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<blockquote>\n<p>这是楚尔特当地不同寻常的野生动植物。熟练自然技能的冒险者能够一眼认出这些动植物，并通过一个成功 的 DC 15 的智力(自然)检定来回忆起它的详细属性。如果冒险者们是楚尔特本地人，则该检定具优势。</p>\n<p>此处描述的野生动植物可以在南扎路港和其他聚居地内以动植物价格表内对应的价格进行买卖。</p>\n<p>有的野生动植物中会使生物承受一小时或更久的中毒状态。请记住，@UUID[Compendium.dnd5e_classpack.spell.I1C2EQxwynPd7dOC]{次级复原术 Lesser Restoration}以及类似魔法可以结束该状态。</p>\n</blockquote>\n<p>这些莓果呈暗褐色，带苦味。完全成熟的辛达莓丛生长有 [[/r 4d6]] 颗莓果。被摘尽果实的莓丛需要 [[/r 1d4]] 个月才能重新长出所有新莓果。摘下的莓果会在 24 小时后不再新鲜并失去特殊效果。</p>\n<p>新鲜的辛达莓果可以生吃，也可以加入饮品中以冲淡苦味。 吃下至少 10 颗新鲜的辛达莓果的生物在接下来的 24 小时内为 了抵抗疾病和毒素而进行的豁免检定具优势。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "ToA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0.5,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "24",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "4d6",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-sinda-berries",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!ea2Ul0WiFfFGRPW5"
+}

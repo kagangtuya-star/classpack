@@ -1,0 +1,202 @@
+{
+  "name": "贝拉希拉的眼魔王冠",
+  "type": "equipment",
+  "img": "icons/equipment/head/helm-barbute-evil-green.webp",
+  "system": {
+    "description": {
+      "value": "<div class=\"WordSection1\" style=\"LAYOUT-GRID:15.6pt none\"><p class=\"MsoNormal\" style=\"TEXT-ALIGN:left\">这顶共生体王冠由浓淡相间的紫色石块雕刻而成，其上有十个茎状凸起，顶部装饰着宝石，看起来像是眼魔的眼梗。要与这件奇物同调，你必须在同调期间将它一直戴在头上，让皇冠里隐藏着的触手钻入你的头皮，扎根于你的颅骨之中。<br />戴着这顶王冠时，你能看穿120尺范围内的黑暗，无论是魔法的还是非魔法的。<br />法术：这顶王冠拥有10发充能。戴着它时，你可以使用一个动作，消耗一定数量的充能来施展以下法术（法术豁免DC=16）：<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.QFBZcGORjnBRgAYo]{魅惑人类}</strong>（1发充能）、<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.j4LqpyfXhYoUpUCz]{解离术}</strong>（6发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.wnJNHkm5kThiJixx]{恐惧术}</strong>（3发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.r5y9Q7FglPwcglKB]{死亡一指}</strong>（7发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.oLtyOvrWeLNEJDIE]{石化术}</strong>（6发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.syHHJlRPS4rVwCQA]{人类定身术}</strong>（2发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.VRvKmIZL44nZWKaa]{衰弱射线}</strong>（2发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.hFHF7vm3FYyTN288]{睡眠术}</strong>（1发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.2AgiR8EQ7IglGbci]{缓慢术}</strong>（3发充能），<strong>@UUID[Compendium.dnd5e_classpack.spell.Item.MTNfEcCXSJZ2m2nG]{心灵遥控}</strong>（5发充能）。<br />王冠每日清晨将会回复[[/r 1d6+3]]发已经消耗的充能。<br /><strong>共生体：</strong>完成同调后，王冠无法被脱下，你也不能主动终止与王冠的同调。如果你成为一个能结束诅咒的法术的目标，那么你与王冠的同调自动结束，它将会与你分离。<br />这些王冠是由异变魔贝拉希拉制作的，当它与王冠位于同一个位面时，贝拉希拉可以通过这些眼梗来进行观察。<br /></p></div>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "ERLW",
+      "revision": 1,
+      "rules": "2014",
+      "book": "ERLW"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50000,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "legendary",
+    "identified": true,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "10",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "formula",
+          "formula": "1d6+3"
+        }
+      ],
+      "spent": 0
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": 1,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "",
+    "attuned": false
+  },
+  "effects": [],
+  "folder": "WzRnOrLwT9KfSdBp",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 10,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1691471264247,
+    "modifiedTime": 1757871317236,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "W4o4bhDa19RFL339",
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!W4o4bhDa19RFL339"
+}

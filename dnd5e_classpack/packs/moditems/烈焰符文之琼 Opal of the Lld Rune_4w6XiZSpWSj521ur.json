@@ -1,0 +1,162 @@
+{
+  "_id": "4w6XiZSpWSj521ur",
+  "name": "烈焰符文之琼 Opal of the Lld Rune",
+  "type": "consumable",
+  "img": "icons/commodities/gems/gem-rough-drop-red.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p>\n<p>这块三角形的火蛋白石每边大约有三寸长，厚度约一寸半。Ild（火）符文在其核心处闪烁，使其摸起来有些温暖。这块蛋白石具有以下特性，这些特性只在此蛋白石装备在你身上时才能生效。</p>\n<p><strong>点燃Ignite</strong>。以一个动作，你可以点燃10尺内的一个物件。该物件必须是可燃的，并且燃起的火堆直径不会高过1尺。</p>\n<p><strong>火焰之友Fire's Friend</strong>。你对寒冷伤害具有抗性。</p>\n<p><strong>火焰驯服者Fire Tamer</strong>。以一个动作，你可以熄灭10尺内的任何明火。你选择半径范围内有多少火焰被熄灭。</p>\n<p><strong>火焰之赠礼Gift of Flame</strong>。通过用你的手指在一件非魔法物品——一把武器或一件盔甲上描摹ild符文，你可以将蛋白石的魔法转移到上面。转移需要花费8小时时间，并且需要两件物品在此期间互相间隔在5尺之内。在这8小时结束时，蛋白石会被摧毁，并且红色的符文会出现在你所选择的物品上，这会使得该物品获得一项基于其形态的增益：</p>\n<ul>\n<li><strong>武器Weapon</strong>。该武器现在成为一件非普通的魔法武器，它会对任何被它命中的目标造成额外[[/r 1d6]]点火焰伤害。</li>\n<li><strong>盔甲Armor</strong>。该盔甲现在成为一件珍稀的魔法物品，需要同调。穿戴此盔甲时，你对寒冷伤害具有抗性。</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "SKT",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "",
+      "autoDestroy": false,
+      "spent": null,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 6,
+        "bonus": "",
+        "types": [
+          "fire"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-opal-of-the-lld-rune",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!4w6XiZSpWSj521ur"
+}

@@ -1,0 +1,169 @@
+{
+  "_id": "Xu5309APnkDEgKsz",
+  "name": "渔夫的喜悦之钩 Hook of Fisher's Delight",
+  "type": "equipment",
+  "img": "icons/commodities/metal/fragments-steel-barbed.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>奇物</p>\n<p>这个小小的银色鱼钩上附有一根金色小羽毛。为使其产生效果，你必须将它系在鱼线的末端并沉入足够大的水域中（至少10立方尺）。每当你不间断地将其沉入水中1小时，骰一次[[/r d6]]。骰值为6时，一条6寸长的魔法鱼耷拉在鱼钩尾部。被变出的鱼的颜色和效应由下表的掷骰决定。一旦该鱼钩变出了鱼，直到第二天黎明时，它都不能再如此做。</p>\n<table>\n<thead>\n<tr>\n<th><strong> [[/r d20]]</strong></th>\n<th><strong>鱼的颜色</strong></th>\n<th><strong>魔法效应</strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1~10</td>\n<td>绿色，带有铜色条纹</td>\n<td>这条美味的鱼可以为吃掉它的生物满足一整天的营养需求。若在被抓到24小时后仍未被食用，这条鱼将失去该效应并腐烂。</td>\n</tr>\n<tr>\n<td>11~14</td>\n<td>黄色，带有黑色条纹</td>\n<td>当被从鱼钩上取下后，这条难吃的鱼可以用来投掷。指定120尺内投掷者能看见的一个生物，该生物必须进行一次DC15的力量豁免。豁免失败者将被击倒地。随后这条鱼消失。</td>\n</tr>\n<tr>\n<td>15~18</td>\n<td>蓝色，带有白色条纹</td>\n<td>当被从鱼钩上释放后，这条鱼将长出翅膀跟着你自由地舞动，并用水族语歌唱一曲优美的旋律。[[/r 2d4]]小时后或生命值降为0时，它将消失。这条鱼使用食人鱼Quipper的数值，但它可以在空气中呼吸且拥有30尺的飞行速度。</td>\n</tr>\n<tr>\n<td>19~20</td>\n<td>金色，带有银色条纹</td>\n<td>这条美味的鱼可以为吃掉它的生物满足一整天的营养需求，并为该生物提供[[/r 2d10]]临时生命。若在被抓到24小时后仍未被食用，这条鱼将失去该效应并腐烂。</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "IDRotF",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": null
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "dt": null,
+      "conditions": ""
+    },
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "attuned": false,
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-hook-of-fishers-delight",
+    "container": null,
+    "cover": null,
+    "crewed": false,
+    "properties": []
+  },
+  "_key": "!items!Xu5309APnkDEgKsz"
+}

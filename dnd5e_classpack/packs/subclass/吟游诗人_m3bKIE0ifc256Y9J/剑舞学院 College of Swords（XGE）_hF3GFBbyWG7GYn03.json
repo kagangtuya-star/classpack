@@ -1,0 +1,162 @@
+{
+  "_id": "hF3GFBbyWG7GYn03",
+  "name": "剑舞学院 College of Swords（XGE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Warrior_WeaponMastery.png",
+  "effects": [],
+  "folder": "m3bKIE0ifc256Y9J",
+  "sort": 97657,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>剑舞学院的诗人被称作「刃锋」，他们通过杂耍武器以取乐。刃锋表演诸如吞剑，杂耍，飞刀和模拟格斗之类的特技。尽管他们用他们的武器来娱乐，他们同时也是自身有着高度训练和熟练技巧的战士。</p><p>他们武器上的才能使得许多刃锋过着双重身份的生活。一个刃锋可能使用马戏团来掩盖他们的邪恶行为，比如暗杀，抢劫和勒索。其他刃锋则打击邪恶，伸张正义，反对强权和残暴。大多数剧团乐于接受刃锋把他们娱乐的才能加入到他们的表演上去，但是很少有艺人完全相信他们。</p><p>放弃了艺人生活的刃锋通常都遇到了使其不能再维持秘密活动的麻烦。盗窃被抓或者从事义务警员的刃锋对大多数剧团来说都是个太大的负担。使用他们武器的技巧和魔法。这些刃锋开始成为盗贼公会的执行者或是像个冒险者一样开辟自己的道路。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "identifier": "college-of-swords",
+    "classIdentifier": "bard",
+    "advancement": [
+      {
+        "_id": "i636y9x8kmqd9es0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.WKQXfXbifuoCk1V1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "5q08qn03a7lbzlj8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.elgZeXSAplLNQhD1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.rkVUrrGCxHRarKYn",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "oY5eZnZ9DTK9DDfh",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "3": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": false,
+          "type": null,
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.VoKRG6XqUxTz4rT3"
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.class-abilityphb.Item.9U4ePVABZME8Syk9"
+            }
+          ],
+          "spell": null,
+          "restriction": {}
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "战斗风格",
+        "hint": "",
+        "icon": null
+      },
+      {
+        "_id": "0b9LV7s3g6wd9PbD",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.91cuCtFwcWhR8O2Z",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.Item.6phT9JzgLIAgIu4Y",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性",
+        "hint": "",
+        "icon": null
+      },
+      {
+        "_id": "XGD19ed6CvPhihoU",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapon:mar:scimitar",
+            "armor:med"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 3,
+        "title": "",
+        "hint": "",
+        "icon": null
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!hF3GFBbyWG7GYn03"
+}

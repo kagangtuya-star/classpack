@@ -1,0 +1,200 @@
+{
+  "_id": "3634FECD7EEC78E6",
+  "name": "魔像手册 Manual of Golems",
+  "type": "consumable",
+  "img": "icons/sundries/books/book-symbol-triangle-silver-blue.webp",
+  "effects": [],
+  "folder": "XzwLZWoghG1AqJYp",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "effectCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>这本手册记载了制造某种魔像所必须的知识和符咒，魔像的类型由DM选择或随机决定。只有拥有至少2个5环法术位的施法者才能解读并使用这本书。无法解读这本书的生物在阅读它时将受到[[/r 6d6]]精神伤害。</p>\n<p>制造魔像时，你需要花费表格中所标注的时间，每天休息不超过8小时。工作时你必须把魔像手册放在手边随时参考，并且不能受到打扰。另外，你还要付出表格中标注的金钱用以购买材料。</p>\n<p>魔像完工后，魔像手册将被魔焰吞噬。当你把手册的灰烬洒在魔像上时，它将获得生命。它服从你的控制，理解并听从你的口头命令。魔像的数据见怪物图鉴。</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<td><strong>[[/r d20]]</strong></td>\n<td><strong>魔像</strong></td>\n<td><strong>时间</strong></td>\n<td><strong>花费</strong></td>\n</tr>\n<tr>\n<td>1-5</td>\n<td>粘土魔像</td>\n<td>30天</td>\n<td>65,000金币</td>\n</tr>\n<tr>\n<td>6-17</td>\n<td>肉魔像</td>\n<td>60天</td>\n<td>50,000金币</td>\n</tr>\n<tr>\n<td>18</td>\n<td>铁魔像</td>\n<td>120天</td>\n<td>100,000金币</td>\n</tr>\n<tr>\n<td>19-20</td>\n<td>石魔像</td>\n<td>90天</td>\n<td>80,000金币</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 180",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 35000,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": 6,
+        "denomination": 6,
+        "bonus": "",
+        "types": [
+          "psychic"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": 0,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "0",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-manual-of-golems",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010438952,
+    "modifiedTime": 1757871129202,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 39800000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!3634FECD7EEC78E6"
+}

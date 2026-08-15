@@ -1,0 +1,250 @@
+{
+  "_id": "zlLTYwA98imjAPWY",
+  "name": "小丑面具 Jester's Mask (BMT)",
+  "type": "equipment",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BMT",
+      "page": "36",
+      "license": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "description": {
+      "value": "<div><p><em>奇物，传说（需吟游诗人、术士或邪术师同调）</em><br />这款色彩缤纷的多米诺花纹小丑面具的边缘镶有珍珠。着装此面具后，你获得以下增益： <br /><em><strong>魅力焦点Charismatic Focus。</strong></em>你可以将面具作为施展法术的法器。你在任何使用魅力作为施法能力的法术攻击检定和法术豁免DC上获得+3加值。<br /><em><strong>非凡逃脱Marvelous Escape。</strong></em>当一个生物的攻击检定命中你时，你可以用一个反应消失在一阵烟雾和彩色闪光之中。你不会因此次攻击受到任何伤害，而是连同你穿着或携带的任何物件一起传送到一个你可以看到的30尺内的未被占据的空间。此反应一经使用，直到下次黎明前不能再次使用。<br /><em><strong>颠倒黑白Topsy-Turvy。</strong></em>当你在[[/r d20]]上掷出1时，你可以将该掷骰视为掷出20。此项属性一经使用，直到下次黎明前不能再次使用。</p><p><em>(requires attunement by a bard, sorcerer, or warlock)</em></p></div><div class=\"rd__b  rd__b--2\"><p>This colorful, harlequin domino mask is edged with pearls. While wearing this mask, you gain the following benefits:</p><ul class=\"rd__list rd__list-hang-notitle\"><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Charismatic Focus\"><span class=\"bold rd__list-item-name\">Charismatic Focus.</span> You can use the mask as a spellcasting focus. You gain a +3 bonus to any spell attack rolls and spell saving throw DCs that use Charisma as the spellcasting ability.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Marvelous Escape\"><span class=\"bold rd__list-item-name\">Marvelous Escape.</span> When a creature hits you with an attack roll, you can use your reaction to disappear in a puff of smoke and colorful sparkles. You take no damage and instead teleport, along with anything you are wearing or carrying, to an unoccupied space you can see within 30 feet of yourself. Once this reaction is used, it can't be used again until the next dawn.</p></li><li class=\"rd__li \"><p class=\"rd__p-list-item\" data-roll-name-ancestor=\"Topsy-Turvy\"><span class=\"bold rd__list-item-name\">Topsy-Turvy.</span> When you roll a 1 on a [[/r d20]], you can treat the roll as if you rolled a 20 instead. Once this property is used, it can't be used again until the next dawn.</p></li></ul></div>",
+      "chat": ""
+    },
+    "proficient": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attuned": true,
+    "identified": true,
+    "equipped": true,
+    "rarity": "legendary",
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "attunement": "required",
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": null,
+      "dex": null,
+      "magicalBonus": 0
+    },
+    "strength": null,
+    "activities": {},
+    "identifier": "jesters-mask-bmt",
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "cover": null,
+    "crewed": false
+  },
+  "img": "modules/dnd5e_classpack/Nicons/img/items/BMT/Jesters Mask.webp",
+  "ownership": {
+    "default": 0,
+    "qKmljmeCDhGDkX2L": 3
+  },
+  "flags": {
+    "plutonium": {
+      "page": "items.html",
+      "source": "BMT",
+      "hash": "jester's%20mask_bmt",
+      "propDroppable": "item"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "removeAttackDamageButtons": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "9cYbduRNFMFijpdI",
+      "name": "Spell Attack Bonus (Melee)",
+      "img": "modules/dnd5e_classpack/Nicons/img/items/BMT/Jesters Mask.webp",
+      "description": "",
+      "changes": [
+        {
+          "key": "system.bonuses.msak.attack",
+          "mode": 2,
+          "value": "+3",
+          "priority": 7
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "plutonium": {
+          "dedupeId": "spell-attack-bonus-melee"
+        }
+      },
+      "type": "base",
+      "system": {},
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!zlLTYwA98imjAPWY.9cYbduRNFMFijpdI"
+    },
+    {
+      "_id": "WdniFNlg6FwGc673",
+      "name": "Spell Attack Bonus (Ranged)",
+      "img": "modules/dnd5e_classpack/Nicons/img/items/BMT/Jesters Mask.webp",
+      "description": "",
+      "changes": [
+        {
+          "key": "system.bonuses.rsak.attack",
+          "mode": 2,
+          "value": "+3",
+          "priority": 7
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "plutonium": {
+          "dedupeId": "spell-attack-bonus-ranged"
+        }
+      },
+      "type": "base",
+      "system": {},
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!zlLTYwA98imjAPWY.WdniFNlg6FwGc673"
+    },
+    {
+      "_id": "VPJovDyUftZIYoWd",
+      "name": "Spell Save DC Bonus",
+      "img": "modules/dnd5e_classpack/Nicons/img/items/BMT/Jesters Mask.webp",
+      "description": "",
+      "changes": [
+        {
+          "key": "system.bonuses.spell.dc",
+          "mode": 2,
+          "value": "+3",
+          "priority": 7
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "plutonium": {
+          "dedupeId": "spell-save-dc-bonus"
+        }
+      },
+      "type": "base",
+      "system": {},
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.3.9",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!items.effects!zlLTYwA98imjAPWY.VPJovDyUftZIYoWd"
+    }
+  ],
+  "folder": "FTUTqxHn0J4bGngr",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": 1751738836954,
+    "modifiedTime": 1751738836954,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "exportSource": null
+  },
+  "sort": 200000,
+  "_key": "!items!zlLTYwA98imjAPWY"
+}

@@ -1,0 +1,197 @@
+{
+  "_id": "96890A877B611A74",
+  "name": "黄金狮子异能塑像 Figurine of Wondrous Power Golden Lions",
+  "type": "consumable",
+  "img": "icons/commodities/claws/claw-bear-brown-grey.webp",
+  "effects": [],
+  "folder": "tBltNHvQID4vNcLI",
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 2,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物</em></p>\n<p>异能塑像是小到可以装在口袋里的野兽雕像。当你用一个动作说出命令语并把雕像扔到你周围60尺以内的某处时，它将变成一只活体生物。如果雕像被扔到的地方被其他生物或物件占据，或者周围的空间不足以容纳该雕像变成的生物，则它将不会变成生物。</p>\n<p>雕像变成的生物对你和你的同伴态度友善。它能听懂你的语言并会按你的口头命令行事。如果你不下达任何命令，则该生物会保护自己而不作其他动作。</p>\n<p>生物存在的时间依雕像而不同。持续时间结束时，生物将变回异能塑像形态。它的生命值降至0，或你用一个动作碰触它并说出命令语时，它将提前变回雕像状态。变回雕像后，异能塑像的属性必须经过一段时间后才能再次启动，时间长短依雕像种类而不同。</p>\n<p><strong>@UUID[Compendium.dnd5e_classpack.itempack.96890A877B611A74]{黄金狮子 Golden Lions}（珍稀）。</strong>这尊黄金制成的狮子雕像总是成对制造。你可以只使用其中一只，也可以两只一起使用。每只狮子雕像都可以变为一只@UUID[Compendium.dnd5e_classpack.monsterspack.hjhERRzafCiFFVLA]{狮子Lion}，其存在至多维持1小时。每只狮子雕像都需要经过7日才能再次启动。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "DMG pg. 169",
+      "revision": 1,
+      "rules": "2014",
+      "book": "DMG"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1200,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "max": "2",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "container": null,
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "1",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "10",
+            "type": "space",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-figurine-of-wondrous-power-golden-lions",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1713010440538,
+    "modifiedTime": 1757875165753,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "sort": 6400000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!96890A877B611A74"
+}

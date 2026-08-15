@@ -1,0 +1,90 @@
+{
+  "name": "地狱遗赠 (提夫林)",
+  "type": "feat",
+  "system": {
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "description": {
+      "value": "<p>你可以获得施展戏法<em>奇术<span class=\"SpellE\">tha-umaturgy</span></em>的能力。</p>\n<p>第3级时，你可以每日施展一次2环的<em>炼狱叱喝hellish rebuke</em>。</p>\n<p>第5级时，你可以每日施展一次<em>黑暗术darkness</em>。</p>\n<p>花费掉的法术次数将在完成<span class=\"GramE\">一</span>次长休后恢复。与该特质相关的施法关键属性为魅力。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "requirements": "提夫林",
+    "activities": {},
+    "identifier": "-",
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "always",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "always",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "_id": "GhMtL8PyeViTnuWQ",
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "folder": "66dNdlYkq2o4S2TN",
+  "sort": 17900000,
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "modifiedTime": 1757945141747,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!GhMtL8PyeViTnuWQ"
+}

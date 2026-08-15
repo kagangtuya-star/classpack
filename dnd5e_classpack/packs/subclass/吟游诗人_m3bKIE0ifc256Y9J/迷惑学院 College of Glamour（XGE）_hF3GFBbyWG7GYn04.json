@@ -1,0 +1,148 @@
+{
+  "_id": "hF3GFBbyWG7GYn04",
+  "name": "迷惑学院 College of Glamour（XGE）",
+  "type": "subclass",
+  "img": "modules/dnd5e_classpack/Nicons/Ability_Priest_Darkness.png",
+  "effects": [],
+  "folder": "m3bKIE0ifc256Y9J",
+  "sort": 94532,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757275023121,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p>         迷惑学院向那些在充满生机又处处致命的妖精国度里学习技艺的吟游诗人们敞开了大门。被半羊人，艾拉德琳和其他精类生物指导，这些吟游诗人学会了使用魔法来取悦并吸引他人。</p><p>         此学院的吟游诗人通常会带来敬畏与恐惧。他们的表演近乎传奇。此学院的吟游诗人风情万种，只是一场表演便足以让绑架者乖乖离开，让愤怒的巨龙归于平静。同样的魔法让他们在操弄他人心智的同时，也能掌控野兽。恶劣的迷惑学院诗人可以混入一个社群几周，用魔法让主人变成奴隶；英勇的迷惑学院诗人反而利用这种力量打击压迫者，为被压迫的人们带来快乐。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "identifier": "college-of-glamour",
+    "classIdentifier": "bard",
+    "advancement": [
+      {
+        "_id": "xc5aaw0wrli6jluk",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.GUKctWtG0m69VgFk",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.2JSV2d5Xm2DBvXFz",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "i636y9x8kmqd9es0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.xe5xbHMQAWZ9q2ET"
+            },
+            {
+              "optional": true,
+              "uuid": "Compendium.dnd5e_classpack.spell.Ja6HpsLeGA9MQ0Rm"
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "preparation": "innate",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "ability": []
+          }
+        },
+        "value": {},
+        "level": 6,
+        "title": "职业特性",
+        "icon": null,
+        "hint": ""
+      },
+      {
+        "_id": "5q08qn03a7lbzlj8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e_classpack.extra-ability.ocvcBCV6uWcdfnIu",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "职业特性",
+        "icon": null
+      },
+      {
+        "_id": "kogbdjwbg0ji6482",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "temp-hp",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "3": {
+              "value": 5
+            },
+            "5": {
+              "value": 8
+            },
+            "10": {
+              "value": 11
+            },
+            "15": {
+              "value": 14
+            }
+          }
+        },
+        "value": {},
+        "title": "激励光环临时生命",
+        "icon": null,
+        "hint": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": "",
+      "preparation": {
+        "formula": ""
+      }
+    }
+  },
+  "_key": "!items!hF3GFBbyWG7GYn04"
+}

@@ -1,7 +1,6 @@
 # DND5e classpack for fvtt
 
-整合了大部分种族，职业，物品，法术，同时可以使dm完全关闭babele换取加载性能。  
-该mod与babele兼容性一般。
+整合了大部分种族，职业，物品，法术， 
 交流与制作群：942329050（新） 1083272094（旧，不再活跃）
 
 使用方法：  
@@ -13,3 +12,6 @@
 
 更新日志见
 https://github.com/HJSmile/classpack/releases
+
+如需为本项目贡献，请参阅：
+https://github.com/observer1236/classpack/blob/master/CONTRIBUTING.md

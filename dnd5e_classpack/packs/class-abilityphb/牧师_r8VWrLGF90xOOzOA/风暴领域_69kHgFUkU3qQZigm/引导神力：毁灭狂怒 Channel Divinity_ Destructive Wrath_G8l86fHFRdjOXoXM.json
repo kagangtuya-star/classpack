@@ -1,0 +1,191 @@
+{
+  "_id": "G8l86fHFRdjOXoXM",
+  "name": "引导神力：毁灭狂怒 Channel Divinity: Destructive Wrath",
+  "type": "feat",
+  "img": "modules/dnd5e_classpack/Nicons/Warlock_SiphonLife.png",
+  "system": {
+    "description": {
+      "value": "<p>        第2级起，你可以用@UUID[Compendium.dnd5e_classpack.class-abilityphb.WPevnsjK8Cjd9Fcl]{引导神力}特性为自己装备无拘束的凶猛风暴之力。</p>\n<p>        当你造成闪电或雷鸣伤害时，可以使用引导神力使该伤害的伤害掷骰直接取最高值而无需掷骰。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 60",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "cover": null,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "channelDivinity"
+    },
+    "requirements": "风暴领域等级 2",
+    "activities": {},
+    "identifier": "",
+    "advancement": [],
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "引导神力-毁灭狂怒",
+      "img": "modules/dnd5e_classpack/Nicons/Warlock_SiphonLife.png",
+      "origin": "Compendium.dnd5e_classpack.class-abilityphb.Item.G8l86fHFRdjOXoXM",
+      "_id": "FrUmVQPlLk3jCK6d",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.activation",
+          "mode": 2,
+          "value": "['lightning', 'thunder'].some(type=>damageTypes[type])",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.damage.all",
+          "mode": 2,
+          "value": "reroll-max",
+          "priority": 20
+        },
+        {
+          "key": "flags.midi-qol.optional.引导神力-毁灭狂怒.count",
+          "mode": 2,
+          "value": "ItemUses.引导神力 Channel Divinity",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.4",
+        "createdTime": 1757268059747,
+        "modifiedTime": 1757268205094,
+        "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+        "exportSource": null
+      },
+      "_key": "!items.effects!G8l86fHFRdjOXoXM.FrUmVQPlLk3jCK6d"
+    }
+  ],
+  "folder": "69kHgFUkU3qQZigm",
+  "sort": 14600000,
+  "flags": {
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "chris-premades": {
+      "info": {
+        "identifier": "destructiveWrath",
+        "source": "chris-premades",
+        "version": "0.0.0"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "createdTime": null,
+    "modifiedTime": 1757268306673,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!G8l86fHFRdjOXoXM"
+}

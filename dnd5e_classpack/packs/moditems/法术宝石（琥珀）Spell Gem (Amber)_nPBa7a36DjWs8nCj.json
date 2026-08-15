@@ -1,0 +1,166 @@
+{
+  "_id": "nPBa7a36DjWs8nCj",
+  "name": "法术宝石（琥珀）Spell Gem (Amber)",
+  "type": "consumable",
+  "img": "icons/commodities/gems/gem-amber-insect-orange.webp",
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "migratedUses": 1,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.3.9",
+    "createdTime": null,
+    "modifiedTime": 1749710928408,
+    "lastModifiedBy": "qKmljmeCDhGDkX2L",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（部分需同调）</em></p>\n<p>一枚法术宝石可以储存一发任意等级职业相应环阶的法术。你将在得知宝石的属性后知晓其内含法术的具体状况。持握宝石时，若你知晓其内的法术且该法术在你的职业法术列表中，则你可以用一个动作施展该法术。以该方式施展法术时无需与宝石同调也不需要任何法术成分。施法过后，宝石中的法术也随之消散。</p>\n<p>如果宝石里的高环阶法术超过了你当前可施展法术环阶，则你需要以你的施法关键属性进行一次额外的检定，以判断本次施法是否成功。其DC 为10＋该法术的环阶。检定失败时，该法术失效且宝石中的法术也随之消散。</p>\n<p>不同类型的法术宝石 其能够存储法术的最大环阶也各不相同。宝石与法术环阶相关的稀有度和储存法术其豁免DC 与攻击加值，具体如“法术宝石”表所示。</p>\n<p>与宝石同调后，你可以在宝石内未有法术时将一发法术注入其中。此时，你需要手握空的宝石并正常施展一次该法术，然后法术便会注入宝石中而不是正常生效。法术的施法时间必须是 1 动作或不低于 1 分钟时间，且其法术环阶必须不高于宝石的上限。如果该法术是防护系且需要耗材，则你也需要满足相应需求，不过只需一半材料就能完成该作业。</p>\n<p>被注入法术后，同一枚宝石必须在下次黎明过后才能再次向其注入法术。</p>\n<p>这些法术宝石由地底侏儒制作而成，不过他们并不愿意跟别人分享这种秘密工艺。</p>\n<table>\n<thead>\n<tr>\n<th colspan=\"5\"><strong>法术宝石</strong></th>\n</tr>\n<tr>\n<th><strong> 最大法术环价 </strong></th>\n<th><strong> 宝石 </strong></th>\n<th><strong> 稀有度 </strong></th>\n<th><strong> 豁免DC </strong></th>\n<th><strong> 攻击加值 </strong></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>4环</td>\n<td>琥珀Amber</td>\n<td>极珍稀</td>\n<td>15</td>\n<td>+9</td>\n</tr>\n</tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "OoTA",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "veryRare",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "spell-gem-amber",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_key": "!items!nPBa7a36DjWs8nCj"
+}

@@ -1,0 +1,164 @@
+{
+  "name": "幻象角号 Horn of Illusions",
+  "type": "tool",
+  "img": "icons/tools/instruments/flute-simple-wood.webp",
+  "effects": [],
+  "flags": {
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default"
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "reactionCondition": "",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p><em>奇物（需同调）</em></p><p><em>能激起观众的敬畏、好奇、恐惧等情绪的各种号角。</em></p><em>\n</em><p><em>拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。各个种类的乐器之间互不关联，其熟练项只对相应的乐器起效。</em></p><p>当你使用这个乐器演奏音乐，你可以在乐器五尺半径的球体周围创造无害的，虚无缥缈的视觉效应。如果你是个诗人，那么半径提高到十五尺。简单的视觉效应包括了发光的音符，特殊的舞蹈，蝴蝶，悠长的落雪。这种魔法影响既无触感亦无声音，他们显然是幻象。此效应在你停止演奏后结束。</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "XGE",
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "required",
+    "equipped": false,
+    "rarity": "common",
+    "identified": true,
+    "ability": "cha",
+    "chatFlavor": "",
+    "proficient": null,
+    "bonus": "",
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "music",
+      "baseItem": "horn"
+    },
+    "container": null,
+    "properties": [
+      "mgc"
+    ],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "check",
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "check": {
+          "ability": "cha",
+          "associated": [],
+          "dc": {}
+        },
+        "sort": 0
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "identifier": "-horn-of-illusions",
+    "attuned": false
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1686408421882,
+    "modifiedTime": 1757871706888,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "v11-classpack",
+      "uuid": null,
+      "coreVersion": "11.301",
+      "systemId": "dnd5e",
+      "systemVersion": "2.2.1"
+    }
+  },
+  "folder": "qszubHIHtjNdLnf4",
+  "_id": "Yja9x6MmN5UhHah6",
+  "sort": 2500000,
+  "ownership": {
+    "default": 0,
+    "5Uof9fv4q2aZTmDS": 3
+  },
+  "_key": "!items!Yja9x6MmN5UhHah6"
+}

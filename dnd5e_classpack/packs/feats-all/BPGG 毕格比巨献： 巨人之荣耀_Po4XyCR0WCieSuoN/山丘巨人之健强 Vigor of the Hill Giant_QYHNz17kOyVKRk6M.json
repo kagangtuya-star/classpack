@@ -1,0 +1,166 @@
+{
+  "name": "山丘巨人之健强 Vigor of the Hill Giant",
+  "type": "feat",
+  "system": {
+    "source": {
+      "custom": "",
+      "book": "BPGG",
+      "page": "19",
+      "license": "",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "description": {
+      "value": "<div><hr /><div><p><em>先决条件: 第4级，@UUID[Compendium.dnd5e_classpack.feats-all.Item.WXC70UjLdZ7mpSpz]{巨人打击}（山丘打击）专长</em> <br />你展现出象征着山丘巨人的强韧性，使得你获得下列增益：<br /><strong>属性值提升Ability Score Increase。</strong> 你的力量、体质、或感知属性提升1，上限为20。<br /><strong>不动如山Bulwark。</strong>当你受到一次让你移动至少5尺、或给予你 <strong>倒地Prone</strong> 状态的效应时，你可以用你的反应来稳定自身，此时，你既不会被因此移动，也不会因此陷入 <strong>倒地Prone</strong> 。<br /><strong>钢铁肠胃Iron Stomach。</strong> 当你在短休时进食，并且使用了一粒或更多生命骰恢复生命时，你额外恢复等同于你的 体质调整值+你的熟练加值 点的生命值。</p></div></div>",
+      "chat": ""
+    },
+    "requirements": "strike of the giants (hill strike) feat",
+    "prerequisites": {
+      "level": 4,
+      "repeatable": false
+    },
+    "uses": {
+      "max": "",
+      "spent": null,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "properties": [],
+    "cover": null,
+    "crewed": false,
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When you are subjected to an effect that would move you at least 5 feet or give you the prone condition, you can use",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "-vigor-of-the-hill-giant",
+    "advancement": [],
+    "enchant": {}
+  },
+  "ownership": {
+    "default": 0,
+    "pF5tIzH2aEMuTR6D": 3
+  },
+  "img": "icons/environment/wilderness/cave-entrance-mountain.webp",
+  "flags": {
+    "plutonium": {
+      "page": "feats.html",
+      "source": "BGG",
+      "hash": "vigor%20of%20the%20hill%20giant_bgg",
+      "propDroppable": "feat"
+    },
+    "core": {},
+    "midiProperties": {
+      "confirmTargets": "default",
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "critOther": false,
+      "offHandWeapon": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false,
+      "idr": false,
+      "idi": false,
+      "idv": false,
+      "ida": false
+    },
+    "midi-qol": {
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "effectCondition": "",
+      "removeAttackDamageButtons": "default",
+      "otherCondition": ""
+    },
+    "dnd5e": {
+      "persistSourceMigration": true,
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "effects": [],
+  "folder": "Po4XyCR0WCieSuoN",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.4",
+    "coreVersion": "13.351",
+    "createdTime": 1724940942753,
+    "modifiedTime": 1757275418894,
+    "lastModifiedBy": "WqWGW8MuBm7BNHxt",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "QYHNz17kOyVKRk6M",
+  "sort": 0,
+  "_key": "!items!QYHNz17kOyVKRk6M"
+}
